@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- PG크로스브라우징필수내용 -->
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <!-- // PG크로스브라우징필수내용 -->
+
+        <title></title>
+        <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+        <!--@css(/layout/basic/css/layout.css)-->
+        <!--@css(/layout/basic/css/ec-base-ui.css)-->
+        <!--@css(/layout/basic/css/ec-base-button.css)-->
+        <!--@css(/layout/basic/css/ec-base-tab.css)-->
+        <!--@css(/layout/basic/css/ec-base-table.css)-->
+        <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+        <!--@css(/layout/basic/css/ec-base-help.css)-->
+        <!--@css(/layout/basic/css/ec-base-fold.css)-->
+        <!--@css(/layout/basic/css/ec-base-box.css)-->
+        <!--@css(/layout/basic/css/ec-base-desc.css)-->
+        <!--@css(/layout/basic/css/ec-base-product.css)-->
+        <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+        <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+        <!--js(/layout/basic/js/basic.js)-->
+        <!--js(/layout/basic/js/layout.js)-->
+        <!--js(/js/common.js)-->
+
+        <!--@import(/_wp/common.lib.html)-->
+    </head>
+    <body>
+        <div id="skipNavigation">
+            <p><a href="#category">전체상품목록 바로가기</a></p>
+            <p><a href="#contents">본문 바로가기</a></p>
+        </div>
+
+        <div id="wrap">
+            <!--@import(/_wp/header.html)-->
+            <!--import(/_wp/sidebar.html)-->
+            <div id="container">
+                <div id="contents">
+                    <div class="">
+                        <span module="Layout_MobileAction" class="RTMB">
+                            <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
+                        </span>
+                        <!--@contents-->
+                    </div>
+                </div><hr class="layout" />
+            </div><hr class="layout" />
+            <!--@import(/_wp/footer.html)-->
+        </div><hr class="layout" />
+        <!--@css(/userCSS.css)-->
+        <!--@js(/userJS.js)-->
+    </body>
+</html>

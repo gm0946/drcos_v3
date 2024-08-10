@@ -1,0 +1,6 @@
+.xans-estimate-userform .ec-base-table .agree { overflow:auto; width:95%; height:100px; padding:5px 6px; border:1px solid #d5d5d5; line-height:1.5; }
+.xans-estimate-userform .ec-base-table.typeWrite .formGroup{padding-left:0; padding-right:0;}
+.xans-estimate-userform .ec-base-table.typeWrite .formGroup input[type="text"]:first-child,
+.xans-estimate-userform .ec-base-table.typeWrite .formGroup input[type="password"]:first-child,
+.xans-estimate-userform .ec-base-table.typeWrite .formGroup select:first-child{margin-left:0;}
+

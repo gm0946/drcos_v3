@@ -1,0 +1,48 @@
+.time-sale-wrap .banner {text-align:center;}
+.time-sale-wrap .banner img {width:100%;}
+
+.타임세일,
+.timesale-active .discountPeriod{display:none !important;}
+
+.wp-timer{text-align: center; color: #fff;display: flex;justify-content: center;align-items: center;border-radius:.5rem;background: var(--color-timer);box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);}
+.wp-timer:before{content:"";display:block;width:1rem;height:1rem;margin-right:.2rem;background:url(/skin_img/ico_time_fff.svg) no-repeat 0 0;}
+.wp-timer.wp--wait{background: #fff; border: 1px solid #ddd;color: #777;}
+.wp-timer .wp-time.day:after{  font-weight:normal;content:"일";}
+.wp-timer.wp--wait .wp-time.day:before{content:"할인시작";font-size:11px; font-weight:normal;margin-right:5px;}
+
+.wp-timer.wp--wait .second:after{content:"전";}
+
+/* 타임세일 판매가 플리커 현상 [230322] */
+.timesale-active .spec .product_price{display:none;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.time-sale-wrap .banner img {max-width:100%;border-radius: var(--border-radius-basic);}
+
+	.wp-timer {position: absolute;font-size: 14px;height: 26px;left:9px; top:9px; padding:0 7px;}
+	.wp-timer:before{width:1rem;height:1rem;background-size:1rem auto;}
+	.wp-timer .wp-time{padding:0 2px; font-weight:bold; line-height:1;}
+	.wp-timer .wp-time.day:after{ font-size:12px;}
+	.wp-timer .second:after{margin-left:3px; font-size:11px; font-weight:normal;content:"남음";}
+
+	/* 상세페이지 */
+	.detailArea .wp-timer{position:static;display:inline-flex;margin:0 0 18px 0; font-size:15px;padding:7px 12px;height:auto;}
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.time-sale-wrap .banner {margin: 0 -1rem;}
+
+	.wp-timer {position: absolute;left: .4rem;top: .4rem;font-size: 11px;padding:4px 5px;}
+	.wp-timer *{vertical-align:middle;line-height:1;}
+	.wp-timer:before{width:12px;height:12px;background-size:12px auto; margin-right:1px;}
+	.wp-timer .wp-time{padding:0 2px;font-weight:bold;}
+	.wp-timer .day.wp-time{}
+	.wp-timer .wp-time.day:after{ font-size:11px; font-weight:normal;}
+	.wp-timer .second:after{margin-left:1px; font-size:11px; font-weight:normal;}
+
+	/* 상세페이지 */
+	.xans-product-detail .wp-timer{display:inline-flex;position:unset;margin:0 0 12px;font-size: 13px;padding:5px 8px;}
+	.xans-product-detail .wp-timer .wp-time{font-weight:bold;}
+}

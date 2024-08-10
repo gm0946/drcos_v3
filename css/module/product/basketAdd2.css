@@ -1,0 +1,132 @@
+.xans-order-layerbasketpackage .ec-base-layer.typeSide .header {
+	border-bottom: 1px solid #eee;
+	padding: 1.1rem 1rem;
+}
+
+.xans-order-layerbasket.content .totalCount {
+	padding: 15px 0 10px;
+	margin: 0 20px 15px;
+	border-bottom: 1px solid #ececec;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.xans-order-layerbasket.content .totalCount strong {
+	color: #008bcc;
+}
+
+.xans-order-layerbasket.content ul.prdList {
+	margin: 0 0 20px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.xans-order-layerbasket.content ul.prdList .box {
+	padding: 20px 0;
+	display: flex;
+}
+
+.xans-order-layerbasket.content ul.prdList .thumbnail {
+	width: 83px;
+}
+
+.xans-order-layerbasket.content ul.prdList .info {
+	flex: 1;
+	margin: 0 0 0 15px;
+}
+
+.xans-order-layerbasket.content ul.prdList li.item {
+	display: block;
+	padding: 0 16px;
+	vertical-align: top;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.xans-order-layerbasket.content ul.prdList li.item .box {
+	margin: 0 auto;
+	font-size: 12px;
+	color: #2e2e2e;
+	line-height: 18px;
+}
+
+.xans-order-layerbasket.content ul.prdList li.item .box p {
+	font-weight: normal;
+	word-break: break-all;
+}
+
+.xans-order-layerbasket.content ul.prdList li.item .box p img {
+	width: 0;
+	height: 0;
+}
+
+.xans-order-layerbasket.content ul.prdList .thumb {
+	border: 0px solid #ededed;
+	max-width: 100%;
+	border-radius: var(--border-radius-basic);
+}
+
+.xans-order-layerbasket.content ul.prdList .name a {
+	color: #2e2e2e;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.xans-order-layerbasket.content ul.prdList .name .ec-set-product-name {
+	display: block;
+}
+
+.xans-order-layerbasket.content ul.prdList .name img {
+	margin: 0 1px;
+}
+
+.xans-order-layerbasket.content ul.column4 li.item {
+	width: 25%;
+}
+
+.xans-order-layerbasket.content ul.column4 li.item .box {
+	width: 150px;
+}
+
+.xans-order-layerbasket.content ul.prdList ul {
+	margin: 0;
+}
+
+.xans-order-layerbasket.content ul.prdList ul li {
+	margin: 3px 0;
+	color: #757575;
+}
+
+.xans-order-layerbasket.content ul.prdList ul li.price {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+}
+
+.xans-order-layerbasket.content ul.prdList .strike {
+	text-decoration: line-through;
+}
+
+.xans-order-layerbasket.content ul.prdList .strike strong {
+	font-weight: normal;
+}
+
+.xans-order-layerbasket .ec-base-paginate {
+	margin: 20px 0;
+}
+
+.xans-order-layerbasketpackage .ec-base-layer.typeSide .ec-base-button[class*="gColumn"] {
+	border-top: 1px solid #ddd;
+	margin: 0;
+	padding: 16px 14px;
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-order-layerbasketpackage .ec-base-layer.typeSide {
+		position: relative;
+		width: 570px;
+		height: 630px;
+		overflow: hidden;
+		border-radius: var(--border-radius-basic);
+	}
+}

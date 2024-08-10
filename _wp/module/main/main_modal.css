@@ -1,0 +1,124 @@
+/* 모달 활성화 시 로딩 제거 */
+html.modal-active body {
+	overflow: hidden;
+}
+
+.main--modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*width: 100vw;*/
+	height: 100%;
+	z-index: 9999999;
+	display: flex;
+	justify-content: center;
+}
+
+.main--modal .bg {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	min-width: 100vw;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.25s linear;
+	backdrop-filter: blur(5px);
+}
+
+.main--modal.active .bg {
+	opacity: 1;
+	transition: opacity 0.25s linear;
+}
+
+.main--modal .main-modal-box {
+	position: relative;
+	width: 420px;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 2;
+	transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.main--modal.active .main-modal-box {
+	opacity: 1;
+	transform: translateY(0);
+	transition: transform 0.25s 0.2s ease-out, opacity 0.25s 0.15s ease-out;
+}
+
+.main--modal .main-modal-box img {
+	width: 100%;
+}
+
+.main--modal .main-btn-box {
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	margin-top: -1px;
+}
+
+.main--modal .main-btn-box .close {
+	cursor: pointer;
+	text-decoration: none;
+	flex: 1;
+	text-align: center;
+	color: #000
+}
+
+.main--modal .main-btn-box .right.close {
+	border-left: 1px solid rgb(0 0 0 / 10%);
+}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.main--modal {
+		align-items: center;
+	}
+
+	.main--modal .main-modal-box {
+		border-radius: 16px;
+		transform: translateY(30px);
+
+	}
+
+	.main--modal .main-btn-box .close {
+		font-size: 15px;
+		padding: 20px 25px;
+	}
+
+	.main--modal .main-btn-box .close {
+		transition: opacity .25s ease;
+	}
+
+	.main--modal .main-btn-box .close:hover {
+		opacity: 0.8;
+	}
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.main--modal {
+		align-items: flex-end;
+	}
+
+	.main--modal .main-modal-box {
+		bottom: 0;
+		width: calc(100% - 20px);
+		border-radius: 12px 12px 0 0;
+		max-width: 500px;
+		transform: translateY(30px);
+	}
+
+	.main--modal .main-btn-box .close {
+		font-size: 1rem;
+		padding: 1.3rem 0;
+	}
+
+	.main--modal .main-btn-box .close.left {
+		flex: 1;
+	}
+}

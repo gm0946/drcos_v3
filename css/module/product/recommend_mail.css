@@ -1,0 +1,25 @@
+
+
+.xans-product-recommmail .ec-base-box.typeProduct { margin:0 0 20px; }
+.xans-product-recommmail .infomation .icon { margin:0 0 14px; }
+.xans-product-recommmail .infomation h2 { font-size:14px; color:#2e2e2e; }
+.xans-product-recommmail .infomation .price { margin:5px 0 0; font-weight:bold; font-size:14px; }
+
+.xans-product-recommmail input[type="text"],
+.xans-product-recommmail input[type="password"],
+.xans-product-recommmail .fWidthFull input[type=text]{line-height: 35px; height: 35px;}
+.xans-product-recommmail #content{height:14rem;}
+.xans-product-recommmail table .captcha { display: inline-flex; }
+.xans-product-recommmail table .captcha  #tmp_image_name_str { width:80px; margin-right: 10px;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #popup { width:620px; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    #popup {  }
+}
+
+

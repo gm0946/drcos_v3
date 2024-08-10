@@ -1,0 +1,14 @@
+.xans-order-deferedpaymentguide .ec-base-table.typeList .scroll { min-height:208px; }
+.xans-order-deferedpaymentguide #defer_delivcompany { margin:0 0 7px; }
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #popup { width:800px; }
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+}

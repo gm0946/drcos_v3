@@ -1,0 +1,14 @@
+.member_contents{text-align:center;}
+.member_contents img{max-width:100%;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.member_contents img{}
+}
+
+
+/********************* Mobile ********************/
+@media all and (max-width:1024px) {
+	.member_contents img{}
+}

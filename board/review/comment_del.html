@@ -1,0 +1,28 @@
+<!--@layout(/layout/basic/review.html)-->
+<!--@css(/board/review/css/review.css)-->
+<!--@js(/board/review/js/review.js)-->
+
+<div class="review_CommentDelete_grp">
+	<div class="section_title">댓글 삭제</div>
+	<div class="section_cont">
+		<div module="board_CommentDeletePackage_4">
+			<!--@css(/css/module/board/commentDeletePackage.css)-->
+
+			<div module="Board_CommentDel_4">
+				<div class="ec-base-box typeThin gPadding center">
+					<fieldset class="form">
+						<legend>댓글삭제</legend>
+						<p class="headDesc">댓글 등록 시 입력한 <strong class="txtEm">비밀번호를 입력하여 주십시요.</strong></p>
+						<div class="password">{$form.comment_password}</div>
+					</fieldset>
+				</div>
+				<div class="ec-base-button gBottom">
+					<!-- <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a> -->
+					<button type="submit" class="btnSubmitFix sizeM">확인</button>
+					<a href="javascript:history.back(-1);" class="btnNormalFix sizeM">취소</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="close-review" href="javascript:wpReview.close();"></a>
+</div>

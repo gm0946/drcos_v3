@@ -1,0 +1,45 @@
+<!--@css(/board/review/css/review_highlight_widget.css)-->
+<div class="review_highlight">
+	<div class="review__total">
+		<div class="title_sub">리뷰 개수</div>
+		<div class="cont_sub">
+			<span class="ico">전체</span>
+			<span class="num">{$review_count|numberformat}</span>
+			<span class="txt">개</span>
+		</div>
+	</div>
+	<div class="review__rating">
+		<div class="title_sub">구매 만족도</div>
+		<div class="cont_sub">
+			<span class="ico"></span>
+			<span class="rate">-.-</span>
+			<span class="txt">/5</span>
+		</div>
+	</div>
+	<div class="review__graph">
+		<div class="rate5">
+			<span class="gauge"><span class="percentile"></span></span>
+			<span class="txt">5점<span class="percentile">-</span></span>
+		</div>
+		<div class="rate4">
+			<span class="gauge"><span class="percentile"></span></span>
+			<span class="txt">4점<span class="percentile">-</span></span>
+		</div>
+		<div class="rate3">
+			<span class="gauge"><span class="percentile"></span></span>
+			<span class="txt">3점<span class="percentile">-</span></span>
+		</div>
+		<div class="rate2">
+			<span class="gauge"><span class="percentile"></span></span>
+			<span class="txt">2점<span class="percentile">-</span></span>
+		</div>
+		<div class="rate1">
+			<span class="gauge"><span class="percentile"></span></span>
+			<span class="txt">1점<span class="percentile">-</span></span>
+		</div>
+	</div>
+	<div class="review__writing">
+		<div class="title_sub"><span class="ico"></span>구매 리뷰를 남겨주세요.</div>
+		<div class="btn"><a href="{$review_write|replace:/board/product,/board/review}" class="btnNormal">리뷰 작성하기</a></div>
+	</div>
+</div>

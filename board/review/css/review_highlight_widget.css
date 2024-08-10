@@ -1,0 +1,53 @@
+.review_highlight{border:1px solid #ddd; padding:30px 0;margin: -1px 0 20px;display: flex;justify-content: center; align-items: center;font-size:15px;background:#fff;border-radius:var(--border-radius-small);}
+.review_highlight .title_sub{background: #f2f2f2;border-radius: 5px; padding: 6px 10px; margin:0 0 10px; display: flex; align-items: center;justify-content: center;font-weight: 500;}
+.review_highlight .review__rating .cont_sub{display: flex;justify-content: center; align-items: center;}
+.review_highlight .review__rating .cont_sub .ico{margin-right: 5px;}
+.review_highlight .review__rating .cont_sub .ico:before{content:"";display:block;width:17px;height:17px;background:url(/board/review/img/ico_rate.svg) no-repeat 0 center / 17px ;}
+.review_highlight .review__rating .cont_sub .txt{color: #888; margin-left:3px;}
+.review_highlight .review__total .cont_sub{display: flex;justify-content: center; align-items: center;}
+.review_highlight .review__total .cont_sub .ico,
+.review_highlight .review__total .cont_sub .txt{font-weight: 500;font-size: 14px;}
+.review_highlight .review__total .cont_sub .ico{margin-right: 5px;display: flex; align-items: center;color: #888;}
+.review_highlight .review__total .cont_sub .ico:before{content:"";display:block;width:18px;height:18px;background:url(/board/review/img/ico_bubble.svg) no-repeat 0 center / 18px ;margin-right: 4px;}
+.review_highlight .review__total .cont_sub .txt{color: #000; margin-left:2px;}
+.review_highlight .review__graph{display: flex;text-align: center;border-left:0;padding-left:0;}
+.review_highlight .review__graph [class^='rate']{display: flex;flex-direction: column;align-items: center; margin:0 7px; width:30px;}
+.review_highlight .review__graph .gauge{background: #eee;width: 10px;height: 55px;margin: 0 0 6px;border-radius: 2px;display: flex; align-items: flex-end;overflow: hidden;}
+.review_highlight .review__graph .gauge .percentile{background:#666;display:block;width:100%;min-height:1%;}
+.review_highlight .review__graph .rate5 .gauge .percentile{background: #f94830;}
+.review_highlight .review__graph .txt .percentile{color:#999;font-size:12px;display:block;font-weight: 300;margin:2px 0 0;}
+.review_highlight .review__writing {text-align:left;}
+.review_highlight .review__writing .title_sub{background:none;}
+.review_highlight .review__writing .title_sub .ico{margin-right: 5px;}
+.review_highlight .review__writing .title_sub .ico:before{content:"";display:block;width:14px;height:14px;background:url(/board/review/img/ico_write.svg) no-repeat 0 center / 14px ;}
+.review_highlight .review__writing .btn{padding-left:10px;}
+.review_highlight .review__writing [class^='btnNormal']{border-radius: 7px;padding: 10px 24px;height: 35px; line-height:1;color: #333;font-size: 14px;}
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+	.review_highlight{flex-wrap: wrap;padding:10px 10px;}
+	.review_highlight .title_sub{font-size:12px;}
+	.review_highlight .review__rating,
+	.review_highlight .review__total{width: calc(50% - 20px);margin: 10px 10px; max-width: 200px;}
+	.review_highlight .review__rating .cont_sub .rate,
+	.review_highlight .review__total .cont_sub .num{ color:#000;font-size:21px;margin-top: -3px;}
+	.review_highlight .review__total .cont_sub .ico{font-size: 13px;}
+	.review_highlight .review__graph{width: 100%;justify-content: center;border-top: 1px solid #eee; padding: 20px 0 0;margin: 0 0 10px;}
+	.review_highlight .review__graph [class^='rate']{margin:0 10px;}
+	.review_highlight .review__graph .txt{font-size:13px;  color:#111;}
+	.review_highlight .review__writing{width: 100%; text-align:center;margin: 10px 0 10px;}
+	.review_highlight .review__writing .title_sub{display:none;}
+	.review_highlight .review__writing [class^='btnNormal']{font-size:13px;}
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.review_highlight [class^='review__']{border-left:1px solid #ddd;margin-left: 5%; padding-left: 5%;min-width: 90px;}
+	.review_highlight .title_sub{font-size:14px;}
+	.review_highlight .review__rating .cont_sub .rate{ color:#000; font-size:30px; margin-top: -5px;}
+	.review_highlight .review__total{border:0; margin:0; padding:0;}
+	.review_highlight .review__total .cont_sub .num{ color:#000;  font-size:30px;margin-top: -5px;}
+	.review_highlight .review__graph{border-left:0;padding-left:0;}
+	.review_highlight .review__graph .txt{font-size:14px;  color:#111;}
+}

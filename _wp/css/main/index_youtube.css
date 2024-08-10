@@ -1,0 +1,97 @@
+.index_youtube .section_bg {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.index_youtube .txt {
+	text-align: center;
+}
+
+.index_youtube .p1 *{
+	font-family: "PT Serif", sans-serif;
+}
+
+.index_youtube .video {
+	position: relative;
+	padding-top: 56.25%;
+	line-height: 0;
+}
+
+.index_youtube .mov iframe {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	border-radius: var(--border-radius-basic);
+}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.index_youtube {
+		margin: 0 0 120px 0;
+	}
+
+	.index_youtube .section_bg {
+		padding: 90px 0;
+	}
+
+	.index_youtube .txt {
+		margin: 0 0 50px;
+	}
+
+	.index_youtube .txt>span {
+		display: block;
+	}
+
+	.index_youtube .txt .p1 {
+		font-size: 27px;
+		margin: 0 0 5px;
+	}
+
+	.index_youtube .txt .p2 {
+		font-size: 20px;
+	}
+
+	.index_youtube .mov {
+		width: 100%;
+	}
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.index_youtube {
+		margin: 0 0 5rem 0;
+	}
+
+	.index_youtube .section_bg {
+		padding: 3rem 0;
+	}
+
+	.index_youtube .txt {
+		margin: 0 1rem 2rem;
+        word-break: keep-all;
+	}
+
+	.index_youtube .txt>span {
+		display: block;
+	}
+
+	.index_youtube .txt .p1 {
+		font-size: 1.3rem;
+		margin: 0 0 .5rem;
+	}
+
+	.index_youtube .txt .p2 {
+		font-size: 1.1rem;
+	}
+
+	.index_youtube .mov {
+		padding: 0 1rem 1rem;
+	}
+}

@@ -1,0 +1,342 @@
+#footer,
+#footer a{
+    text-decoration: none;
+    color:var(--footer-conts-color);
+}
+#footer {
+    background: var(--footer-bg-color);
+}
+
+ #footer .heading .title{
+	color:var(--footer-title-color);
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #footer{
+        padding:60px 0 70px;
+    }
+
+	#footer .xans-layout-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #footer .xans-layout-footer + .xans-layout-footer{
+    	border-top: 1px solid rgba(0, 0, 0, 0.08);
+        margin: 30px 0 0;
+        padding: 30px 0 0;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+	#footer .footArea_address{
+        flex:1;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+	#footer .footArea_address .info_logo {
+		margin:0 0 40px;
+	}
+
+	#footer .footArea_address .info_logo img{
+        width:var(--logo-foot);
+    }
+
+	#footer .util{
+        display: flex;
+    }
+
+	#footer .util li:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0 10px 0 12px;
+    }
+
+	#footer .util li:last-child:after{
+        content:none;
+    }
+
+	#footer .util li a{
+        font-size:14px;
+    }
+
+	#footer .address{
+        margin:20px 0 0;
+        line-height: 1.5;
+        word-break: keep-all;
+        font-size:14px;
+        font-weight: 300;
+    }
+
+	#footer .address span.line{
+        color:rgba(0, 0, 0, 0.1);
+        margin: 0 6px;
+        font-size: 14px;
+    }
+
+	#footer .copyright {
+        font-size:13px;
+        margin:15px 0 0;
+        font-weight: 300;
+    }
+
+	#footer .footArea_customer{
+        max-width:250px;
+
+        box-sizing: border-box;
+    }
+
+	#footer .tel{
+        font-size:22px;
+        margin-bottom: 5px;
+        font-weight:bold;
+    }
+
+    #footer .tel > div {
+        margin-bottom: 3px;
+    }
+
+	#footer .runtime{
+        font-size: 14px;
+    }
+
+	#footer .return .content{
+    	font-size:14px;
+    }
+
+	#footer .return{
+    	margin-top:24px;
+    }
+
+    #footer .footArea_account{
+        max-width:230px;
+        box-sizing: border-box;
+    }
+
+	 #footer .bankinfo{
+		margin: 0 0 30px;
+		 padding-left: 50px;
+	 }
+
+    #footer .bankinfo .account .number{
+        font-size:15px;
+    }
+
+    #footer .bankinfo .account .holder{
+        font-size: 14px;
+		margin-bottom: 10px;
+    }
+
+    #footer .sns-lnk{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+	#footer .sns-lnk .icon{
+        margin:0 0 0 14px;
+    }
+
+	#footer .sns-lnk .icon:first-child{
+        margin-left:0;
+    }
+
+	#footer .sns-lnk img{
+        height:22px;
+    }
+
+    #footer .heading{
+        margin: 0 0 12px;
+    }
+
+    #footer .heading .title{
+    	font-size: 15px;
+    }
+
+	 #footer a,
+	 #footer a:hover{
+		text-decoration:none;
+		transition: opacity .25s ease;
+	 }
+
+	 #footer a:hover{
+		opacity:0.8;
+	 }
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    #footer{
+    	padding:2rem 1rem ;
+    }
+
+	#footer .xans-layout-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #footer .footArea_customer {
+        box-sizing: border-box;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #footer .tel {
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+
+    #footer .tel > div {
+        margin-bottom: 3px;
+    }
+
+	#footer .return{
+    	margin-top:2rem;
+    }
+
+    #footer .footArea_account {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #footer .footArea_address {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #footer .runtime {
+        margin-top: .4rem;
+    }
+
+    #footer .bankinfo{
+    	margin-top:2rem;
+    }
+
+	#footer .footArea_address .info_logo {
+		margin:0 0 1.5rem;
+	}
+
+    #footer .util {
+        display: flex;
+        margin: 1.5rem 0;
+		padding:1.5rem 0 0;
+        border-top: 1px solid rgb(255 255 255 / 20%);
+    }
+
+    #footer .util li:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 14px;
+        background: rgba(255,255,255,0.5);
+        margin: 0 10px 0 12px;
+    }
+
+    #footer .util li:last-child:after {
+        content: none;
+    }
+
+    #footer .util li a {
+        font-size: 1rem;
+    }
+
+    #footer .address {
+        line-height: 1.5;
+        word-break: keep-all;
+        font-size: 1rem
+    }
+
+    #footer .address .heading .title {
+        display: flex;
+        align-items: center;
+    }
+
+    #footer .address .heading .arrow {
+        width: 1.3rem;
+        height: 1.3rem;
+        display: block;
+        margin-left: .6rem;
+    }
+
+    #footer .address .heading .arrow:before {
+        content: "";
+        display: block;
+        width: .6rem;
+        height: .6rem;
+        border-top: 1.5px solid #888;
+        border-left: 1.5px solid #888;
+        border-radius: 1px;
+    }
+
+    #footer .address .heading .arrow:before {
+        transform: rotate( 225deg );
+        margin: 0.1rem 0 0 0.3rem;
+    }
+
+    #footer .address.active .heading .arrow:before {
+        transform: rotate( 45deg);
+        margin: 0.4rem 0 0 0.3rem;
+    }
+
+    #footer .address .content {
+        display: none;
+    }
+
+    /* #footer .address.active .content {
+        display: block;
+    } */
+
+    #footer .address span {
+        display: block;
+    }
+
+    #footer .address span.line {
+        display: none;
+    }
+
+    #footer .address br {
+        display: none;
+    }
+
+    #footer .copyright {
+        padding: 1rem 0 1.5rem;
+        font-size: 0.9rem;
+        border-bottom: 1px solid rgb(255 255 255 / 20%);
+        margin:0 0 1.5rem;
+    }
+
+    #footer .heading {
+        margin: 0 0 0.5rem;
+        font-size: .9rem;
+    }
+
+    #footer .escrow_intro{
+    	margin:0 0 1rem;
+    }
+
+	#footer .escrow_intro a.escrow{
+		display:inline-block;
+	}
+
+	#footer .sns-lnk{
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+    #footer .sns-lnk .icon {
+        margin: 0 0.7rem 0 0;
+    }
+
+    #footer .sns-lnk .icon img {
+        height: 1.6rem;
+    }
+
+}

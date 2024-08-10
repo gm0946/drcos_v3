@@ -1,0 +1,112 @@
+<!--@layout(/layout/basic/layout_login.html)-->
+<!--@js(/_wp/js/login.js)-->
+
+<div class="wp-login">
+	<div class="login_header">
+        <a href="javascript:;" class="bt_back" onclick="history.back();">취소</a>
+        <a href="/index.html" class="bt_home">홈</a>
+    </div>
+
+	<div class="path displaynone">
+		<span>현재 위치</span>
+		<ol>
+			<li><a href="/">홈</a></li>
+			<li title="현재 위치"><strong>로그인</strong></li>
+		</ol>
+	</div>
+
+	<div class="login_head_logo">
+		<!-- 상단 로고 -->
+		<!--@import(/_wp/header_logo.html)-->
+		<!--//-->
+	</div>
+
+	<div class="titleArea">
+		<h2>로그인</h2>
+		<h4>아이디와 비밀번호 입력하기 귀찮으시다면,<br>SNS 회원가입으로 간편하게 로그인 하세요.</h4>
+	</div>
+
+    <div class="login__sns login_head_sns" module="member_login">
+        <!-- 샘플몰에서만 노출 -->
+		<a href="#none" class="btnKakao wp-sample" onclick="{$kakao_func_login}">카카오 로그인/회원가입</a>
+		<a href="#none" class="btnNaver wp-sample" onclick="{$naver_func_login}">네이버 로그인/회원가입</a>
+		<!--//샘플몰에서만 노출-->
+        <a href="#none" class="btnKakao {$display_kakao|display}" onclick="{$kakao_func_login}">카카오 로그인/회원가입</a>
+		<a href="#none" class="btnNaver {$display_naver|display}" onclick="{$naver_func_login}">네이버 로그인/회원가입</a>
+		<a href="#none" class="btnApple {$display_apple|display}" onclick="{$apple_func_login}">Apple로 로그인</a>
+    </div>
+
+    <!-- 배너 -->
+    <div class="login_bnr" webpb-banner-code="1byp" hidden>
+		<div webpb-banner><a href="{#link}" target="{#link_target}"><img src="{#pc_thumb_url}"></a></div>
+	</div>
+    <!--//-->
+
+    <div class="ec-base-tab typeNav gFlex">
+        <ul class="menu">
+            <li><a href="/member/login.html">기존 회원</a></li>
+            <li><a href="/member/login.html?mode=guest&noMemberOrder&returnUrl=%2Findex.html">비회원 주문조회</a></li>
+        </ul>
+    </div>
+
+    <div module="member_login">
+		<!--@css(/css/module/member/login.css)-->
+		<!--@js(/js/module/member/login.js)-->
+		<!--
+			$defaultReturnUrl = /index.html
+			$forbidIpUrl = member/adminFail.html
+		-->
+		<div class="login displaynone">
+			<fieldset class="form">
+				<legend>회원로그인</legend>
+				<label class="id ePlaceholder" title="{$login_id_type_text}">{$form.member_id}</label>
+				<label class="password ePlaceholder" title="비밀번호">{$form.member_passwd}</label>
+				<p class="login__security">
+					{$form.member_check_save_id}
+					<span class="secret">{$form.member_check_secret_connect}</span>
+				</p>
+				<ul class="login__util">
+					<li><a href="/member/id/find_id.html">아이디찾기</a></li>
+					<li><a href="/member/passwd/find_passwd_info.html">비밀번호찾기</a></li>
+					<li><a href="/member/join.html">회원가입</a></li>
+				</ul>
+				<div class="login__button">
+					<a href="#none" class="btnBasic gFull sizeL" onclick="{$action_func_login}">기존 회원 로그인</a>
+					<a href="{$returnUrl}" onclick="{$action_nomember_order}" class="btnNormal gFull sizeL btnNonmember {$display_nomember|display}">비회원 구매</a>
+				</div>
+				<div class="clear"></div>
+
+
+				<div class="login__sns">
+					<!-- 샘플몰에서만 노출 -->
+					<a href="#none" class="btnFacebook wp-sample" onclick="{$facebook_func_login}">Facebook 로그인</a>
+					<a href="#none" class="btnGoogle wp-sample" onclick="{$google_func_login}">Google 로그인</a>
+					<!-- //샘플몰에서만 노출 -->
+
+					<a href="#none" class="btnFacebook {$display_facebook|display}" onclick="{$facebook_func_login}">Facebook 로그인</a>
+					<a href="#none" class="btnLine {$display_line|display}" onclick="{$line_func_login}">LINE 로그인</a>
+					<a href="#none" class="btnGoogle {$display_google|display}" onclick="{$google_func_login}">Google 로그인</a>
+					<a href="#none" class="btnYahoo {$display_yahoojp|display}" onclick="{$yahoojp_func_login}">Yahoo! JAPAN 로그인</a>
+				</div>
+			</fieldset>
+        </div>
+    </div>
+
+    <div module="MyShop_OrderHistoryNologin" id="order_history_nologin_id">
+        <!--
+        $orderDetailUrl = /myshop/order/list.html
+		-->
+        <div class="login displaynone">
+            <div class="form">
+                <div class="orderName"><span>주문자명</span><input id="order_name" name="order_name" fw-filter="isFill" fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder="주문자명" value="" type="text"><!-- {$form.order_name} --></div>
+                <div class="orderId"><span>주문번호</span>{$form.order_id}</div>
+                <div class="orderPassword"><span>비회원주문 비밀번호</span><input id="order_password" name="order_password" fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" placeholder="비회원주문 비밀번호"  value="" type="password"><!-- {$form.order_password} --></div>
+                <div class="login__button">
+                    <button type="submit" class="btnSubmit gFull sizeL">주문조회</button>
+                    <a href="/member/join.html" class="btnNormal gFull sizeL">회원가입</a>
+                </div>
+                <p class="txtInfo typeDot">비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+            </div>
+        </div>
+    </div>
+</div>

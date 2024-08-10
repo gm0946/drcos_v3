@@ -1,0 +1,31 @@
+.ec-base-tab{font-size:1rem;}
+.xans-myshop-orderhistorynologin .login__button{margin-top:18px;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.ec-base-tab{width:450px; margin:0 auto;}
+
+	.login { width:451px; margin:0 auto; }
+
+	.xans-myshop-orderhistorynologin .login .form .orderName,
+	.xans-myshop-orderhistorynologin .login .form .orderId,
+	.xans-myshop-orderhistorynologin .login .form .orderPassword{display: flex; align-items: center; margin-bottom: 10px;justify-content: space-between;}
+	.xans-myshop-orderhistorynologin .login .form .orderName span,
+	.xans-myshop-orderhistorynologin .login .form .orderId span,
+	.xans-myshop-orderhistorynologin .login .form .orderPassword span{ width: 120px; word-break: keep-all; font-size:13px; }
+	.xans-myshop-orderhistorynologin .login input[type=text],
+	.xans-myshop-orderhistorynologin .login input[type=password] {margin-bottom:0;width: calc(100% - 150px);}
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-myshop-orderhistorynologin .login .form .orderName,
+	.xans-myshop-orderhistorynologin .login .form .orderId,
+	.xans-myshop-orderhistorynologin .login .form .orderPassword{margin-bottom: 15px;}
+	.xans-myshop-orderhistorynologin .login .form .orderName span,
+	.xans-myshop-orderhistorynologin .login .form .orderId span,
+	.xans-myshop-orderhistorynologin .login .form .orderPassword span{ font-size:1rem; padding-bottom:7px; display: block;}
+	.xans-myshop-orderhistorynologin .login input[type=text],
+	.xans-myshop-orderhistorynologin .login input[type=password] {margin-bottom:0;width: 100%;}
+}

@@ -1,0 +1,436 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title {
+    min-height: 30px;
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.xans-board-title .title h2 {
+    display: inline-block;
+    padding: 0 0 0 12px;
+    color: #2e2e2e;
+    font-size: 16px;
+    *display: inline;
+    *zoom: 1;
+    background: url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat;
+}
+
+.xans-board-title .title p {
+    display: inline-block;
+    margin: 0 0 0 6px;
+    padding: 0 0 0 10px;
+    color: #939393;
+    vertical-align: bottom;
+    background: url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0;
+    *display: inline;
+    *zoom: 1;
+}
+
+.xans-board-title p.imgArea {
+    margin: 0 0 20px;
+}
+
+.xans-board-title .titleArea p {
+    display: none;
+}
+
+.xans-board-listpackage .boardSort {
+    margin: 0 0 30px;
+}
+
+.xans-board-listpackage .boardSort ul {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.xans-board-listpackage .boardSort ul.grid2>li {
+    width: 50%;
+}
+
+.xans-board-listpackage .boardSort ul.grid3>li {
+    width: 33.333%;
+}
+
+.xans-board-listpackage .boardSort ul.grid4>li {
+    width: 25%;
+}
+
+.xans-board-listpackage .boardSort ul.grid5>li {
+    width: 20%;
+}
+
+.xans-board-listpackage .boardSort ul.grid6>li {
+    width: 16.666%;
+}
+
+.xans-board-listpackage .boardSort ul.grid7>li {
+    width: 14.285714%;
+}
+
+.xans-board-listpackage .boardSort li a {
+    display: block;
+    border: 1px solid #ddd;
+    color: #000;
+    margin: 0;
+    padding: 1rem 0;
+    text-decoration: none;
+    transition: all .25s ease;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.xans-board-listpackage .boardSort li.selected a {
+    border-color: var(--board-event-tab);
+    color: #fff;
+    background: var(--board-event-tab);
+    font-weight: bold;
+}
+
+/* 갤러리형 탭메뉴 */
+ul.xans-board-listheader {
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+ul.xans-board-listheader li {
+    display: inline;
+}
+
+/* 게시글 */
+.xans-board-list {
+    font-size: 13px;
+    border-top: 1px solid #111;
+}
+
+.xans-board-list+.xans-board-list {
+    border-top: 0;
+}
+
+.xans-board-list .content p {
+    background: none !important;
+}
+
+.xans-board-list .content p>span {
+    background: none !important;
+    font-size: 14px !important
+}
+
+.xans-board-list .content p em {
+    font-style: normal;
+    background: #ffe841;
+    color: #000;
+    font-weight: bold;
+}
+
+.xans-board a:hover {
+    text-decoration: none !important;
+}
+
+/* 상품후기 아코디언형 */
+.xans-board-listpackage #content_view td {
+    padding: 9px 10px 20px;
+    background: #f6f7f9;
+    text-align: left;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.xans-board-list .content .cont img {
+    max-width: 100%;
+}
+
+.xans-board-list .content .content_info:before{
+	margin-top:2px;
+}
+
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-board-listpackage .boardSort ul {
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .xans-board-listpackage .boardSort ul li a {
+        display: block;
+        font-size: 1.1rem;
+        border: 1px solid #ddd;
+        color: #000;
+        margin: 0;
+        padding: 0.7rem 1.3rem;
+        text-decoration: none;
+        transition: all .25s ease;
+        font-weight: 500;
+        word-break: keep-all;
+    }
+
+    .xans-board-list {
+        font-size: 13px;
+    }
+
+    .xans-board-list li {
+        position: relative;
+        color: #757575;
+        border-bottom: 1px solid #ececec;
+        overflow: hidden;
+        font-size: 0;
+    }
+
+    .xans-board-list a {
+        display: grid;
+        color: #757575;
+        width: 100%;
+    }
+
+    .xans-board-list .summary {
+        position: relative;
+        font-size: 0;
+        padding: 1rem 1rem;
+    }
+
+    .xans-board-list .summary .category {
+        font-size: .9rem;
+        color: #999;
+        display: block;
+        order: 3;
+        padding-left: 1.4rem;
+        padding-top: 0.3rem;
+    }
+
+    .xans-board-list .summary .btn-dropdown {
+        position: absolute;
+        top: 1.1rem;
+        right: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(//img.echosting.cafe24.com/skin/skin/common/ico_select.png) no-repeat 50% 50%;
+        background-size: 1rem auto;
+        transition: all .25s ease;
+    }
+
+    .xans-board-list .item.active .btn-dropdown {
+        transform: rotate(180deg);
+    }
+
+    .xans-board-list .subject {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #1b1b1b;
+        font-weight: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-break: keep-all;
+        margin-left: 1.5rem;
+    }
+
+    .xans-board-list .subject:before {
+        content: "Q.";
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        color: #111;
+        position: absolute;
+        left: 1rem;
+        top: auto;
+        line-height: 1.4;
+    }
+
+    .xans-board-list .content {
+        display: none;
+        border-top: 1px solid #ddd;
+        background: #f9f9f9;
+    }
+
+    .xans-board-list .content .category {
+        display: none;
+    }
+
+    .xans-board-list .content .content_info {
+        font-weight: normal;
+        padding: 1rem 1rem;
+        font-size: 0;
+    }
+
+    .xans-board-list .content .content_info:before {
+        content: "A.";
+        font-size: 1rem;
+        font-weight: bold;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 7px;
+        color: #111;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .xans-board-list .content .cont {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 2.2rem);
+        font-size: 1rem;
+        color: #777;
+    }
+
+    .xans-board-list .content .cont * {
+        font-size: 0.94rem !important;
+    }
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-board-listpackage .boardSort li a {
+        padding: 12px 24px;
+        margin: 0 5px;
+        transition: all .25s ease;
+		font-size:14px;
+    }
+
+    .xans-board-listpackage .boardSort li a:hover {
+        background: #f1f1f1;
+        color: #111;
+        border-color: #f1f1f1;
+    }
+
+    .xans-board-list {
+        font-size: 13px;
+    }
+
+    .xans-board-list li {
+        position: relative;
+        color: #757575;
+        border-bottom: 1px solid #ececec;
+        overflow: hidden;
+        font-size: 0;
+    }
+
+    .xans-board-list a {
+        display: block;
+        color: #757575;
+        width: 100%;
+    }
+
+    .xans-board-list .summary {
+        position: relative;
+        font-size: 0;
+    }
+
+    .xans-board-list .summary .category {
+        width: 120px;
+        font-size: 14px;
+        color: #999;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        ;
+    }
+
+    .xans-board-list .summary .btn-dropdown {
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        background: url(//img.echosting.cafe24.com/skin/skin/common/ico_select.png) no-repeat 50% 50%;
+        background-size: 14px 8px;
+        transition: all .25s ease;
+    }
+
+    .xans-board-list .item.active .btn-dropdown {
+        transform: rotate(180deg);
+    }
+
+    .xans-board-list .subject {
+        font-size: 15px;
+        line-height: 1.5em;
+        color: #1b1b1b;
+        font-weight: normal;
+        padding: 18px 0 18px 20px;
+        width: calc(100% - 180px);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-right: 60px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .xans-board-list .subject:before {
+        content: "Q.";
+        font-size: 14px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 7px;
+        color: #111;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .xans-board-list .content {
+        display: none;
+        border-top: 1px solid #ddd;
+        background: #f9f9f9;
+    }
+
+    .xans-board-list .content .category {
+        display: inline-block;
+        vertical-align: top;
+        width: 120px;
+    }
+
+    .xans-board-list .content .content_info {
+        font-weight: normal;
+        padding: 20px 20px;
+        width: calc(100% - 120px);
+        font-size: 14px;
+        color: #777;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .xans-board-list .content .content_info:before {
+        content: "A.";
+        font-size: 14px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 7px;
+        color: #111;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .xans-board-list .content .cont {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 35px);
+        font-size: 14px;
+        color: #777;
+    }
+
+    .xans-board-list .content .cont * {
+        font-size: 14px !important;
+        line-height: 1.5;
+    }
+
+    .xans-board-function.ec-base-button {
+        padding: 20px 0;
+        border-top: 0;
+    }
+}

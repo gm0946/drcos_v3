@@ -1,0 +1,4 @@
+.navigation__category { margin:0 150px; text-align:center; }
+.navigation__category li { display:inline-block; margin:0 19px; padding:23px 0 20px; }
+.navigation__category li a { display:inline-block; font-size:13px; line-height:20px; }
+.navigation__category li a:hover { text-decoration:none; }

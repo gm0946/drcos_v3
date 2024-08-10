@@ -1,0 +1,41 @@
+<!--@css(/board/review/css/review.css)-->
+<!--@css(/_wp/css/main/index_board_review.css)-->
+<!--@js(/board/review/js/review.js)-->
+<!--@js(/_wp/js/main/index_review.js)-->
+
+<div module="board_list_4" class="index_board_review review_list_grp wp-effect wp-stand-by">
+	<div class="site-wrap">
+		<div class="section-title animate__animated animate__fadeInUpCustom animate__delayCustom"
+			style="--wp-fade-range:30%;--wp-delay:.1s;">
+			<h3>
+				<span class="title">{#title}</span>
+				<p class="sub-title">{#sub_title}</p>
+			</h3>
+			<a class="more" href="/board/review/list.html?board_no=4">더보기</a>
+		</div>
+		<div class="swiper-wrap">
+			<div class="review__list grid">
+				<ul class="animate__animated animate__fadeIn" style="--wp-fade-range:30%;--wp-delay:.3s;">
+					<!--
+						🔅 옵션 설정 🔅
+
+						1. 리뷰 노출 개수는 $count 의 숫자를 조정해주시면 됩니다.
+
+						$count = 10
+						$login_page_url = /member/login.html
+						$deny_access_url = /index.html
+						$main_list_reply_view = no
+					-->
+					<li data-review-no="{$idx}" class="{$block_target_class}" {$block_data_attr}>
+						<!--@import(/board/review/item.html)-->
+					</li>
+					<li data-review-no="{$idx}" class="{$block_target_class}" {$block_data_attr}>
+						<!--@import(/board/review/item.html)-->
+					</li>
+				</ul>
+			</div>
+			<!-- <div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div> -->
+		</div>
+	</div>
+</div>

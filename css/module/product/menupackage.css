@@ -1,0 +1,74 @@
+.xans-product-menupackage { margin:0 0 27px; }
+.xans-product-menupackage .titleArea > h2{vertical-align:middle;}
+.xans-product-menupackage .titleArea img{max-width:100%;}
+.xans-product-menupackage .likeButton { display:inline-block; vertical-align:middle; border:1px solid #ddd;  margin:3px 0 0 10px;border-radius: 30px; padding: 4px 10px;box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);}
+.xans-product-menupackage .likeButton button { height:16px; color:#9a9a9a; letter-spacing:-1px; background:none; }
+.xans-product-menupackage .likeButton.selected button { color:#E84748; }
+.xans-product-menupackage .likeButton button img{max-height:16px;margin-right: 3px;margin-top:-2px;}
+.xans-product-menupackage .menuCategory.menu{font-size:0; line-height:0; }
+.xans-product-menupackage .menuCategory.menu > li,
+.xans-product-menupackage .menuCategory.menu > li > a{padding:0;margin:0;}
+.xans-product-menupackage .menuCategory.menu > li { display:inline-block;vertical-align:top; }
+.xans-product-menupackage .menuCategory.menu > li > a { color:#777; text-align: left; }
+.xans-product-menupackage .menuCategory.menu > li.selected > a { color:#222; font-weight:bold;}
+.xans-product-menupackage .menuCategory.menu > li .count { font-weight:normal; }
+.xans-product-menupackage .banner { text-align:center; }
+.xans-product-menupackage .banner img { max-width: 100%; }
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #contents>.site-wrap{max-width:100%;padding:0;}
+	.xans-product-menupackage .likeButton button{font-size:13px;}
+    .xans-product-menupackage .gInner {margin: 0 24px;}
+    .xans-product-menupackage .banner{display: flex;justify-content: center;align-items: center;text-align: center;flex-direction: column;}
+	.xans-product-menupackage .menuCategory.menu{width: 100%;flex-wrap: wrap;z-index: 10;}
+	.xans-product-menupackage .menuCategory.menu > li,
+	.xans-product-menupackage .menuCategory.menu > li > a.button{height:44px;line-height:44px; transition: all .25s ease; font-size:14px; border-radius:5px;}
+	.xans-product-menupackage .menuCategory.menu > li { width: calc(16.66% - 9px); margin-left: 10px; max-width: 16.66%; margin-bottom: 9px; }
+	.xans-product-menupackage .menuCategory.menu > li:nth-child(6n+1){margin-left:0;}
+	.xans-product-menupackage .menuCategory.menu > li > a.button{padding-left:8px;display:block;overflow:hidden;white-space:nowrap; text-overflow:ellipsis; padding-right: 20px; border:1px solid #ddd; }
+	.xans-product-menupackage .menuCategory.menu > li > a.button:hover { text-decoration:none; background-position:100% -95px;  }
+	.xans-product-menupackage .menuCategory.menu > li:hover > a.button{border-radius:5px 5px 0 0;color:#111;background:#f9f9f9;}
+	.xans-product-menupackage .menuCategory.menu > li > a.iconWrap {vertical-align: middle; position: absolute; top: 18px; right: 0;}
+	.xans-product-menupackage .menuCategory.menu > li > a.iconWrap:after{top: -3px;transform: rotate(135deg);}
+	.xans-product-menupackage .menuCategory.menu > li > ul {background: #fff; z-index: 1;display:block;top: 42px; right: 0px; left: 0px; padding:5px 0; opacity:0;visibility: hidden;transition: all .25s ease; border-radius:0 0 5px 5px;}
+	.xans-product-menupackage .menuCategory.menu > li:hover > ul{visibility: visible; opacity:1;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li {padding:0;position: relative;white-space: normal; height:auto;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li.active {padding-right:10px;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li > a { color:#777; padding:7px 10px; font-size:13px; display:block; text-align:left; line-height: 1.5;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li:hover> a,
+	.xans-product-menupackage .menuCategory.menu > li > ul > li.selected > a { color:#222;background:#f9f9f9; }
+	.xans-product-menupackage .menuCategory.menu > li > ul > li > a.iconWrap { position: absolute; top: 1px; right: 0;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li > a.iconWrap:after{right:15px; top:10px;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li .button{display:block;margin:0;padding:0;}
+	.xans-product-menupackage .menuCategory.menu .subCategory { display: none;position: absolute;left: 200px;top: -5.5px;z-index: 11;width: 190px;padding: 5px 0;border: 1px solid #ddd;font-size: 0;line-height: 0; border-radius:5px;}
+	.xans-product-menupackage .menuCategory.menu > li > ul > li:hover .subCategory { display:block; }
+	.xans-product-menupackage .menuCategory.menu .subCategory li { font-size:13px; line-height:14px; vertical-align:top; height:auto;padding:0;white-space: normal; }
+	.xans-product-menupackage .menuCategory.menu .subCategory li:hover{background:#f5f5f5;}
+	.xans-product-menupackage .menuCategory.menu .subCategory li a { color:#777; display: block; text-align: left; padding: 5px 10px;line-height: 1.5; font-size:13px;}
+	.xans-product-menupackage .menuCategory.menu .subCategory li a:hover,
+	.xans-product-menupackage .menuCategory.menu .subCategory li.selected a { color:#222; }
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-product-menupackage .titleArea{padding:2rem 0;}
+	.xans-product-menupackage .titleArea > h2,
+	.xans-product-menupackage .titleArea > h2 + .likeButton{margin:0;}
+	.xans-product-menupackage .titleArea > h2:has(img){margin:0 -1rem;}
+	.xans-product-menupackage .likeButton button{font-size:12px;}
+    .xans-product-menupackage .gInner {margin: 0 16px;}
+	.xans-product-menupackage .banner {margin: 0 -1rem; }
+	.xans-product-menupackage .ec-base-tab.typeMenu{height:auto; margin:0; }
+	 .xans-product-menupackage .ec-base-tab.typeMenu .menu{position:static;overflow:auto;overflow: visible;flex-wrap: wrap;justify-content: center;gap:5px;}
+	.xans-product-menupackage .menuCategory.menu{justify-content: flex-start;}
+	.xans-product-menupackage .menuCategory.menu > li,
+	.xans-product-menupackage .menuCategory.menu > li > a.btton{font-size: 13px;line-height: 32px;height: 32px;display: block;}
+	.xans-product-menupackage .menuCategory.menu > li{position:relative;}
+	.xans-product-menupackage .menuCategory.menu > li > a{display:inline-block; font-size:.9rem;}
+	.xans-product-menupackage .menuCategory.menu > li > a.button{border:1px solid #ddd;display: block;width: 100%;height: 100%; line-height: 30px;border-radius: 5px;padding: 0 6px; }
+	.xans-product-menupackage .menuCategory.menu > li .iconWrap{position: absolute;top: 12px;right: 0;bottom: 0; display:none;}
+
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.5px" height="35.587px"
+	 viewBox="0 0 32.5 35.587" enable-background="new 0 0 32.5 35.587" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  width="32.5" height="35.587" x="4.017" y="-38.359" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<g>
+		<path fill="#040000" d="M24.808,35.587H7.693C3.451,35.587,0,32.137,0,27.896V15.08c0-1.386,0.571-2.735,1.567-3.7l9.661-9.348
+			C12.583,0.722,14.366,0,16.25,0s3.667,0.722,5.022,2.032l9.659,9.347c0.997,0.965,1.568,2.314,1.568,3.701v12.816
+			C32.5,32.137,29.049,35.587,24.808,35.587z M16.25,2.5c-1.232,0-2.398,0.472-3.284,1.329l-9.66,9.347
+			C2.794,13.672,2.5,14.366,2.5,15.08v12.816c0,2.862,2.33,5.191,5.193,5.191h17.114c2.863,0,5.192-2.329,5.192-5.191V15.08
+			c0-0.714-0.294-1.408-0.807-1.905l-9.659-9.346C18.648,2.972,17.482,2.5,16.25,2.5z"/>
+	</g>
+	<g>
+		<path fill="#040000" d="M21.804,35.587H10.697c-0.69,0-1.25-0.56-1.25-1.25V21.882c0-2.29,1.863-4.152,4.153-4.152h5.3
+			c2.29,0,4.153,1.862,4.153,4.152v12.455C23.054,35.027,22.494,35.587,21.804,35.587z M11.947,33.087h8.606V21.882
+			c0-0.911-0.741-1.652-1.653-1.652h-5.3c-0.912,0-1.653,0.741-1.653,1.652V33.087z"/>
+	</g>
+</g>
+</svg>

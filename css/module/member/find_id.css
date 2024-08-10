@@ -1,0 +1,12 @@
+.xans-member-findid{}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-member-findid .ec-base-help{margin:0 0 1rem;}
+}

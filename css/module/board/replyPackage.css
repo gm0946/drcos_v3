@@ -1,0 +1,49 @@
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+.xans-board-reply .captcha img { vertical-align:middle; margin-left:4px; }
+.xans-board-reply .file td { color:#7d7d7d; }
+.xans-board-reply .file label { color:#000; }
+.xans-board-reply .file [id^="delfile"] { margin-left:20px; }
+.xans-board-reply .agree textarea { margin:0 0 14px; }
+.xans-board-reply td.clear{padding: 15px 0 !important;}
+
+.xans-board-replylist a,
+.xans-board-replylist a:hover{text-decoration:none;}
+.xans-board-replylist a img{ vertical-align:middle;margin-left:8px;}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-board-reply #board_category { width:170px; margin:0 10px 0 0; }
+	.xans-board-reply #subject { width:526px; margin:0 20px 0 0; }
+    .xans-board-reply #writer { width:450px; }
+    .xans-board-reply #email1,
+    .xans-board-reply #email2 { width:138px; }
+    .xans-board-reply #email3 { width:138px; margin:0 0 0 10px; }
+    .xans-board-reply #captcha { width:200px; margin:0 20px 0 10px; }
+    .xans-board-reply #ucc { width:328px; }
+    .xans-board-reply #ucc_width,
+    .xans-board-reply #ucc_height { width:150px; margin-left:4px; }
+    .xans-board-reply #password { width:200px; }
+    .xans-board-reply .agree textarea { width:550px; height:140px; }
+
+	.xans-board-reply .ec-base-button.gBottom [class^='btn'] + [class^='btn']{margin-left:0;}
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-board-reply .ec-base-table input[type="text"],
+    .xans-board-reply .ec-base-table input[type="password"],
+    .xans-board-reply .ec-base-table select { width:100%; }
+    .xans-board-reply #email1 { width:47%; margin:0 6px 0 0; }
+    .xans-board-reply #email2 { width:47%; flex:1; margin:0 0 0 6px; }
+    .xans-board-reply #email3 { margin:10px 0 0; }
+    .xans-board-reply #captcha { flex:1; margin-left:10px; }
+    .xans-board-reply .file input[type="file"] { display:block; }
+    .xans-board-reply .agree textarea { width:100%; height:140px; }
+
+	.xans-board-replylist{}
+	.xans-board-replylist > li > a{display: flex;align-items: center;}
+	.xans-board-replylist > li > a *{width: auto !important; margin: 0 9px 0 0 !important;}
+}

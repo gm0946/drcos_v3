@@ -1,0 +1,123 @@
+<!--@css(/_wp/css/main/index_prd_500.css)-->
+<!--@js(/_wp/js/main/index_prd_500.js)-->
+
+<div class="index_prd_500 wp-effect wp-stand-by" webpb-banner-code="47rj" hidden>
+	<div class="site-wrap">
+		<div class="section-title animate__animated animate__fadeInUpCustom animate__delayCustom" style="--wp-fade-range:30%;--wp-delay:.1s;">
+            <h3>
+                <span class="title">{#title}</span>
+                <p class="sub-title">{#sub_title}</p>
+            </h3>
+        </div>
+        <div class="swiper-container section-prod">
+			<div class="swiper-wrapper animate__animated animate__fadeIn" style="--wp-fade-range:30%;--wp-delay:.3s;">
+
+                <!-- 첫번째 배너+상품영역-->
+                <div class="swiper-slide" webpb-banner>
+                    <div class="bx">
+                        <div class="visual" >
+                            <div class="img">
+                                <div class="pc_view"><a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a></div>
+                                <div class="m_view"><a href="{#link}" target="{#link_target}">{#m_thumb_tag}</a></div>
+                            </div>
+                            <div class="txt">
+                                <p class="h1" style="color:{#color1};">{#text_1}</p>
+                                <p class="h2" style="color:{#color2};">{#text_2}</p>
+                            </div>
+                        </div>
+                        <div module="product_listmain_5" class="productItem ec-base-product">
+                            <!--
+                                🔅 옵션 설정 🔅
+                                1. 상품진열 개수는 $count 의 숫자를 조정해주시면 됩니다.
+
+                                $count = 3
+                                $basket_result = /product/add_basket.html
+                                $basket_option = /product/basket_option.html
+                            -->
+                            <ul class="prdList">
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- // 첫번째 배너+상품영역-->
+
+                <!-- 두번째 배너+상품영역-->
+                <div class="swiper-slide" webpb-banner>
+                    <div class="bx">
+                        <div class="visual">
+                            <div class="img">
+                                <div class="pc_view"><a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a></div>
+                                <div class="m_view"><a href="{#link}" target="{#link_target}">{#m_thumb_tag}</a></div>
+                            </div>
+                            <div class="txt">
+                                <p class="h1" style="color:{#color1};">{#text_1}</p>
+                                <p class="h2" style="color:{#color2};">{#text_2}</p>
+                            </div>
+                        </div>
+                        <div module="product_listmain_6" class="productItem ec-base-product">
+
+                            <!--
+                                🔅 옵션 설정 🔅
+                                1. 상품진열 개수는 $count 의 숫자를 조정해주시면 됩니다.
+
+                                $count = 3
+                                $basket_result = /product/add_basket.html
+                                $basket_option = /product/basket_option.html
+                            -->
+                            <ul class="prdList">
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- // 두번째 배너+상품영역-->
+
+
+                <!-- 세번째 배너+상품영역-->
+                <div class="swiper-slide" webpb-banner>
+                    <div class="bx">
+                        <div class="visual">
+                            <div class="img">
+                                <div class="pc_view"><a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a></div>
+                                <div class="m_view"><a href="{#link}" target="{#link_target}">{#m_thumb_tag}</a></div>
+                            </div>
+                            <div class="txt">
+                                <p class="h1" style="color:{#color1};">{#text_1}</p>
+                                <p class="h2" style="color:{#color2};">{#text_2}</p>
+                            </div>
+                        </div>
+                        <div module="product_listmain_7" class="productItem ec-base-product">
+                            <!--
+                                🔅 옵션 설정 🔅
+                                1. 상품진열 개수는 $count 의 숫자를 조정해주시면 됩니다.
+
+                                $count = 3
+                                $basket_result = /product/add_basket.html
+                                $basket_option = /product/basket_option.html
+                            -->
+                            <ul class="prdList">
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                                <li id="anchorBoxId_{$product_no}">
+                                    <!--@import(/_wp/base_product_list.html)-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- // 세번째 배너+상품영역-->
+
+            </div>
+			<div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+</div>

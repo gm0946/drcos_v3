@@ -1,0 +1,31 @@
+.index_prd_200 .section-title {
+    position: relative;
+}
+
+/********************* PC *********************/
+@media all and (min-width: 1025px) {
+    .index_prd_200 {
+        margin:0 0 120px 0;
+    }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width: 1024px) {
+    .index_prd_200 {
+        margin:0 0 5rem 0;
+    }
+
+    .index_prd_200 .section-title > h3:before {
+        width: 1.8rem;
+        height: 1.8rem;
+        background-size: auto 100%;
+    }
+
+    .index_prd_200 .ec-base-product .prdList {
+        margin: 0 10px -20px 10px;
+    }
+
+    .index_prd_200 .ec-base-product .prdList + .xans-product-listmore {
+        margin-top: 20px;
+    }
+}

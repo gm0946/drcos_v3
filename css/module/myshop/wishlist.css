@@ -1,0 +1,19 @@
+#contents .xans-myshop-wishlistitem {}
+#contents .xans-myshop-wishlist .shippingFee { position:relative; display:inline-block; text-align:left; }
+#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -170px; width:360px; }
+#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table th { width:40px; }
+#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table th,
+#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table td { padding:7px 10px 8px 10px; text-align:left; }
+#contents .xans-myshop-wishlist .sale-price{font-weight:bold;font-size:13px;margin-left:0px;display:block;}
+
+#contents .xans-myshop-wishlist .ec-base-prdInfo .prdBox{padding: 24px 0;}
+#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail,
+#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{height:auto;}
+#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail{border:0;}
+#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{border:1px solid #eee;}
+#contents .xans-myshop-wishlist .ec-base-prdInfo .btnDelete{right:0;}
+
+
+
+
+

@@ -1,0 +1,18 @@
+.ec-base-layer .xans-myshop-depositrefundlist .header > h1,
+.ec-base-layer .xans-myshop-depositrefundlist .header > h3,
+.ec-base-layer .xans-myshop-depositrefundlist .header > h5 { font-size:16px; font-weight: normal; }
+.ec-base-layer .xans-myshop-depositrefundlist .content { padding: 20px; font-size:13px; line-height: 22px; min-height: 90px; box-sizing:border-box; }
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	#popup { width:750px; }
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.ec-base-layer .xans-myshop-depositrefundlist .content .ec-base-table colgroup,
+	.ec-base-layer .xans-myshop-depositrefundlist .content .ec-base-table thead{display:none;}
+}

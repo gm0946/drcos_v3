@@ -1,0 +1,42 @@
+<!--@css(/_wp/css/main/index_board_notice.css)-->
+<!--@js(/_wp/js/main/notice.js)-->
+
+<!-- [메인공지사항] -->
+<div class="index_board_notice wp-stand-by">
+	<div class="site-wrap">
+		<div class="board" module="board_listpackage_1">
+			<div class="section-title">
+                <h3 class="title">{#title}</h3>
+                <a class="more" href="/board/free/list.html?board_no=1">더보기</a>
+            </div>
+			<div class="board_list" >
+				<div class="swiper-container">
+					<div class="swiper-wrapper" module="board_list_1">
+					<!--
+                        🔅 옵션 설정 🔅
+
+                        1. 공지사항 노출 개수는 $count 의 숫자를 조정해주시면 됩니다.
+
+						$count = 5
+						$main_list = yes
+						$main_list_reply_view = no
+					 -->
+					 <ul class="swiper-slide">
+						<li class="subject"><a href="{$link_board_detail}">{$subject}</a></li>
+						<li class="date {$date_display|display}">{$write_date|date:y.m.d}</li>
+					 </ul>
+					 <ul class="swiper-slide">
+						<li class="subject"><a href="{$link_board_detail}">{$subject}</a></li>
+						<li class="date {$date_display|display}">{$write_date|date:y.m.d}</li>
+					 </ul>
+					</div>
+				 </div>
+			</div>
+			<a href="javascript:;" class="bt_prev">이전글</a>
+			<a href="javascript:;" class="bt_next">다음글</a>
+
+		</div>
+	</div>
+</div>
+
+

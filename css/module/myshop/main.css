@@ -1,0 +1,36 @@
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    /* myshop layout */
+    .myshopArea,
+	.myshopMain{ position:relative; margin:49px 0 0; padding:0 0 0 210px; }
+    .xans-myshop-main { position:absolute; left:0; top:0; width:150px; }
+
+    .xans-myshop-main .title {  font-size:19px; font-weight:500; margin:0 0 24px; }
+    .xans-myshop-main .subTitle { margin:50px 0 0; display:none; }
+    .xans-myshop-main h3 { color:#000; color:var(--font-color-heading); font-size:18px; font-weight:normal; font-weight:bold; }
+    .xans-myshop-main .menu {border-bottom: 1px solid #ddd;margin: 0 0 20px; padding: 0 0 20px}
+    .xans-myshop-main .menu.menu_last{border-bottom:0;  margin:0; padding:0;}
+    .xans-myshop-main .menu li { margin:12px 0 0; }
+	.xans-myshop-main .menu li a { display:block; color:#6d6d6d; font-size:14px; text-decoration:none; }
+    .xans-myshop-main .consult { margin:45px 0 0; }
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    /* myshop layout */
+	.myshopMain .xans-myshop-main{display:block;margin: 1rem 0;}
+	.myshopArea .xans-myshop-main{display:none; }
+    .xans-myshop-main { display:none; }
+
+    .xans-myshop-main .subTitle { padding:27px 16px 12px;  display:none;}
+    .xans-myshop-main h3 { color:#000; color:var(--font-color-heading); font-size:16px; }
+    .xans-myshop-main .menu { border-top:1px solid #e5e5e5; }
+	.xans-myshop-main .menu li { border-bottom:1px solid #e5e5e5; }
+	.xans-myshop-main .menu li a { position:relative; display:block; padding:15px 16px; font-size:14px; text-decoration:none; }
+    .xans-myshop-main .menu li a:after { content:""; display:block; position:absolute; top:1px; right:18px; width: 10px; height: 10px; margin: 18px auto 0; border-left: 1px solid #929292; border-bottom: 1px solid #929292; -webkit-transform: rotate(-135deg); transform: rotate(-135deg); }
+    .xans-myshop-main .consult { margin:23px 0 0; }
+    .xans-myshop-main .consult .btnNormal { width:100%; }
+}

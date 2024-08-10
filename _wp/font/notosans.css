@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 100;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Thin.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Thin.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Thin.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 300;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Light.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Light.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Light.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 400;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Regular.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Regular.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 500;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Medium.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Medium.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 700;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Bold.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Bold.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 900;
+    src:url(/_wp/font/notoSansKR/NotoSansKR-Black.woff2) format('woff2'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Black.woff) format('woff'),
+        url(/_wp/font/notoSansKR/NotoSansKR-Black.otf) format('truetype');
+    unicode-range: U+0000-00FF,U+AC00-D7AF;
+    font-display: swap;
+}
+

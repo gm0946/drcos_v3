@@ -1,0 +1,116 @@
+.xans-order-basketpackage .xans-order-dcinfo.ec-base-box.typeMember .description .member{margin:0 0 10px;}
+.xans-order-basketpackage .xans-order-dcinfo.ec-base-box.typeMember .description .mileage{margin:0;}
+
+.xans-order-basketpackage .title.subTitle { display:block; padding:0; }
+.xans-order-basketpackage .title.subTitle:after { display:none; }
+.xans-order-basketpackage .title.subTitle h4 { display:block; padding:0 0 0 15px; line-height:55px; font-size:13px; font-weight:normal; background-color:#f6f6f6; }
+.xans-order-basketpackage .summary { padding:20px; border-bottom:1px solid #e5e5e5; background:#f9f9f9; }
+.xans-order-basketpackage .summary .title { margin:0 0 ; }
+.xans-order-basketpackage .summary .title h5 { font-size:13px; font-weight:normal; }
+.xans-order-basketpackage .summary .contents { line-height:20px; }
+.xans-order-basketpackage .summary .total { display:block; margin:5px 0 0; }
+
+.xans-order-basketpackage .ec-base-prdInfo .thumbnail,
+.xans-order-basketpackage .ec-base-prdInfo .thumbnail img{height:auto;}
+.xans-order-basketpackage .ec-base-prdInfo .thumbnail{border:0;}
+.xans-order-basketpackage .ec-base-prdInfo .thumbnail img{border:1px solid #eee;}
+.xans-order-basketpackage .ec-base-prdInfo .description .prdName {margin:0 0 7px;}
+.xans-order-basketpackage .ec-base-prdInfo .description .prdName img{width:0;height:0;}
+.xans-order-basketpackage .ec-base-prdInfo .description .price li[class*='display__0']{display:none;}
+.xans-order-basketpackage .ec-base-prdInfo .description .optionGroup li .product,
+.xans-order-basketpackage .ec-base-prdInfo .description .optionGroup li .optionStr{color:#777;}
+.xans-order-basketpackage .ec-base-prdInfo .description .info li.mileage img{vertical-align:middle;}
+
+.xans-order-basketpackage .xans-order-weight .totalWeight {text-align: right; padding: 14px; font-size: 13px; border-bottom: 1px solid #d5d5d5; }
+.xans-order-basketpackage .xans-order-weight .totalWeight span {display: inline-block;min-width: 50px;}
+
+.xans-order-basketpackage .totalSummary__title { display:block; margin:0 0 20px; padding:0 0 19px; font-size:14px; border-bottom:1px solid #e5e5e5; }
+.xans-order-basketpackage .totalSummary { padding:8px 7px;  }
+.xans-order-basketpackage .totalSummary__item { margin:0 0 20px; }
+.xans-order-basketpackage .totalSummary__item .heading { display:flex; justify-content: space-between; margin:0 0 15px; }
+.xans-order-basketpackage .totalSummary__item .item { display:flex; justify-content: space-between; margin:10px 0 0; color:#6d6d6d; }
+.xans-order-basketpackage .totalSummary__item .title { font-size:13px; font-weight:normal; }
+.xans-order-basketpackage .totalSummary__item .data { text-align:right; }
+.xans-order-basketpackage .totalSummary .item .title:before { content:""; display:inline-block; width:9px; height:9px; margin:-2px 10px 0 0; vertical-align:top; border-left: 1px solid #dadada; border-bottom: 1px solid #dadada; }
+.xans-order-basketpackage .totalSummary .total { display:flex; justify-content: space-between; overflow:hidden; margin:20px 0 0; padding:20px 0 0; border-top:1px solid #e5e5e5;align-items: center; }
+.xans-order-basketpackage .totalSummary .total .title { font-size:15px; }
+.xans-order-basketpackage .totalSummary .total_mileage_price_area{margin: 10px 0 0;}
+.xans-order-basketpackage .totalSummary .paymentPrice { text-align:right; }
+.xans-order-basketpackage .totalSummary .paymentPrice strong,
+.xans-order-basketpackage .totalSummary .paymentPrice span { display:inline-block; word-break:break-all; }
+.xans-order-basketpackage .totalSummary .paymentPrice strong { font-size:18px; }
+.xans-order-basketpackage .totalSummary .title p .refer,
+.xans-order-basketpackage .totalSummary .title div .refer { display:inline-block; font-size:12px; word-break:break-all; }
+.xans-order-basketpackage .totalSummary .ec-base-help { margin:10px 0; }
+
+#orderFixItem .ec-base-button{margin:20px 5px;}
+
+.xans-order-basketpriceinfoguide .ec-base-help li{margin:0;background-position: 0 3px;}
+
+#NaverChk_Button { margin:14px 0 0; text-align:center;}
+#appPaymentButtonBox{text-align:center;margin:10px 0;}
+
+.xans-order-basketpackage td .box.shipping { line-height:1.3em; }
+.xans-order-basketpackage td .box.shipping .shippingArea { font-size:12px; line-height:1.3em; }
+.xans-order-basketpackage .shippingFee { position:relative; display:inline-block; vertical-align:middle; text-align:left; }
+.xans-order-basketpackage .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -340px; width:360px; }
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th { width:40px; }
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th,
+.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table td { padding:7px 10px 8px 10px; height:auto; font-size:12px; line-height:1.5; text-align:left; }
+
+.xans-order-basketpackage .ec-base-prdEmpty + .cart-container{height: 0;overflow: hidden;}
+
+.xans-order-basketpackage .total_mileage_price_area .heading{display: flex;justify-content: space-between;margin: 0 0 15px;}
+.xans-order-basketpackage .total_mileage_price_area .heading .title {font-size: 13px;font-weight: normal;}
+.xans-order-basketpackage .total_mileage_price_area .heading .data {text-align: right;}
+.xans-order-basketpackage .total_mileage_price_area .content .item {display: flex;justify-content: space-between;margin: 10px 0 0;color: #6d6d6d;}
+.xans-order-basketpackage .total_mileage_price_area .content .item .title {font-size: 13px;font-weight: normal;}
+.xans-order-basketpackage .total_mileage_price_area .content .data {text-align: right;}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    .xans-order-basketpackage .xans-order-tabinfo { margin:0 0 1rem; }
+
+	.xans-order-basketpackage .xans-order-emptyitem.ec-base-fold.theme1 > .title,
+	.xans-order-basketpackage .xans-order-emptyitem.ec-base-fold.theme1.selected > .title{padding:0;border: 0;}
+	.xans-order-basketpackage .xans-order-emptyitem.ec-base-fold.theme1 > .title:after,
+	.xans-order-basketpackage .xans-order-emptyitem.ec-base-fold.theme1.selected > .title:after{top: 1.8rem;right: 5px;}
+	.xans-order-basketpackage .xans-order-emptyitem.ec-base-fold.theme1 > .title:after{top:1.4rem;}
+
+	.xans-order-basketpackage .title.subTitle h4{line-height:3.5;}
+	.xans-order-basketpackage .ec-base-prdInfo .description{padding: 0;}
+    .xans-order-basketpackage .ec-base-prdInfo .description .prdName{padding-right: 40px;}
+    .xans-order-basketpackage .ec-base-prdInfo .prdBox{padding:1.5rem 0;}
+	.xans-order-basketpackage .ec-base-prdInfo .btnDelete{right:0;top:0.9rem;}
+	.xans-order-basketpackage .ec-base-prdInfo .sumPrice strong{font-size: 1rem;}
+	.xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice,
+	.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity,
+	.xans-order-basketpackage .ec-base-prdInfo.gCheck .buttonGroup{padding:0 0 0 130px;}
+	.xans-order-basketpackage .totalSummary { border: 1px solid #111;box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); padding:1rem; margin:0 0 2rem;}
+
+	#orderFixItem .ec-base-button{margin: 0; border: 0;}
+	#orderFixArea{border:0;padding:0;margin:0;z-index:98;}
+	#orderFixArea.ec-base-button.gFixed > .ec-base-button[class*="gColumn"]{margin: 0;border:0;padding:0;}
+	#orderFixArea.ec-base-button.gFixed > .ec-base-button[class*="gColumn"] [class^='btn']{margin: 0; border-radius:0;}
+	#orderFixArea.ec-base-button.gFixed > .ec-base-button[class*="gColumn"] [class^='btnNormal ']{border: 0; border-top: 1px solid #ddd;}
+
+	.xans-order-basketguide.ec-base-help > h3{padding:0;margin:0 0 1rem;}
+	.xans-order-basketguide.ec-base-help .inner{padding:1rem;}
+
+	#footer{padding-bottom: 5rem;}
+	#wrap .bottom-nav{bottom:7rem;}
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-order-basketpackage .ec-base-prdInfo .description .prdName{font-size: 15px; line-height: 1.4; }
+	.xans-order-basketpackage .ec-base-prdInfo .description .info li{font-size:13px;}
+    .cart-container { display:flex; }
+    .cart-product { flex:1; }
+    .cart-total { position:relative; width:300px; margin:0 0 0 47px; }
+    .cart-total .sticky { position:sticky; top:100px;padding: 10px; background: #fff; border: 1px solid #ddd;border-radius: 5px;}
+	.xans-order-basketpackage .xans-order-tabinfo { margin:40px 0 54px; }
+    .xans-order-basketpackage .ec-base-prdInfo .description { margin:0 20% 0 0; }
+    #orderFixArea { display:none !important; }
+}

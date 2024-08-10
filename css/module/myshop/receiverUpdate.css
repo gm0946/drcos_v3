@@ -1,0 +1,22 @@
+#popup {max-width:600px; }
+#popup .xans-myshop-orderreceiverupdate.ec-base-layer{z-index:998;}
+.ec-base-layer {}
+.ec-base-layer .inputTypeText { width:200px; }
+.ec-base-layer select { min-width:85px; }
+.ec-base-layer textarea { min-width:277px; min-height:90px; }
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+}
+
+/********************* Mobile ********************/
+@media all and (max-width:1024px) {
+    #popup{width:100%;}
+    .content .ec-base-table{border:0; padding:0; }
+    .content .formGroup{padding:0;}
+    .ec-base-table.typeWrite .formGroup select{margin-left:0;}
+    .ec-base-table .ec-address{margin:0;}
+    .ec-base-table .ec-address > li{padding: 0;}
+    .content textarea{width: 100%;max-width: 100%;}
+    #r_mobile1{max-width: 75px;}
+}

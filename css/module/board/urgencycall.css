@@ -1,0 +1,33 @@
+.xans-mall-urgencycall .info {  color:#8f8f8f; }
+.xans-mall-urgencycall .required { text-align:right; }
+.xans-mall-urgencycall .required img { vertical-align:middle; }
+.xans-mall-urgencycall .ec-base-table input[type=text],
+.xans-mall-urgencycall .ec-base-table textarea { height:100px; }
+.xans-mall-urgencycall .ec-base-table #captcha { width:160px; }
+.xans-mall-urgencycall #prd_ord,
+.xans-mall-urgencycall #email,
+.xans-mall-urgencycall #mobile,
+.xans-mall-urgencycall #writer{height:42px;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-mall-urgencycall .info {margin:20px 0;}
+	.xans-mall-urgencycall .required { margin:-35px 0 10px; }
+	.xans-mall-urgencycall .ec-base-table textarea { width:500px; }
+	.xans-mall-urgencycall #prd_ord,
+	.xans-mall-urgencycall #email,
+	.xans-mall-urgencycall #mobile,
+	.xans-mall-urgencycall #writer{width: 290px;}
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-mall-urgencycall .info { margin:0 0 20px;text-align: center;word-break: keep-all;}
+	.xans-mall-urgencycall .required {margin: 10px 0;}
+	.xans-mall-urgencycall .ec-base-table textarea { width:100%; }
+	.xans-mall-urgencycall .ec-base-table.typeWrite td.formGroup{padding:0;}
+	.xans-mall-urgencycall #prd_ord,
+	.xans-mall-urgencycall #email,
+	.xans-mall-urgencycall #mobile,
+	.xans-mall-urgencycall #writer{margin:0;width:100%;}
+}

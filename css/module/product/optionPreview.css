@@ -1,0 +1,16 @@
+.xans-product-optionpreview { display:inline; }
+.xans-product-optionpreview .prdOption { position:absolute; left:0; top:26px; z-index:100; width:100%; margin:0 0 0 0; }
+.xans-product-optionpreview .prdOption .inner { padding:1rem; border:1px solid #565960; color:#2e2e2e; background:#fff; }
+.xans-product-optionpreview .prdOption .inner{max-height: 30rem;overflow: auto;}
+.xans-product-optionpreview .prdOption li { padding:6px 0 7px; border-top:1px solid #d6d4d4; text-align:left; line-height:16px; font-size:0.8rem; }
+.xans-product-optionpreview .prdOption li:first-child { border:0; }
+.xans-product-optionpreview .prdOption .close { position:absolute; right:14px; top:14px; }
+.xans-product-optionpreview .prdOption .close > a{display:block;width: 1rem; height: 1rem;}
+.xans-product-optionpreview .prdOption .close > a:before,
+.xans-product-optionpreview .prdOption .close > a:after{content:"";display:block;width: 1px; height: 14px;background: #555; position: absolute; top: 0; left: 7px;}
+.xans-product-optionpreview .prdOption .close > a:before{transform: rotate( 45deg );}
+.xans-product-optionpreview .prdOption .close > a:after{transform: rotate( 315deg );}
+.xans-product-optionpreview .prdOption .ico { position:absolute; left:0; top:-5px; width:9px; height:6px; margin:0 0 0 10px; }
+.xans-product-optionpreview .prdOption .ico > img{vertical-align:top;}
+
+.xans-product-optionpreview ::-webkit-scrollbar {width: 3px;}

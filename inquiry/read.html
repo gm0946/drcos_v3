@@ -1,0 +1,94 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_ReadPackage_1002">
+    <!--@css(/css/module/board/readPackage.css)-->
+    <!--@css(/inquiry/css/inquiry_read.css)-->
+    <!--@js(/js/module/board/readPackage.js)-->
+    <div module="board_title_1002">
+        <div class="path">
+            <span>현재 위치</span>
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치"><strong>{$board_name}</strong></li>
+            </ol>
+        </div>
+
+        <!--@import(/board/boardTitle.html)-->
+    </div>
+
+    <div module="board_read_1002">
+        <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/free/list.html
+        -->
+        <div class="ec-base-table typeWrite">
+            <div class="head">
+                <h3>{$subject}</h3>
+                <div class="description">
+                    <span class="name">{$member_icon} {$writer} <span class="{$config.display_ip|display}">(ip:{$ip})</span> {$admin_mileage}</span>
+                    <ul class="etcArea">
+                        <li class="{$config.use_date|display}">
+                            <span class="txtNum">{$write_date}</span>
+                        </li>
+                        <li class="{$config.use_cnt|display}">
+                            <span>조회</span> <span class="txtNum">{$hit_count}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail">
+                <!-- {$content_image} -->{$content}
+            </div>
+			<div class="attach {$config.use_attach|display}">{$attach_file}</div>
+        </div>
+
+        <div class="ec-base-button gBottom gBreak">
+            <span class="gLeft">
+                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM {$delete_button_auth|display}">삭제</a>
+
+            </span>
+            <span class="gRight gBreak">
+                <a href="/inquiry/list.html" class="btnSubmitFix sizeM">목록</a>
+            </span>
+        </div>
+		<div class="ec-base-button config {$config.is_admin|display}">
+			<a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
+			<a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
+			<a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
+			<a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
+		</div>
+
+		<div class="password {$delete_button_auth|display} {$config.use_password|display}">{$form.password}
+			<span class="ec-base-help txtInfo">삭제하려면 비밀번호를 입력하세요.</span>
+		</div>
+    </div>
+</div>
+
+<div module="board_movement_1002">
+    <!--@css(/css/module/board/movement.css)-->
+    <ul>
+        <li class="prev {$prev_display|display}">
+            <strong>이전글<i aria-hidden="true" class="icon icoArrowTop"></i></strong><a href="{$link_board_detail_prev}">{$prev_subject}</a>
+        </li>
+        <li class="next {$next_display|display}">
+            <strong>다음글<i aria-hidden="true" class="icon icoArrowBottom"></i></strong><a href="{$link_board_detail_next}">{$next_subject}</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Admin only -->
+<div module="board_function_1002">
+    <!--@css(/css/module/board/function.css)-->
+    <!--
+        $success_return_url = /board/free/list.html
+    -->
+    <span class="gColumn">{$board_function_selectbox}</span>
+    <span class="gColumn">
+        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
+        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+    </span>
+    <span class="ec-base-help">{$board_function_help|replace:*,}</span>
+</div>
+<!-- // Admin only -->
+<!--@define(cmc_log)-->

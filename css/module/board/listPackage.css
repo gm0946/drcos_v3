@@ -1,0 +1,87 @@
+/* Common */
+.xans-board-title p.imgArea { text-align:center; padding:0 16px; }
+.xans-board-title p.imgArea img { max-width:100%; margin:0 0 20px; }
+#wrap .ec-base-tab.typeMenu .button:hover,
+#wrap .ec-base-tab.typeMenu .button.active{color:#000;font-weight:bold;}
+
+/* Table */
+.xans-board-listpackage { margin:0 0 10px; }
+.xans-board-listpackage .ec-base-table { clear:both; }
+.xans-board-listpackage .ec-base-table table td.no { color:#6d6d6d; }
+.xans-board-listpackage .ec-base-table table th.chk,
+.xans-board-listpackage .ec-base-table table td.chk { overflow:hidden; }
+.xans-board-listpackage .ec-base-table table td.chk .ec-common-rwd-image { margin:3px 0 0; }
+.xans-board-listpackage .ec-base-table table td.subject .product { margin:0 10px 5px 0; line-height:18px; color:#999; font-size:.9rem;}
+.xans-board-listpackage .ec-base-table table td.subject .product:empty { margin-bottom:0; }
+.xans-board-listpackage .ec-base-table table td.subject a { margin-right:5px; vertical-align:middle; }
+.xans-board-listpackage .ec-base-table table td.subject img { width:auto; max-height:21px; margin:0px 5px 1px 0; vertical-align:middle; }
+.xans-board-listpackage .ec-base-table table td.subject .badge img { height:auto; }
+.xans-board-listpackage .ec-base-table table td.thumb a { display:inline-block; overflow:hidden; }
+.xans-board-listpackage .ec-base-table table td.thumb span { float:left; width:80px; padding:0 0 0 8px; text-align:left; }
+.xans-board-listpackage .ec-base-table table td .comment { display:inline-block; margin:0 5px 0 0; vertical-align:middle; color:#ef441f; font-weight:normal; }
+.xans-board-listpackage .ec-base-table table td .comment:empty { margin:0; }
+
+.xans-board-listpackage .ec-base-table.notice + .ec-base-table{margin-top:-1px;}
+
+/* notice */
+.xans-board-listpackage .ec-base-table.notice .subject img{border:1px solid red; display:none;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	/* ec-base-tab (Gallery) */
+	.xans-board-listheader-8.ec-base-tab { margin:0; }
+	.xans-board-listheader-8.ec-base-tab ul { overflow:hidden;display: flex; justify-content: flex-end;}
+	.xans-board-listheader-8.ec-base-tab ul li { text-align:center; }
+	.xans-board-listheader-8.ec-base-tab ul li + li{margin-left:0px;}
+	.xans-board-listheader-8.ec-base-tab ul li a { display:block; font-size:14px; color:#000; padding:10px 15px; opacity:0.6;}
+	.xans-board-listheader-8.ec-base-tab ul li a svg.icon { display:inline-block; margin-right:4px; }
+	.xans-board-listheader-8.ec-base-tab ul li.selected a,
+	.xans-board-listheader-8.ec-base-tab ul li a:hover{ border-bottom:0; text-decoration:none; opacity:1;}
+
+	/* Table - typeList */
+	.xans-board-listpackage .ec-base-table.typeList table {border-top:1px solid #e5e5e5;}
+	.xans-board-listpackage .ec-base-table.typeList table td.thumb img { width:46px; }
+    .xans-board-listpackage .ec-base-table.typeList table td.chk { overflow:hidden; }
+    .xans-board-listpackage .ec-base-table.typeList table td.chk .boardChk,
+    .xans-board-listpackage .ec-base-table.typeList table th.chk .boardListAll{ float:left; margin:2px 5px 0 0; }
+    .xans-board-listpackage .ec-base-table.typeList table td.chk img { margin-top:4px; }
+    .xans-board-listpackage .ec-base-table.typeList table td.subject .badge  { display:none; }
+
+    /* ec-base-tab (Gallery) */
+	.xans-board-listheader-8.ec-base-tab { margin:0; }
+	.xans-board-listheader-8.ec-base-tab ul li{width:auto;}
+	.xans-board-listheader-8.ec-base-tab li a { padding: 16px 2px 3px; white-space:nowrap; border-bottom:0; }
+	.xans-board-listheader-8.ec-base-tab li + li{ margin:0 0 0 50px; }
+
+	.xans-board-listpackage + .ec-base-paginate.typeList{ margin-bottom:40px;}
+
+    .xans-board-listpackage .boardSort { margin:0 0 20px; }
+	.xans-board-listpackage .boardSort select { min-width:152px; margin:0 6px 0 0; }
+
+	.xans-board-buttonlist.ec-base-button .btnSubmitFix { float:right; width:135px; }
+    .xans-board-buttonlist.ec-base-button.gBottom { margin-top:20px; }
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-board-title p.imgArea{margin:0 -1.2rem; padding:0;}
+
+	/* ec-base-tab (Gallery) */
+	.xans-board-listheader-8.ec-base-tab { margin:0; }
+	.xans-board-listheader-8.ec-base-tab ul { overflow:hidden; }
+	.xans-board-listheader-8.ec-base-tab ul li { width:50%; float:left; text-align:center; }
+	.xans-board-listheader-8.ec-base-tab li a { display:block; font-size:14px; color:#777; border-bottom:1px solid #e0e0e0; padding:20px 15px; }
+	.xans-board-listheader-8.ec-base-tab li a svg.icon { display:inline-block; margin-right:4px; }
+	.xans-board-listheader-8.ec-base-tab li.selected a { color:#000000; border-bottom:1px solid #000000; }
+	.xans-board-listheader-8 li a:hover{text-decoration:none;}
+
+    .xans-board-listpackage .ec-base-button.gBottom { margin:20px 0 0; }
+
+    /* Table - typeList */
+    .xans-board-listpackage .ec-base-table.typeList table td.subject .badge { display:inline-block; vertical-align: middle; border: 1px solid #ddd; border-radius: 20px; padding: 0 8px; font-size:.86rem; margin-right:5px;}
+
+    .xans-board-listpackage .boardSort {}
+	 .xans-board-listpackage .boardSort { margin:0 0 20px; }
+}

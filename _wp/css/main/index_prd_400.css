@@ -1,0 +1,211 @@
+.index_prd_400 {
+	position: relative;
+}
+
+.index_prd_400:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #f5f5f5;
+	height: 100%;
+}
+
+.index_prd_400 .section-title {
+	position: relative;
+}
+
+.index_prd_400 .section-title img {
+	display: inline-block;
+	vertical-align: middle;
+	margin: -5px 0 0 0;
+}
+
+.index_prd_400 .swiper-wrap {
+    position: relative;
+}
+
+.index_prd_400 .ec-base-product .prdList>li {
+	border-radius: calc(var(--border-radius-basic) + 4px);
+	margin:0;
+	border: 1px solid #eee;
+	background: #fff;
+}
+
+.index_prd_400 .ec-base-product .prdList .thumbnail,
+.index_prd_400 .ec-base-product .prdList .description {
+	margin: 0;
+}
+
+.index_prd_400 .ec-base-product .prdList .option {
+	display: none;
+}
+
+.index_prd_400 .swiper-pagination {
+    height: 2px;
+    position: unset;
+}
+
+.index_prd_400 .swiper-pagination .swiper-pagination-drag {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/********************* PC *********************/
+@media all and (max-width:1445px) {
+    .index_prd_400 .swiper-button-prev,
+    .index_prd_400 .swiper-button-next {
+        display: none;
+    }
+}
+
+@media all and (min-width:1025px) {
+	.index_prd_400 {
+		margin: 0 0 120px 0;
+		padding: 50px 0;
+	}
+
+	.index_prd_400 .section-title h3 {
+		order: 1;
+	}
+
+	.index_prd_400 .section-title img {
+		width: 35px;
+	}
+
+	.index_prd_400 .swiper-container {
+		margin: -10px -10px;
+		padding: 10px;
+	}
+
+	.index_prd_400 .ec-base-product .prdList>li {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.index_prd_400 .ec-base-product .prdList>li:hover {
+		box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+	}
+
+	.index_prd_400 .ec-base-product .prdList .thumbnail{
+		margin:8px 8px 0;
+	}
+
+	.index_prd_400 .ec-base-product .prdList .description {
+		padding: 15px 14px 25px;
+	}
+
+	.index_prd_400 .swiper-button-prev,
+    .index_prd_400 .swiper-button-next {
+        left: 0;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+        transition: all .25s ease;
+    }
+
+    .index_prd_400:hover .swiper-button-prev,
+    .index_prd_400:hover .swiper-button-next {
+        opacity: 1;
+    }
+
+    .index_prd_400 .swiper-button-prev {
+        left: -75px;
+    }
+
+    .index_prd_400 .swiper-button-next {
+        left: auto;
+        right: -75px;
+    }
+
+    .index_prd_400 .swiper-button-prev:hover,
+    .index_prd_400 .swiper-button-next:hover {
+        opacity: 1;
+    }
+
+    .index_prd_400 .swiper-button-prev:after,
+    .index_prd_400 .swiper-button-next:after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        margin-top: -10px;
+        transition: all .25s ease;
+        border-top: 1.5px solid #444;
+        border-left: 1.5px solid #444;
+    }
+
+    .index_prd_400 .swiper-button-prev:after {
+        transform: rotate(315deg);
+        margin-left: -5px;
+    }
+
+    .index_prd_400 .swiper-button-next:after {
+        transform: rotate(135deg);
+        margin-left: -13px;
+    }
+
+    .index_prd_400 .swiper-button-prev.swiper-button-disabled,
+    .index_prd_400 .swiper-button-next.swiper-button-disabled {
+        opacity: 0;
+        display: none;
+    }
+
+    .index_prd_400 .swiper-pagination {
+        width: auto;
+        max-width: 400px;
+        margin: 40px auto 0;
+    }
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.index_prd_400 {
+		padding: 2.4rem 0;
+		margin:0 0 5rem 0;
+	}
+
+	.index_prd_400 .section-title img {
+		width: 1.8rem;
+	}
+
+	.index_prd_400 .ec-base-product .swiper-container {
+		padding: 0 10px;
+	}
+
+	.index_prd_400 .ec-base-product .prdList {
+		margin: 0;
+		padding-bottom: 1rem;
+	}
+
+	.index_prd_400 .ec-base-product .prdList>li {
+		height: auto;
+	}
+
+	.index_prd_400 .ec-base-product .prdList .thumbnail{
+		margin:6px 6px 0;
+	}
+
+	.index_prd_400 .ec-base-product .prdList .description {
+		padding: 1rem 1rem;
+	}
+
+	.index_prd_400 .ec-base-product .prdList .iconarea {
+		border: 0;
+	}
+
+	.index_prd_400 .swiper-pagination {
+        width: auto;
+        position: unset;
+        margin: 1rem 1rem 0;
+	}
+
+	.index_prd_400 .swiper-button-prev,
+	.index_prd_400 .swiper-button-next {
+		display: none;
+	}
+}

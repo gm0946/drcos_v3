@@ -1,0 +1,15 @@
+.xans-myshop-addrlist .ec-base-table.typeList .scroll { max-height:250px; }
+
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	#popup { width:800px; }
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-myshop-addrlist.ec-base-layer .ec-base-table.typeList > table{display:none;}
+}

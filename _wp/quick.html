@@ -1,0 +1,37 @@
+<!--@css(/_wp/css/quick.css)-->
+<div class="bottom-nav" id="quickMenu">
+
+    <div module="Layout_productRecent" class="recent displaynone">
+        <!--
+            $count = 3
+        -->
+        <a href="/product/recent_view_product.html" class="recent_count">
+			<h2>최근 본 상품{$recent_count}</h2>
+        </a>
+        <ul >
+            <li class="{$disp_recent|display} prod">
+                <div class="thumbnail">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /></a>
+                </div>
+            </li>
+            <li class="{$disp_recent|display} prod">
+                <div class="thumbnail">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+	<div webpb-banner-code="4gp8" hidden>
+        <div class="bottom-nav__chat" webpb-banner>
+            <a href="{#link}" target="{#link_target}">{#pc_thumb_tag}</a>
+        </div>
+    </div>
+
+	<div class="bottom-nav__top displaynone">
+		<a href="" title="화면 최상단으로 이동하기"><span>Top</span></a>
+	</div>
+	<div class="bottom-nav__btm displaynone">
+		<a href="" title="화면 최하단으로 이동하기"><span>bottom</span></a>
+	</div>
+</div>

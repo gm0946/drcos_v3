@@ -1,0 +1,101 @@
+.xans-myshop-asyncbenefit{padding:0 0 20px;background:#f9f9f9;}
+
+.xans-member-edit .required {display: block;margin: -13px 0 0;line-height: 1;text-align: right;color: var(--font-color-base);}
+.xans-member-edit .titleArea--middle > h3{font-weight:bold;}
+
+.xans-member-edit .layerLeave.xans-member-edit .required { display:block; margin: -13px 0 0; line-height:1; text-align:right; color:var(--font-color-base); }
+.xans-member-edit .required:before { display:none; }
+.xans-member-edit .icoRequired { vertical-align:middle; margin-top:-3.5px; }
+
+.xans-member-edit .ec-base-table .error { color:var(--font-color-warn); }
+
+.xans-member-edit .ec-base-table.typeWrite table .interest { margin-top:10px; }
+.xans-member-edit .ec-base-table.typeWrite table .interest label { line-height:26px; }
+.xans-member-edit .ec-base-table.typeWrite table th{background:#fff;font-weight: normal; padding-left: 20px;}
+
+.xans-member-edit .verify { position:relative; display:inline-block; vertical-align:top; }
+.xans-member-edit .verify .time { position:absolute; top:10px; right:15px; color:var(--font-color-warn); }
+.xans-member-edit .verify #verify_sms_number { padding:2px 50px 2px 4px; box-sizing:border-box; }
+.xans-member-edit .verify #verify_sms_number:disabled { padding-right:4px; }
+
+.xans-member-edit .layerLeave {display:none; }
+.xans-member-edit .layerLeave h4 { margin:20px 0 10px; }
+.xans-member-edit .layerLeave select,
+.xans-member-edit .layerLeave textarea { width:100%; box-sizing:border-box; }
+
+.xans-member-edit .agreeArea:nth-child(1){border-top:1px solid #ddd;}
+.xans-member-edit .agreeArea { color:#747474; line-height:20px; border-top:0; }
+.xans-member-edit .agreeArea label { display: none; }
+.xans-member-edit .agreeArea label.check { display: inline-block; margin-left: 8px; }
+.xans-member-edit .agreeArea .content { overflow:auto; height:110px; padding:20px; margin-top: 12px; border:1px solid #e6e6e6; background:#fff; }
+.xans-member-edit .agreeArea .content p { padding:0 0 17px; }
+.xans-member-edit .agreeArea .check { padding:2px 0 0 0; color:#202020; font-size:14px; }
+.xans-member-edit .agreeArea h3 { position:relative; margin: 0px;}
+.xans-member-edit .agreeArea h3 .btnToggle { display: inline-block; width: 8px; height: 8px; text-indent: 120%; white-space: nowrap; border-left: 1px solid #000; border-bottom: 1px solid #000; -webkit-transition: .3s ease-out; transform: rotate(315deg); transition: .3s ease-out; position:absolute; top: 5px; right:0; cursor: pointer; overflow: visible; }
+.xans-member-edit .agreeArea h3 .btnToggle:before { content:''; display: block; position: absolute; width: 100%; height: 100%; transform: scale(3); }
+.xans-member-edit .agreeArea.on h3 .btnToggle { transform: rotate(135deg); }
+.xans-member-edit .agreeArea .content {display:none;}
+.xans-member-edit .agreeArea.on .content {display:block;}
+
+/* tooltip */
+.xans-member-edit .eTooltip { position:relative; display:inline-block; }
+.xans-member-edit .ec-base-tooltip.typeUpper { left:20px !important; bottom:28px !important; width:260px; }
+.xans-member-edit .ec-base-tooltip.typeUpper .edge { left:20%; }
+.xans-member-edit .ec-base-tooltip.typeUpper:before,
+.xans-member-edit .ec-base-tooltip.typeUpper:after { left:55px; }
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-member-edit select,
+    .xans-member-edit input[type="text"],
+    .xans-member-edit input[type="password"] { width:290px; }
+
+    .xans-member-edit #hint,
+    .xans-member-edit #hint_answer { width:450px; }
+
+    .xans-member-edit #mobile1,
+    .xans-member-edit #mobile2,
+    .xans-member-edit #mobile3,
+    .xans-member-edit #phone1,
+    .xans-member-edit #phone2,
+    .xans-member-edit #phone3,
+    .xans-member-edit #birth_year,
+    .xans-member-edit #marry_year,
+    .xans-member-edit #partner_year,
+    .xans-member-edit #birth_month,
+    .xans-member-edit #marry_month,
+    .xans-member-edit #partner_month,
+    .xans-member-edit #birth_day,
+    .xans-member-edit #marry_day,
+    .xans-member-edit #partner_day { width:86px; }
+
+	.xans-member-edit .gInnerMargin {margin: 20px 0;}
+
+    .xans-member-edit .layerLeave { width:600px; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    .xans-member-edit .ec-base-table.typeWrite table th{padding:7px 0 2px;}
+    .xans-member-edit .ec-base-table.typeWrite table td{padding:2px 0 7px 0;}
+    .xans-member-edit input,
+    .xans-member-edit select,
+    .xans-member-edit .eTooltip,
+    .xans-member-edit #nameContents,
+    .xans-member-edit #authWrap { width:100%; }
+    .xans-member-edit #phone1,
+    .xans-member-edit #mobile1{margin-left:0;}
+    .xans-member-edit #phone2,
+    .xans-member-edit #phone3{flex:1.6;}
+    .xans-member-edit #birth_year{margin-left:0;}
+    .xans-member-edit #partner_year{margin-left:0;}
+    .xans-member-edit #marry_year{margin-left:0;}
+
+    .xans-member-edit .certifForm { width:100%; }
+    .xans-member-edit .ec-base-table.typeWrite td.formGroup.date{padding-left:0;}
+
+    .xans-member-edit .titleArea{padding:1rem 0;margin:1rem 0 0;}
+
+}

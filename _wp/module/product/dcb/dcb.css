@@ -1,0 +1,47 @@
+.card-benefit .quest-mark{display:inline-block;}
+.card-benefit .quest-mark > i{cursor: pointer;border: 1px solid #ddd;text-align: center;font-size: 10px;font-weight: bold;font-style: initial;background: #fff;border-radius: 50%;width: 16px;display: inline-block;height: 16px;line-height: 14px;margin-left: 2px; margin-top:-2px;vertical-align: middle;}
+.card-benefit .quest-mark.active .quest-detail{position:fixed;top:0;left:0;height:100%;width:100%;background:rgba(0,0,0,0.5);z-index:9998;content:'';}
+.card-benefit .card-info{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);display: none;z-index: 9999;}
+.card-benefit .quest-mark.active .card-info{display: block;}
+.card-benefit .quest-close{position: absolute;z-index: 1;font-size: 0px;text-align: center;cursor: pointer;width: 30px; height: 30px;}
+.card-benefit .quest-close:before,
+.card-benefit .quest-close:after{content:"";display:block;position:absolute;top:50%;left:50%;background:#fff; width:1px;height:20px;margin-top: -10px;}
+.card-benefit .quest-close:before{transform: rotate( 225deg);}
+.card-benefit .quest-close:after{transform: rotate( 135deg );}
+.card-benefit .title_section{color:#fff;background:#2a2a2a;font-weight:bold;text-align:left;border-radius: var(--border-radius-basic) var(--border-radius-basic) 0 0;}
+.card-benefit .conts_section{overflow-y:auto;border-radius: 0 0 var(--border-radius-basic) var(--border-radius-basic) ;background: #fff;}
+.card-benefit .card-detail{border-bottom: 1px solid #eee;font-size:0;}
+.card-benefit .card-detail .card-thumb img{width:70px;}
+.card-benefit .card-detail .card-detail-list > li{margin-bottom:6px;}
+.card-benefit .card-detail .card-detail-list .card-price{display: inline-block; vertical-align: top; width: 90px; }
+.card-benefit .card-detail .card-detail-list .card-desc{display: inline-block; width: calc(100% - 90px); word-break: keep-all;color: #999;}
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+	.card-benefit{position:relative;font-size:1rem;}
+	.card-benefit .card-info {width: 95vw;margin:0 auto;}
+	.card-benefit .quest-close{top: 7px;right:7px;}
+	.card-benefit .title_section{font-size:1.1rem;padding: 1.4rem 1.4rem;}
+	.card-benefit .conts_section{padding:1.4rem;min-height: 500px;max-height: 70vh;}
+	.card-benefit .card-detail{padding:1.2rem 0;}
+	.card-benefit .card-detail .card-thumb{margin-bottom:1rem;}
+	.card-benefit .card-detail .card-detail-list {display:flex;align-items: center;}
+	.card-benefit .card-detail .card-detail-list .card-desc{font-size: 1rem;order:1;}
+	.card-benefit .card-detail .card-detail-list .card-price{font-size: 1.1rem;order:2; text-align:right;}
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.card-benefit{font-size: 14px;}
+	.card-benefit .quest-mark{position:relative;}
+	.card-benefit .card-info{width: 550px;min-height: 550px;}
+	.card-benefit .quest-close{top: 15px;right: 10px;}
+	.card-benefit .title_section{font-size:17px;padding: 20px 15px;font-weight: 600;}
+	.card-benefit .conts_section{padding: 15px 25px;min-height: 500px;max-height: 70vh;}
+	.card-benefit .card-detail{padding:25px 0;display: flex;justify-content: space-between;}
+	.card-benefit .card-detail .card-thumb{display: inline-block; vertical-align: top; width: 110px;text-align:center;}
+	.card-benefit .card-detail .card-detail-list{display: inline-block; vertical-align: top; width: calc(100% - 130px);}
+	.card-benefit .card-detail .card-detail-list .card-desc,
+	.card-benefit .card-detail .card-detail-list .card-price{font-size: 14px;}
+}

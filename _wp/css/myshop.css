@@ -1,0 +1,892 @@
+.myshopMain a,
+.myshopMain a:hover{
+	text-decoration: none;
+}
+
+.myshopMain .titleArea.titleArea--middle {
+    position: relative;
+}
+
+.myshopMain .titleArea.titleArea--middle h3 {
+    font-weight: bold;
+}
+
+.myshopMain .titleArea.titleArea--middle .desc {
+    font-weight: normal;
+}
+
+.myshopMain .titleArea.titleArea--middle .more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
+}
+
+.myshopMain .titleArea.titleArea--middle .more:after {
+    content: "";
+    transform: rotate(135deg);
+    border-top: 1px solid #777;
+    border-left: 1px solid #777;
+    display: block;
+}
+
+.myshopMain .benefit{
+	font-size:0;
+}
+
+.myshopMain .section_wrap{
+	border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.myshopMain .ec-base-prdEmpty.section_wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#777;
+}
+
+.myshopMain .xans-myshop-asyncbankbook,
+.myshopMain .xans-myshop-orderstate,
+.myshopMain .xans-myshop-asyncbenefit,
+.myshopMain .xans-myshop-orderhistorylistitem,
+.myshopMain .xans-myshop-wishlist,
+.myshopMain .xans-product-recentlist,
+.myshopMain .xans-myshop-boardpackage,
+.myshopMain .myshop_menu{
+	font-size:13px;
+}
+
+.myshopMain .xans-myshop-asyncbankbook ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.myshopMain .xans-myshop-asyncbankbook li {
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit {
+    flex: 2;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__thumb {
+    width: 50px;
+    height: 50px;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .group {
+    display: none;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: none;
+    border-radius: 50%;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    text-align: left;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .txtEm1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data {
+    font-size: 14px;
+    color: #6a6a6a;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data span {
+    color: #1a1a1a;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info p {
+    font-size: 12px;
+}
+
+.myshopMain .xans-myshop-asyncbankbook li:not(:last-child):after {
+    top: 0;
+    height: 100%;
+    margin: 0;
+    background: #e3e3e3;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .thumb {
+    width: 32px;
+    height: 32px;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .thumb {
+    display: block;
+}
+
+.myshopMain .xans-myshop-asyncbankbook .title {
+    display: block;
+    font-weight: normal;
+    color: #6d6d6d;
+    box-sizing: border-box;
+}
+
+.xans-myshop-asyncbenefit .invite>strong {
+    display: block;
+}
+
+.xans-myshop-asyncbenefit .invite .copy {
+    margin: 8px 0 0;
+}
+
+.xans-myshop-asyncbenefit .invite #reco_url {
+    width: 439px;
+}
+
+.xans-myshop-asyncbenefit .invite ul {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #757575;
+}
+
+.xans-myshop-asyncbenefit .invite ul li {
+    margin: 3px 0 0;
+}
+
+.xans-myshop-orderstate .state__order {
+    display: flex;
+}
+
+.xans-myshop-orderstate .state__order .count {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.xans-myshop-orderstate .state__order .label {
+    color: #6a6a6a;
+    margin: 4px 0 0;
+    display: block;
+}
+
+.xans-myshop-orderstate .state__cs {
+    display: flex;
+}
+
+.xans-myshop-orderstate .state__cs li {
+    flex: 1;
+    text-align: center;
+    background: #f9f9f9;
+	padding:0;
+}
+
+.xans-myshop-orderstate .state__cs a {
+    display: block;
+}
+
+.xans-myshop-orderstate .state__cs strong {
+    font-weight: normal;
+    color: #353535;
+}
+
+.xans-myshop-orderstate .state__cs li span {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.xans-myshop-orderhistorylistitem .order {
+    position: relative;
+}
+
+.xans-myshop-orderhistorylistitem .order__number .date {
+    font-weight: bold;
+}
+
+.xans-myshop-orderhistorylistitem .orderList .order__number {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 15px;
+}
+
+.xans-myshop-orderhistorylistitem .btnDetail {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.xans-myshop-orderhistorylistitem .orderList .ec-base-prdInfo {
+    border-bottom: 1px solid #eee;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdBox {
+    padding: 24px 0 14px;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail,
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail img {
+    height: auto;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail {
+    border: 0;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail img {
+    border:0;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .description .prdName {
+    font-weight: bold;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot {
+    border: 0;
+    padding: 0 0 10px;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .gRight>span {
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .gRight>span:first-child {
+    padding: 0;
+}
+
+.xans-myshop-orderhistorylistitem .request {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 0 0;
+    text-align: right;
+}
+
+.xans-myshop-orderhistorylistitem .rentBadge {
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    line-height: 0;
+    margin: 0 0 4px;
+    width: 26px;
+    height: 16px;
+    background-image: url("https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_rent.png");
+    background-repeat: no-repeat;
+}
+
+.xans-myshop-orderhistorylistitem .payDetail {
+    text-align: right;
+    display: flex;
+    word-break: keep-all;
+    font-size: 13px;
+}
+
+.xans-myshop-orderhistorylistitem .ec-base-button {
+    margin: 1rem 0 0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo,
+.xans-product-listitem .ec-base-prdInfo{
+	border-bottom: 1px solid #eee;
+    background: none;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo:first-child,
+.xans-product-listitem .ec-base-prdInfo:first-child{
+	padding-top:0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo:last-child,
+.xans-product-listitem .ec-base-prdInfo:last-child{
+	border-bottom:0;
+	padding-bottom:0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .prdBox,
+.xans-product-listitem .ec-base-prdInfo .prdBox{
+	padding:0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .thumbnail,
+.xans-product-listitem .ec-base-prdInfo .thumbnail{
+	border: 0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description,
+.xans-product-listitem .ec-base-prdInfo .description{
+	margin:0;
+	width: calc(100% - 100px);
+	padding:0;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .prdName,
+.xans-product-listitem .ec-base-prdInfo .description .prdName{
+    display: block;
+    margin: 0 0 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	font-weight:bold;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .prdName a,
+.xans-product-listitem .ec-base-prdInfo .description .prdName a{
+	color:#333;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .price li,
+.xans-product-listitem .ec-base-prdInfo .description .price li{
+	font-size:13px;
+	display: flex;
+    flex-direction: column;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .price li .sale-price,
+.xans-product-listitem .ec-base-prdInfo .description .price li .sale-price,
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .price li .sell-price,
+.xans-product-listitem .ec-base-prdInfo .description .price li .sell-price {
+	color:#333;
+	font-weight: bold;
+}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .description .price li .strike,
+.xans-product-listitem .ec-base-prdInfo .description .price li .strike {
+	color:#999;
+	font-weight: normal;
+}
+
+.xans-product-listitem .ec-base-prdInfo .description .price li .sell-price.strike{
+	color:#333;
+}
+
+
+.xans-myshop-boardpackage .ec-base-table{
+	border:0;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject {
+	float: none;
+	box-sizing: border-box;
+	padding: 0;
+	font-weight:bold;
+	font-size:13px;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject a{
+	color:#444;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject img{
+	vertical-align:middle;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject .comment{
+	color: var(--font-color-secondary);
+	margin-left:3px;
+	font-size:12px;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject .comment b{
+    font-weight: normal;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.subject img{
+    margin-top:-2px;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList td.category{
+	padding-left:0;
+}
+
+.xans-myshop-boardpackage .message{
+	display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+	color:#777;
+}
+
+.xans-myshop-boardpackage .myshop-boardList{
+	padding:5px 20px;
+}
+
+.xans-myshop-boardpackage .ec-base-table.typeList tr:last-child,
+.xans-myshop-boardpackage .ec-base-table.typeList tr:last-child td{
+	border-bottom:0;
+}
+
+.xans-myshop-boardpackage table + .message{
+	display:none;
+}
+
+.myshop_menu .menu a{
+	display:flex;
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+	flex-wrap: wrap;
+}
+
+.myshop_menu .menu .subject{
+	color:#444;
+	font-weight:bold;
+}
+
+.myshop_menu .menu .desc{
+	color:#777;
+}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.myshopMain .titleArea.titleArea--middle{
+		margin: 50px 0 15px;
+	}
+
+	.myshopMain .titleArea.titleArea--middle h3{
+		font-size:17px;
+	}
+
+    .myshopMain .titleArea.titleArea--middle .more {
+        position: absolute;
+        bottom: 0;
+        right: -5px;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .myshopMain .titleArea.titleArea--middle .more:after {
+        width: 10px;
+        height: 10px;
+        margin: 13px 0 0 7px;
+    }
+
+    .myshopMain .titleArea.titleArea--middle .more:hover:after {
+        border-color: #000;
+    }
+
+	.myshopMain .ec-base-prdEmpty.section_wrap{
+		padding:50px 0;
+	}
+
+    .myshopMain .xans-myshop-asyncbankbook {
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook li {
+        flex: 1;
+        padding: 28px 0 27px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook li:not(:last-child):after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width: 1px;
+        background: #e5e5e5;
+        vertical-align: middle;
+        top: 50%;
+        height: 48px;
+        margin-top: -24px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .thumb {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 5px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .data {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .title {
+        margin: 2px 0 0;
+        font-size: 13px;
+    }
+
+    .xans-myshop-asyncbenefit .ec-base-box.typeThinBg {
+        margin-top: 8px;
+        border: 1px solid #e5e5e5;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .xans-myshop-orderstate .state {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .xans-myshop-orderstate .state__order {
+        width: 70%;
+    }
+
+    .xans-myshop-orderstate .state__order li {
+        position: relative;
+        width: 25%;
+        padding: 35px 0 33px;
+        text-align: center;
+    }
+
+    .xans-myshop-orderstate .state__order li:not(:last-child):after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 13px;
+        height: 13px;
+        margin: -10px auto 0;
+        border-left: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    .xans-myshop-orderstate .state__order .count {
+        font-size: 22px;
+    }
+
+    .xans-myshop-orderstate .state__order .label {
+        font-size: 14px;
+    }
+
+    .xans-myshop-orderstate .state__cs {
+        width: 30%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .xans-myshop-orderstate .state__cs li {
+        line-height: 50px;
+    }
+
+    .xans-myshop-orderstate .state__cs strong {
+        font-size: 14px;
+    }
+
+    .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .txtStatus {
+        font-size: 13px;
+    }
+
+	.myshopMain .xans-myshop-wishlist,
+	.myshopMain .xans-product-recentlist{
+		display: inline-block;
+        width: calc(50% - 2px);
+        vertical-align: top;
+	}
+
+	.myshopMain .xans-myshop-wishlist{
+		padding-right: 25px;
+	}
+
+	.myshopMain .xans-myshop-wishlistitem,
+	.myshopMain .xans-product-listitem,
+	.myshopMain .xans-myshop-wishlist .ec-base-prdEmpty,
+	.myshopMain .xans-product-recentlist .ec-base-prdEmpty{
+		height: 380px;
+	}
+
+	.myshopMain .xans-myshop-wishlistitem .ec-base-prdInfo,
+	.myshopMain .xans-product-listitem .ec-base-prdInfo {
+		padding: 20px 0;
+	}
+
+	.myshopMain .xans-myshop-wishlistitem .ec-base-prdInfo:first-child,
+	.myshopMain .xans-product-listitem .ec-base-prdInfo:first-child {
+		padding-top: 0;
+	}
+
+	.xans-myshop-boardpackage .message{
+		padding:50px 0;
+	}
+
+	.myshop_menu .xans-myshop-main{
+		position: unset;
+        width: auto;
+	}
+
+	.xans-myshop-boardpackage .ec-base-table.typeList td.subject a{
+		font-size:14px;
+	}
+
+	.myshop_menu .menu ul{
+		display: flex;
+		flex-wrap: wrap;
+		gap:16px;
+	}
+
+	.myshop_menu .menu li{
+		width:calc(50% - 8px);
+	}
+
+	.myshop_menu .menu a{
+		padding: 18px;
+		align-items: center;
+	}
+
+	.myshop_menu .menu .subject{
+		font-size:14px;
+		margin-right:10px;
+	}
+
+	.myshop_menu .menu .desc{
+		font-size:13px;
+		font-weight: 300;
+	}
+
+
+}
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .myshopMain .titleArea.titleArea--middle {
+        padding: 35px 0 12px;
+    }
+
+	.titleArea.titleArea--middle h3 {
+        font-size: 1.2rem;
+    }
+
+    .myshopMain .titleArea.titleArea--middle .more {
+        position: absolute;
+        bottom: 8px;
+        right: -10px;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .myshopMain .titleArea.titleArea--middle .more:after {
+        width: 7px;
+        height: 7px;
+        margin: 10px 0 0 7px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook {
+        border: 0;
+        margin: 0 -1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook li {
+        width: 33%;
+        padding: 25px 0;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook li:first-child::after {
+        display: none;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit {
+        flex: auto;
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .group {
+        display: none;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user {
+        align-items: center;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook li:not(:last-child):after {
+        top: 0;
+        height: 100%;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .user {
+        display: flex;
+        text-align: left;
+        padding: 5px 16px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .user__thumb {
+        width: 42px;
+        height: 42px;
+        margin: 0 16px 0 0;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .user__info {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .user__data {
+        display: block;
+        margin: 8px 0 0;
+        font-size: 14px;
+        color: #6d6d6d;
+        font-weight: normal;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .thumb {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 10px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .data {
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .title {
+        margin: 7px 0 0;
+        font-size: 12px;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .txtEm1 {
+        font-size: 1.1rem;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data {
+        margin: 1px 0 0;
+    }
+
+    .myshopMain .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user img {
+        width: 100%;
+    }
+
+    .xans-myshop-asyncbenefit .ec-base-box.typeThinBg {
+        border: 1px solid #e5e5e5;
+        text-align: center;
+        margin: 0 -1rem;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .xans-myshop-orderstate .state__order .count {
+        font-size: 1.4rem;
+    }
+
+    .xans-myshop-orderstate .state__order li {
+        width: 25%;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .xans-myshop-orderstate .state__order li:not(:last-child):after {
+        content: "";
+        width: 0px;
+        height: 40px;
+        position: absolute;
+        border: none;
+        border-left: 1px dotted #e5e5e5;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 1px;
+    }
+
+    .xans-myshop-orderstate .state__order .label {
+        font-size: 12px;
+    }
+
+    .xans-myshop-orderstate .state__cs {
+        margin-top: 10px;
+        gap: 0 10px;
+    }
+
+    .xans-myshop-orderstate .state__cs a {
+        padding: 10px 0;
+    }
+
+    .xans-myshop-orderstate .state__cs strong {
+        font-size: 13px;
+    }
+
+    .xans-myshop-orderhistorylistitem .request {
+        padding: 25px 16px;
+    }
+
+    .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .gLeft {
+        float: none;
+    }
+
+    .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .gRight {
+        float: none;
+        text-align: left;
+    }
+
+    .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .txtStatus {
+        font-size: 13px;
+    }
+
+    .xans-myshop-orderhistorylistitem .payDetail {
+        flex-direction: row;
+        padding: 0rem 0.5rem 1rem;
+		flex-wrap: wrap;
+		text-align:left;
+    }
+
+    .xans-myshop-orderhistorylistitem .ec-base-button[class*="gMColumn"] {
+        margin: 1rem 0 0;
+        flex-direction: column;
+    }
+
+	.xans-myshop-wishlistitem .ec-base-prdInfo,
+	.xans-product-listitem .ec-base-prdInfo{
+		padding: 10px 0;
+	}
+
+	.xans-myshop-boardpackage .ec-base-table colgroup{
+		display:none;
+	}
+
+	.xans-myshop-boardpackage .myshop-boardList{}
+
+	.myshop_menu .menu ul{
+		display: flex;
+		flex-direction: column;
+		gap:10px;
+	}
+
+	.myshop_menu .menu a{
+		padding:15px 20px;
+		flex-direction: column;
+	}
+
+	.myshop_menu .menu .subject{
+		margin-bottom:5px;
+	}
+}

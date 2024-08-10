@@ -1,0 +1,33 @@
+<!--
+    # 리뷰 썸네일 속성
+     - src = "업로드 된 이미지" (1순위)
+     - data-prod-img = "상품 이미지 경로" (2순위)
+     - data-error-img = "첨부 이미지와 상품 이미지가 모두 없을 경우 노출 되는 이미지" (3순위)
+
+    # 클래스 설명
+      - .open-review 가 감싸고 있는 영역을 클릭 시 읽기 팝업 레이어 표시
+-->
+
+{$icon_re}
+<div class="item {$block_target_class}" {$block_data_attr}>
+	<div class="content {$block_content_class}">
+		 <div class="thumb open-review">
+			<a href="javascript:;" class="open-review"><img src="{$img_src|replace:/gallery/,/}" data-prod-img="{$product_img_src}" data-error-img="/board/review/img/noimage.jpg" class="thumb-review" /></a>
+			<div class="thumb-attach"></div>
+		</div>
+        <div class="subject open-review {$block_content_class}"><span class="icon">{$icon_re}{$icon_lock}</span><span class="icon fixed_icon">{$fixed_icon}</span>{$subject}<span class="comment">{$comment_count}</span></div>
+        <div class="cont clamp open-review {$block_content_class}">{$content|striptag}</div>
+		<div class="cont__more displaynone">더보기</div>
+		<div class="rate {$point_display|display} rate{$point_count}"><div class="article-rate" data-rate="{$point_count}"></div>{$point_count}.0</div>
+        <div class="member">{$member_icon}{$writer}</div>
+		<div class="cont_date">
+			<div class="vote {$vote_display|display}">추천 <span>{$vote|numberformat}</span></div>
+			<div class="date {$date_display|display}">작성 <span>{$write_date|date:y.m.d}</span></div>
+			<div class="hit {$hit_display|display}">조회 <span>{$hit_count|numberformat}</span></div>
+		</div>
+		<div class="cont_prod">
+			<div class="prod_thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" data-error-img="/board/review/img/noimage.jpg" alt="{$product_name}" class="small-thumb-review" /></a></div>
+			<div class="prod_name"><div class="name"><a href="{$link_product_detail}">{$product_name}</a></div></div>
+		</div>
+    </div>
+</div>

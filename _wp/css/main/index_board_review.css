@@ -1,0 +1,100 @@
+.index_board_review {
+    background: #f9f9f9;
+	position: relative;
+}
+
+.index_board_review .section-title {
+    position: relative;
+}
+
+.index_board_review.review_list_grp .review__list > ul > li .item {
+    background: #fff;
+    overflow: hidden;
+	border-radius: calc(var(--border-radius-basic) + 4px);
+}
+
+.index_board_review .review__list.grid .content .thumb{
+	border-radius: var(--border-radius-basic);
+}
+
+.index_board_review.review_list_grp .subject,
+.index_board_review .review__list.grid .content .member{
+	display:none !important;
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.index_board_review {
+        padding: 50px 0;
+    }
+
+    .index_board_review.review_list_grp .review__list{
+    	padding:10px 0;
+    }
+
+	.index_board_review.review_list_grp .review__list > ul > li{
+		width: calc(20% - 8px);
+		margin-left: 8px;
+	}
+
+	.index_board_review.review_list_grp .review__list > ul > li:nth-child(5n+1) {
+		margin-left: 0;
+	}
+
+	.index_board_review.review_list_grp .review__list > ul > li .item{
+		transition: all .35s ease;
+	}
+
+	.index_board_review.review_list_grp .review__list > ul > li .item:hover {
+		box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+	}
+
+	.index_board_review .review__list.grid .content .thumb{
+		margin: -6px -6px 0;
+	}
+
+	.index_board_review.review_list_grp .review__list .thumb-attach{
+		margin-left:-4px;
+	}
+
+	.index_board_review .review__list.grid .content .cont{
+		margin-top:0;
+	}
+}
+
+
+/********************* PC & Tablet *********************/
+@media all and (min-width:641px) and (max-width:1024px){
+	.index_board_review.review_list_grp .review__list > ul > li{
+		width: calc(33% - 14px);
+		margin-left: 16px;
+	}
+}
+
+/********************* Mobile *********************/
+@media all and (max-width: 1024px) {
+	.index_board_review {
+        padding: 2.4rem 0;
+    }
+
+	.index_board_review .review__list.grid{
+		margin:10px 10px 0;
+	}
+
+	.index_board_review .review__list.grid >ul>li:nth-child(n+7){
+		display:none !important;
+	}
+
+	.index_board_review .review__list.grid >ul>li{
+		margin-bottom:12px;
+	}
+
+	.index_board_review .review__list.grid .content .thumb{
+		margin: -7px -7px 10px;
+	}
+
+	.index_board_review .review__list.grid .content .rate{
+		margin:0 0 5px;
+	}
+}

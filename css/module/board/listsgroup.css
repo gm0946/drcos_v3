@@ -1,0 +1,15 @@
+.xans-board-listsgroup { margin:50px 0; }
+.xans-board-listsgroup h4 {  }
+.xans-board-listsgroup .txtNum {font-size: 13px;}
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-board-listsgroup h4 { font-size: 16px; color: #000;  }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-board-listsgroup h4 { font-size: 1.05rem; color: #000;  }
+}

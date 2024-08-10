@@ -1,0 +1,84 @@
+/* 내일출발 시 */
+.dm {
+    background: #fff;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    font-size: 0;
+	border-radius: var(--border-radius-small);
+}
+
+.dm .ico {
+    background: #999;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 25px 25px;
+    margin-right: 15px;
+    background-image: url(/_wp/module/product/dm/img/icon_delivery.svg);
+    background-size: 23px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.dm .ico:after {
+    content: "";
+}
+
+.dm .info {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 61px);
+    color: #555;
+}
+
+.dm [class*='msg'] {
+    line-height: 1.2;
+}
+
+.dm .msg1 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.dm .msg2 > span,.dm .msg3 > span {
+    color: #f94830;
+    font-weight: 600;
+}
+
+/* 당일출발 시 */
+.dm.active .ico {
+    background-color: #1381e1;
+}
+
+.dm.active .msg1 {
+    margin-bottom: 5px;
+}
+
+.dm.active .msg2 > span,.dm.active .msg3 > span {
+    color: #1381e1;
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.dm {
+		padding: 15px;
+		margin: 10px 0;
+	}
+
+	.dm .info {
+        font-size:13px;
+    }
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+	.dm {
+		padding: 1rem;
+	}
+	.dm .info{
+		font-size:1rem;
+	}
+}

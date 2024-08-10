@@ -1,0 +1,10 @@
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    .xans-member-changepasswd .ec-base-help{margin:0 0 1rem;}
+}

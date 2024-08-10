@@ -1,0 +1,23 @@
+.xans-board-function #boardGroup { margin:0 8px; height:35px;}
+.xans-board-function .gColumn { display:inline-block; margin:10px; }
+.xans-board-function .ec-base-help { display:inline-block; position:relative; top:4px; margin-left:5px; background-position:0 1px; }
+.xans-board-function select { width:138px; }
+
+.xans-board-listsgroup + form > .xans-board-function { padding-top:0; border-top:0; }
+
+
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.xans-board-function{border-top: 1px solid #eee; }
+    .xans-board-function .gColumn:first-of-type { margin-left:0; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-board-function .gColumn { margin:5px 0; }
+	.xans-board-movement + form > .xans-board-function { margin:0 ; padding: 0; border-top:0;font-size: .9rem;}
+	.xans-board-movement + form > .xans-board-function .gColumn{padding:5px 0; margin:0;}
+}

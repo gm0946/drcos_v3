@@ -1,0 +1,28 @@
+.xans-product-normalmenu .function { overflow:hidden; text-align:right; margin:0 0 1rem;}
+.xans-product-normalmenu .function .btnCompare { display:inline-block; padding:0 12px; border: 1px solid #ddd; margin-right: 5px;}
+.xans-product-normalmenu .function .btnCompare:hover { text-decoration:none; }
+.xans-product-normalmenu .prdCount { float:left; color:#7d7d7d; }
+.xans-product-normalmenu .sort{display: inline-block;vertical-align: middle; float:right;}
+.xans-product-normalmenu .sort > select{font-size:14px;}
+.xans-product-normalmenu .compare {display: inline-block;vertical-align: middle;}
+.xans-product-normalmenu .compare a{height:40px;line-height:40px;font-size:1rem; padding:0 1.2rem;border-radius: 0;}
+.xans-product-normalmenu fieldset { margin:20px 0 0; padding:10px 16px; text-align:right; background:#fbf9fa; }
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-product-normalmenu { margin:50px 0 0; }
+	.xans-product-normalmenu .function { line-height:38px; }
+	.xans-product-normalmenu .prdCount {font-size: 15px; line-height:40px;}
+}
+
+/********************* Mobile  *********************/
+@media all and (max-width:1024px) {
+    .xans-product-normalmenu { margin:20px 0 0;}
+	.xans-product-normalmenu .function{height:2.6rem; line-height:2.6rem;margin:0 0 1rem;}
+	.xans-product-normalmenu .btnCompare,
+	.xans-product-normalmenu .sort > select{height:2.5rem; line-height:2.5rem;font-size: 0.9rem; color: #888;padding: 0 30px 0 10px;}
+	.xans-product-normalmenu .btnCompare{vertical-align: middle; margin-top: -2px;}
+	.xans-product-normalmenu .prdCount{font-size:1rem;line-height: 2.5rem;}
+	.xans-product-normalmenu .compare a{height:2.5rem;line-height:2.5rem;font-size:.9rem;}
+}

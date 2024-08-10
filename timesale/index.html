@@ -1,0 +1,43 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="time-sale-wrap">
+	<div class="path">
+		<span>현재 위치</span>
+		<ol>
+			<li><a href="/">홈</a></li>
+			<li title="현재 위치"><strong>타임특가</strong></li>
+		</ol>
+	</div>
+
+	<div class="banner" webpb-banner-code="v4x6" hidden>
+		<div webpb-banner>
+			<div class="img pc_view">{#pc_thumb_tag}</div>
+            <div class="img m_view">{#m_thumb_tag}</div>
+		</div>
+	</div>
+
+	<div class="titleArea wp-effect">
+		<h2 class="animate__animated animate__fadeInUp animate__fast">타임특가</h2>
+	</div>
+
+	<div class="ec-base-product timesale-active" module="product_listmain_4">
+		<div class="title displaynone">
+			<h2>
+				<span style="display: {$category_title_text_display};">{$category_title_text}</span>
+				<span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}" /></span>
+			</h2>
+		</div>
+		<ul class="prdList grid4 mgrid2">
+			<!--
+				$count = 999
+				※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+				※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+			-->
+			<li id="anchorBoxId_{$product_no}" class="timesale-timer">
+				<!--@import(/_wp/base_product_list.html)-->
+			</li>
+			<li id="anchorBoxId_{$product_no}" class="timesale-timer">
+				<!--@import(/_wp/base_product_list.html)-->
+			</li>
+		</ul>
+	</div>
+</div>

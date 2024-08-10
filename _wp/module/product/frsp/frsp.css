@@ -1,0 +1,32 @@
+.frsp{background:#f9f9f9; position:relative; border-radius:5px;}
+.frsp .msg{padding: 10px 0;text-align:center;letter-spacing: -0.3px;}
+.frsp .msg .frsp--msg1{color:#000;font-weight: bold;}
+.frsp .msg .frsp--msg2{color:#f92626;font-weight: bold;}
+.frsp .progressbar{position:relative;height:8px;border-radius:5px;background:#fff; border:1px solid #f2f1f1;}
+.frsp .progressbar .bar{position:absolute;top:0;left:0;bottom:0;display: block;width:var(--bar-width);border-radius:inherit;transition:all .4s;background:var(--frsp-progress-color);}
+.frsp .progressbar:before,
+.frsp .progressbar:after{top:-20px;position:absolute;color:#111; font-weight:600;letter-spacing: -0.5px;font-weight:400;}
+.frsp .progressbar:before{content:"0원";left:0;}
+.frsp .progressbar:after{content:var(--base-price);right:0;}
+.frsp .txt{margin-top:10px;}
+.frsp .truck{transform: scaleX(-1);display:inline-block;font-size:18px;}
+
+/* 상세페이지 */
+#optionG.active .frsp{margin-top:10px;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.frsp{padding:40px 30px 10px 30px;}
+	.frsp .msg{font-size: 13px;}
+	.frsp .progressbar:before,
+	.frsp .progressbar:after{font-size:13px;}
+}
+
+/********************* Mobile ********************/
+@media all and (max-width:1024px) {
+	.frsp{padding:3rem 1.5rem 1rem ;margin: 1rem 0;}
+	.frsp .msg{font-size: 13px;}
+	.frsp .progressbar:before,
+	.frsp .progressbar:after{font-size:12px;}
+	.frsp .truck{transform: scaleX(-1);display:inline-block;font-size:16px;}
+}

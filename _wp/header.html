@@ -1,0 +1,161 @@
+<!--
+	상단 공통 영역입니다.
+	이 영역에 대한 스타일은 "/_wp/css/header.css"에 정의되어 있습니다.
+-->
+<!-- 탑배너 -->
+<!--@import(/_wp/top.banner.html)-->
+<!-- // -->
+
+<!--@css(/_wp/css/header.css)-->
+<!--@js(/_wp/js/header.js)-->
+
+<header id="header">
+	<div class="site-wrap logo-wrap">
+		<div class="topArea_logo">
+			<!-- 상단 로고 -->
+			<!--@import(/_wp/header_logo.html)-->
+			<!--//-->
+		</div>
+		<div class="topArea_statelog pc_view">
+			<div class="statelog">
+				<a href="/member/login.html" module="Layout_statelogoff">로그인</a>
+				<a href="/member/join.html" module="Layout_statelogoff">회원가입<span class="pointbox displaynone">{#join_point}</span></a>
+				<a href="{$action_logout}" class="log" module="Layout_stateLogon" >로그아웃</a>
+				<a href="/myshop/order/list.html">주문조회</a>
+			</div>
+
+			<!-- 멀티쇼핑몰 -->
+			<div module="Layout_multishopList" class="list">
+				<button type="button" class="toggle">{$current_language}<i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+				<ul module="Layout_multishopListitem">
+					<li class="{$selected_class}">
+						<a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /> {$locale_language}</a>
+					</li>
+					<li class="{$selected_class}">
+						<a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /> {$locale_language}</a>
+					</li>
+				</ul>
+			</div>
+			<!--//-->
+		</div>
+	</div>
+
+	<div class="inner inner__in">
+		<div class="site-wrap">
+			<div class="topArea_navigation">
+				<span class="logo">
+					<!-- 상단 로고 (스크롤시 노출) -->
+					<!--@import(/_wp/header_logo.html)-->
+					<!--//-->
+				</span>
+
+				<!-- 상단 메뉴 -->
+                <!--@js(/_wp/js/gnb.active.js)-->
+				<div class="navigation_">
+					<div class="cate-swiper-container swiper-container">
+                        <div class="cate-mask-left"></div>
+                        <div class="cate-mask-right"></div>
+						<div class="items swiper-wrapper">
+							<div class="swiper-slide tm mn--brandstory wp-stand-by"><a href="/brand/index.html" class="wp-cate mn--link">브랜드스토리</a></div>
+							<!-- 상품분류(관리자연동) -->
+                            <div id="category" module="Layout_category" class="swiper-slide cate-override">
+								<ul>
+									<li data-param="{$param}">
+                                        <a href="/{$design_page_url}{$param}" class="wp-cate">{$name_or_img_tag}</a>
+                                        <div class="sub-cate"></div>
+                                    </li>
+                                    <li data-param="{$param}">
+                                        <a href="/{$design_page_url}{$param}" class="wp-cate">{$name_or_img_tag}</a>
+                                        <div class="sub-cate"></div>
+                                    </li>
+                                </ul>
+                            </div><!--//-->
+                            <div class="swiper-slide tm mn--timesale wp-stand-by"><a href="/timesale/" class="wp-cate mn--link">타임특가</a></div>
+                            <div class="swiper-slide tm mn--review wp-stand-by"><a href="/board/review/list.html?board_no=4" class="wp-cate mn--link">리뷰</a></div>
+                            <div class="swiper-slide tm mn--event wp-stand-by"><a href="/board/gallery/list.html?board_no=8&category_no=1" class="wp-cate mn--link">이벤트</a></div>
+                            <div class="swiper-slide tm mn--membership wp-stand-by"><a href="/membership.html" class="wp-cate mn--link">멤버십</a></div>
+
+                            <!-- 커뮤니티(게시판연동) -->
+                            <div class="swiper-slide tm mn--community wp-stand-by">
+								<a href="/board/free/list.html?board_no=1" class="cate wp-cate mn--link">커뮤니티</a>
+								<div class="sub-list boardlink">
+									<ul module="Layout_BoardInfo">
+										<li><a href="{$board_list_url}" >{$board_name}</a></li>
+										<li><a href="{$board_list_url}" >{$board_name}</a></li>
+										<li><a href="{$board_list_url}" >{$board_name}</a></li>
+									</ul>
+								</div>
+							</div><!--//-->
+						</div>
+					</div>
+				</div>
+				<!--//-->
+
+				<!-- 전체메뉴 버튼 -->
+				<div class="menu_navi">
+					<a href="javascript:;" class="fold"><div class="fold-icon"><span class="line1"></span><span class="line2"></span><span class="line3"></span></div></a>
+				</div>
+				<!--//-->
+
+				<!-- 검색 버튼 -->
+				<div class="menu_search ">
+					<a href="javascript:;"><img src="/skin_img/icon_search.svg" alt="상품검색"/>상품검색</a>
+				</div>
+				<!--//-->
+
+				<!-- 장바구니 버튼 -->
+				<div class="menu_basket" module="Layout_orderBasketcount">
+					<a href="/order/basket.html"><img src="/skin_img/icon_basket.svg" alt="장바구니"/>장바구니 <span class="count {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+				</div>
+				<!--//-->
+
+				<!-- 마이페이지 버튼 -->
+				<div class="menu_user pc_view">
+					<a href="/myshop/index.html"><img src="/skin_img/icon_member.svg" alt="마이페이지"/>마이페이지</a>
+				</div>
+				<!--//-->
+			</div>
+		</div>
+
+		<!-- 상품검색 화면 -->
+        <!--@js(/_wp/js/search.js)-->
+		<div class="search-form fade-effect">
+			<div module="Layout_SearchHeader">
+				<!--
+					$product_page=/product/detail.html
+					$category_page=/product/list.html
+				-->
+				<div class="site-wrap">
+					<div class="tlt-search">SEARCH</div>
+					<div class="search-box">
+						<fieldset>
+							{$form.keyword}<button type="button" class="btnSearch"><img src="/skin_img/icon_search.svg" alt="검색"/> 검색</button>
+							<ul class="autoDrop" id="{$search_auto_id}"></ul>
+						</fieldset>
+						<div class="search-dropbox">
+							<div module="search_hotkeyword">
+								<h5>추천 검색어</h5>
+								<div class="keyword">
+									<a class="keyword-item" href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+									<a class="keyword-item" href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+								</div>
+							</div>
+                            <div id="recentSearches">
+                               <h5>최근 검색어</h5>
+                               <div class="list"></div>
+                            </div>
+						</div>
+					</div>
+					<div class="bt-search-close"><a href="javascript:;"></a></div>
+				</div>
+			</div>
+			<div class="back-panel"></div>
+		</div>
+		<!--//-->
+
+		<!-- 전체메뉴 화면-->
+		<!--@import(/_wp/sidebar.html)-->
+		<!--//-->
+	</div>
+</header>
+

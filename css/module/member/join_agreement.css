@@ -1,0 +1,148 @@
+/* sns로그인 */
+.login__sns { margin:30px 0;font-size:0; }
+.login__sns [class*="btn"] { display:block; font-size:14px; text-align:center; height:50px; line-height:51px; text-decoration:none; box-sizing:border-box; background-size:20px 0; padding-left:20px; }
+.login__sns .btnKakao { color:#000; background:#fee500 url("//img.echosting.cafe24.com/skin/skin/member/ico_kakao.svg") no-repeat 20px 15px / 19px auto; }
+.login__sns .btnNaver { color:#fff; background:#03c75a url("/skin_img/ico_naver_fff.svg") no-repeat 20px 15px; }
+.login__sns .btnFacebook { color:#fff; background:#3b5998 url("/skin_img/ico_facebook_fff.svg") no-repeat 20px 15px; }
+.login__sns .btnLine { color:#000; border:1px solid #ddd; background:#fff url("/skin_img/ico_line.svg") no-repeat 20px 15px; }
+.login__sns .btnGoogle { color:#000; border:1px solid #ddd; background:#fff url("/skin_img/ico_google.svg") no-repeat 20px 15px; }
+.login__sns .btnApple { color:#fff; background:#000 url("/skin_img/ico_apple_fff.svg") no-repeat 20px 13px; }
+.login__sns .btnYahoo { color:#000; border:1px solid #ddd; background:#fff url("/skin_img/ico_yahoojp.svg") no-repeat 20px 15px; }
+
+/* 회원가입폼 */
+.memberArea .titleArea--middle > h3{font-weight:bold;}
+.memberArea .required { display:block; margin: -13px 0 0; line-height:1; text-align:right; color:var(--font-color-base); }
+.memberArea .icoRequired { vertical-align:middle; margin-top:-3.5px; }
+.memberArea .auth .ec-base-table{border-top:0;}
+.memberArea .ec-base-table .error { color:var(--font-color-warn); }
+.memberArea .verify { position:relative; display:inline-block; vertical-align:top; }
+.memberArea .verify .time { position:absolute; top:10px; right:15px; color:var(--font-color-warn); }
+.memberArea .verify #verify_sms_number { padding:2px 50px 2px 4px; box-sizing:border-box; }
+.memberArea .verify #verify_sms_number:disabled { padding-right:4px; }
+.memberArea .ec-base-table.typeWrite table .interest { margin-top:10px; }
+.memberArea .ec-base-table.typeWrite table .interest label { line-height:26px; }
+.memberArea .ec-base-table.typeWrite table th{background:#fff;font-weight: normal; padding-left: 20px;}
+.memberArea .ec-base-table.typeWrite table th *,
+.memberArea .ec-base-table.typeWrite table td *{font-size:1rem;}
+.memberArea .ec-base-table.typeWrite .formGroup.code{font-size:14px;}
+.memberArea .eTooltip { position:relative; display:inline-block; }
+.memberArea .ec-base-tooltip.typeUpper { left:20px !important; bottom:28px !important; width:260px; }
+.memberArea .ec-base-tooltip.typeUpper .edge { left:20%; }
+.memberArea .ec-base-tooltip.typeUpper:before,
+.memberArea .ec-base-tooltip.typeUpper:after { left:55px; }
+.memberArea #realNameAuth p span { display:inline-block; width:80px; }
+.memberArea #btn_verify_mobile_confirm { margin-left:15px; }
+
+/* 약관동의 */
+.agreementArea .title {display: flex; justify-content: space-between;}
+.agreementArea .title h3 { font-weight:normal; }
+.agreementArea .title .more{font-size: .9rem;color: #999;text-decoration: underline;}
+.agreementArea .agreeArea { padding: 0 0 15px; border-bottom: 1px solid #eee; margin: 0 0 15px;}
+.agreementArea .contents{display:none;}
+.agreementArea .agreeArea.selected .contents{display:block;}
+.agreementArea label { display:none; }
+.agreementArea label.check { display:inline-block; }
+.agreementArea .contents { overflow:hidden; overflow-y:auto; height:152px; margin:10px 0 0; padding:20px; color:#6d6d6d; font-size:12px; line-height:20px; box-sizing:border-box; border: 0; background: #f7f7f7; }
+.agreementArea .contents p { margin:0 0 20px; }
+.agreementArea .title h3{line-height: 1.5;}
+.agreementArea .title h3 input[type="checkbox"]{vertical-align: top; display: inline-block; margin-top: 2px;}
+.agreementArea .agreeAll { margin:20px 0; font-size:16px; border-bottom:1px solid #eee; padding: 0 0 15px; }
+.agreementArea .agreeAll h3 { margin:0 0 20px; font-size:16px; display:none;}
+.agreementArea .agreeAll label { display:inline-block;font-weight:bold; }
+.agreementArea .agreeAll input[type="checkbox"]{vertical-align: top; display: inline-block; margin-top: 2px;}
+.agreementArea label + label { margin-left:0;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.wp_login{max-width: 898px; margin:0 auto;}
+
+	/* sns로그인 */
+	.login__sns [class*="btn"] { display:inline-block;width: calc(25% - 5px); margin-bottom: 7px;font-size:15px;}
+	.login__sns [class*="btn"]:nth-child(4n+1){margin-left:0;}
+
+	.memberArea .auth .ec-base-table tr th,
+	.memberArea .auth .ec-base-table tr td{border-top:1px solid #ddd;}
+    .memberArea select,
+    .memberArea input[type="text"],
+    .memberArea input[type="password"] { width:290px; }
+    .memberArea #hint,
+    .memberArea #hint_answer { width:450px; }
+    .memberArea #mobile1,
+    .memberArea #mobile2,
+    .memberArea #mobile3,
+    .memberArea #phone1,
+    .memberArea #phone2,
+    .memberArea #phone3,
+    .memberArea #birth_year,
+    .memberArea #marry_year,
+    .memberArea #partner_year,
+    .memberArea #birth_month,
+    .memberArea #marry_month,
+    .memberArea #partner_month,
+    .memberArea #birth_day,
+    .memberArea #marry_day,
+    .memberArea #partner_day { width:86px; }
+    .memberArea #result_send_verify_mobile_fail{margin-left:5px;}
+
+	/* 약관동의 */
+	.agreementArea{margin:50px 0;}
+	.agreementArea .title h3 { font-size:1rem;}
+    .agreementArea .agreeArea.terms .contents { min-height:100%; }
+    .agreementArea .agreeArea + .agreeArea { margin:40px 0 0; }
+    .agreementArea .additional { margin:15px 0 0; }
+	.agreementArea .additional li { display:inline-block; margin-right:40px; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.wp_login{}
+
+	.memberArea .auth{background:#f9f9f9;padding:0 1.4rem;}
+	.memberArea .auth .ec-base-table.typeWrite{padding:0;}
+	.memberArea .auth .ec-base-table.typeWrite table th{background:none;}
+    .memberArea .ec-base-table.typeWrite table th{padding:7px 0 2px;}
+    .memberArea .ec-base-table.typeWrite table td{padding:2px 0 7px 0;}
+	.memberArea .ec-base-table.typeWrite td.formGroup.date{padding-left:0;}
+    .memberArea input,
+    .memberArea select,
+    .memberArea .eTooltip,
+    .memberArea #nameContents,
+    .memberArea #authWrap { width:100%; }
+    .memberArea #mobile1,
+	.memberArea #phone1,
+	.memberArea #birth_year,
+	.memberArea #marry_year,
+	.memberArea #verify_sms_number,
+	.memberArea #partner_year{margin-left:0;}
+    .memberArea #mobile2,
+    .memberArea #mobile3{flex:1.6;}
+    .memberArea .ec-base-button.gBottom{border:0;margin:0;}
+    .memberArea input[type="text"],
+    .memberArea input[type="password"]{padding: 0 0.5rem;}
+    .memberArea .ec-base-table.typeWrite td .txtInfo,
+    .memberArea .ec-base-table.typeWrite td .txtWarn{display: block;width: 100%;}
+    .memberArea .ec-base-table.typeWrite table .interest input{display: inline-block;width: 20px;}
+    .memberArea .ec-base-table.typeWrite table .interest label {width: calc(100% - 42px);display: inline-block;}
+
+	/* 약관동의 */
+	.agreementArea {margin:2rem 0;}
+	.agreementArea .title h3 { font-size:1rem;}
+	.agreementArea .agreeAll{margin:1rem 0; font-size:1rem;}
+	.agreementArea .agreeAll label{font-size: 1rem;display:block;padding-left: 2.4rem;}
+	.agreementArea .agreeInner {margin:1rem 0;}
+    .agreementArea .additional { margin:20px 0 0; }
+	.agreementArea .additional li{display:block;margin: 15px 0 15px 10px; font-size: 0.88rem;}
+}
+
+@media all and (min-width:580px) and (max-width:1024px) {
+	/* sns로그인 */
+	.login__sns [class*="btn"] { display:inline-block;width: calc(33.33% - 0.5rem); margin-left: 0.5rem; margin-bottom: 0.5rem;font-size:1rem;}
+	.login__sns [class*="btn"]:nth-child(3n+1){margin-left:0;}
+}
+
+@media all and (max-width:360px) {
+	/* sns로그인 */
+	.login__sns [class*="btn"],
+	.login__sns [class^='btn'] + [class^='btn']{width:100%;margin:.3rem 0;}
+}

@@ -1,0 +1,65 @@
+/* Common */
+.xans-board-title p.imgArea { text-align:center; padding:0 16px; }
+.xans-board-title p.imgArea img { max-width:100%; margin:0 0 20px; }
+
+.inquiry_write_grp .xans-board-write{margin: 2rem 0;}
+.inquiry_write_grp .xans-board-write .section_title{border-bottom: 1px solid #ddd; padding: 0 0 0.7rem;}
+
+.inquiry_write_grp .xans-board-write .wp-form-box ul{font-size:0;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul:after{content:"";display:block; clear:both; height:1px ;background: #eee; width:100%;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul li.req-tit:after{content:"*";color:red; margin: 0 5px;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=text],
+.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=password],
+.inquiry_write_grp .xans-board-write .wp-form-box ul li textarea{border: 0; background: #efefef; padding: 10px;  font-size:15px;outline: 0; box-sizing: border-box;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress input[type=text]{margin-bottom:9px;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress input[type=text]:first-child{min-width:100px; width:150px;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress input[type=text]:last-child{margin:0;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul li textarea{width:100%; height: 200px; box-sizing: border-box; }
+.inquiry_write_grp .xans-board-write .wp-form-box ul.captcha input{margin-top:5px;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul.agree textarea{margin-bottom: 5px;height: 140px;font-size: 13px;background: #fff;border: 1px solid #ddd;color: #888;}
+.inquiry_write_grp .xans-board-write .wp-form-box ul.agree .privacy_agreement{margin-top:5px;}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.inquiry_write_grp{margin:0 ;}
+	.inquiry_write_grp .title_image{text-align:center; background: #f4f4f4;border-radius: 1rem; padding: 2rem 0;}
+	.inquiry_write_grp .title_image strong{display:block;color: var(--main-bg-color);font-size: 1.7rem; margin-bottom: 8px;}
+	.inquiry_write_grp .title_image p{font-size: 0.9rem;}
+
+	.inquiry_write_grp .xans-board-title p.imgArea{padding: 0;}
+
+	.inquiry_write_grp .xans-board-write .section_title{font-size: 1.1rem; }
+
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li{ box-sizing: border-box; font-size:.9rem;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li:first-child{font-weight:500; padding:1rem 0 0;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li:last-child{ padding: 12px 0;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=text],
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=password]{width: 100%;height: 45px; font-size: 1rem;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress .btnNormal {vertical-align: top;height: 45px;line-height: 45px; font-size: .9rem;padding: 0 1rem; margin-left:.5rem;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress #addr1 + span,
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress #addr2 + span{display:none;}
+
+	.inquiry_write_grp .xans-board-function.ec-base-button{margin: -1rem 0 0;}
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	.inquiry_write_grp .title_image{text-align:center; background: #f4f4f4;border-radius: 1rem; padding: 3rem 0;}
+	.inquiry_write_grp .title_image strong{display:block;color: var(--main-bg-color);font-size: 2.2rem; margin-bottom: 8px;}
+	.inquiry_write_grp .title_image p{font-size: 1.1rem;}
+
+	.inquiry_write_grp .xans-board-write .section_title{ font-size: 1.2rem; }
+
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li{ box-sizing: border-box; display: inline-block; vertical-align: middle;font-size:1rem;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li:first-child{width:190px; font-weight:500; padding:0 0 0 15px;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li:last-child{width:calc(100% - 190px);padding: 12px 0;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=text],
+	.inquiry_write_grp .xans-board-write .wp-form-box ul li input[type=password]{min-width:450px; height: 45px; }
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress .btnNormal {vertical-align: top;height: 45px;line-height: 45px;padding: 0 20px;font-size: 1rem; margin-left:.7rem;}
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress #addr1 + span,
+	.inquiry_write_grp .xans-board-write .wp-form-box ul.form-adress #addr2 + span{ padding-left:1rem;}
+    
+	.inquiry_write_grp .xans-board-function.ec-base-button{margin-top: -68px;}
+}

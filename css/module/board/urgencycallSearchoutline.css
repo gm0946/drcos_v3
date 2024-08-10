@@ -1,0 +1,39 @@
+.xans-mall-urgencycallsearchoutline .result strong { color:#000; }
+.xans-mall-urgencycallsearchoutline .urgencyOrder .inputOrdNum { width:145px; }
+.xans-mall-urgencycallsearchoutline .urgencyProduct .ec-base-table input { width:340px; font-weight:bold; }
+.xans-mall-urgencycallsearchoutline .ec-base-table th{background:#fff;}
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product { overflow:hidden; }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product p { padding:0 0 0 55px; }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb { float:left; }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb img { width:46px; }
+.xans-mall-urgencycallsearchoutline .btnClose:before,
+.xans-mall-urgencycallsearchoutline .btnClose:after{margin:0 5px 0;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-mall-urgencycallsearchoutline { width:680px; }
+	.xans-mall-urgencycallsearchoutline .content { min-height:470px; }
+	.xans-mall-urgencycallsearchoutline .result { margin:18px 0 8px; padding:0 0 0 16px; }
+	.xans-mall-urgencycallsearchoutline .ec-base-table .scroll { overflow:auto; max-height:278px; }
+	.xans-mall-urgencycallsearchoutline .ec-base-table .scroll.xans-mall-urgencycallordresult { max-height:365px; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-mall-urgencycallsearchoutline{}
+	.xans-mall-urgencycallsearchoutline .content{height: calc(90vh - 150px);}
+	.xans-mall-urgencycallsearchoutline .urgencyProduct{height: calc(100% - 50px);overflow: auto;}
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeList .head{display:none;}
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeList tr{overflow:hidden;}
+	.xans-mall-urgencycallsearchoutline .ec-base-table th,
+	.xans-mall-urgencycallsearchoutline .ec-base-table td,
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeWrite td.formGroup{padding:0;}
+	.xans-mall-urgencycallsearchoutline .ec-base-table select{width:100%;}
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeWrite .formGroup input[type="text"],
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeWrite .formGroup input[type="password"],
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeWrite .formGroup select,
+	.xans-mall-urgencycallsearchoutline .ec-base-table.typeWrite .formGroup [class^="btn"]{margin:5px 0;}
+	.xans-mall-urgencycallsearchoutline .result { margin:18px 0 8px; }
+	.xans-mall-urgencycallsearchoutline .ec-base-button{display:none;}
+}

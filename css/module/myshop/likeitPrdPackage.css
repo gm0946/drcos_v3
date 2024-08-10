@@ -1,0 +1,9 @@
+.xans-myshop-likeproductlist .list table td.thumb img { width:75px; height:auto; }
+.xans-myshop-likeproductlist .prod-name .icon img,
+.xans-myshop-likeproductlist .prod-name .button img{vertical-align:middle;}
+.xans-myshop-likeproductlist .prod-name strong{font-weight:normal;font-size:13px;}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	#contents .ec-base-tab.typeNav .menu li{flex : none;}
+}

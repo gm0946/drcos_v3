@@ -1,0 +1,188 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/board/review/css/review.css)-->
+<!--@css(/_wp/css/board/review.css)-->
+<!--@js(/board/review/js/review.js)-->
+<!--@js(/_wp/js/board/review.js)-->
+
+<div class="review--board review_list_grp">
+	<div module="Board_ListPackage_4">
+		<!--css(/css/module/board/listPackage.css)-->
+		<div module="board_title_4">
+			<div class="path">
+				<span>현재 위치</span>
+				<ol>
+					<li><a href="/">홈</a></li>
+					<li><a href="/board/index.html">게시판</a></li>
+					<li title="현재 위치"><strong>{$board_name}</strong></li>
+				</ol>
+			</div>
+
+			<div class="banner" webpb-banner-code="bnk1" hidden>
+				<div webpb-banner>
+					<div class="img pc_view">{#pc_thumb_tag}</div>
+					<div class="img m_view">{#m_thumb_tag}</div>
+				</div>
+			</div>
+
+			<!--@import(/board/boardTitle.html)-->
+			<p class="imgArea">{$board_top_image}</p>
+		</div>
+
+		<!--@import(/board/boardList.html)-->
+
+		<div class="boardSort">
+			<span module="board_category_4">{$form.board_category}</span>
+			<span module="board_ReplySort_4">{$reply_sort}</span>
+		</div>
+
+		<!-- 공지사항 -->
+		<div class="ec-base-table typeList notice">
+			<table border="1" >
+				<caption>게시판 목록</caption>
+				<colgroup module="board_listheader_1002">
+					<col style="width:80px;" />
+					<col style="width:auto;" />
+					<!-- <col style="width:110px;" class="{$config.is_category|display}" />
+					<col style="width:150px;" />
+					<col style="width:100px;" class="{$config.use_date|display}" />
+					<col style="width:84px;" class="{$config.use_cnt|display}" />
+					<col style="width:104px;" class="{$config.is_use_point|display}" /> -->
+				</colgroup>
+				<tbody module="board_notice_1002" class="center">
+					<!--
+						$count = 10
+						$login_page_url = /member/login.html
+						$deny_access_url = /index.html
+					-->
+					<tr >
+						<td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+						<td class="subject left txtBreak">
+							<span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="/board/review/read_notice.html{$param_read}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}</strong>
+						</td>
+					</tr>
+					<tr >
+						<td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+						<td class="subject left txtBreak">
+							<span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="/board/review/read_notice.html{$param_read}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}</strong>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--//-->
+
+		<!-- 고정글 -->
+		<div class="ec-base-table fixed" module="board_fixed_4">
+			<!--@js(/board/review/js/review_fixed.js)-->
+			<div class="tlt">
+				<h3>Best Review</h3>
+				<p>베스트 후기입니다</p>
+			</div>
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+						<!--
+							$count = 10
+							$login_page_url = /member/login.html
+							$deny_access_url = /index.html
+						-->
+						<li data-review-no="{$idx}" class="swiper-slide {$block_target_class}" {$block_data_attr}>
+							<!--@import(/board/review/item.html)-->
+						</li>
+						<li data-review-no="{$idx}" class="swiper-slide {$block_target_class}" {$block_data_attr}>
+							<!--@import(/board/review/item.html)-->
+						</li>
+					</ul>
+					<div class="swiper-scrollbar"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+		</div>
+		<!--//-->
+
+		<!-- 검색 -->
+		<div class="list_type">
+			<ul class="list--type">
+				<li class="grid selected"><a href="javascript:;">이미지</a></li>
+				<li class="list"><a href="javascript:;">리스트</a></li>
+			</ul>
+			<div module="board_search_4">
+				<fieldset class="boardSearch">
+					<legend>게시물 검색</legend>
+					<p class="category {$form.product_category_selector_display|display}">{$form.product_category_selector}</p>
+					<div class="form">
+						<!-- <span class="first"><img src="/board/review/img/ico_search.png" alt=""/> 상품검색</span> -->
+						<!-- {$form.search_date}{$form.search_key}  -->
+						<select id="search_date" name="search_date" fw-filter="" fw-label="" fw-msg="" style="display:none;">
+						<option value="week">일주일</option>
+						<option value="month">한달</option>
+						<option value="month3">세달</option>
+						<option value="all" selected>전체</option>
+						</select>
+						<select id="search_key" name="search_key" fw-filter="" fw-label="" fw-msg="" >
+							<option value="subject">제목</option>
+							<option value="content">내용</option>
+							<option value="writer_name">글쓴이</option>
+							<option value="member_id">아이디</option>
+							<option value="nick_name">별명</option>
+							<option value="product" selected>상품정보</option>
+						</select>
+						{$form.search} <a href="javascript:;" class="btnNormal" onclick="{$action_search}">검색</a>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<!-- // -->
+
+		<!-- 리뷰 목록 -->
+		<div class="review__list grid">
+			<ul module="board_list_4">
+				<!--
+					$product_name_cut = 30
+					$login_page_url = /member/login.html
+					$deny_access_url = /index.html
+				-->
+				<li data-review-no="{$idx}" class="swiper-slide {$block_target_class}" {$block_data_attr}>
+					<!--@import(/board/review/item.html)-->
+				</li>
+				<li data-review-no="{$idx}" class="swiper-slide {$block_target_class}" {$block_data_attr}>
+					<!--@import(/board/review/item.html)-->
+				</li>
+			</ul>
+		</div>
+
+		<p class="message {$empty_display|display}" module="board_empty_4">{$empty_message}</p>
+	</div>
+	<!-- // -->
+
+    <div module="board_ButtonList_4" class="{$write_display|display} ec-base-button gBottom">
+        <a href="/board/review/write.html{$param_write}" class="btnSubmitFix {$write_display|display}">글쓰기</a>
+    </div>
+</div>
+
+<div module="board_paging_4" class="ec-base-paginate typeList">
+    <a href="{$param_prev}">이전 페이지</a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}">다음 페이지</a>
+</div>
+
+<!-- Admin only -->
+<div module="board_catemove_4">
+    <!--@css(/css/module/board/catemove.css)-->
+    <span class="gColumn">{$board_catemove_selectbox}</span>
+    <span class="gColumn"><a href="javascript:;" class="btnNormal sizeS" onclick="{$action_category_move}">{$category_move}</a></span>
+</div>
+
+<div module="board_function_4">
+    <!--@css(/css/module/board/function.css)-->
+    <span class="gColumn">{$board_function_selectbox}</span>
+    <span class="gColumn">
+        <a href="javascript:;" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
+        <a href="javascript:;" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+    </span>
+    <span class="ec-base-help">{$board_function_help|replace:*,}</span>
+</div>
+<!-- // Admin only -->
+

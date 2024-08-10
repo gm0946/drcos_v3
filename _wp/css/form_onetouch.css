@@ -1,0 +1,72 @@
+/* 주문서작성 */
+
+/* header */
+#header .header {height: 22px;}
+#header .header a{display: inline-flex;justify-content: center;align-items: center;}
+
+
+#header .headerMenu .btnBasket > a{background: url(/skin_img/icon_basket.svg) no-repeat 50% 50%; background-size: 1.4rem auto; display:none;}
+#header .headerMenu .btnBasket .count{background:#222; top:5px;}
+#header .headerMenu .btnMy{background: url(/skin_img/icon_member.svg) no-repeat 50% 50%; background-size: 1.4rem auto;}
+
+#header .titleArea{display:block;}
+#header .titleArea h1{background:#f5f5f5; color:#222; }
+
+#mCafe24Order .recentShipArea .contact{margin-left:-14px;}
+
+/* ec-base-button */
+/* button */
+#mCafe24Order {  background:#fff; }
+#mCafe24Order .btnSubmit{background:#222;}
+#mCafe24Order #ec-shop_orderConfirmLayer .btnSubmit{background:#222;}
+#mCafe24Order.xans-order-result .btnSubmit{background:#222;}
+
+/* ec-base-layer */
+/* typeWide */
+#mCafe24Order .ec-base-layer.typeWide h1 {background:#555;}
+
+#mCafe24Order .product_detail #totalProducts{background: #f9f9f9;}
+#mCafe24Order .product_detail .product_info h3.name{padding-right: 60px;}
+#mCafe24Order .product_detail .product_info .prdIcon{margin-left:0;}
+#mCafe24Order .product_detail #totalProducts tbody.option_products tr td .quantity input,
+#mCafe24Order .product_detail #totalProducts tbody.add_products tr td .quantity input{height: 30px;line-height: 30px;width: 45px;}
+#mCafe24Order .product_detail .product_info .ec-base-qty input[type="tel"]{height:40px;}
+#mCafe24Order .product_detail #totalProducts tbody td .quantity .up{left: auto; right: 0; top: 0;bottom: 0;}
+#mCafe24Order .product_detail #totalProducts tbody.option_products tr td .quantity .down,
+#mCafe24Order .product_detail #totalProducts tbody.add_products tr td .quantity .down{left:0;top:0;bottom:0;}
+
+#progressPaybarBackground{position: fixed;}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    body { max-width:1080px; width:auto; font-size:15px;}
+    #titleArea {max-width:1080px; width:auto; }
+
+    /* header */
+    #header {max-width:1080px; width:auto;}
+	#header .header img{height:18px;max-width:500px;max-height:18px;}
+    #mCafe24Order { max-width:1080px; border:0; width:auto; }
+    #totalProducts a.delete{top:20px;}
+}
+
+
+/********************* Mobile  *********************/
+@media all and (max-width:1024px) {
+    body{font-size:13px;}
+
+    /* header */
+	#header .header img{height:13px;max-width:200px;max-height:13px;}
+	#mCafe24Order.xans-order-result.typeHeader{padding-top: 112px;}
+    #mCafe24Order .title h2{font-size:1rem;}
+	#orderFixItem.ec-base-button.gFull{margin: 0 14px 14px;}
+
+	#mCafe24Order #totalProducts > table > tbody > tr.option_product{display: revert;}
+    #mCafe24Order .product_detail #totalProducts tbody td p.product + p input[type=number]{margin-left: 29px;}
+    #mCafe24Order .product_detail #totalProducts tbody tr td:first-child{padding-left: 10px;min-width:280px;}
+    #mCafe24Order .product_detail #totalProducts table .right {position: absolute;top: 50px;background: none;}
+    #mCafe24Order .product_detail #totalProducts table .center{padding: 0;}
+    #mCafe24Order .product_detail .totalPrice .total strong{padding-left:10px;}
+}
+
+

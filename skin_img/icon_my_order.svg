@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37.174px"
+	 height="32.796px" viewBox="0 0 37.174 32.796" enable-background="new 0 0 37.174 32.796" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="32.796" width="37.174" x="2.235" y="-36.949" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<path fill="#767777" d="M35.924,32.796H1.25c-0.69,0-1.25-0.56-1.25-1.25V1.25C0,0.56,0.56,0,1.25,0h34.674
+		c0.69,0,1.25,0.56,1.25,1.25v30.296C37.174,32.236,36.614,32.796,35.924,32.796z M2.5,30.296h32.174V2.5H2.5V30.296z"/>
+</g>
+<g>
+	<path fill="#767777" d="M22.958,8.628h-8.742c-0.69,0-1.25-0.56-1.25-1.25V1.651c0-0.69,0.56-1.25,1.25-1.25h8.742
+		c0.69,0,1.25,0.56,1.25,1.25v5.727C24.208,8.068,23.648,8.628,22.958,8.628z M15.466,6.128h6.242V2.901h-6.242V6.128z"/>
+</g>
+<g>
+	<path fill="#767777" d="M31.224,27.489h-0.05c-0.69,0-1.25-0.56-1.25-1.25s0.56-1.25,1.25-1.25s1.274,0.56,1.274,1.25
+		S31.914,27.489,31.224,27.489z"/>
+</g>
+<g>
+	<path fill="#767777" d="M27.229,27.489h-0.05c-0.69,0-1.25-0.56-1.25-1.25s0.56-1.25,1.25-1.25s1.275,0.56,1.275,1.25
+		S27.919,27.489,27.229,27.489z"/>
+</g>
+</svg>

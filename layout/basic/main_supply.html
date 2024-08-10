@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- PG크로스브라우징필수내용 -->
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <!-- // PG크로스브라우징필수내용 -->
+
+        <title></title>
+        <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+        <!--@css(/layout/basic/css/layout.css)-->
+        <!--@css(/layout/basic/css/ec-base-ui.css)-->
+        <!--@css(/layout/basic/css/ec-base-button.css)-->
+        <!--@css(/layout/basic/css/ec-base-tab.css)-->
+        <!--@css(/layout/basic/css/ec-base-table.css)-->
+        <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+        <!--@css(/layout/basic/css/ec-base-help.css)-->
+        <!--@css(/layout/basic/css/ec-base-fold.css)-->
+        <!--@css(/layout/basic/css/ec-base-box.css)-->
+        <!--@css(/layout/basic/css/ec-base-desc.css)-->
+        <!--@css(/layout/basic/css/ec-base-product.css)-->
+        <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+        <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+        <!--js(/layout/basic/js/basic.js)-->
+        <!--js(/layout/basic/js/layout.js)-->
+        <!--js(/js/common.js)-->
+
+        <!--@import(/_wp/common.lib.html)-->
+    </head>
+    <body>
+        <div id="skipNavigation">
+            <p><a href="#category">전체상품목록 바로가기</a></p>
+            <p><a href="#contents">본문 바로가기</a></p>
+        </div>
+
+        <div id="wrap" class="wp-stand-by" style="opacity:0;">
+            <!--@import(/_wp/header.html)-->
+            <div id="sidebar">
+                <div module="Layout_CategorySupplyList"  id="category">
+                    <!--@css(/css/module/layout/categorySupplyList.css)-->
+                    <div class="mainDirect {$main_title_display|display}"><a href="{$main_url}">{$main_title}</a></div>
+                    <div class="position" id="{$category_list}">
+                        <ul>
+                            <li module="Layout_Second" id='{$category_no}'><a href='{$category_url}' class="second">{$category_name}</a>
+                                <ul module="Layout_Third">
+                                    <li id='{$category_no}' class="depth2"  onmouseover="{$sub_category_show}" onmouseout="{$sub_category_hide}"><a href='{$category_url}'>{$category_name}</a>
+                                        <div class='sub-category' style='display:none;'>
+                                            <ul>
+                                                <li module="Layout_Fourth" id='{$category_no}'><a href='{$category_url}'>{$category_name}</a>
+                                                    <ul module="Layout_Fifth">
+                                                        <li  id='{$category_no}'><a href='{$category_url}'>{$category_name}</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="container">
+                    <div id="contents">
+                        <div class="site-wrap">
+                            <span module="Layout_MobileAction" class="RTMB">
+                                <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
+                            </span>
+                            <!--@contents-->
+                        </div>
+                    </div>
+                </div>
+                <!--@import(/_wp/footer.html)-->
+            </div>
+        </div>
+        <!--@import(/_wp/loading.html)-->
+        <!--@css(/userCSS.css)-->
+        <!--@js(/userJS.js)-->
+    </body>
+</html>
+

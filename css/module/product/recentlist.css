@@ -1,0 +1,33 @@
+#contents .xans-product-listitem { border-top:1px solid #ddd; }
+#contents .xans-product-listitem .ec-base-prdInfo .prdBox{padding: 24px 0;}
+#contents .xans-product-listitem .ec-base-prdInfo .thumbnail,
+#contents .xans-product-listitem .ec-base-prdInfo .thumbnail img{height:auto;}
+#contents .xans-product-listitem .ec-base-prdInfo .thumbnail{border:0;}
+#contents .xans-product-listitem .ec-base-prdInfo .thumbnail img{border:1px solid #eee;}
+#contents .xans-product-listitem .prdName {margin:0 0 10px;}
+#contents .optionSelect{display:none;}
+
+#contents .xans-product-listitem .custom-price.strike,
+#contents .xans-product-listitem .custom-price.strike strong{color:#999; font-weight:normal;}
+#contents .xans-product-listitem .sell-price.strike,
+#contents .xans-product-listitem .sell-price.strike .txtEm{color:#000; font-weight:normal;}
+#contents .xans-product-listitem .sell-price strong{color:#000;font-size:13px;font-weight:bold;}
+#contents .xans-product-listitem .sale-price{color:#000;font-size:13px;font-weight:bold;}
+#contents .xans-product-listitem .ec-base-prdInfo .optionSelect{margin: 0 0 24px;}
+#contents .xans-product-listitem .ec-base-prdInfo .btnDelete{right:0;}
+#quickMenu .xans-product-recentlist1{display:none !important;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	#contents .xans-product-listitem .prdName a{font-size:14px; font-weight:bold;}
+    #contents .ec-base-prdInfo .name{display:flex;align-items:center;}
+    #contents .ec-base-prdInfo .optionDesc{width:130px;font-size:14px;}
+    #contents .ec-base-prdInfo .optionSelect select,
+    #contents .ec-base-prdInfo .optionSelect input{width:auto;max-width:calc(100% - 130px);margin-left:5px;}
+
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+	#contents .xans-product-listitem .prdName a{font-size:13px;font-weight:bold;}
+}

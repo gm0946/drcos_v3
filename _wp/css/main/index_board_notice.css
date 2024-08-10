@@ -1,0 +1,200 @@
+.index_board_notice {
+	border-top:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+}
+
+.index_board_notice .section-title {
+    text-align: left;
+}
+
+.index_board_notice .board_list .swiper-container{
+    height:100%;
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .index_board_notice {
+        background: #fff;
+        padding: 25px 0;
+        font-size: 0;
+        position: relative;
+        line-height: 1.5;
+    }
+
+    .index_board_notice .section-title {
+        width: 220px;
+        margin: 0;
+    }
+
+    .index_board_notice .section-title>h3 {
+        font-size: 22px;
+    }
+
+    .index_board_notice .section-title .more {
+        right: 19px;
+        top: 0;
+        bottom: 0;
+    }
+
+    .index_board_notice .board {
+        display: flex;
+        align-items: center;
+    }
+
+    .index_board_notice .board_list {
+        width: calc(100% - 400px);
+        height: 24px;
+        overflow: hidden;
+        line-height: 1.4;
+    }
+
+    .index_board_notice .board_list li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .index_board_notice .board_list li.subject {
+        font-size: 16px;
+    }
+
+    .index_board_notice .board_list li.subject a,
+    .index_board_notice .board_list li.subject a:hover {
+        text-decoration: none;
+        transition: opacity .25s ease;
+    }
+
+    .index_board_notice .board_list li.subject a:hover {
+        opacity: 0.8;
+    }
+
+    .index_board_notice .board_list li.date {
+        color: #888;
+        font-size: 14px;
+        margin-left: 10px;
+        line-height: 1;
+    }
+
+    .index_board_notice .board_list li a {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #333;
+    }
+
+    .index_board_notice .bt_prev,
+    .index_board_notice .bt_next {
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+        transition: all .25s ease;
+        position: absolute;
+        top: 50%;
+        margin-top: -16px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        transition: border .25s ease-out;
+    }
+
+    .index_board_notice .bt_prev:hover,
+    .index_board_notice .bt_next:hover {
+        border-color: #555;
+    }
+    .index_board_notice .bt_prev:hover:after,
+    .index_board_notice .bt_next:hover:after {
+        border-width: 2px;
+    }
+
+    .index_board_notice .bt_prev {
+        left: 120px;
+    }
+
+    .index_board_notice .bt_next {
+        left: 160px;
+    }
+
+    .index_board_notice .bt_prev:after,
+    .index_board_notice .bt_next:after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-top: 1.5px solid #444;
+        border-left: 1.5px solid #444;
+        border-radius: 1px;
+    }
+
+    .index_board_notice .bt_prev:after {
+        transform: rotate(45deg);
+        margin: 13px 0 0 10px;
+    }
+
+    .index_board_notice .bt_next:after {
+        transform: rotate(225deg);
+        margin: 8px 0 0 10px;
+    }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    .index_board_notice {
+        padding: 1.2rem 0;
+    }
+
+    .index_board_notice .section-title {
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    .index_board_notice .section-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .index_board_notice .board_list {
+        margin: 0 1rem;
+        font-size: 0;
+        height:1.5rem;
+    }
+
+    .index_board_notice .board_list li {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.4;
+    }
+
+    .index_board_notice .board_list li.subject,
+    .index_board_notice .board_list li.date {
+        font-size: 1rem;
+    }
+
+    .index_board_notice .board_list li.subject {
+        display: inline-flex;
+        width: 75%;
+    }
+
+    .index_board_notice .board_list li.date {
+        display: inline-flex;
+        width: 25%;
+        text-align: right;
+        justify-content: flex-end;
+        min-width: 6rem;
+        color: #888;
+        line-height: 1;
+    }
+
+    .index_board_notice .board_list li a {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #333;
+    }
+
+    .index_board_notice .board_list li.subject a {
+        font-size: 13px;
+    }
+
+    .index_board_notice .bt_prev,
+    .index_board_notice .bt_next {
+        display: none;
+    }
+}

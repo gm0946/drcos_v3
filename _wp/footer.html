@@ -1,0 +1,150 @@
+<!--
+	하단 공통 영역입니다.
+	이 영역에 대한 스타일은 "/_wp/css/footer.css"에 정의되어 있습니다.
+-->
+<!--@js(/_wp/js/footer.js)-->
+<!--@css(/_wp/css/footer.css)-->
+
+<footer id="footer">
+    <h2 class="blind">회사정보</h2>
+    <div class="site-wrap">
+		<div module="Layout_footer">
+			<div class="footArea_address">
+				<!-- 하단 로고 -->
+				<div class="info_logo pc_view" webpb-banner-code="eb65" hidden>
+					<div webpb-banner>
+						<a href="{#link}">{#pc_thumb_tag}</a>
+					</div>
+				</div>
+				<!--//-->
+
+				<ul class="util">
+					<li><a href="/shopinfo/company.html">회사소개</a></li>
+					<li><a href="/member/mall_agreement.html">이용약관</a></li>
+					<li><a href="/member/privacy.html"><strong>개인정보 취급방침</strong></a></li>
+					<li><a href="/shopinfo/guide.html">이용안내</a></li>
+				</ul>
+
+				<!-- 상점정보 -->
+				<div class="address">
+					<div class="heading m_view">
+						<h3 class="title">사업자정보<span class="arrow active"></span></h3>
+					</div>
+					<div class="content">
+						<span>법인명(상호) : {$company_name} </span>
+						<span class="line">|</span>
+						<span>주소 : {$mall_zipcode} {$mall_addr1} {$mall_addr2}</span>
+						<br>
+						<span>대표자 : <a href="mailto:{$email}">{$president_name}</a></span>
+						<span class="line">|</span>
+						<span>전화 : <a href="tel:{$phone}">{$phone}</a></span>
+						<span class="line">|</span>
+						<span class="{$cpo_email|display}">개인정보관리책임자 : {$cpo_name}(<a href="mailto:{$cpo_email}">{$cpo_email}</a>)</span>
+						<br/>
+						<span>사업자등록번호 {$company_regno}</span>
+						<span class="line">|</span>
+						<span>통신판매업신고 {$network_regno} {$biz_no_link}</span>
+						<!-- <span>팩스 : {$fax}</span> -->
+						<div class="copyright">Copyright &copy; <strong>{$mall_name}</strong>. All rights reserved.</div>
+					</div>
+                </div>
+				<!--//-->
+			</div>
+
+			<!-- 고객센터 -->
+			<div class="footArea_customer wp-stand-by" module="Layout_Info">
+				<div class="customer">
+					<div class="heading">
+						<h3 class="title">고객센터</h3>
+					</div>
+					<div class="content">
+						<ul>
+							<li class="tel">{#cs_tel}</li>
+							<li class="runtime">{#cs_runtime}</li>
+						</ul>
+					</div>
+				</div>
+
+				 <!-- 반품및교환주소 -->
+                <div class="return wp-stand-by">
+                    <div class="heading">
+                        <h3 class="title">교환 &amp; 반품주소</h3>
+                    </div>
+                    <div class="content">{#return_addr}</div>
+                </div><!--//-->
+			</div>
+			<!--//-->
+
+            <!-- 무통장입금안내/반품및교환주소 -->
+            <div class="footArea_account">
+                <!-- 무통장입금안내 -->
+                <div class="bankinfo wp-stand-by">
+                    <div class="heading">
+                        <h3 class="title">무통장입금 안내</h3>
+                    </div>
+                    <div class="content">
+                        <ul class="account">
+                           {#account_info}
+                        </ul>
+                    </div>
+                </div><!--//-->
+            </div>
+            <!--//-->
+
+		</div>
+        <div class="xans-layout-footer">
+        	<div class="escrow_intro wp-stand-by">고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 <br class="pc_view">PG사의 구매안전 서비스를 이용하실 수 있습니다. <a href="#none" class="escrow">[서비스 가입사실 확인]</a></div>
+            <!-- SNS 아이콘 -->
+            <div class="sns_intro">
+				<!--@import(/_wp/module/sns/footer_sns.html)-->
+            </div><!--//-->
+        </div>
+    </div>
+</footer>
+
+<!-- 우측 하단 고정 버튼 -->
+<!--@import(/_wp/quick.html)-->
+<!--//-->
+
+<div id="progressPaybar" style="display:none;">
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <div id="progressPaybarView">
+        <div class="box">
+            <h3>현재 결제가 진행중입니다.</h3>
+            <p class="txt">
+                본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br />
+                주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+            </p>
+            <div class="progressbar"><img src="//img.echosting.cafe24.com/skin/skin/common/img_loading.gif" alt="loading" loading="lazy"></div>
+        </div>
+    </div>
+</div>
+
+<div module="Layout_multishopShipping">
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <div class="worldshipLayer ec-base-layer typeModal">
+        <div class="header">
+            <h3>WORLD SHIPPING</h3>
+        </div>
+        <div class="content">
+            <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+            <select module="Layout_multishopShippingCountrylist">
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+            </select>
+            <select module="Layout_multishopShippingLanguagelist">
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+            </select>
+        </div>
+        <div class="ec-base-button">
+            <a href="#none" class="btnSubmitFix sizeM">GO</a>
+        </div>
+        <a href="#none" class="btnClose">닫기</a>
+    </div>
+</div>
+
+<div id="layoutDimmed" class="dimmed"></div>
+

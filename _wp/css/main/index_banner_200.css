@@ -1,0 +1,73 @@
+.index_ban_200{
+	text-align:center;
+}
+
+.index_ban_200 .line{
+	width:1px;
+	height:60px;
+	background:#ddd;
+}
+
+.index_ban_200 .txt p{
+	line-height:1.5;
+}
+
+.index_ban_200 .p2 *{
+	font-family: "PT Serif", sans-serif;
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+	 .index_ban_200 {
+        margin:120px 0 120px 0;
+        position: relative;
+    }
+
+	.index_ban_200 .line{
+		margin:0 auto 20px;
+	}
+
+	.index_ban_200 .txt p{
+		margin:15px 0;
+	}
+
+	.index_ban_200 .p1{
+		font-size:19px;
+	}
+
+	.index_ban_200 .p2{
+		font-size:42px;
+	}
+
+	.index_ban_200 .p3{
+		font-size:19px;
+	}
+
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.index_ban_200 {
+        margin:5rem 0 5rem 0;
+    }
+
+	.index_ban_200 .line{
+		margin:0 auto 1rem;
+	}
+
+	.index_ban_200 .txt p{
+		margin:1rem 0;
+	}
+
+	.index_ban_200 .p1{
+		font-size:13px;
+	}
+
+	.index_ban_200 .p2{
+		font-size:20px;
+	}
+
+	.index_ban_200 .p3{
+		font-size:13px;
+	}
+}

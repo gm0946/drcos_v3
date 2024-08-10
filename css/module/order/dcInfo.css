@@ -1,0 +1,25 @@
+.xans-order-dcinfo { margin:20px 0; color:#353535; line-height:1.5; }
+.xans-order-dcinfo h3 { font-size:12px; }
+.xans-order-dcinfo .description .mileage { margin:6px 0 0; padding:10px 0 0; border-top:1px solid #e8e8e8; }
+.xans-order-dcinfo .description .mileage:after { content:""; display:block; clear:both; }
+.xans-order-dcinfo .description .displaynone + .mileage { margin:0; padding:0; border:0; }
+.xans-order-dcinfo .description .mileage li { float:left; margin:0 40px 0 0; }
+.xans-order-dcinfo .description .mileage li a { text-decoration:none; }
+.xans-order-dcinfo .description .mileage li strong { color:#008bcc; }
+
+/* wp */
+.xans-order-dcinfo.ec-base-box.typeMember {padding:10px;background:#f9f9f9;border:0;}
+.xans-order-dcinfo.ec-base-box.typeMember .information .description{border:0;}
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage{margin: 10px 0 0;}
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage li{margin:0 10px 0 0;}
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage li:before{content:"";border-left:1px solid #ddd;margin-right:10px;height: 14px;display: inline-block;vertical-align: middle;}
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage li:first-child:before,
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage li.displaynone:before{content:none;}
+.xans-order-dcinfo.ec-base-box.typeMember .description .mileage li strong { color:#000; }
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {}

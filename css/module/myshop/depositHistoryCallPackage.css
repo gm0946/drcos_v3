@@ -1,0 +1,22 @@
+.ec-base-layer .xans-myshop-depositrefundform .header > h1,
+.ec-base-layer .xans-myshop-depositrefundform .header > h3,
+.ec-base-layer .xans-myshop-depositrefundform .header > h5 { font-size:16px; font-weight: normal; }
+.ec-base-layer .xans-myshop-depositrefundform .content { padding: 20px; font-size:13px; line-height: 22px; min-height: 90px; box-sizing:border-box; }
+
+.xans-myshop-depositrefundform table .price1 { font-size:16px; }
+.xans-myshop-depositrefundform table .price2 { font-size:16px; }
+.xans-myshop-depositrefundform table td #request_deposit_amt { width:100px; }
+.xans-myshop-depositrefundform table td #request_account_name { width:100px; }
+.xans-myshop-depositrefundform table td #request_account_no,
+.xans-myshop-depositrefundform table td #request_bank_code { width:200px; }
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.ec-base-layer .xans-myshop-depositrefundform .content .ec-base-table.typeWrite colgroup{display:none;}
+}

@@ -1,0 +1,70 @@
+.xans-project-package .title{ margin: 40px 0 0;}
+.xans-project-package .title h2 { margin: 0 0 30px; text-align: center; font-size:20px; color:#000; }
+.xans-project-package .banner { margin:20px 0; text-align:center;}
+.xans-project-package .banner img { max-width: 100%; }
+
+.xans-product-headcategory + .ec-base-tab {margin: 30px 0 0;}
+.xans-project-package .menuCategory.menu{font-size:0; line-height:0;}
+.xans-project-package .menuCategory.menu > li,
+.xans-project-package .menuCategory.menu > li > a{padding:0;margin:0;}
+.xans-project-package .menuCategory.menu > li { display:inline-block;vertical-align:top;  border:1px solid #ddd;  }
+.xans-project-package .menuCategory.menu > li > a { color:#777; text-align: left; }
+.xans-project-package .menuCategory.menu > li.selected > a { color:#222; }
+.xans-project-package .menuCategory.menu > li .count { font-weight:normal; color:#999;}
+
+.xans-project-list + .xans-project-list {border: 0;}
+.xans-project-list > h3 { margin:50px 0 35px; font-weight:normal; font-size:18px; color:#2e2e2e; text-align:left; font-weight:bold; }
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-project-list {}
+
+	.xans-project-package .menuCategory.menu{width: 100%;}
+	.xans-project-package .menuCategory.menu > li,
+	.xans-project-package .menuCategory.menu > li > a{height:38px;line-height:38px; transition: all .25s ease; font-size:14px; }
+	.xans-project-package .menuCategory.menu > li { width: calc(16.66% - 9px); margin-left: 10px; max-width: 16.66%; margin-bottom: 9px; }
+	.xans-project-package .menuCategory.menu > li:nth-child(6n+1){margin-left:0;}
+	.xans-project-package .menuCategory.menu > li:hover{border:1px solid #222;}
+	.xans-project-package .menuCategory.menu > li > a{padding-left:8px;display:block;overflow:hidden;white-space:nowrap; text-overflow:ellipsis; padding-right: 20px;}
+	.xans-project-package .menuCategory.menu > li > a:hover { text-decoration:none; background-position:100% -95px;  }
+	.xans-project-package .menuCategory.menu > li:hover > a{color:#222; }
+	.xans-project-package .menuCategory.menu > li > a.iconWrap {vertical-align: middle; position: absolute; top: 18px; right: 0;}
+	.xans-project-package .menuCategory.menu > li > a.iconWrap:after{top: -3px;}
+
+	.xans-project-package .menuCategory.menu > li > ul {background: #fff; z-index: 1;display:block;top: 38px; right: -1px; left: -1px; border: 1px solid #222; border-top:0;padding:5px 0; opacity:0;visibility: hidden;transition: all .25s ease;}
+	.xans-project-package .menuCategory.menu > li:hover > ul{visibility: visible; opacity:1; }
+	.xans-project-package .menuCategory.menu > li > ul > li {padding:0; padding-right:20px;position: relative;white-space: normal; height:auto;}
+	.xans-project-package .menuCategory.menu > li > ul > li:hover{background:#f5f5f5;}
+	.xans-project-package .menuCategory.menu > li > ul > li > a { color:#777; padding:5px 10px; font-size:13px; display:block; text-align:left; line-height: 1.5;}
+	.xans-project-package .menuCategory.menu > li > ul > li > a:hover,
+	.xans-project-package .menuCategory.menu > li > ul > li.selected > a { color:#222; }
+	.xans-project-package .menuCategory.menu > li > ul > li > a.iconWrap { position: absolute; top: 0; right: 0;}
+	.xans-project-package .menuCategory.menu > li > ul > li > a.iconWrap:after{right:15px; top:10px;}
+
+	.xans-project-package .menuCategory.menu .subCategory { display: none;position: absolute;right: 0;top: 0;z-index: 11;width: 150px;padding: 5px 0;border: 1px solid #222;font-size: 0;line-height: 0;}
+	.xans-project-package .menuCategory.menu > li > ul > li:hover .subCategory { display:block; }
+	.xans-project-package .menuCategory.menu .subCategory li { font-size:13px; line-height:14px; vertical-align:top; height:auto;padding:0;white-space: normal; }
+	.xans-project-package .menuCategory.menu .subCategory li:hover{background:#f5f5f5;}
+	.xans-project-package .menuCategory.menu .subCategory li a { color:#777; display: block; text-align: left; padding: 5px 10px;line-height: 1.5; font-size:13px;}
+	.xans-project-package .menuCategory.menu .subCategory li a:hover,
+	.xans-project-package .menuCategory.menu .subCategory li.selected a { color:#222; }
+}
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-project-package .banner {margin:0 -1.2rem; }
+
+	.xans-project-list {}
+    .xans-project-list h3 {margin: 1.5rem 0 ; font-size: 1.2rem;}
+
+	.xans-project-package .menuCategory.menu{ }
+	.xans-project-package .menuCategory.menu > li,
+	.xans-project-package .menuCategory.menu > li > a.btton{font-size:1rem;line-height: 2.4rem; height:2.4rem;}
+	.xans-project-package .menuCategory.menu > li{padding:0 1rem; margin-left: 5px; }
+	.xans-project-package .menuCategory.menu > li:first-child{margin-left:0;}
+	.xans-project-package .menuCategory.menu > li > a{display:inline-block;}
+	.xans-project-package .menuCategory.menu > li .iconWrap{height: 0; display: inline-block; vertical-align: middle; margin-left: 1rem;}
+	.xans-project-package .menuCategory.menu > li .iconWrap:after{top: -.4rem; right: 5px;}
+}

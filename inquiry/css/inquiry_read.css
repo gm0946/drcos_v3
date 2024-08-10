@@ -1,0 +1,42 @@
+/*게시판 읽기 */
+#wpFormWrap ul{font-size:0;padding:0;margin:0;}
+#wpFormWrap ul:after{content:"";display:block; clear:both; height:1px ;background: #eee; width:100%;}
+#wpFormWrap ul li{list-style:none !important;}
+#wpFormWrap ul li.req-tit:after{content:"*";color:red; margin: 0 5px;}
+#wpFormWrap ul li input[type=text],
+#wpFormWrap ul li input[type=password],
+#wpFormWrap ul li textarea{border: 0; background: #efefef; padding: 10px;  font-size:15px;outline: 0; box-sizing: border-box;}
+#wpFormWrap ul.form-adress input[type=text]{margin-bottom:9px;}
+#wpFormWrap ul.form-adress input[type=text]:first-child{min-width:100px; width:150px;}
+#wpFormWrap ul.form-adress input[type=text]:last-child{margin:0;}
+#wpFormWrap ul li textarea{width:100%; height: 200px; box-sizing: border-box; }
+#wpFormWrap ul.captcha input{margin-top:5px;}
+#wpFormWrap ul.agree textarea{margin-bottom: 5px;height: 140px;font-size: 13px;background: #fff;border: 1px solid #ddd;color: #888;}
+#wpFormWrap ul.agree .privacy_agreement{margin-top:5px;}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    #wpFormWrap ul li{ box-sizing: border-box; font-size:.9rem;}
+    #wpFormWrap ul li:first-child{font-weight:500; padding:1rem 0 0;}
+    #wpFormWrap ul li:last-child{ padding: 12px 0;}
+    #wpFormWrap ul li input[type=text],
+    #wpFormWrap ul li input[type=password]{width: 100%;height: 45px; font-size: 1rem;}
+    #wpFormWrap ul.form-adress .btnNormal {vertical-align: top;height: 45px;line-height: 45px; font-size: .9rem;padding: 0 1rem; margin-left:.5rem;}
+    #wpFormWrap ul.form-adress #addr1 + span,
+    #wpFormWrap ul.form-adress #addr2 + span{display:none;}
+    .inquiry_write_grp .xans-board-function.ec-base-button{margin: -1rem 0 0;}
+}
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #wpFormWrap ul li{ box-sizing: border-box; display: inline-block; vertical-align: middle;font-size:1rem;}
+    #wpFormWrap ul li:first-child{width:190px; font-weight:500; padding:0 0 0 15px;}
+    #wpFormWrap ul li:last-child{width:calc(100% - 210px);padding: 12px 0;min-height: 45px;}
+    #wpFormWrap ul li input[type=text],
+    #wpFormWrap ul li input[type=password]{min-width:450px; height: 45px; }
+    #wpFormWrap ul.form-adress .btnNormal {vertical-align: top;height: 45px;line-height: 45px;padding: 0 20px;font-size: 1rem; margin-left:.7rem;}
+    #wpFormWrap ul.form-adress #addr1 + span,
+    #wpFormWrap ul.form-adress #addr2 + span{ padding-left:1rem;}
+    .inquiry_write_grp .xans-board-function.ec-base-button{margin-top: -68px;}
+}

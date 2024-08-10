@@ -1,0 +1,8 @@
+#tbanner {position:relative; overflow:hidden; z-index:99; height:40px;}
+#tbanner .swiper-wrapper li a{display:block; text-align:center; text-decoration:none; height:40px; line-height:40px; font-size:15px; width:100%;background:#000;color:#fff;}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	#tbanner{height:2.8rem;}
+	#tbanner .swiper-wrapper li a{height:2.8rem; line-height:2.8rem; font-size:1rem; }
+}

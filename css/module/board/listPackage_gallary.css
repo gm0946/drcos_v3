@@ -1,0 +1,704 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title {
+	min-height: 30px;
+	margin: 10px 0 20px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.xans-board-title .title h2 {
+	display: inline-block;
+	padding: 0 0 0 12px;
+	color: #2e2e2e;
+	font-size: 16px;
+	background: url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat;
+}
+
+.xans-board-title .title p {
+	display: inline-block;
+	margin: 0 0 0 6px;
+	padding: 0 0 0 10px;
+	color: #939393;
+	vertical-align: bottom;
+	background: url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0;
+}
+
+.xans-board-title p.imgArea>img {
+	margin: 0 0 20px;
+}
+
+/* 리스트 정렬 */
+.xans-board-listpackage-8 .boardList {
+	padding: 0 0 60px;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.xans-board-listpackage-8 .boardSort {
+	display: flex;
+	margin: 0 11px 0;
+}
+
+.xans-board-listpackage-8 .boardSort {
+	margin: 0 0 20px;
+}
+
+.xans-board-listpackage-8 .boardSort select {
+	min-width: 152px;
+	margin: 0 6px 0 0;
+}
+
+.xans-board-listpackage-8 .boardSort .xans-board-category-8 {
+	flex: 1;
+	display: inline-block;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+.xans-board-listpackage-8 .xans-board-buttonlist-8.ec-base-button.gBottom {
+	margin: 20px 16px 0;
+}
+
+/* 갤러리형 탭메뉴 */
+.xans-board-listheader-8 {
+	margin: 0 0 20px;
+}
+
+.xans-board-listheader-8 ul {
+	overflow: hidden
+}
+
+.xans-board-listheader-8 ul li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.xans-board-listheader-8 li a {
+	display: block;
+	font-size: 14px;
+	color: #6d6d6d;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 20px 15px;
+}
+
+.xans-board-listheader-8 li a svg.icon {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.xans-board-listheader-8 li.selected a {
+	color: #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.xans-board-listheader-8 li a:hover {
+	text-decoration: none;
+}
+
+/* notice */
+.xans-board-listpackage .ec-base-table.notice {
+	margin-bottom: 20px;
+}
+
+.xans-board-listpackage .ec-base-table.notice .subject img {
+	border: 1px solid red;
+	display: none;
+}
+
+.xans-board-listpackage .ec-base-table.notice table td.subject a {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+/* list 공통 */
+.xans-board-listpackage-8 {
+	margin: 0 0 20px;
+}
+
+.xans-board-listpackage-8 .summary .subject span.comment {
+	display: inline-block;
+	float: none;
+	color: #ef441f;
+	margin: 0 0 0 8px;
+}
+
+/* 고정글 */
+.xans-board-listpackage-8 .xans-board-fixed-8 {
+	clear: both;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 ul {
+	font-size: 0;
+	line-height: 0;
+	padding: 0 11px;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li {
+	font-size: 13px;
+	line-height: 1.5;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail {
+	display: block;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail img {
+	display: block;
+	width: 100%;
+	min-width: 88px;
+	margin: 0 auto;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary {
+	display: block;
+	color: #6d6d6d;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary .subject {
+	display: block;
+	margin: 16px 0 8px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary span {
+	display: inline-block;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary span.date {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary em {
+	display: inline-block;
+	color: #6d6d6d;
+	font-style: normal;
+	margin-right: 6px;
+	vertical-align: top;
+}
+
+/* 일반글 */
+.xans-board-listpackage-8 .xans-board-list-8 {
+	clear: both;
+	overflow: hidden;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 ul {
+	font-size: 0;
+	line-height: 0;
+	padding: 0 11px;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1.5;
+	width: 50%;
+	vertical-align: top;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li .boardChk {
+	display: block;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .thumbnail {
+	display: block;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .thumbnail img {
+	display: block;
+	width: 100%;
+	min-width: 88px;
+	margin: 0 auto;
+	border-radius: var(--border-radius-basic);
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary {
+	display: block;
+	color: #6d6d6d;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary .subject {
+	display: block;
+	margin: 15px 0 0;
+	font-weight: bold;
+	color: #000000;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary .event-period {
+	color: #555;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary span {
+	display: inline-block;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary .write {
+	margin-top: 5px;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary span.date {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li a .summary em {
+	color: #6d6d6d;
+	font-style: normal;
+}
+
+.xans-board-listpackage-8 .xans-board-list-8 li .boardChk {
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+
+.xans-board-listpackage-8 .ec-base-table.typeList td.subject img {
+	vertical-align: middle;
+}
+
+/* 게시글 없음, 검색결과없음 */
+.xans-board-listpackage-8 .boardListEmpty {
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.xans-board-listpackage-8 .boardListEmpty>p {
+	margin-top: 80px;
+}
+
+.xans-board-listpackage-8 .boardChk {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+
+
+
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+
+	.xans-board-listpackage .ec-base-table.notice table {
+		border-top: 1px solid #e5e5e5;
+	}
+
+	.xans-board-listpackage .ec-base-table.notice table td.thumb img {
+		width: 46px;
+	}
+
+	.xans-board-listpackage .ec-base-table.notice table td.chk {
+		overflow: hidden;
+	}
+
+	.xans-board-listpackage .ec-base-table.notice table td.chk .boardChk,
+	.xans-board-listpackage .ec-base-table.notice table th.chk .boardListAll {
+		float: left;
+		margin: 2px 5px 0 0;
+	}
+
+	.xans-board-listpackage .ec-base-table.notice table td.chk img {
+		margin-top: 4px;
+	}
+
+	.xans-board-listpackage .ec-base-table.notice table td.subject .badge {
+		display: none;
+	}
+
+	/* ec-base-tab (Gallery) */
+	.xans-board-listheader-8.ec-base-tab {
+		margin: 0;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul {
+		overflow: hidden;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li {
+		text-align: center;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li+li {
+		margin-left: 0px;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li a {
+		display: block;
+		font-size: 14px;
+		color: #000;
+		padding: 10px 15px;
+		opacity: 0.6;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li a svg.icon {
+		display: inline-block;
+		margin-right: 4px;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li.selected a,
+	.xans-board-listheader-8.ec-base-tab ul li a:hover {
+		border-bottom: 0;
+		text-decoration: none;
+		opacity: 1;
+	}
+
+	/* 리스트 정렬 */
+	.xans-board-listpackage-8 .boardList {
+		margin: 0;
+		padding: 0 0 60px;
+		border-bottom: 1px solid #e5e5e5
+	}
+
+	.xans-board-listpackage-8 .boardSort {
+		margin: 0 0 0px;
+	}
+
+	.xans-board-listpackage-8 .boardSort .xans-board-category-8 {
+		width: auto;
+		min-width: 152px;
+		padding: 0;
+		margin: 10px 0;
+	}
+
+	.xans-board-listpackage-8 .boardSort .xans-board-category-8+.xans-board-category-8 {
+		padding: 0 0 0 10px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-buttonlist-8.ec-base-button.gBottom {
+		margin: 20px 0 0;
+	}
+
+	/* 갤러리형 탭메뉴 */
+	.xans-board-listheader-8 {
+		margin: 13px 0 0;
+	}
+
+	.xans-board-listheader-8 ul li {
+		width: auto;
+	}
+
+	.xans-board-listheader-8 li a {
+		padding: 3px 2px 3px;
+		white-space: nowrap;
+		border-bottom: 0;
+	}
+
+	.xans-board-listheader-8 li+li {
+		margin: 0 0 0 50px;
+	}
+
+	/* 공지글 */
+	.xans-board-listpackage .border_notice .ec-base-table table {
+		border: 1px solid #e5e5e5;
+		border-bottom: 0;
+	}
+
+	.xans-board-listpackage .ec-base-table.typeList table td.subject .badge {
+		display: none;
+	}
+
+	/* list 공통 */
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a:hover,
+	.xans-board-listpackage-8 .xans-board-list-8 li a:hover {
+		text-decoration: none;
+	}
+
+	/*  고정글 */
+	.xans-board-listpackage-8 .xans-board-fixed-8 {
+		border-top: 1px solid #eee;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li {
+		padding: 20px 0;
+		border-bottom: 1px solid #eee;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail {
+		flex: none;
+		width: 155px;
+		margin-right: 20px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a {
+		display: flex;
+		align-items: center;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail img {
+		max-width: 205px;
+		margin: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary {
+		flex: 1;
+		display: inline-block;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary .subject {
+		margin: 0 0 8px;
+		font-size: 14px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary .subject img {
+		vertical-align: middle;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 ul {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary span.date {
+		float: none;
+		display: inline-block;
+		margin: 0 12px 0 0;
+	}
+
+	/* 일반글 */
+	.xans-board-listpackage-8 .xans-board-list-8 ul {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li {
+		margin-left: 20px;
+		margin-bottom: 40px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid2 li {
+		width: 50%;
+		width: calc(50% - 10px);
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid2 li:nth-child(2n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid3 li {
+		width: 33.33%;
+		width: calc(33.33% - 14px);
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid3 li:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid4 li {
+		width: 25%;
+		width: calc(25% - 15px);
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid4 li:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid5 li {
+		width: 20%;
+		width: calc(20% - 16px);
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.grid5 li:nth-child(5n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li a .summary .subject {
+		margin: 15px 0 0;
+		font-size: 16px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li a .summary span.date {
+		float: none;
+		display: inline-block;
+		margin: 0 12px 0 0;
+	}
+}
+
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+	.xans-board-title p.imgArea {
+		margin: 0 -1.2rem;
+		padding: 0;
+	}
+
+	.xans-board-title p.imgArea img {}
+
+	.xans-board-listpackage .ec-base-table.typeList table td.subject .badge {
+		display: inline-block;
+		vertical-align: middle;
+		border: 1px solid #ddd;
+		border-radius: 20px;
+		padding: 0 8px;
+		background: #fff;
+		font-size: .86rem;
+		margin-right: 5px;
+	}
+
+	/* ec-base-tab (Gallery) */
+	.xans-board-listheader-8.ec-base-tab {
+		margin: 0;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul {
+		overflow: hidden;
+	}
+
+	.xans-board-listheader-8.ec-base-tab ul li {
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.xans-board-listheader-8.ec-base-tab li a {
+		display: block;
+		font-size: 14px;
+		color: #6d6d6d;
+		border-bottom: 1px solid #e0e0e0;
+		padding: 20px 15px;
+	}
+
+	.xans-board-listheader-8.ec-base-tab li a svg.icon {
+		display: inline-block;
+		margin-right: 4px;
+	}
+
+	.xans-board-listheader-8.ec-base-tab li.selected a {
+		color: #000000;
+		border-bottom: 1px solid #000000;
+	}
+
+	.xans-board-listheader-8 li a:hover {
+		text-decoration: none;
+	}
+
+	/* 리스트 정렬 */
+	.xans-board-listpackage-8 .boardSort {
+		margin: 0;
+	}
+
+	.xans-board-listpackage-8 .boardSort .xans-board-category-8 {
+		margin: 10px 0;
+	}
+
+	/*  고정글 */
+	.xans-board-listpackage-8 .xans-board-fixed-8 {
+		border-top: 1px solid #eee;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li {
+		border-bottom: 1px solid #eee;
+		margin: 20px 0 0;
+		padding: 0 0 20px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail {
+		flex: none;
+		width: 105px;
+		margin-right: 20px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a {
+		display: flex;
+		align-items: center;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .thumbnail img {
+		max-width: 105px;
+		margin: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary {
+		flex: 1;
+		display: inline-block;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary .subject {
+		margin: 0 0 8px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 ul {
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-fixed-8 li a .summary span.date {
+		float: none;
+		display: inline-block;
+		margin: 0 12px 0 0;
+	}
+
+	/* 일반글 */
+	.xans-board-listpackage-8 .xans-board-list-8 ul {
+		padding: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li {
+		margin: 0 0 30px 20px;
+		width: 100%;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid1 li {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid2 li {
+		width: 50%;
+		width: calc(50% - 10px);
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid2 li:nth-child(2n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid3 li {
+		width: 33.33%;
+		width: calc(33.33% - 10px);
+		margin-left: 15px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid3 li:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid4 li {
+		width: 25%;
+		width: calc(25% - 12px);
+		margin-left: 15px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 ul.m_grid4 li:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li a .summary .subject {
+		font-size: 1.2rem;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li .boardChk {
+		left: 14px;
+	}
+
+	.xans-board-listpackage-8 .xans-board-list-8 li a {
+		text-decoration: none;
+	}
+
+	.xans-board-listpackage-8 .xans-board-buttonlist-8.ec-base-button.gBottom {
+		margin: 1rem 0;
+	}
+}

@@ -1,0 +1,11 @@
+.xans-coupon-couponlist .ec-base-table img { vertical-align:middle; }
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #popup { width:800px; }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width:1024px) {
+    #popup { }
+}
