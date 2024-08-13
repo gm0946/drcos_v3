@@ -1,7 +1,7 @@
 /**
 * detail_product_image.js
 * 제작 : 웹퍼블릭
-* 버전 : 1.2.2 (축소이미지 - 가로형)
+* 버전 : 1.2.3 (축소이미지 - 가로형)
 * 최종업데이트 : 2024.08.14
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
@@ -143,6 +143,5 @@ $(function () {
     $(document).on('click', '.listImg .swiper-slide', function () {
         var index = $(this).index();
         $(this).addClass('selected').siblings().removeClass('selected');
-        thumb_img_swiper.slideTo(index,0);
     });
 });
