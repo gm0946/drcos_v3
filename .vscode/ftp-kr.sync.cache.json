@@ -371,8 +371,8 @@
               },
               "review.css": {
                 "type": "-",
-                "size": 76879,
-                "lmtime": 1723303367806.06,
+                "size": 76876,
+                "lmtime": 1723560961928.2317,
                 "modified": false
               },
               "review_highlight_widget.css": {
@@ -724,16 +724,16 @@
           "css": {
             "brand.css": {
               "type": "-",
-              "size": 3966,
-              "lmtime": 1723303368596.8606,
+              "size": 3591,
+              "lmtime": 1723560961960.35,
               "modified": false
             }
           },
           "img": {},
           "index.html": {
             "type": "-",
-            "size": 3017,
-            "lmtime": 1723303368569.747,
+            "size": 2892,
+            "lmtime": 1723560961943.0996,
             "modified": false
           },
           "js": {
@@ -1893,8 +1893,8 @@
             "product": {
               "additional.css": {
                 "type": "-",
-                "size": 12394,
-                "lmtime": 1723303371747.4307,
+                "size": 12388,
+                "lmtime": 1723560961974.0352,
                 "modified": false
               },
               "basketAdd2.css": {
@@ -2123,8 +2123,8 @@
         "index_banner_200.html": {
           "type": "-",
           "size": 529,
-          "lmtime": 1723303366232.7192,
-          "modified": true
+          "lmtime": 1723560961853.6953,
+          "modified": false
         },
         "index_banner_300.html": {
           "type": "-",
@@ -2136,12 +2136,6 @@
           "type": "-",
           "size": 1804,
           "lmtime": 1723303366265.9575,
-          "modified": false
-        },
-        "index_banner_500.html": {
-          "type": "-",
-          "size": 1334,
-          "lmtime": 1723303366282.236,
           "modified": false
         },
         "index_banner_600.html": {
@@ -2164,9 +2158,9 @@
         },
         "index.html": {
           "type": "-",
-          "size": 4572,
-          "lmtime": 1723303366347.8757,
-          "modified": true
+          "size": 3728,
+          "lmtime": 1723560961872.2092,
+          "modified": false
         },
         "index_product_100.html": {
           "type": "-",
@@ -2182,8 +2176,8 @@
         },
         "index_product_300.html": {
           "type": "-",
-          "size": 2363,
-          "lmtime": 1723303366396.5347,
+          "size": 2317,
+          "lmtime": 1723560961886.2314,
           "modified": false
         },
         "index_product_400.html": {
@@ -2192,34 +2186,10 @@
           "lmtime": 1723303366414.8596,
           "modified": false
         },
-        "index_product_500.html": {
-          "type": "-",
-          "size": 6419,
-          "lmtime": 1723303366430.1465,
-          "modified": false
-        },
         "index_product_600.html": {
           "type": "-",
           "size": 1839,
           "lmtime": 1723303366445.347,
-          "modified": false
-        },
-        "index_product_700.html": {
-          "type": "-",
-          "size": 1839,
-          "lmtime": 1723303366461.8958,
-          "modified": false
-        },
-        "index_product_800.html": {
-          "type": "-",
-          "size": 1841,
-          "lmtime": 1723303366478.1667,
-          "modified": false
-        },
-        "index_youtube.html": {
-          "type": "-",
-          "size": 961,
-          "lmtime": 1723303366495.3044,
           "modified": false
         },
         "inquiry": {
@@ -2436,14 +2406,8 @@
               },
               "detail_product_image.js": {
                 "type": "-",
-                "size": 5758,
-                "lmtime": 1723303372983.7925,
-                "modified": false
-              },
-              "detail_product_image_nancy228.js": {
-                "type": "-",
-                "size": 5353,
-                "lmtime": 1723303372999.95,
+                "size": 6861,
+                "lmtime": 1723562181188.1213,
                 "modified": false
               },
               "image.js": {
@@ -2586,8 +2550,8 @@
               },
               "ec-base-product.css": {
                 "type": "-",
-                "size": 17922,
-                "lmtime": 1723303373540.441,
+                "size": 18041,
+                "lmtime": 1723560962010.2068,
                 "modified": false
               },
               "ec-base-tab.css": {
@@ -3342,14 +3306,20 @@
         "popup": {
           "popup_1.html": {
             "type": "-",
-            "size": 1117,
-            "lmtime": 1723303375342.9207,
+            "size": 1366,
+            "lmtime": 1723562137874.7358,
             "modified": false
           },
           "popup_2.html": {
             "type": "-",
             "size": 1365,
             "lmtime": 1723303375359.1956,
+            "modified": false
+          },
+          "popup_3.html": {
+            "type": "-",
+            "size": 1367,
+            "lmtime": 1723562137901.5579,
             "modified": false
           }
         },
@@ -3398,8 +3368,8 @@
           },
           "detail.html": {
             "type": "-",
-            "size": 48269,
-            "lmtime": 1723303375486.1013,
+            "size": 48444,
+            "lmtime": 1723560962032.8794,
             "modified": false
           },
           "email_restock.html": {
@@ -3458,8 +3428,8 @@
           },
           "project.html": {
             "type": "-",
-            "size": 6092,
-            "lmtime": 1723303375660.5066,
+            "size": 6096,
+            "lmtime": 1723560962047.3955,
             "modified": false
           },
           "provider": {
@@ -3496,8 +3466,8 @@
           },
           "search.html": {
             "type": "-",
-            "size": 6663,
-            "lmtime": 1723303375745.4138,
+            "size": 6905,
+            "lmtime": 1723560962060.9038,
             "modified": false
           },
           "shoppQ": {
@@ -3577,9 +3547,9 @@
         },
         "setup.js": {
           "type": "-",
-          "size": 40861,
-          "lmtime": 1723464845512.924,
-          "modified": true
+          "size": 38182,
+          "lmtime": 1723560961903.9424,
+          "modified": false
         },
         "shopinfo": {
           "company.html": {
@@ -3884,8 +3854,8 @@
           },
           "icon_basket.svg": {
             "type": "-",
-            "size": 2833,
-            "lmtime": 1723303376341.866,
+            "size": 835,
+            "lmtime": 1723560962074.0017,
             "modified": false
           },
           "icon_buy_white.svg": {
@@ -3962,8 +3932,8 @@
           },
           "icon_member.svg": {
             "type": "-",
-            "size": 2055,
-            "lmtime": 1723303376553.76,
+            "size": 1877,
+            "lmtime": 1723560962086.0696,
             "modified": false
           },
           "icon_menu.svg": {
@@ -4016,8 +3986,8 @@
           },
           "icon_search.svg": {
             "type": "-",
-            "size": 1861,
-            "lmtime": 1723303376702.8567,
+            "size": 674,
+            "lmtime": 1723560962099.6216,
             "modified": false
           },
           "icon_share.svg": {
@@ -4834,14 +4804,14 @@
           },
           "base_product_list.html": {
             "type": "-",
-            "size": 2259,
-            "lmtime": 1723303379381.2097,
+            "size": 2261,
+            "lmtime": 1723560962112.6682,
             "modified": false
           },
           "common.lib.html": {
             "type": "-",
-            "size": 1514,
-            "lmtime": 1723303379395.8088,
+            "size": 1140,
+            "lmtime": 1723560962126.7534,
             "modified": false
           },
           "css": {
@@ -4867,8 +4837,8 @@
             },
             "footer.css": {
               "type": "-",
-              "size": 6062,
-              "lmtime": 1723303379597.062,
+              "size": 6080,
+              "lmtime": 1723560962153.3335,
               "modified": false
             },
             "form_onetouch.css": {
@@ -4910,8 +4880,8 @@
               },
               "index_banner_200.css": {
                 "type": "-",
-                "size": 979,
-                "lmtime": 1723303379869.028,
+                "size": 2346,
+                "lmtime": 1723560962167.3374,
                 "modified": false
               },
               "index_banner_300.css": {
@@ -4922,14 +4892,8 @@
               },
               "index_banner_400.css": {
                 "type": "-",
-                "size": 4190,
-                "lmtime": 1723303379902.2144,
-                "modified": false
-              },
-              "index_banner_500.css": {
-                "type": "-",
-                "size": 3033,
-                "lmtime": 1723303379918.9277,
+                "size": 4234,
+                "lmtime": 1723560962181.853,
                 "modified": false
               },
               "index_banner_600.css": {
@@ -4964,8 +4928,8 @@
               },
               "index_prd_300.css": {
                 "type": "-",
-                "size": 2674,
-                "lmtime": 1723303380019.9697,
+                "size": 3223,
+                "lmtime": 1723560962193.8894,
                 "modified": false
               },
               "index_prd_400.css": {
@@ -4974,34 +4938,10 @@
                 "lmtime": 1723303380037.3896,
                 "modified": false
               },
-              "index_prd_500.css": {
-                "type": "-",
-                "size": 3579,
-                "lmtime": 1723303380053.9268,
-                "modified": false
-              },
               "index_prd_600.css": {
                 "type": "-",
                 "size": 680,
                 "lmtime": 1723303380068.964,
-                "modified": false
-              },
-              "index_prd_700.css": {
-                "type": "-",
-                "size": 680,
-                "lmtime": 1723303380084.6418,
-                "modified": false
-              },
-              "index_prd_800.css": {
-                "type": "-",
-                "size": 680,
-                "lmtime": 1723303380100.4253,
-                "modified": false
-              },
-              "index_youtube.css": {
-                "type": "-",
-                "size": 1435,
-                "lmtime": 1723303380116.9143,
                 "modified": false
               }
             },
@@ -5020,8 +4960,8 @@
             "product": {
               "detail.css": {
                 "type": "-",
-                "size": 84355,
-                "lmtime": 1723303380140.2666,
+                "size": 84264,
+                "lmtime": 1723562137937.6255,
                 "modified": false
               }
             },
@@ -5761,8 +5701,8 @@
             },
             "core.js": {
               "type": "-",
-              "size": 66016,
-              "lmtime": 1723303383704.1821,
+              "size": 67180,
+              "lmtime": 1723560962231.8088,
               "modified": false
             },
             "countUp.min.js": {
@@ -5860,8 +5800,8 @@
             "main": {
               "index_banner_100.js": {
                 "type": "-",
-                "size": 3574,
-                "lmtime": 1723464894967.3582,
+                "size": 4810,
+                "lmtime": 1723562235502.322,
                 "modified": false
               },
               "index_banner_300.js": {
@@ -5874,12 +5814,6 @@
                 "type": "-",
                 "size": 2227,
                 "lmtime": 1723384768745.0295,
-                "modified": false
-              },
-              "index_banner_500.js": {
-                "type": "-",
-                "size": 1422,
-                "lmtime": 1723384774881.202,
                 "modified": false
               },
               "index_banner_600.js": {
@@ -5912,28 +5846,10 @@
                 "lmtime": 1723384806902.5757,
                 "modified": false
               },
-              "index_prd_500.js": {
-                "type": "-",
-                "size": 2017,
-                "lmtime": 1723384815393.1975,
-                "modified": false
-              },
               "index_prd_600.js": {
                 "type": "-",
                 "size": 1266,
                 "lmtime": 1723384825127.0847,
-                "modified": false
-              },
-              "index_prd_700.js": {
-                "type": "-",
-                "size": 1275,
-                "lmtime": 1723384830459.0554,
-                "modified": false
-              },
-              "index_prd_800.js": {
-                "type": "-",
-                "size": 1275,
-                "lmtime": 1723384837115.3901,
                 "modified": false
               },
               "index_review.js": {
@@ -6269,8 +6185,8 @@
           },
           "sidebar.html": {
             "type": "-",
-            "size": 6988,
-            "lmtime": 1723303379522.171,
+            "size": 7111,
+            "lmtime": 1723560962139.2751,
             "modified": false
           },
           "top.banner.html": {
