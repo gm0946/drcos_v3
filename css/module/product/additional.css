@@ -79,9 +79,9 @@
 @media all and (max-width:1024px) {
     .xans-product-additional { margin:3rem 0 0; }
 
-    .xans-product-additional .ec-base-tab.gFlex .menu li a {font-size:14px; height: 3.5rem; line-height: 3.5rem; }
+    .xans-product-additional .ec-base-tab.gFlex .menu li a {font-size:14px; height: 4rem; line-height: 4rem; }
 
-    .xans-product-additional .menu-inner{position:relative; height:3.5rem;}
+    .xans-product-additional .menu-inner{position:relative; height:4rem;}
     .xans-product-additional .menu-inner.fixed .menu{position:fixed;top:0;left:0;top: 0;left: 0;z-index: 99;right:0;}
 
 	#prdDetail .cont_top_banner,

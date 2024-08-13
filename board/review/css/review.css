@@ -2003,7 +2003,7 @@ body#review {
 		}
 
 		.review__list.list .content .rate .article-rate {
-			margin-top: -1px;
+			margin-top: 0;
 		}
 
 		.review__list.list .content .rate .jq-star-svg {

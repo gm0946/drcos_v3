@@ -29,10 +29,10 @@
 		$use_item_sale_price = T
     -->
      <div class="detailArea">
-        <div class="imgArea" module="product_image">
+         <div class="imgArea" module="product_image">
 			<!-- 00 명이 구매했어요! -->
 			<!--@import(/_wp/module/product/purchase/purchase.html)-->
-
+            
             <div class="detail-img-box">
 				<!--@js(/js/module/product/detail_product_image.js)-->
                 <div class="prdImg" module="product_addimage">
@@ -58,7 +58,9 @@
 						</div>
                     </div>
                 </div>
-
+                
+                <!-- 삭제금지 -->
+                <div class="displaynone"><img src="{$big_img}" class="bigImage" alt="{$seo_alt_tag}"></div>
                 <!-- 삭제 금지 -->
 				<div id="zoom_wrap" class="displaynone"></div>
 
@@ -81,8 +83,8 @@
 				<!--@js(/_wp/js/detail/sns.js)-->
 				<h1>{$name}</h1>
                 <span class="delivery {$delvtype_display|display}">(해외배송 가능상품)</span>
-				<div class="simple_desc_css {$simple_desc|display}">{$simple_desc}</div>
 				<div class="summary_desc_css {$summary_desc|display}">{$summary_desc}</div>
+				<div class="simple_desc_css {$simple_desc|display}">{$simple_desc}</div>
 				<div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
 
 				<span class="b_share"><a href="javascript:;"><img src="/skin_img/icon_share.svg" alt="" /></a></span>

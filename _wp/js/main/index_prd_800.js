@@ -12,4 +12,16 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-var _0x20b7a3=_0x5806;function _0x5806(_0x39072a,_0x4b3de2){var _0x5f55d4=_0x5f55();return _0x5806=function(_0x5806bd,_0x36f766){_0x5806bd=_0x5806bd-0xc9;var _0x38c49c=_0x5f55d4[_0x5806bd];return _0x38c49c;},_0x5806(_0x39072a,_0x4b3de2);}(function(_0xefdc65,_0x498aa1){var _0x292e05=_0x5806,_0x458973=_0xefdc65();while(!![]){try{var _0x50b754=-parseInt(_0x292e05(0xe3))/0x1*(parseInt(_0x292e05(0xc9))/0x2)+parseInt(_0x292e05(0xdf))/0x3*(-parseInt(_0x292e05(0xd7))/0x4)+-parseInt(_0x292e05(0xe5))/0x5*(parseInt(_0x292e05(0xcf))/0x6)+parseInt(_0x292e05(0xdd))/0x7*(parseInt(_0x292e05(0xdb))/0x8)+parseInt(_0x292e05(0xd4))/0x9+parseInt(_0x292e05(0xd9))/0xa+parseInt(_0x292e05(0xca))/0xb;if(_0x50b754===_0x498aa1)break;else _0x458973['push'](_0x458973['shift']());}catch(_0x1de205){_0x458973['push'](_0x458973['shift']());}}}(_0x5f55,0x32c34),$(document)[_0x20b7a3(0xe0)](function(){var _0x56d2aa=_0x20b7a3;if(WP_SETUP[_0x56d2aa(0xcb)][_0x56d2aa(0xcc)]['표시여부']=='off'){$(_0x56d2aa(0xe4))[_0x56d2aa(0xd2)]();return;}WP_CORE()['util']['replaceCodeToText'](_0x56d2aa(0xd5),'{#title}',WP_SETUP[_0x56d2aa(0xcb)][_0x56d2aa(0xcc)][_0x56d2aa(0xd3)]),WP_CORE()[_0x56d2aa(0xd1)][_0x56d2aa(0xd6)](_0x56d2aa(0xe1),_0x56d2aa(0xda),WP_SETUP[_0x56d2aa(0xcb)][_0x56d2aa(0xcc)][_0x56d2aa(0xde)]),$(_0x56d2aa(0xd8))[_0x56d2aa(0xd0)](_0x56d2aa(0xe6)+WP_SETUP[_0x56d2aa(0xcb)][_0x56d2aa(0xcc)][_0x56d2aa(0xce)]['PC']),$('.index_prd_800\x20.prdList')['addClass'](_0x56d2aa(0xcd)+WP_SETUP[_0x56d2aa(0xcb)][_0x56d2aa(0xcc)][_0x56d2aa(0xce)]['M']),$(_0x56d2aa(0xe4))[_0x56d2aa(0xe2)](_0x56d2aa(0xdc));}));function _0x5f55(){var _0xa4accf=['진열개수','2270262MOVOsD','addClass','util','remove','타이틀','2122659lOQNny','.index_prd_800\x20.section-title\x20.title','replaceCodeToText','164RtDvAK','.index_prd_800\x20.prdList','2046820iatBtJ','{#sub_title}','63352RUCrzM','wp-stand-by','119SBjPWV','서브타이틀','17517hDHgWD','ready','.index_prd_800\x20.section-title\x20.sub-title','removeClass','19401MPbixh','.index_prd_800','5MXYPQf','grid','42cVMBbS','7237615rJmhCc','메인페이지','상품진열4','mgrid'];_0x5f55=function(){return _0xa4accf;};return _0x5f55();}
+$(document).ready(function () {
+    if (WP_SETUP.메인페이지.상품진열4.표시여부 == 'off') {
+        $('.index_prd_800').remove();
+        return;
+    }
+
+    WP_CORE().util.replaceCodeToText('.index_prd_800 .section-title .title', '{#title}', WP_SETUP.메인페이지.상품진열4.타이틀);
+    WP_CORE().util.replaceCodeToText('.index_prd_800 .section-title .sub-title', '{#sub_title}', WP_SETUP.메인페이지.상품진열4.서브타이틀);
+
+    $('.index_prd_800 .prdList').addClass('grid' + WP_SETUP.메인페이지.상품진열4.진열개수.PC);
+    $('.index_prd_800 .prdList').addClass('mgrid' + WP_SETUP.메인페이지.상품진열4.진열개수.M);
+    $('.index_prd_800').removeClass('wp-stand-by');
+});

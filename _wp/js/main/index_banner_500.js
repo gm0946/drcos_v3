@@ -13,4 +13,35 @@
 */
 
 
-const _0x442174=_0x4338;function _0x4338(_0x214414,_0x7b765e){const _0x430b48=_0x430b();return _0x4338=function(_0x4338bf,_0x50e54d){_0x4338bf=_0x4338bf-0x190;let _0x44a8ab=_0x430b48[_0x4338bf];return _0x44a8ab;},_0x4338(_0x214414,_0x7b765e);}(function(_0x2e876d,_0x3bb95f){const _0x3327ce=_0x4338,_0x3e2c98=_0x2e876d();while(!![]){try{const _0x40abe7=-parseInt(_0x3327ce(0x1a2))/0x1*(parseInt(_0x3327ce(0x197))/0x2)+-parseInt(_0x3327ce(0x192))/0x3+parseInt(_0x3327ce(0x1a1))/0x4*(parseInt(_0x3327ce(0x196))/0x5)+parseInt(_0x3327ce(0x19f))/0x6*(parseInt(_0x3327ce(0x19d))/0x7)+-parseInt(_0x3327ce(0x198))/0x8*(parseInt(_0x3327ce(0x1a0))/0x9)+-parseInt(_0x3327ce(0x19a))/0xa+parseInt(_0x3327ce(0x19c))/0xb;if(_0x40abe7===_0x3bb95f)break;else _0x3e2c98['push'](_0x3e2c98['shift']());}catch(_0x4928fc){_0x3e2c98['push'](_0x3e2c98['shift']());}}}(_0x430b,0xa6dca),$(document)[_0x442174(0x199)](function(){const _0x1e19b0=_0x442174,_0x1a3917=new Swiper(_0x1e19b0(0x194),{'slidesPerView':1.2,'spaceBetween':0xa,'observer':!![],'observeParents':!![],'loop':![],'on':{'init':function(){const _0x43eb15=_0x1e19b0;$(this['el'])[_0x43eb15(0x193)](_0x43eb15(0x191))[_0x43eb15(0x19b)](_0x43eb15(0x19e));}},'pagination':{'el':_0x1e19b0(0x195),'clickable':!![]},'navigation':{'nextEl':_0x1e19b0(0x190),'prevEl':'.index_ban_500\x20.swiper-button-prev'},'breakpoints':{0x280:{'slidesPerView':2.2,'spaceBetween':0xf},0x401:{'slidesPerView':0x3,'spaceBetween':0x12}}});}));function _0x430b(){const _0x16173e=['3954ualYuj','18lTfGEx','1004svqWkH','369898FYnqil','.index_ban_500\x20.swiper-button-next','.wp-stand-by','1425387gfkOwM','closest','.index_ban_500\x20.swiper-container','.index_ban_500\x20.swiper-pagination','11020NHwWAp','6WexkgH','591032PRffjP','ready','6823260KnmrRv','removeClass','19653260KqUbjn','8057RoSVjq','wp-stand-by'];_0x430b=function(){return _0x16173e;};return _0x430b();}
+$(document).ready(function () {
+    const swiper = new Swiper('.index_ban_500 .swiper-container', {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        loop: false,
+        on: {
+            init: function () {
+                $(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
+            },
+        },
+        pagination: {
+            el: '.index_ban_500 .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.index_ban_500 .swiper-button-next',
+            prevEl: '.index_ban_500 .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2.2,
+                spaceBetween: 15,
+            },
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            }
+        }
+    });
+});

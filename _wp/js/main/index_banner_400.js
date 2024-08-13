@@ -12,4 +12,48 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-const _0xb03bd1=_0x3681;function _0x22d5(){const _0x45d3bd=['wp-stand-by','.index_ban_400\x20.section-title\x20.title','3454340FxFAit','1335ANYDww','18123450zfkVSj','12572JItnEe','util','.wp-stand-by','.index_ban_400\x20.swiper-container','136OsKvwQ','6213006msAXcM','띠배너_1X1','대기시간','이벤트배너','55636QagiDx','ready','자동재생','{#title}','2jastWg','인터렉션','replaceCodeToText','{#sub_title}','자동재생여부','6bKUToR','.index_ban_400\x20.swiper-button-prev','.index_ban_400\x20.swiper-button-next','타이틀','53735066VEESSC','서브타이틀','메인페이지','822110eGzUZV'];_0x22d5=function(){return _0x45d3bd;};return _0x22d5();}function _0x3681(_0x3bdb63,_0xf54bef){const _0x22d50d=_0x22d5();return _0x3681=function(_0x368151,_0x1b1965){_0x368151=_0x368151-0xa6;let _0x57105e=_0x22d50d[_0x368151];return _0x57105e;},_0x3681(_0x3bdb63,_0xf54bef);}(function(_0xea686b,_0x11a5c9){const _0x30c8e6=_0x3681,_0x443fa7=_0xea686b();while(!![]){try{const _0x3564f4=-parseInt(_0x30c8e6(0xbf))/0x1*(parseInt(_0x30c8e6(0xac))/0x2)+parseInt(_0x30c8e6(0xb0))/0x3*(-parseInt(_0x30c8e6(0xb2))/0x4)+-parseInt(_0x30c8e6(0xaf))/0x5*(parseInt(_0x30c8e6(0xc4))/0x6)+-parseInt(_0x30c8e6(0xbb))/0x7*(-parseInt(_0x30c8e6(0xb6))/0x8)+parseInt(_0x30c8e6(0xb7))/0x9+-parseInt(_0x30c8e6(0xb1))/0xa+parseInt(_0x30c8e6(0xa9))/0xb;if(_0x3564f4===_0x11a5c9)break;else _0x443fa7['push'](_0x443fa7['shift']());}catch(_0x604c2a){_0x443fa7['push'](_0x443fa7['shift']());}}}(_0x22d5,0xf0d82),$(document)[_0xb03bd1(0xbc)](function(){const _0x24b270=_0xb03bd1;WP_CORE()[_0x24b270(0xb3)][_0x24b270(0xc1)](_0x24b270(0xae),_0x24b270(0xbe),WP_SETUP[_0x24b270(0xab)]['이벤트배너'][_0x24b270(0xa8)]),WP_CORE()[_0x24b270(0xb3)][_0x24b270(0xc1)]('.index_ban_400\x20.section-title\x20.sub-title',_0x24b270(0xc2),WP_SETUP[_0x24b270(0xab)][_0x24b270(0xba)][_0x24b270(0xaa)]);const _0x10aa60=new Swiper(_0x24b270(0xb5),{'slidesPerView':1.3,'spaceBetween':0xd,'loop':!![],'speed':0x258,'preloadImages':![],'lazy':!![],'centeredSlides':![],'roundLengths':!![],'observer':!![],'observeParents':!![],'on':{'init':function(){const _0x2ad50a=_0x24b270;$(this['el'])['closest'](_0x2ad50a(0xb4))['removeClass'](_0x2ad50a(0xad));}},'autoplay':WP_SETUP[_0x24b270(0xab)]['이벤트배너'][_0x24b270(0xbd)][_0x24b270(0xc3)]=='on'?{'delay':WP_SETUP['메인페이지']['이벤트배너']['자동재생'][_0x24b270(0xb9)],'disableOnInteraction':WP_SETUP['메인페이지'][_0x24b270(0xb8)][_0x24b270(0xbd)][_0x24b270(0xc0)]=='on'?![]:!![]}:![],'pagination':{'el':'.index_ban_400\x20.swiper-pagination','clickable':!![]},'navigation':{'nextEl':_0x24b270(0xa7),'prevEl':_0x24b270(0xa6)},'breakpoints':{0x280:{'slidesPerView':2.2,'spaceBetween':0xf},0x401:{'slidesPerView':'auto','spaceBetween':0x12,'centeredSlides':!![]}}});}));
+$(document).ready(function () {
+    WP_CORE().util.replaceCodeToText('.index_ban_400 .section-title .title', '{#title}', WP_SETUP.메인페이지.이벤트배너.타이틀);
+    WP_CORE().util.replaceCodeToText('.index_ban_400 .section-title .sub-title', '{#sub_title}', WP_SETUP.메인페이지.이벤트배너.서브타이틀);
+
+    const swiper = new Swiper('.index_ban_400 .swiper-container', {
+        slidesPerView: 1.3,
+        spaceBetween: 13,
+        loop: true,
+        speed: 600,
+        preloadImages: false,
+        lazy: true,
+        centeredSlides: false,
+        roundLengths: true,
+        observer: true,
+        observeParents: true,
+        on: {
+            init: function () {
+                $(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
+            },
+        },
+        autoplay: (WP_SETUP.메인페이지.이벤트배너.자동재생.자동재생여부 == 'on') ? {
+            delay: WP_SETUP.메인페이지.이벤트배너.자동재생.대기시간,
+            disableOnInteraction: (WP_SETUP.메인페이지.띠배너_1X1.자동재생.인터렉션 == 'on') ? false : true,
+        } : false,
+        pagination: {
+            el: '.index_ban_400 .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.index_ban_400 .swiper-button-next',
+            prevEl: '.index_ban_400 .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2.2,
+                spaceBetween: 15,
+            },
+            1025: {
+                slidesPerView: 'auto',
+                spaceBetween: 18,
+                centeredSlides: true,
+            }
+        }
+    });
+});

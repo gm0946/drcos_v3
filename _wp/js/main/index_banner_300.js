@@ -12,4 +12,56 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-function _0x3a79(){const _0x59aad2=['promise','2768tqCijq','.index_ban_300\x20.swiper-container','find','wp-stand-by','340fAtmpw','18ZwFErs','메인페이지','띠배너_1X1','9035920pypVoj','.swiper-slide','대기시간','.swiper-slide-active','.index_ban_300\x20.swiper-button-next','이펙트','.index_ban_300','selected','3217576qNnGDD','removeClass','hasClass','2492TijECB','756UViLdz','closest','done','addClass','18518929Hkuowx','3mPzPHh','226202YEAXRh','인터렉션','717439ZIMUPC','자동재생','.index_ban_300\x20.swiper-pagination'];_0x3a79=function(){return _0x59aad2;};return _0x3a79();}function _0x3de8(_0x2c601e,_0x1fc7ad){const _0x3a7934=_0x3a79();return _0x3de8=function(_0x3de879,_0x1d78c6){_0x3de879=_0x3de879-0xef;let _0x2c7d2e=_0x3a7934[_0x3de879];return _0x2c7d2e;},_0x3de8(_0x2c601e,_0x1fc7ad);}(function(_0x17dee6,_0x3ae953){const _0xf8d577=_0x3de8,_0x4e7e8f=_0x17dee6();while(!![]){try{const _0x5b519f=parseInt(_0xf8d577(0x10a))/0x1+-parseInt(_0xf8d577(0x108))/0x2*(parseInt(_0xf8d577(0x107))/0x3)+-parseInt(_0xf8d577(0x10e))/0x4*(parseInt(_0xf8d577(0xf2))/0x5)+parseInt(_0xf8d577(0x102))/0x6*(-parseInt(_0xf8d577(0x101))/0x7)+parseInt(_0xf8d577(0xfe))/0x8*(-parseInt(_0xf8d577(0xf3))/0x9)+-parseInt(_0xf8d577(0xf6))/0xa+parseInt(_0xf8d577(0x106))/0xb;if(_0x5b519f===_0x3ae953)break;else _0x4e7e8f['push'](_0x4e7e8f['shift']());}catch(_0x17afd5){_0x4e7e8f['push'](_0x4e7e8f['shift']());}}}(_0x3a79,0x7722b),$(document)['ready'](function(){const _0xb320c9=_0x3de8,_0x3786e3=new Swiper(_0xb320c9(0xef),{'effect':WP_SETUP[_0xb320c9(0xf4)][_0xb320c9(0xf5)][_0xb320c9(0xfb)],'fadeEffect':{'crossFade':!![]},'slidesPerView':0x1,'loop':!![],'spaceBetween':0xa,'observer':!![],'observeParents':!![],'speed':0x1f4,'autoplay':WP_SETUP['메인페이지'][_0xb320c9(0xf5)][_0xb320c9(0x10b)]['자동재생여부']=='on'?{'delay':WP_SETUP[_0xb320c9(0xf4)][_0xb320c9(0xf5)][_0xb320c9(0x10b)][_0xb320c9(0xf8)],'disableOnInteraction':WP_SETUP[_0xb320c9(0xf4)][_0xb320c9(0xf5)][_0xb320c9(0x10b)][_0xb320c9(0x109)]=='on'?![]:!![]}:![],'on':{'init':function(){const _0x4ba7f7=_0xb320c9;$(_0x4ba7f7(0xfc))[_0x4ba7f7(0x103)]('.wp-stand-by')[_0x4ba7f7(0xff)](_0x4ba7f7(0xf1));},'slideChangeTransitionStart':function(){const _0x2121dc=_0xb320c9;$(_0x2121dc(0xfc))['find'](_0x2121dc(0xf7))[_0x2121dc(0xff)](_0x2121dc(0xfd))[_0x2121dc(0x10d)]()[_0x2121dc(0x104)](function(){const _0x40e4c2=_0x2121dc;$(_0x40e4c2(0xfc))[_0x40e4c2(0xf0)](_0x40e4c2(0xf9))[_0x40e4c2(0x105)]('selected');});},'touchEnd':function(){const _0x19303b=_0xb320c9;!$(_0x19303b(0xfc))[_0x19303b(0xf0)](_0x19303b(0xf9))[_0x19303b(0x100)]('selected')&&setTimeout(function(){const _0x3bb6b4=_0x19303b;$(_0x3bb6b4(0xfc))['find'](_0x3bb6b4(0xf9))[_0x3bb6b4(0x105)]('selected');},0x0);}},'pagination':{'el':_0xb320c9(0x10c),'clickable':!![]},'navigation':{'nextEl':_0xb320c9(0xfa),'prevEl':'.index_ban_300\x20.swiper-button-prev'},'breakpoints':{0x280:{'slidesPerView':0x1,'spaceBetween':0xf},0x401:{'slidesPerView':0x1,'spaceBetween':0x12}}});}));
+$(document).ready(function () {
+    const swiper = new Swiper('.index_ban_300 .swiper-container', {
+        effect: WP_SETUP.메인페이지.띠배너_1X1.이펙트,
+        fadeEffect: {
+            crossFade: true
+        },
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        speed: 500,
+        autoplay: (WP_SETUP.메인페이지.띠배너_1X1.자동재생.자동재생여부 == 'on') ? {
+            delay: WP_SETUP.메인페이지.띠배너_1X1.자동재생.대기시간,
+            disableOnInteraction: (WP_SETUP.메인페이지.띠배너_1X1.자동재생.인터렉션 == 'on') ? false : true,
+        } : false,
+        on: {
+            init: function () {
+                $('.index_ban_300').closest('.wp-stand-by').removeClass('wp-stand-by');
+            },
+            slideChangeTransitionStart: function () {
+                $('.index_ban_300').find('.swiper-slide').removeClass('selected').promise().done(function () {
+                    $('.index_ban_300').find('.swiper-slide-active').addClass('selected');
+                });
+            },
+            touchEnd: function () {
+                if (!$('.index_ban_300').find('.swiper-slide-active').hasClass('selected')) {
+                    setTimeout(function () {
+                        $('.index_ban_300').find('.swiper-slide-active').addClass('selected');
+                    }, 0);
+                }
+            },
+        },
+        pagination: {
+            el: '.index_ban_300 .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.index_ban_300 .swiper-button-next',
+            prevEl: '.index_ban_300 .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+            1025: {
+                slidesPerView: 1,
+                spaceBetween: 18,
+            }
+        }
+    });
+});

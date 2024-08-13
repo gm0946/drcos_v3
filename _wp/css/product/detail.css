@@ -260,6 +260,7 @@
 .xans-product-detail .xans-product-detaildesign .product_name_css,
 .xans-product-detail .xans-product-detaildesign .product_custom_css,
 .xans-product-detail .xans-product-detaildesign .product_price_css,
+.xans-product-detail .xans-product-detaildesign .product_price_sale_login_css,
 .xans-product-detail .xans-product-detaildesign .prd_price_sale_css,
 .xans-product-detail .xans-product-detaildesign .summary_desc_css,
 .xans-product-detail .xans-product-detaildesign .simple_desc_css,
@@ -3274,7 +3275,6 @@
     }
 
     .xans-product-detail .detail-img-box {
-        display: flex;
         position: relative;
     }
 
@@ -3283,7 +3283,7 @@
     }
 
     .xans-product-detail .imgArea .prdImg {
-        width: calc(100% - 95px);
+        width:100%;
     }
 
     .xans-product-detail .imgArea .prdImg img {
@@ -3323,7 +3323,7 @@
     }
 
     .xans-product-detail .detail-review-box {
-        margin: 20px 0 20px;
+        margin: 10px 0;
     }
 
     .xans-product-detail .grp_review {
@@ -3356,10 +3356,8 @@
 
     .xans-product-detail .imgArea .listImg {
         position: relative;
-        width: 80px;
-        max-height: 549px;
         box-sizing: border-box;
-        margin-left: 5px;
+		margin-top:5px;
     }
 
     .xans-product-detail .imgArea .listImg .inner {
@@ -3374,6 +3372,7 @@
 
     .xans-product-detail .imgArea .listImg li.swiper-slide {
         height: auto !important;
+		width:128px;
     }
 
     .xans-product-detail .imgArea .listImg li.swiper-slide img {
@@ -3381,7 +3380,7 @@
         cursor: pointer;
         box-sizing: border-box;
         border-radius: var(--border-radius-basic);
-        border: 1px solid transparent;
+        border: 1px solid #f1f1f1;
     }
 
     .xans-product-detail .imgArea .listImg li.swiper-slide.selected img {
@@ -3942,13 +3941,8 @@
     }
 }
 
-@media all and (min-width:1440px) {
-    .xans-product-detail .imgArea .prdImg {
-        width: calc(100% - 95px);
-    }
-
-    .xans-product-detail .imgArea .listImg {
-        width: 85px;
-        margin-left: 10px;
-    }
+@media all and (min-width:1025px) and (max-width:1279px) {
+    .xans-product-detail .imgArea .listImg li.swiper-slide{
+		width:90px;
+	}
 }

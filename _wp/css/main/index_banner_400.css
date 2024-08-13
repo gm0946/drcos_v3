@@ -65,10 +65,12 @@
 	 .index_ban_400 .txt{
 		padding: 0 0 0 9%;
 		transition: padding .25s ease;
+		opacity:0.5;
 	 }
 
 	  .index_ban_400 .swiper-slide.swiper-slide-active .txt{
 		padding: 0 0 0 7%;
+		opacity:1;
 	 }
 
 	 .index_ban_400 .txt .p1{
@@ -194,11 +196,12 @@
     .index_ban_400 .swiper-pagination{
         width: auto;
 		position: unset;
+		margin:.5rem 0 0;
     }
 
     .index_ban_400 .swiper-pagination-bullet {
-        width: .4rem;
-        height: .4rem;
+        width: 6px;
+        height: 6px;
     }
 
     .index_ban_400 .swiper-pagination-bullet.swiper-pagination-bullet-active {

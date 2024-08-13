@@ -1,5 +1,5 @@
 /**
-* 메인슬라이드 100 배너
+* 메인슬라이드 100 배너 (암호화 필요)
 * 제작 : 웹퍼블릭
 * 버전 : 1.1
 * 최종업데이트 : 2024.07.14
@@ -12,4 +12,65 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-const _0x51fc7f=_0x154b;function _0x3483(){const _0x533c4d=['.index_ban_100\x20.swiper-button-next','.index_ban_100\x20.swiper-slide','40682NEDvwJ','off','.index_ban_100.type_b','35dVyRso','40MXAbSM','12HVwpES','5624820vjhnKB','.swiper-slide-active','9411QHCWjE','wp-stand-by','closest','remove','addClass','268535pTlZxB','메인페이지','ready','자동재생','ecudemo','인터렉션','.index_ban_100\x20.swiper-button-prev','표시여부','href','util','화살표','wp-completely','대기시간','auto','type','removeClass','26626787cahhEc','976ggSTWt','getParamUrl','promise','hasClass','length','.index_ban_100.type_a','6411930Fbdmya','includes','.index_ban_100\x20.swiper-pagination','메인슬라이드','이펙트','.wp-stand-by','done','find','페이지네이션','920185EWwFvv','.index_ban_100\x20.swiper-container','.index_ban_100'];_0x3483=function(){return _0x533c4d;};return _0x3483();}function _0x154b(_0x14fb18,_0x1bbaca){const _0x34831d=_0x3483();return _0x154b=function(_0x154b8f,_0xc7623b){_0x154b8f=_0x154b8f-0xe6;let _0x25c50b=_0x34831d[_0x154b8f];return _0x25c50b;},_0x154b(_0x14fb18,_0x1bbaca);}(function(_0x453a3f,_0x1ade2c){const _0xf022fe=_0x154b,_0x30b18e=_0x453a3f();while(!![]){try{const _0x6ce4b7=-parseInt(_0xf022fe(0x10e))/0x1*(parseInt(_0xf022fe(0x10b))/0x2)+-parseInt(_0xf022fe(0x113))/0x3*(parseInt(_0xf022fe(0xf7))/0x4)+parseInt(_0xf022fe(0xe6))/0x5*(parseInt(_0xf022fe(0x110))/0x6)+-parseInt(_0xf022fe(0x106))/0x7*(-parseInt(_0xf022fe(0x10f))/0x8)+-parseInt(_0xf022fe(0x111))/0x9+-parseInt(_0xf022fe(0xfd))/0xa+parseInt(_0xf022fe(0xf6))/0xb;if(_0x6ce4b7===_0x1ade2c)break;else _0x30b18e['push'](_0x30b18e['shift']());}catch(_0x343f1e){_0x30b18e['push'](_0x30b18e['shift']());}}}(_0x3483,0x6bdaa),$(document)[_0x51fc7f(0xe8)](function(){const _0x568eba=_0x51fc7f;location[_0x568eba(0xee)][_0x568eba(0xfe)](_0x568eba(0xea))&&(WP_CORE()[_0x568eba(0xef)]['getParamUrl'](_0x568eba(0xf4))&&WP_CORE()[_0x568eba(0xef)][_0x568eba(0xf8)](_0x568eba(0xf4))=='a'?$(_0x568eba(0x10d))[_0x568eba(0x116)]():$(_0x568eba(0xfc))[_0x568eba(0x116)]());const _0xacbd6e=new Swiper(_0x568eba(0x107),{'effect':WP_SETUP['메인페이지'][_0x568eba(0x100)][_0x568eba(0x101)],'fadeEffect':{'crossFade':!![]},'spaceBetween':0x0,'speed':0x1f4,'grabCursor':!![],'observer':!![],'observeParents':!![],'slidesPerView':_0x568eba(0xf3),'loop':$(_0x568eba(0x10a))[_0x568eba(0xfb)]<=0x1?![]:!![],'autoplay':WP_SETUP[_0x568eba(0xe7)]['메인슬라이드'][_0x568eba(0xe9)]['자동재생여부']=='on'?{'delay':WP_SETUP['메인페이지']['메인슬라이드']['자동재생'][_0x568eba(0xf2)],'disableOnInteraction':WP_SETUP[_0x568eba(0xe7)][_0x568eba(0x100)][_0x568eba(0xe9)][_0x568eba(0xeb)]=='on'?![]:!![]}:![],'pagination':WP_SETUP[_0x568eba(0xe7)]['메인슬라이드']['페이지네이션'][_0x568eba(0xed)]=='on'?{'clickable':!![],'el':_0x568eba(0xff),'type':WP_SETUP[_0x568eba(0xe7)][_0x568eba(0x100)][_0x568eba(0x105)]['스타일']}:![],'navigation':WP_SETUP[_0x568eba(0xe7)][_0x568eba(0x100)][_0x568eba(0xf0)]=='on'?{'nextEl':_0x568eba(0x109),'prevEl':'.index_ban_100\x20.swiper-button-prev'}:![],'on':{'init':function(){const _0x68202a=_0x568eba;if(WP_SETUP[_0x68202a(0xe7)][_0x68202a(0x100)][_0x68202a(0x105)]['표시여부']==_0x68202a(0x10c))$(_0x68202a(0xff))[_0x68202a(0x116)]();if(WP_SETUP[_0x68202a(0xe7)]['메인슬라이드']['화살표']=='off')$(_0x68202a(0xec))['add'](_0x68202a(0x109))[_0x68202a(0x116)]();if($(_0x68202a(0x10a))[_0x68202a(0xfb)]<=0x1)$(_0x68202a(0x10a))['addClass'](_0x68202a(0xf1));$(_0x68202a(0x108))[_0x68202a(0x115)](_0x68202a(0x102))[_0x68202a(0xf5)](_0x68202a(0x114));},'slideChangeTransitionStart':function(){const _0x32cb05=_0x568eba;$(_0x32cb05(0x108))[_0x32cb05(0x104)]('.swiper-slide')['removeClass']('wp-completely')[_0x32cb05(0xf9)]()[_0x32cb05(0x103)](function(){const _0x2eeb23=_0x32cb05;$(_0x2eeb23(0x108))[_0x2eeb23(0x104)](_0x2eeb23(0x112))[_0x2eeb23(0x117)](_0x2eeb23(0xf1));});},'touchEnd':function(){const _0x5c7988=_0x568eba;!$('.index_ban_100')['find'](_0x5c7988(0x112))[_0x5c7988(0xfa)](_0x5c7988(0xf1))&&setTimeout(function(){const _0x3daed3=_0x5c7988;$(_0x3daed3(0x108))[_0x3daed3(0x104)]('.swiper-slide-active')[_0x3daed3(0x117)](_0x3daed3(0xf1));},0x0);}}});}));
+$(document).ready(function () {
+
+    // 암호화 해제 시 아래 코드 주석 제거 ⬇️
+    if (location.href.includes('ecudemo')) {
+        if (WP_CORE().util.getParamUrl('type')
+            && WP_CORE().util.getParamUrl('type') == 'b') {
+            $('.index_ban_100.type_a').remove();
+        } else {
+            $('.index_ban_100.type_b').remove();
+        }
+    }
+
+    const swiper = new Swiper('.index_ban_100 .swiper-container', {
+        effect: WP_SETUP.메인페이지.메인슬라이드.이펙트,
+        fadeEffect: {
+            crossFade: true
+        },
+        spaceBetween: 0,
+        speed: 500,
+        grabCursor: true,
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        loop: ($('.index_ban_100 .swiper-slide').length <= 1) ? false : true,
+        autoplay: (WP_SETUP.메인페이지.메인슬라이드.자동재생.자동재생여부 == 'on') ? {
+            delay: WP_SETUP.메인페이지.메인슬라이드.자동재생.대기시간,
+            disableOnInteraction: (WP_SETUP.메인페이지.메인슬라이드.자동재생.인터렉션 == 'on') ? false : true,
+        } : false,
+        pagination: (WP_SETUP.메인페이지.메인슬라이드.페이지네이션.표시여부 == 'on') ? {
+            clickable: true,
+            el: '.index_ban_100 .swiper-pagination',
+            type: WP_SETUP.메인페이지.메인슬라이드.페이지네이션.스타일,
+        } : false,
+        navigation: (WP_SETUP.메인페이지.메인슬라이드.화살표 == 'on') ? {
+            nextEl: '.index_ban_100 .swiper-button-next',
+            prevEl: '.index_ban_100 .swiper-button-prev',
+        } : false,
+        on: {
+            init: function () {
+                if (WP_SETUP.메인페이지.메인슬라이드.페이지네이션.표시여부 == 'off')
+                    $('.index_ban_100 .swiper-pagination').remove();
+                if (WP_SETUP.메인페이지.메인슬라이드.화살표 == 'off')
+                    $('.index_ban_100 .swiper-button-prev').add('.index_ban_100 .swiper-button-next').remove();
+                if ($('.index_ban_100 .swiper-slide').length <= 1)
+                    $('.index_ban_100 .swiper-slide').addClass('wp-completely');
+                $('.index_ban_100').closest('.wp-stand-by').removeClass('wp-stand-by');
+            },
+            slideChangeTransitionStart: function () {
+                $('.index_ban_100').find('.swiper-slide').removeClass('wp-completely').promise().done(function(){
+                    $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
+                });
+            },
+            touchEnd: function () {
+                if (!$('.index_ban_100').find('.swiper-slide-active').hasClass('wp-completely')) {
+                    setTimeout(function () {
+                        $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
+                    }, 0);
+                }
+            },
+        },
+    });
+});

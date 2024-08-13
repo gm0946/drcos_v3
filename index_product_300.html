@@ -1,7 +1,7 @@
 <!--@css(/_wp/css/main/index_prd_300.css)-->
 <!--@js(/_wp/js/main/index_prd_300.js)-->
 
-<div class="index_prd_300 wp-stand-by wp-effect"  webpb-banner-code="8l7r" hidden>
+<div class="index_prd_300 wp-stand-by wp-effect">
 	<div class="site-wrap">
         <div class="section-title animate__animated animate__fadeInUpCustom animate__delayCustom" style="--wp-fade-range:30%;--wp-delay:.1s;">
             <h3>
@@ -10,16 +10,19 @@
             </h3>
         </div>
         <div class="productItem ec-base-product">
-            <div class="bnr" webpb-banner>
-                <a href="{#link}" target="{#link_target}">
-                    <div class="img pc_view">{#pc_thumb_tag}</div>
-                    <div class="img m_view">{#m_thumb_tag}</div>
-                    <div class="txt">
-                        <span style="--wp-fade-range:20%;--wp-delay:.4s;color:{#color1};" class="p1 animate__animated animate__fadeInUpCustom animate__delayCustom">{#text_1}</span>
-                        <span style="--wp-fade-range:20%;--wp-delay:.7s;color:{#color2};" class="p2 animate__animated animate__fadeInUpCustom animate__delayCustom">{#text_2}</span>
-                    </div>
-                </a>
-            </div>
+            <div class="bnr" webpb-banner-code="8l7r" hidden>
+				<div class="mov" webpb-banner>
+					<div class="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/{#html}?controls=0&mute=1&autoplay=1&loop=1&playlist={#html}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div webpb-banner>
+					<a href="{#link}" target="{#link_target}">
+						<!-- PC image --><div class="img pc_view">{#pc_thumb_tag}</div>
+						<!-- M image --><div class="img m_view">{#m_thumb_tag}</div>
+					</a>
+				</div>
+			</div>
 
             <div class="prod">
                 <div  class="swiper-container" module="product_listmain_3">

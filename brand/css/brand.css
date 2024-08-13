@@ -11,9 +11,7 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.brand_contents .section_first .txt-box .p1{
-	font-family: "PT Serif", sans-serif;
-}
+
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
@@ -22,7 +20,6 @@
     .brand_contents .section_first .txt-box{text-align:center;display: flex;flex-direction: column;justify-content: center;align-items: center;min-height:400px;z-index: 2;position: relative;}
     .brand_contents .section_first .txt-box .p1{font-size:30px; margin:0 0 30px; font-weight:700; }
     .brand_contents .section_first .txt-box .p2{font-size:24px;font-weight:700; }
-	.brand_contents .section_first .txt-box .line{position:absolute;bottom:-40px;left:50%;background:#111;width:1px;height:80px;}
 	.brand_contents .section_first .img-box{position: absolute;top: 0;left: 0;right: 0;z-index: 1;bottom: 0;}
 	.brand_contents .section_first .img-box img{width: 100%;height: 100%;object-fit: cover;}
     .brand_contents .section_second{margin:170px 0;}
@@ -47,7 +44,6 @@
     .brand_contents .section_first .txt-box{text-align:center;display: flex;flex-direction: column;justify-content: center;align-items: center;min-height:200px;z-index: 2;position: relative;padding:0 20px;}
     .brand_contents .section_first .txt-box .p1{font-size:20px; margin:0 0 10px; font-weight:700; }
     .brand_contents .section_first .txt-box .p2{font-size:14px;font-weight:700; }
-	.brand_contents .section_first .txt-box .line{position:absolute;bottom:-20px;left:50%;background:#111;width:1px;height:40px;}
 	.brand_contents .section_first .img-box{position: absolute;top: 0;left: 0;right: 0;z-index: 1;bottom: 0;}
 	.brand_contents .section_first .img-box img{width: 100%;height: 100%;object-fit: cover;}
 	.brand_contents .section_second{margin:70px 0;}
@@ -59,7 +55,6 @@
 	.brand_contents .section .site-wrap{display: flex; align-items: center;flex-direction: column; padding:0;}
     .brand_contents .section .img-box,
 	.brand_contents .section .txt-box{max-width:60vw;}
-	.brand_contents .section .img-box{}
 	.brand_contents .section .img-box img{width:100%;}
     .brand_contents .section .txt-box{padding: 20px 0 0;text-align: center;}
     .brand_contents .section .txt-box .p1{font-weight: 700; font-size: 22px;}

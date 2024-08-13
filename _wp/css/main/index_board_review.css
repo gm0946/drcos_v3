@@ -51,7 +51,7 @@
 	}
 
 	.index_board_review .review__list.grid .content .thumb{
-		margin: -6px -6px 0;
+		margin: -6px -6px 12px;
 	}
 
 	.index_board_review.review_list_grp .review__list .thumb-attach{

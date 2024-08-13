@@ -12,4 +12,56 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-const _0x41828e=_0x5cc7;function _0x5cc7(_0x98242a,_0x352160){const _0x3bb124=_0x3bb1();return _0x5cc7=function(_0x5cc796,_0x4dcff8){_0x5cc796=_0x5cc796-0x154;let _0x689a0b=_0x3bb124[_0x5cc796];return _0x689a0b;},_0x5cc7(_0x98242a,_0x352160);}(function(_0x202975,_0x2d960e){const _0x4dd1a0=_0x5cc7,_0x38638a=_0x202975();while(!![]){try{const _0xb3c1d9=-parseInt(_0x4dd1a0(0x16b))/0x1*(parseInt(_0x4dd1a0(0x15d))/0x2)+-parseInt(_0x4dd1a0(0x171))/0x3+parseInt(_0x4dd1a0(0x170))/0x4+parseInt(_0x4dd1a0(0x177))/0x5*(-parseInt(_0x4dd1a0(0x15e))/0x6)+-parseInt(_0x4dd1a0(0x162))/0x7*(-parseInt(_0x4dd1a0(0x166))/0x8)+parseInt(_0x4dd1a0(0x17a))/0x9*(parseInt(_0x4dd1a0(0x178))/0xa)+parseInt(_0x4dd1a0(0x175))/0xb;if(_0xb3c1d9===_0x2d960e)break;else _0x38638a['push'](_0x38638a['shift']());}catch(_0x337b93){_0x38638a['push'](_0x38638a['shift']());}}}(_0x3bb1,0xa98c0),$(document)[_0x41828e(0x16e)](function(){const _0x272cdb=_0x41828e;if(WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)]['표시여부']==_0x272cdb(0x16c)){$(_0x272cdb(0x172))['remove']();return;}WP_CORE()[_0x272cdb(0x167)][_0x272cdb(0x16a)](_0x272cdb(0x155),'{#title}',WP_SETUP['메인페이지'][_0x272cdb(0x179)][_0x272cdb(0x163)]),WP_CORE()[_0x272cdb(0x167)][_0x272cdb(0x16a)](_0x272cdb(0x158),_0x272cdb(0x159),WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)]['서브타이틀']);const _0x442db2=$('.index_prd_100\x20.swiper-slide'),_0x7727a8=new Swiper(_0x272cdb(0x15f),{'on':{'init':function(){const _0x4d9cbe=_0x272cdb;$(this['el'])[_0x4d9cbe(0x176)](_0x4d9cbe(0x169))[_0x4d9cbe(0x15c)]('wp-stand-by'),$(_0x4d9cbe(0x15a))[_0x4d9cbe(0x156)]($(this['$el'])[_0x4d9cbe(0x160)]('h3')[_0x4d9cbe(0x15c)]('displaynone')),WP_CORE()['util'][_0x4d9cbe(0x17b)]('.index_prd_100');}},'observer':!![],'observeParents':!![],'slidesPerView':WP_SETUP[_0x272cdb(0x154)]['베스트셀러'][_0x272cdb(0x165)]['M'],'spaceBetween':0xa,'speed':0x1f4,'loop':_0x442db2[_0x272cdb(0x164)]>WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)][_0x272cdb(0x165)]['M'],'freeMode':!![],'autoplay':WP_SETUP[_0x272cdb(0x154)]['베스트셀러'][_0x272cdb(0x168)][_0x272cdb(0x16d)]=='on'?{'delay':WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)][_0x272cdb(0x168)][_0x272cdb(0x15b)],'disableOnInteraction':WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)][_0x272cdb(0x168)]['인터렉션']=='on'?![]:!![]}:![],'pagination':{'el':_0x272cdb(0x157),'type':_0x272cdb(0x173)},'navigation':{'nextEl':_0x272cdb(0x16f),'prevEl':_0x272cdb(0x161)},'breakpoints':{0x280:{'slidesPerView':WP_SETUP['메인페이지'][_0x272cdb(0x179)][_0x272cdb(0x165)][_0x272cdb(0x174)],'spaceBetween':0xf,'loop':_0x442db2[_0x272cdb(0x164)]>WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)]['진열개수'][_0x272cdb(0x174)]},0x401:{'slidesPerView':WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)][_0x272cdb(0x165)]['PC'],'spaceBetween':0x12,'freeMode':![],'loop':_0x442db2[_0x272cdb(0x164)]>WP_SETUP[_0x272cdb(0x154)][_0x272cdb(0x179)][_0x272cdb(0x165)]['PC']}}});}));function _0x3bb1(){const _0x72cd61=['off','자동재생여부','ready','.index_prd_100\x20.swiper-button-next','3903524uJiYBx','2234367MLCCEa','.index_prd_100','progressbar','TABLET','4845907EcyVyw','closest','624840DDliBu','419030jjEvrd','베스트셀러','63CJErPL','swiperBtnAlignByImage','메인페이지','.index_prd_100\x20.section-title\x20.title','append','.index_prd_100\x20.swiper-pagination','.index_prd_100\x20.section-title\x20.sub-title','{#sub_title}','.index_prd_100\x20.section-title','대기시간','removeClass','2PQOCBy','6iChlUh','.index_prd_100\x20.swiper-container','find','.index_prd_100\x20.swiper-button-prev','85225hyOUpE','타이틀','length','진열개수','200yLrCqQ','util','자동재생','.wp-stand-by','replaceCodeToText','449893IEkgPY'];_0x3bb1=function(){return _0x72cd61;};return _0x3bb1();}
+$(document).ready(function () {
+
+    if (WP_SETUP.메인페이지.베스트셀러.표시여부 == 'off') {
+        $('.index_prd_100').remove();
+        return;
+    }
+    
+    WP_CORE().util.replaceCodeToText('.index_prd_100 .section-title .title', '{#title}', WP_SETUP.메인페이지.베스트셀러.타이틀);
+    WP_CORE().util.replaceCodeToText('.index_prd_100 .section-title .sub-title', '{#sub_title}', WP_SETUP.메인페이지.베스트셀러.서브타이틀);
+
+    const slides = $('.index_prd_100 .swiper-slide');
+    const swiper = new Swiper('.index_prd_100 .swiper-container', {
+        on: {
+            init: function () {
+                $(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
+                $('.index_prd_100 .section-title').append($(this.$el).find('h3').removeClass('displaynone'));
+                WP_CORE().util.swiperBtnAlignByImage('.index_prd_100');
+            },
+        },
+        observer: true,
+        observeParents: true,
+        slidesPerView: WP_SETUP.메인페이지.베스트셀러.진열개수.M,
+        spaceBetween: 10,
+        speed: 500,
+        loop: slides.length > WP_SETUP.메인페이지.베스트셀러.진열개수.M,
+        freeMode: true,
+        autoplay: (WP_SETUP.메인페이지.베스트셀러.자동재생.자동재생여부 == 'on') ? {
+            delay: WP_SETUP.메인페이지.베스트셀러.자동재생.대기시간,
+            disableOnInteraction: (WP_SETUP.메인페이지.베스트셀러.자동재생.인터렉션 == 'on') ? false : true,
+        } : false,
+        pagination: {
+            el: '.index_prd_100 .swiper-pagination',
+            type: 'progressbar',
+        },
+        navigation: {
+            nextEl: '.index_prd_100 .swiper-button-next',
+            prevEl: '.index_prd_100 .swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: WP_SETUP.메인페이지.베스트셀러.진열개수.TABLET,
+                spaceBetween: 15,
+                loop: slides.length > WP_SETUP.메인페이지.베스트셀러.진열개수.TABLET,
+            },
+            1025: {
+                slidesPerView: WP_SETUP.메인페이지.베스트셀러.진열개수.PC,
+                spaceBetween: 18,
+                freeMode: false,
+                loop: slides.length > WP_SETUP.메인페이지.베스트셀러.진열개수.PC,
+            },
+        },
+    });
+});

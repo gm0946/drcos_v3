@@ -64,8 +64,8 @@
 .ec-base-product .spec > li.price.sale{text-decoration: line-through; }
 .ec-base-product .spec > li.price ~ .sale{margin-bottom: 14px; color: #000; font-size: 16px; }
 .ec-base-product .spec .summary { color:#6d6d6d; font-size:12px; }
-.ec-base-product .spec .color { overflow:hidden; display:inline-block; margin:3px 0 0 0; line-height:1; }
-.ec-base-product .spec .chips { display: inline-block;border:1px solid #e3e3e3; font-size:0; line-height:0; border-radius:50%;}
+.ec-base-product .spec .color { overflow:hidden; display:inline-flex;gap:3px; margin:3px 0 0 0; line-height:1; }
+.ec-base-product .spec .chips { display: inline-block; width:10px; height:10px; border:1px solid #e3e3e3; font-size:0; line-height:0; border-radius:50%;}
 
 .ec-base-product .discountPeriod { display:inline-block; z-index:10; position:relative; width:55px; height:19px; vertical-align:middle; }
 .ec-base-product .layerDiscountPeriod strong.title { display:block; margin:0 0 12px; padding:0 35px 0 0; font-weight:bold; color:#2e2e2e; line-height:20px; }
@@ -151,8 +151,9 @@
 	.ec-base-product .spec > li.prd_price_sale *{font-weight: bold; font-size: 16px;}
 	.ec-base-product .spec > li.prd_price_sale > span > span{ font-weight: normal; }
 	.ec-base-product .spec > li.prd_price_sale .discount_rate{margin-right: 3px;}
+	.ec-base-product .spec > li.summary_desc{margin-bottom:10px;}
 	.ec-base-product .prdList .review_cnt{font-size: 12px;padding: 1px 0 0 14px;line-height: 1;background-size:12px; margin:5px 0;}
-	.ec-base-product .prdList .chips { width:9px; height:9px; margin:0 3px 3px 0; }
+	.ec-base-product .prdList .chips { width:9px; height:9px;}
     .ec-base-product .prdList .icon:has(>img){margin:10px 0 0;}
     .ec-base-product .prdList .icon img { margin:0 4px 0 0; max-height: 20px; }
 	.ec-base-product .layerDiscountPeriod { left:50%; top:26px; width:247px; margin:0 0 0 -124px; }
@@ -211,8 +212,9 @@
 	.ec-base-product .spec > li.prd_price_sale > span > span{ font-weight: normal; font-size:.8rem !important; }
 	.ec-base-product .spec > li.prd_price_sale .discount_rate{margin-right: .2rem;font-size: 1rem !important;}
 	.ec-base-product .spec > li.prd_price_sale .discount_rate *{display:inline-block;}
+	.ec-base-product .spec > li.summary_desc{margin-bottom:.5rem;}
 	.ec-base-product .prdList .review_cnt{font-size: .8rem;padding: 0 0 0 1rem;display:inline-block;background-size:.8rem auto;}
-	.ec-base-product .prdList .chips { width:7px; height:7px; margin:0 3px 3px 0; }
+	.ec-base-product .prdList .chips { width:7px; height:7px; }
 	.ec-base-product .prdList .icon{margin:0.5rem 0;}
     .ec-base-product .prdList .icon img { margin:0 .2rem 0 0; max-height: 1.3rem; }
 	.ec-base-product .discountPeriod { position:static; }
