@@ -1,7 +1,7 @@
 /**
 * 메인슬라이드 100 배너 (암호화 필요)
 * 제작 : 웹퍼블릭
-* 버전 : 1.2
+* 버전 : 1.3.1
 * 최종업데이트 : 2024.08.15
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
@@ -14,7 +14,7 @@
 
 $(document).ready(function () {
 
-    // 암호화 해제 시 아래 코드 주석 제거 ⬇️
+    // 샘플몰 전용코드
     if (location.href.includes('ecudemo')) {
         if (WP_CORE().util.getParamUrl('type')
             && WP_CORE().util.getParamUrl('type') == 'b') {
@@ -23,22 +23,28 @@ $(document).ready(function () {
             $('.index_ban_100.type_b').remove();
         }
 
-        const target_node = document.querySelector("html");
-        const config = { attributes: true };
-        const callback = (mutationList, observer) => {
-            for (const mutation of mutationList) {
-                if (mutation.type === "attributes") {
-                    if ($(mutation.target).hasClass('res-mobile')) {
-                        $('div[id^="popup_"]').addClass('displaynone');
-                    }else{
-                        $('div[id^="popup_"]').removeClass('displaynone');
-                        $('div[id^="popup_"] iframe')[0].contentWindow.location.reload();
-                    }
+        // 모바일에서 팝업 숨김 처리
+        if ($('div[id^="popup_"] iframe').length > 0) {
+            let timer = null;
+            const mobileHidePopup = function(mq){
+                if (mq.matches) {
+                    $('div[id^="popup_"]').addClass('displaynone');
+                } else {
+                    $('div[id^="popup_"]').removeClass('displaynone').addClass('wp-stand-by');
+                    $('div[id^="popup_"] iframe')[0].contentWindow.location.reload();
+                    clearTimeout(timer);
+                    timer = setTimeout(function(){
+                        $('div[id^="popup_"]').removeClass('wp-stand-by');
+                    },400);
                 }
             }
-        };
-        const observer = new MutationObserver(callback);
-        observer.observe(target_node, config);
+            const mq = window.matchMedia('(max-width: 1024px)');
+            addClassByBrowserMode(mq);
+            mq.addEventListener('change', function () {
+                mobileHidePopup(mq);
+            });
+            mobileHidePopup(mq);
+        }
     }
 
     const swiper = new Swiper('.index_ban_100 .swiper-container', {
