@@ -2406,8 +2406,8 @@
               },
               "detail_product_image.js": {
                 "type": "-",
-                "size": 6861,
-                "lmtime": 1723562181188.1213,
+                "size": 6074,
+                "lmtime": 1723569774789.1333,
                 "modified": false
               },
               "image.js": {
@@ -6179,8 +6179,8 @@
           },
           "setup_backup.js": {
             "type": "-",
-            "size": 40151,
-            "lmtime": 1723303379505.0586,
+            "size": 38182,
+            "lmtime": 1723601572883.031,
             "modified": false
           },
           "sidebar.html": {
