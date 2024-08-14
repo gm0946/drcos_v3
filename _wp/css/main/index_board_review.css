@@ -34,7 +34,7 @@
     }
 
 	.index_board_review.review_list_grp .review__list > ul > li{
-		width: calc(20% - 8px);
+		width: calc(20% - 7px);
 		margin-left: 8px;
 	}
 
@@ -67,8 +67,12 @@
 /********************* PC & Tablet *********************/
 @media all and (min-width:641px) and (max-width:1024px){
 	.index_board_review.review_list_grp .review__list > ul > li{
-		width: calc(33% - 14px);
+		width: calc(33% - 10px);
 		margin-left: 16px;
+	}
+
+	.index_board_review.review_list_grp .review__list > ul > li:nth-child(3n+1) {
+		margin-left: 0;
 	}
 }
 

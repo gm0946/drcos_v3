@@ -228,6 +228,7 @@ main#contents {
 
 	.section-title .more {
 		font-size: 14px;
+		right:5px;
 	}
 
 	.section-title .more:hover {

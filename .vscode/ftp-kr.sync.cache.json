@@ -2406,8 +2406,8 @@
               },
               "detail_product_image.js": {
                 "type": "-",
-                "size": 6074,
-                "lmtime": 1723569774789.1333,
+                "size": 6120,
+                "lmtime": 1723602805247.2231,
                 "modified": false
               },
               "image.js": {
@@ -3547,9 +3547,9 @@
         },
         "setup.js": {
           "type": "-",
-          "size": 38182,
+          "size": 38178,
           "lmtime": 1723560961903.9424,
-          "modified": false
+          "modified": true
         },
         "shopinfo": {
           "company.html": {

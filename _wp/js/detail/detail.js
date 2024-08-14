@@ -17,16 +17,21 @@ $(function () {
                 fail: `
                 <div class="fail">
                         <span class="frsp--msg1">{#shortfall_price}원</span>
-                    이상 주문 시 <span class="frsp--msg2 delivery_fee">무료배송 💖</span>
+                    더 담으면 <span class="frsp--msg2 delivery_fee">무료배송 💖</span>
                 </div>`,
                 success: `
                 <div class="success">
-                    <span class="frsp--msg1">😄 무료배송</span> 
+                    <span class="frsp--msg1">😄 무료배송</span>
                     <span class="frsp--msg2 delivery_fee">{#delivery_fee}원</span>을 절약했어요.
                 </div>`,
             }
         }
     });
+
+    // 네이버페이 또는 카카오페이 활성화 시 클래스 추가
+    if ($('#NaverChk_Button').text().trim().length > 0 || $('#appPaymentButtonBox').text().trim().length > 0) {
+        $('.naver-kakao-pay').addClass('active');
+    }
 
     // 재입고 알림 신청
     $(document).on('click', '#btn_restock', function (e) {

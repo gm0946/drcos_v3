@@ -11,6 +11,7 @@
     "autoDownload": true,
     "ignore": [
         ".git",
-        "/.vscode"
+        "/.vscode",
+        "/user_bak"
     ]
 }

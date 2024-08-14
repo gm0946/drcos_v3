@@ -614,7 +614,7 @@
 }
 
 .xans-product-detail .xans-product-addoption .txtByte {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
     vertical-align: middle;
     letter-spacing: -1px;
 }
@@ -1708,7 +1708,7 @@
 
 #totalProducts>table>tbody>tr.option_product>td>table td:first-child {
     padding-top: 10px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 #totalProducts>table>tbody>tr.option_product>td>table td.right {
@@ -2413,9 +2413,14 @@
     opacity: 0;
     background: #fff;
     height: 28px;
-    animation: cart_count 1.2s forwards, cart_count_swing 1.5s infinite;
     top: -40px;
     white-space: nowrap;
+	display:none;
+}
+
+.actionCart .cart-count.active {
+    display:block;
+    animation: cart_count 1.2s forwards, cart_count_swing 1.5s infinite;
 }
 
 .actionCart .cart-count:before,
@@ -2877,8 +2882,12 @@
     }
 
     #totalPrice {
-        padding: 10px 0 30px;
+        padding: 10px 0;
         font-size: 1.1rem;
+    }
+
+	#optionG.cart-count-active #totalPrice {
+		padding-bottom:40px;
     }
 
     #totalPrice .title {
@@ -2982,7 +2991,6 @@
     }
 
     #NaverChk_Button {
-        margin: 2rem 0 0;
         text-align: center;
     }
 
@@ -3173,9 +3181,13 @@
 
     #optionG.active.extend #totalPrice {
         display: block;
-        padding: 0 10px 40px;
+        padding: 0 10px 20px;
         text-align: right;
     }
+
+	#optionG.active.extend.cart-count-active #totalPrice{
+		padding-bottom:40px;
+	}
 
     /*231212 - 배경 모달창 추가*/
     #optionG.active.extend:before {
@@ -3271,7 +3283,7 @@
     }
 
     .xans-product-detail .imgArea {
-        width: calc(100% - 530px);
+        width: calc(100% - 600px);
     }
 
     .xans-product-detail .detail-img-box {
@@ -3446,7 +3458,7 @@
         font-size: 13px;
         line-height: 1;
         width: 470px;
-        margin: 0 0 0 60px;
+        margin: 0 0 0 100px;
     }
 
     .xans-product-detail .headingArea h1 {
@@ -3630,8 +3642,12 @@
     }
 
     #optionG #totalPrice {
-        padding: 30px 0;
+        padding: 20px 0;
     }
+
+	#optionG.cart-count-active #totalPrice{
+		padding-bottom:40px;
+	}
 
     #orderFixArea {
         display: none !important;
@@ -3639,7 +3655,7 @@
 
     /* button */
     .xans-product-detail .xans-product-action .ec-base-button[class*="gColumn"] {
-        margin: 10px 0 20px;
+        margin: 0 0 20px;
         gap: 10px;
     }
 
@@ -3806,10 +3822,14 @@
     #optionG.active .wp-opt-box {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 20px;
+
         min-height: 200px;
         margin: 0;
     }
+
+	#optionG.active.cart-count-active .wp-opt-box{
+		margin-bottom:20px;
+	}
 
     #optionG.active .wp-opt-box .opt-left,
     #optionG.active .wp-opt-box .opt-right {
@@ -3877,13 +3897,17 @@
     }
 
     #optionG.active .naver-kakao-pay {
-        margin: 0 20px 20px 0;
+        margin: 0 20px;
         overflow: hidden;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
         gap: 20px;
     }
+
+	#optionG.active .naver-kakao-pay.active{
+		margin:20px 20px;;
+	}
 
     #optionG.active .naver-kakao-pay #appPaymentButtonBox {
         margin: 0;

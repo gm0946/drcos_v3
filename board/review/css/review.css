@@ -1012,8 +1012,8 @@ body#review {
 		}
 
 		.review__list.grid .content .thumb .thumb-attach img {
-			width: 1.5rem;
-			height: 1.5rem;
+			width: 1.7rem;
+			height: 1.7rem;
 			border-radius: var(--border-radius-small);
 			margin-left: .2rem;
 			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
@@ -2834,7 +2834,7 @@ body#review {
 
 		.review_read_grp .section_cont {
 			padding-top: 50px;
-			padding-bottom: 50px;
+			padding-bottom: 60px;
 		}
 
 		.review_read_grp .view_photo {
@@ -2959,6 +2959,10 @@ body#review {
 
 		.review_read_grp .xans-board-commentreply .inside {
 			margin-left: 16px;
+		}
+
+		.review_read_grp .xans-board-read .password{
+			margin-left:10px;
 		}
 	}
 
@@ -3098,7 +3102,7 @@ body#review {
 		.review_read_grp .section_cont {
 			overflow: hidden auto;
 			box-sizing: border-box;
-			height: calc(100% - 140px);
+			height: calc(100% - 150px);
 			margin-top: 70px;
 		}
 
@@ -3250,7 +3254,7 @@ body#review {
 		#review.thumb .review_read_grp .view_photo {
 			width: 600px;
 			margin-top: 70px;
-			padding: 0 40px 70px;
+			padding: 0 40px 80px;
 		}
 
 		#review.thumb .review_read_grp .view_photo .single,
@@ -3335,8 +3339,6 @@ body#review {
 			line-height: 33px;
 			top: 16px;
 		}
-
-		#review.list .xans-board-commentform .outside .submit {}
 
 		#review.list .review_read_grp .xans-board-commentform input[type=password] {
 			width: 230px;
