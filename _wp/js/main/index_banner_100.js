@@ -1,8 +1,8 @@
 /**
 * 메인슬라이드 100 배너 (암호화 필요)
 * 제작 : 웹퍼블릭
-* 버전 : 1.1
-* 최종업데이트 : 2024.07.14
+* 버전 : 1.2
+* 최종업데이트 : 2024.08.15
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -32,6 +32,7 @@ $(document).ready(function () {
                         $('div[id^="popup_"]').addClass('displaynone');
                     }else{
                         $('div[id^="popup_"]').removeClass('displaynone');
+                        $('div[id^="popup_"] iframe')[0].contentWindow.location.reload();
                     }
                 }
             }
