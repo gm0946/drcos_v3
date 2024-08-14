@@ -12,48 +12,4 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-$(document).ready(function () {
-    WP_CORE().util.replaceCodeToText('.index_ban_400 .section-title .title', '{#title}', WP_SETUP.메인페이지.이벤트배너.타이틀);
-    WP_CORE().util.replaceCodeToText('.index_ban_400 .section-title .sub-title', '{#sub_title}', WP_SETUP.메인페이지.이벤트배너.서브타이틀);
-
-    const swiper = new Swiper('.index_ban_400 .swiper-container', {
-        slidesPerView: 1.3,
-        spaceBetween: 13,
-        loop: true,
-        speed: 600,
-        preloadImages: false,
-        lazy: true,
-        centeredSlides: false,
-        roundLengths: true,
-        observer: true,
-        observeParents: true,
-        on: {
-            init: function () {
-                $(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
-            },
-        },
-        autoplay: (WP_SETUP.메인페이지.이벤트배너.자동재생.자동재생여부 == 'on') ? {
-            delay: WP_SETUP.메인페이지.이벤트배너.자동재생.대기시간,
-            disableOnInteraction: (WP_SETUP.메인페이지.띠배너_1X1.자동재생.인터렉션 == 'on') ? false : true,
-        } : false,
-        pagination: {
-            el: '.index_ban_400 .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.index_ban_400 .swiper-button-next',
-            prevEl: '.index_ban_400 .swiper-button-prev',
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2.2,
-                spaceBetween: 15,
-            },
-            1025: {
-                slidesPerView: 'auto',
-                spaceBetween: 18,
-                centeredSlides: true,
-            }
-        }
-    });
-});
+function _0x1974(_0x1f25d2,_0x3d52f9){const _0x289e22=_0x289e();return _0x1974=function(_0x197480,_0x9b42ef){_0x197480=_0x197480-0xea;let _0x518372=_0x289e22[_0x197480];return _0x518372;},_0x1974(_0x1f25d2,_0x3d52f9);}const _0x1f5666=_0x1974;function _0x289e(){const _0x4e514f=['.index_ban_400\x20.swiper-container','이벤트배너','{#title}','auto','1490355hmZpbT','19579266jWBGxk','메인페이지','.wp-stand-by','.index_ban_400\x20.section-title\x20.title','인터렉션','.index_ban_400\x20.swiper-button-next','5alEOHI','1377033zDzLlG','10bhydvL','3585169VUZOZz','{#sub_title}','8KZnXhu','ready','자동재생여부','서브타이틀','768000uasBzk','util','1626876lJqRtK','replaceCodeToText','closest','자동재생','2453164eYDrkd','.index_ban_400\x20.swiper-pagination'];_0x289e=function(){return _0x4e514f;};return _0x289e();}(function(_0x5642a6,_0x170262){const _0x25700e=_0x1974,_0x1b42d1=_0x5642a6();while(!![]){try{const _0xd78a1=parseInt(_0x25700e(0x104))/0x1+-parseInt(_0x25700e(0xf6))/0x2+-parseInt(_0x25700e(0xfc))/0x3+parseInt(_0x25700e(0xf2))/0x4*(-parseInt(_0x25700e(0x103))/0x5)+-parseInt(_0x25700e(0xf0))/0x6+parseInt(_0x25700e(0xea))/0x7*(-parseInt(_0x25700e(0xec))/0x8)+parseInt(_0x25700e(0xfd))/0x9*(parseInt(_0x25700e(0x105))/0xa);if(_0xd78a1===_0x170262)break;else _0x1b42d1['push'](_0x1b42d1['shift']());}catch(_0x4cc95b){_0x1b42d1['push'](_0x1b42d1['shift']());}}}(_0x289e,0xbefae),$(document)[_0x1f5666(0xed)](function(){const _0x5c9799=_0x1f5666;WP_CORE()[_0x5c9799(0xf1)]['replaceCodeToText'](_0x5c9799(0x100),_0x5c9799(0xfa),WP_SETUP[_0x5c9799(0xfe)]['이벤트배너']['타이틀']),WP_CORE()[_0x5c9799(0xf1)][_0x5c9799(0xf3)]('.index_ban_400\x20.section-title\x20.sub-title',_0x5c9799(0xeb),WP_SETUP[_0x5c9799(0xfe)][_0x5c9799(0xf9)][_0x5c9799(0xef)]);const _0x540b10=new Swiper(_0x5c9799(0xf8),{'slidesPerView':1.3,'spaceBetween':0xd,'loop':!![],'speed':0x258,'preloadImages':![],'lazy':!![],'centeredSlides':![],'roundLengths':!![],'observer':!![],'observeParents':!![],'on':{'init':function(){const _0x8fdeae=_0x5c9799;$(this['el'])[_0x8fdeae(0xf4)](_0x8fdeae(0xff))['removeClass']('wp-stand-by');}},'autoplay':WP_SETUP['메인페이지'][_0x5c9799(0xf9)][_0x5c9799(0xf5)][_0x5c9799(0xee)]=='on'?{'delay':WP_SETUP['메인페이지']['이벤트배너'][_0x5c9799(0xf5)]['대기시간'],'disableOnInteraction':WP_SETUP[_0x5c9799(0xfe)]['띠배너_1X1']['자동재생'][_0x5c9799(0x101)]=='on'?![]:!![]}:![],'pagination':{'el':_0x5c9799(0xf7),'clickable':!![]},'navigation':{'nextEl':_0x5c9799(0x102),'prevEl':'.index_ban_400\x20.swiper-button-prev'},'breakpoints':{0x280:{'slidesPerView':2.2,'spaceBetween':0xf},0x401:{'slidesPerView':_0x5c9799(0xfb),'spaceBetween':0x12,'centeredSlides':!![]}}});}));

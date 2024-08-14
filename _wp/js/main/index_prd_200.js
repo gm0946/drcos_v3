@@ -12,12 +12,4 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-$(document).ready(function () {
-    WP_CORE().util.replaceCodeToText('.index_prd_200 .section-title .title', '{#title}', WP_SETUP.메인페이지.상품진열1.타이틀);
-    WP_CORE().util.replaceCodeToText('.index_prd_200 .section-title .sub-title', '{#sub_title}', WP_SETUP.메인페이지.상품진열1.서브타이틀);
-    
-    $('.index_prd_200 .prdList').addClass('grid' + WP_SETUP.메인페이지.상품진열1.진열개수.PC);
-    $('.index_prd_200 .prdList').addClass('mgrid' + WP_SETUP.메인페이지.상품진열1.진열개수.M);
-    (WP_SETUP.메인페이지.상품진열1.표시여부 == 'on') ?
-        $('.index_prd_200').removeClass('wp-stand-by') : $('.index_prd_200').remove();
-});
+function _0x6542(){var _0x160adc=['메인페이지','84788jtLntL','5tdvdVS','2OsInYq','1971320MslumV','666544QkKgyu','1205229RNvZKo','grid','mgrid','{#sub_title}','진열개수','서브타이틀','.index_prd_200\x20.section-title\x20.sub-title','상품진열1','.index_prd_200\x20.prdList','replaceCodeToText','1885806dXsYhA','{#title}','removeClass','wp-stand-by','.index_prd_200','타이틀','870qOZhhU','376341hhJpEE','ready','6NfSJrB','addClass','.index_prd_200\x20.section-title\x20.title','299674VhCnYR'];_0x6542=function(){return _0x160adc;};return _0x6542();}var _0x502ea5=_0x5c60;function _0x5c60(_0xaf301f,_0x19ff8f){var _0x654256=_0x6542();return _0x5c60=function(_0x5c6091,_0x575bee){_0x5c6091=_0x5c6091-0x14c;var _0x4b813a=_0x654256[_0x5c6091];return _0x4b813a;},_0x5c60(_0xaf301f,_0x19ff8f);}(function(_0x4e4668,_0x4124c3){var _0x18141a=_0x5c60,_0x11d198=_0x4e4668();while(!![]){try{var _0x534d38=-parseInt(_0x18141a(0x154))/0x1*(-parseInt(_0x18141a(0x150))/0x2)+-parseInt(_0x18141a(0x157))/0x3+-parseInt(_0x18141a(0x156))/0x4*(-parseInt(_0x18141a(0x153))/0x5)+parseInt(_0x18141a(0x14d))/0x6*(-parseInt(_0x18141a(0x168))/0x7)+-parseInt(_0x18141a(0x155))/0x8+-parseInt(_0x18141a(0x161))/0x9+parseInt(_0x18141a(0x167))/0xa*(parseInt(_0x18141a(0x152))/0xb);if(_0x534d38===_0x4124c3)break;else _0x11d198['push'](_0x11d198['shift']());}catch(_0x142659){_0x11d198['push'](_0x11d198['shift']());}}}(_0x6542,0x370ab),$(document)[_0x502ea5(0x14c)](function(){var _0x1a3db2=_0x502ea5;WP_CORE()['util'][_0x1a3db2(0x160)](_0x1a3db2(0x14f),_0x1a3db2(0x162),WP_SETUP[_0x1a3db2(0x151)][_0x1a3db2(0x15e)][_0x1a3db2(0x166)]),WP_CORE()['util'][_0x1a3db2(0x160)](_0x1a3db2(0x15d),_0x1a3db2(0x15a),WP_SETUP['메인페이지'][_0x1a3db2(0x15e)][_0x1a3db2(0x15c)]),$(_0x1a3db2(0x15f))[_0x1a3db2(0x14e)](_0x1a3db2(0x158)+WP_SETUP[_0x1a3db2(0x151)][_0x1a3db2(0x15e)][_0x1a3db2(0x15b)]['PC']),$(_0x1a3db2(0x15f))[_0x1a3db2(0x14e)](_0x1a3db2(0x159)+WP_SETUP[_0x1a3db2(0x151)][_0x1a3db2(0x15e)]['진열개수']['M']),WP_SETUP[_0x1a3db2(0x151)][_0x1a3db2(0x15e)]['표시여부']=='on'?$(_0x1a3db2(0x165))[_0x1a3db2(0x163)](_0x1a3db2(0x164)):$(_0x1a3db2(0x165))['remove']();}));
