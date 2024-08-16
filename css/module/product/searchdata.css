@@ -1,17 +1,17 @@
 /* 검색&상품분류 */
 .xans-product-searchdata .searchField { padding:22px 0; margin:0 0 42px; }
 .xans-product-searchdata .searchField fieldset { position:relative; display:table; margin:0 auto 20px; text-align:center; }
-.xans-product-searchdata .searchField fieldset .searchInput { position:relative; display:inline-block; width:100%; border:1px solid #000; font-size: 0;border-radius: 5px;}
+.xans-product-searchdata .searchField fieldset .searchInput { position:relative; display:inline-block; width:100%; font-size: 0;border-radius: 30px;background: #f3f3f3;}
 .xans-product-searchdata .searchField fieldset .autoDrop { display:none; z-index:2; position:absolute; top:100%; left:-1px; overflow:hidden; overflow-y:auto; max-height:100px; width:100%; border:1px solid #565960; text-align:left; background:#fff; }
 .xans-product-searchdata .searchField fieldset .autoDrop li a { display:block; padding:6px 10px; font-size:11px; color:#000; }
 .xans-product-searchdata .searchField fieldset .autoDrop li a:hover,
 .xans-product-searchdata .searchField fieldset .autoDrop li.selected a { text-decoration:none; color:#fff; background:#a1a4ae; }
 .xans-product-searchdata .searchField fieldset .btnSearchOption { margin:5px 0 0 7px; padding:3px 14px 3px 0; vertical-align:middle; color:#2e2e2e; font-size:1rem; letter-spacing:-1px; outline:0; background:url("//img.echosting.cafe24.com/skin/base/common/ico_arrow2.gif") no-repeat 100% 50%; }
-.xans-product-searchdata .searchField .keyword { border:0; width:100%; height:54px; outline:0; font-size:18px; background:#fff; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; border-radius:5px;}
-.xans-product-searchdata .searchField .btnSearch { position:absolute; bottom:13px; right:13px; outline:0; }
+.xans-product-searchdata .searchField .keyword { border:0; width:100%; height:54px; outline:0; font-size:16px; background:none; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.xans-product-searchdata .searchField .btnSearch { position:absolute; bottom:13px; right:18px; outline:0; }
 .xans-product-searchdata .searchField .keywordArea .list { display:inline-block; }
-.xans-product-searchdata .searchField .keywordArea .list li { display:inline-block; margin:0 0 8px 8px; }
-.xans-product-searchdata .searchField .keywordArea .list li a { display:inline-block; word-break:break-all; word-wrap:break-word; color:#545454; text-decoration:none; }
+.xans-product-searchdata .searchField .keywordArea .list li { display:inline-block; }
+.xans-product-searchdata .searchField .keywordArea .list li a { display:inline-block; word-break:break-all; word-wrap:break-word; color:#545454; text-decoration:none; border:1px solid #ddd;border-radius:30px;}
 
 .xans-product-searchdata .xans-product-searchconditiondata { position:relative; padding:2px 8px 9px 127px; border:1px solid #d7d5d5; font-size:0; line-height:0; }
 #searchContent.xans-product-searchdata .xans-product-searchconditiondata { border-top:0; }
@@ -66,20 +66,25 @@
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-searchdata .searchField fieldset .searchInput { width:650px; padding:0 36px 0 0; }
-    .xans-product-searchdata .searchField .keywordArea { max-width:600px; margin:5px auto; text-align:center; }
-    .xans-product-searchdata .searchField .keywordArea .heading { display:inline-block; margin: 0 10px 0 0; color:#000; font-size:14px; font-weight:bold; }
-    .xans-product-searchdata .searchField .keywordArea .list li a { font-size:14px; }
+	.xans-product-searchdata .searchField .keyword{padding: 2px 5px 2px 25px;}
+    .xans-product-searchdata .searchField .keywordArea { max-width:630px; margin:5px auto; text-align:center; }
+	.xans-product-searchdata .searchField .keywordArea .heading { display: inline-block;margin: 10px 10px 0 0;color: #000;font-size: 15px;font-weight: bold;width: 90px;vertical-align: top;text-align: left;}
+    .xans-product-searchdata .searchField .keywordArea .list{display: inline-flex;width: calc(100% - 110px);vertical-align: top;text-align: left;gap:8px;flex-wrap: wrap;}
+    .xans-product-searchdata .searchField .keywordArea .list li {margin:0;}
+    .xans-product-searchdata .searchField .keywordArea .list li a { font-size:14px; padding:10px 15px;transition: background .25s ease;}
+	.xans-product-searchdata .searchField .keywordArea .list li a:hover{background:#f9f9f9;}
 }
 
 /********************* Mobile *********************/
 @media all and (max-width:1024px) {
-    .xans-product-searchdata .searchField { padding:0 0 24px; margin:0 0 1rem; }
-    .xans-product-searchdata .searchField fieldset .searchInput{border:1px solid #111;}
-    .xans-product-searchdata .searchField .btnSearch{right:10px;}
-    .xans-product-searchdata .searchField .keywordArea{margin:1rem 0 0;}
-    .xans-product-searchdata .searchField .keywordArea .list { overflow:auto; width:100%; white-space:nowrap; }
-    .xans-product-searchdata .searchField .keywordArea .list li { margin:0 10px 0 0; }
-	.xans-product-searchdata .searchField .keywordArea .list li a { font-size:13px; padding:7px 0;}
+    .xans-product-searchdata .searchField { padding:0 0 24px; margin:0; }
+    .xans-product-searchdata .searchField fieldset .searchInput{}
+	.xans-product-searchdata .searchField .keyword{font-size: 15px;height:45px;padding: 2px 4px 2px 20px;}
+    .xans-product-searchdata .searchField .btnSearch{right:15px;bottom: 12px; width: 25px;}
+    .xans-product-searchdata .searchField .keywordArea{margin:1rem 0 0;text-align: center;}
+	.xans-product-searchdata .searchField .keywordArea .heading{margin: 0 0 1rem;display: inline-block;font-size:14px;}
+    .xans-product-searchdata .searchField .keywordArea .list { display: flex;gap: 0.4rem;flex-wrap: wrap; justify-content: center;}
+	.xans-product-searchdata .searchField .keywordArea .list li a { font-size:13px; padding:9px 13px;}
     .xans-product-searchdata .searchResult { padding:1rem 0; border:0;display: flex;justify-content: space-between;align-items: center;}
 
 	.xans-product-searchdata .searchResult .record{line-height:2.5rem;}

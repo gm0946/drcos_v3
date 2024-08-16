@@ -108,7 +108,7 @@
     <div class="searchResult">
         <p class="record">상품 검색 결과 <strong class="txtEm">{$total_count|numberformat} 건</strong></p>
         <div module="product_searchdata">
-            <div class="searchOrder">{$searchOrderby}</div>
+            <div class="searchOrder">{$searchOrderby|replace:::: 기준선택 :::,-정렬선택-}</div>
         </div>
     </div>
     <p class="noData {$search_fail_display|display}">검색 결과가 없습니다.</p>

@@ -6,10 +6,11 @@
 
 $(document).ready(function(){
     const swiper = new Swiper('.review_list_grp .ec-base-table.fixed .swiper-container', {
-        slidesPerView: 1.6,
+        slidesPerView: 1.8,
         spaceBetween: 10,
         speed: 600,
         roundLengths :true,
+        freeMode: true,
         on: {
 			init: function () {
 				$(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
@@ -19,10 +20,6 @@ $(document).ready(function(){
             el: '.review_list_grp .ec-base-table.fixed .swiper-scrollbar',
             hide: false,
             draggable :true,
-        },
-		autoplay: {
-             delay: 2500,
-             disableOnInteraction: false,
         },
 		navigation: {
             nextEl: '.review_list_grp .ec-base-table.fixed .swiper-button-next',
@@ -35,6 +32,7 @@ $(document).ready(function(){
 			1025 : {
 				slidesPerView: 4,
 				spaceBetween: 14,
+                freeMode: false,
 			},
 		},
     });
