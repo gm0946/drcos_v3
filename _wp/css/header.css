@@ -653,7 +653,6 @@
 	#header .topArea_navigation .menu_search ,
 	#header .topArea_navigation .menu_basket,
 	#header .topArea_navigation .menu_user {
-		width: 30px;
 		margin-top:20px;
 	}
 
@@ -688,7 +687,6 @@
 	#header .topArea_navigation .menu_basket {
         font-size: 0;
         position: relative;
-        margin-left: 15px;
     }
 
     #header .topArea_navigation .menu_basket img {
@@ -702,7 +700,7 @@
         text-align: center;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 1px;
         border-radius: 30px;
         float: none;
         min-width: 13px;
@@ -712,9 +710,7 @@
     }
 
 	#header .topArea_navigation .menu_user {
-        width: 30px;
         font-size: 0;
-        margin-left: 15px;
 		position: relative;
     }
 
@@ -722,11 +718,11 @@
         width: 27px;
     }
 
-	#header .topArea_navigation .menu_search a,
-	#header .topArea_navigation .menu_basket a,
-	#header .topArea_navigation .menu_user a{
-		padding-bottom:20px;
-		display:inline-block;
+	#header .topArea_navigation .menu_search > a,
+	#header .topArea_navigation .menu_basket > a,
+	#header .topArea_navigation .menu_user > a{
+		display: inline-block;
+        padding: 0 8px 20px;
 	}
 
 	#header .menu_user .menu_user_list{
