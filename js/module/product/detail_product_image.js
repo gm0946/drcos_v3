@@ -1,8 +1,8 @@
 /**
-* detail_product_image.js
+* detail_product_image.js (암호화 필요)
 * 제작 : 웹퍼블릭
-* 버전 : 1.2.5 (축소이미지 - 가로형)
-* 최종업데이트 : 2024.08.17
+* 버전 : 1.2.6 (축소이미지 - 가로형)
+* 최종업데이트 : 2024.08.19
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -26,11 +26,10 @@ $(function () {
         const zoom_options = {
             zoomType: "window",
             easing: false,
-            borderSize: 1,
             scrollZoom: 0,
             zoomLevel: 1,
-            zoomWindowWidth: (img_natural_width <= 500) ? img_natural_width : 500,
-            zoomWindowHeight: (img_natural_height <= 500) ? img_natural_height : 500,
+            zoomWindowWidth: (img_natural_width <= 550) ? img_natural_width : 550,
+            zoomWindowHeight: (img_natural_height <= 550) ? img_natural_height : 550,
             zoomWindowOffetx: 10,
             borderSize: 1,
             borderColour: '#eeeeee',
@@ -50,12 +49,21 @@ $(function () {
     }
 
     // thumb - remove small image or default smmall thumb remove
+    let is_remove = false;
     $('.detail-img-box .ThumbImage').each(function () {
         if ($(this).attr('src').includes('/product/small/')
             || $(this).attr('src').includes('/thumb/img_product_small.gif')) {
             $(this).closest('.swiper-slide').remove();
+            is_remove = true;
         }
     });
+    
+    // 축소이미지가 정상적으로 삭제되지 않았을 경우 첫번째 이미지 강제로 삭제
+    if (!is_remove){
+    	$('.xans-product-addimage').each(function(){
+        	$(this).find('.swiper-slide:eq(0)').remove();
+        });
+    }
 
     // thumb - add big imgae
     const img_src = $('.detailArea .bigImage').attr('src');
@@ -113,7 +121,6 @@ $(function () {
         },
     });
 
-
     // small image slide
     const add_img_swiper = new Swiper('.listImg .swiper-container', {
         on: {
@@ -147,4 +154,6 @@ $(function () {
         $(this).addClass('selected').siblings().removeClass('selected');
         thumb_img_swiper.slideTo(index, 0);
     });
+    
+    setDefaultImage('.ThumbImage');
 });

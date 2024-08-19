@@ -2085,6 +2085,8 @@
     border-radius: 5px;
 }
 
+#wrap .xans-product-detail .xans-product-action .bt__soldout{color:#fff;}
+
 /* optionG (옵션) */
 #optionG .inner{
 	margin:14px 0 0;
@@ -3284,6 +3286,8 @@
 
     .xans-product-detail .imgArea {
         width: calc(100% - 600px);
+        min-width: 500px;
+        padding-right:50px;
     }
 
     .xans-product-detail .detail-img-box {
