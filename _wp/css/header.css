@@ -39,7 +39,7 @@
     height: 2px;
     background: #222;
     transition: all 0.2s linear;
-	border-radius: 5px;
+	border-radius: var(--border-radius-small);
 }
 
 #header .fold-icon span.line1 {
@@ -216,7 +216,7 @@
         color: #fff;
         font-size: 11px;
         text-align: center;
-        border-radius: 8px;
+        border-radius: var(--border-radius-basic);
         padding: 2px 7px;
         position: absolute;
         top: -26px;
@@ -285,7 +285,7 @@
         padding: 0 25px 0 10px;
 		transition: background .25s ease;
 		color:#777;
-		border-radius:5px;
+		border-radius: var(--border-radius-small);
     }
 
 	#header .xans-layout-multishoplist.list:hover .toggle{
@@ -321,7 +321,7 @@
         margin-left: -50px;
         width: 100px;
         z-index: 2;
-		border-radius:5px;
+		border-radius: var(--border-radius-small);
 		overflow:hidden;
     }
 
@@ -602,7 +602,7 @@
 	#header .navigation_ .sub-cate-list .sub02 > li .sub03,
 	#header .navigation_ .sub-cate-list .sub02 > li .sub04 {
         background: #fff;
-        border-radius: 5px;
+        border-radius: var(--border-radius-small);
         padding: 5px 0;
         box-sizing: border-box;
         border: 1px solid #ddd;

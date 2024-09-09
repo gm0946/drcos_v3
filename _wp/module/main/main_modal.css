@@ -80,9 +80,8 @@ html.modal-active body {
 	}
 
 	.main--modal .main-modal-box {
-		border-radius: 16px;
+		border-radius: var(--border-radius-basic);
 		transform: translateY(30px);
-
 	}
 
 	.main--modal .main-btn-box .close {
@@ -108,13 +107,13 @@ html.modal-active body {
 	.main--modal .main-modal-box {
 		bottom: 0;
 		width: calc(100% - 20px);
-		border-radius: 12px 12px 0 0;
+		border-radius: var(--border-radius-basic) var(--border-radius-basic) 0 0;
 		max-width: 500px;
 		transform: translateY(30px);
 	}
 
 	.main--modal .main-btn-box .close {
-		font-size: 1rem;
+		font-size: 14px;
 		padding: 1.3rem 0;
 	}
 

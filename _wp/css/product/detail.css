@@ -242,7 +242,7 @@
 
 .xans-product-detail .promotionArea li {
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
 }
 
 .xans-product-detail .promotionArea a {
@@ -397,7 +397,7 @@
 .xans-product-detail .infoArea select {
     width: 100%;
     color: #555;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
 }
 
 .xans-product-detail .infoArea td #delivery_cost_prepaid {
@@ -510,7 +510,7 @@
     height: 18px;
     margin: 0 0 0 5px;
     padding: 0 8px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-basic);
     line-height: 18px;
     font-size: 12px;
     font-family: "돋움", "Dotum";
@@ -644,7 +644,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
 }
 
 .xans-product-detail .xans-product-option .ec-product-button li:last-child {
@@ -876,7 +876,7 @@
 .xans-product-detail .productSet {
     margin: 0 0 10px;
     border: 1px solid #e5e5e5;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
 }
 
 .xans-product-detail .productSet>.title {
@@ -1455,7 +1455,7 @@
     margin: 0;
     padding: 0;
     top: 0;
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
 #totalProducts .option_box_del {
@@ -1466,9 +1466,14 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 14px 0 0 5px;
+    margin: 0;
+	margin-top: 15px;
     vertical-align: middle;
     background: url(//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg) no-repeat 0 0;
+}
+
+#totalProducts .add_products .delete {
+	margin-top:14px;
 }
 
 #totalProducts .delete img {
@@ -1607,7 +1612,7 @@
 }
 
 #totalProducts>table>tbody>tr>td:first-child {
-    padding: .7rem .8rem;
+    padding: 14px 14px;
     display: block;
 }
 
@@ -1672,15 +1677,25 @@
     padding: 0;
 }
 
+#totalProducts>table>tbody>tr>td:first-child,
 #totalProducts>table>tbody>tr>td p.product,
-#totalProducts>table>tbody>tr.option_product>td>p.product,
+#totalProducts>table>tbody>tr.option_product>td>p.product{
+	color: #000;
+    font-size: 14px;
+}
+
+#totalProducts>table>tbody>tr.option_product>td>p.product {
+	    padding-bottom: 0;
+}
+
+#totalProducts>table>tbody>tr>td p.product,
 #totalProducts>table>tbody>tr.add_product>td>p.product {
     padding-bottom: 10px;
     padding-right: 25px;
 }
 
 #totalProducts>table>tbody>tr.add_product>td>p.product {
-    padding-top: 10px;
+    padding-top: 14px;
 }
 
 #totalProducts>table>tbody>tr.option_product>td>p.product+p,
@@ -1707,7 +1722,7 @@
 }
 
 #totalProducts>table>tbody>tr.option_product>td>table td:first-child {
-    padding-top: 10px;
+    padding-top: 0;
     /*padding-bottom: 10px;*/
 }
 
@@ -2082,10 +2097,16 @@
 }
 
 .xans-product-detail .xans-product-action .ec-base-button[class*="gColumn"] [class*='btn'] {
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
 }
 
-#wrap .xans-product-detail .xans-product-action .bt__soldout{color:#fff;}
+#wrap .xans-product-detail .xans-product-action .bt__soldout{
+	color:#fff;
+}
+
+#wrap .xans-product-detail .xans-product-action .bt_stock {
+	color:#fff;
+}
 
 /* optionG (옵션) */
 #optionG .inner{
@@ -2302,7 +2323,7 @@
 
 .coupon_modal .coupon_list li .coupon {
     border: 1px solid #2a2a2a;
-    border-radius: 10px;
+    border-radius: var(--border-radius-basic);
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -2689,13 +2710,17 @@
         z-index: 1;
     }
 
+	.xans-product-detail .like_button button .title{
+		font-size:0;
+	}
+
     .xans-product-detail .like_button button {
         display: flex;
         align-items: center;
         font-size: 12px;
         color: #777;
-        border-radius: .5rem;
-        padding: 3px 7px;
+        border-radius: var(--border-radius-small);
+        padding: 4px 7px;
         border: 1px solid #ddd;
         background: #fff;
         transition: border .25s ease, color .25s ease;
@@ -3388,7 +3413,7 @@
 
     .xans-product-detail .imgArea .listImg li.swiper-slide {
         height: auto !important;
-		width:128px;
+		width:118px;
     }
 
     .xans-product-detail .imgArea .listImg li.swiper-slide img {
@@ -3404,29 +3429,28 @@
         width: calc(100% - 1px);
     }
 
-    .xans-product-detail .like_button {
-        position: absolute;
-        left: 10px;
-        bottom: 10px;
-        z-index: 1;
-    }
-
     .xans-product-detail .like_button button {
         display: flex;
         align-items: center;
         font-size: 13px;
         color: #777;
-        border-radius: .5rem;
-        padding: 3px 7px;
+        border-radius: var(--border-radius-small);
+        padding: 6px 9px;
         border: 1px solid #ddd;
         background: #fff;
         transition: border .25s ease, color .25s ease;
+		margin: 20px auto 0;
     }
 
     .xans-product-detail .like_button.selected button {
         color: #ff5858;
         border-color: #ff5858;
     }
+
+	.xans-product-detail .like_button button .title{
+		font-size:12px;
+		margin-right:5px;
+	}
 
     .xans-product-detail .like_button button strong {
         vertical-align: middle;
@@ -3771,7 +3795,7 @@
         width: 100%;
         box-sizing: border-box;
         font-size: 0;
-        border-radius: 5px 5px 0 0;
+        border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
     }
 
     #optionG.active .inner .btn-extend {
@@ -3779,7 +3803,7 @@
         border: 1px solid #aaa;
         border-bottom: 0;
         width: 100px;
-        border-radius: 6px 6px 0 0;
+        border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
         text-align: center;
         margin: 0 auto;
         height: 30px;
@@ -3971,6 +3995,6 @@
 
 @media all and (min-width:1025px) and (max-width:1279px) {
     .xans-product-detail .imgArea .listImg li.swiper-slide{
-		width:90px;
+		width:80px;
 	}
 }

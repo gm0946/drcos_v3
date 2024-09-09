@@ -1,10 +1,15 @@
 /* button */
 [class^='btn']{border-radius:var(--button-radius-basic);}
-[class^='btnNormal'], a[class^='btnNormal'] { display:inline-block; padding:12px 20px; height:40px; font-size:13px; box-sizing:border-box; border:1px solid #c7c7c7; line-height:1; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#555; background-color:#fff; }
-[class^='btnSubmit'], a[class^='btnSubmit'] { display:inline-block; padding:12px 20px; height:40px; font-size:13px; box-sizing:border-box; border:1px solid transparent; line-height:1; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#fff; background-color:var(--button-submit-color, #333); }
-[class^='btnEm'], a[class^='btnEm'] { display:inline-block; box-sizing:border-box; padding:2px 8px; border:1px solid transparent; font-size:12px; line-height:18px; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#fff; background-color:#737373; }
-[class^='btnBasic'], a[class^='btnBasic'] { display:inline-block; box-sizing:border-box; padding:2px 8px; border:1px solid #d1d1d1; font-size:12px; line-height:18px; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#222; background-color:#f0f0f0; }
-[class^='btnStrong'], a[class^='btnStrong'] { display:inline-block; box-sizing:border-box; padding:2px 8px; border:1px solid #666; font-size:12px; line-height:18px; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#fff; background-color:#777; }
+[class^='btnNormal'], a[class^='btnNormal'],
+[class^='btnSubmit'], a[class^='btnSubmit'],
+[class^='btnEm'], a[class^='btnEm'],
+[class^='btnBasic'], a[class^='btnBasic'],
+[class^='btnStrong'], a[class^='btnStrong']{display:inline-block; padding:0 20px; height:40px; line-height:40px; font-size:13px; box-sizing:border-box;font-weight:normal; text-decoration:none; vertical-align:middle;word-spacing:-0.5px; letter-spacing:0;text-align:center; white-space:nowrap;}
+[class^='btnNormal'], a[class^='btnNormal'] {  border:1px solid #c7c7c7;color:#555; background-color:#fff; }
+[class^='btnSubmit'], a[class^='btnSubmit'] { border:1px solid transparent; color:#fff; background-color:var(--button-submit-color, #333); }
+[class^='btnEm'], a[class^='btnEm'] { border:1px solid transparent;color:#fff; background-color:#737373; }
+[class^='btnBasic'], a[class^='btnBasic'] { border:1px solid #d1d1d1;color:#222; background-color:#f0f0f0; }
+[class^='btnStrong'], a[class^='btnStrong'] { border:1px solid #666;color:#fff; background-color:#777; }
 	[class^='btnNormal']:not(.disabled).selected { border-color:#000; }
     [class^='btnNormal'].disabled { border-color:#e3e3e3; color:#999; }
     [class^='btnSubmit'].disabled { background-color:#9297a2; color:#f0f0f0; }
@@ -25,6 +30,10 @@
 .btnMore { display:inline-block; text-align:center; background: #fff; color:#444; border:1px solid #ddd;}
 .btnMore .icon{ margin: -8px 0 0 10px; vertical-align: middle;}
 .btnMore span:first-child{ margin-left:5px;}
+/* size */
+[class^='btn'].sizeS,
+[class^='btn'].sizeM,
+[class^='btn'].sizeL { line-height:1;  }
 
 /* ec-base-button */
 .ec-base-button { margin:20px 0; text-align:center; }
@@ -72,7 +81,7 @@
     [class^='btnEm']:not(.disabled):hover { background-color:#77797d; }
     [class^='btnBasic']:not(.disabled):hover { background-color:#e5e5e5; }
 
-	.btnMore { display:inline-block; min-width: 160px; padding: 13px 0;text-align:center; transition: all .25s ease;font-size: 13px;margin: 20px 0 0;border-radius: 8px; }
+	.btnMore { display:inline-block; min-width: 160px; padding: 13px 0;text-align:center; transition: all .25s ease;font-size: 13px;margin: 20px 0 0;border-radius: var(--border-radius-small); }
 	.btnMore:hover{background:#111;color:#fff;}
 	.btnMore .icon{ margin: -8px 0 0 10px; vertical-align: middle;transition: all .25s ease;}
 	.btnMore:hover .icon{border-color: #fff;}

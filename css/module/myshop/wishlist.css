@@ -1,17 +1,20 @@
-#contents .xans-myshop-wishlistitem {}
-#contents .xans-myshop-wishlist .shippingFee { position:relative; display:inline-block; text-align:left; }
-#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -170px; width:360px; }
-#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table th { width:40px; }
-#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table th,
-#contents .xans-myshop-wishlist .shippingFee .ec-base-tooltip table td { padding:7px 10px 8px 10px; text-align:left; }
-#contents .xans-myshop-wishlist .sale-price{font-weight:bold;font-size:13px;margin-left:0px;display:block;}
+.xans-myshop-wishlistitem {border-top: 1px solid #ddd;}
+.xans-myshop-wishlist .shippingFee { position:relative; display:inline-block; text-align:left; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip { display:block; margin:0 0 0 -170px; width:360px; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table th { width:40px; }
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table th,
+.xans-myshop-wishlist .shippingFee .ec-base-tooltip table td { padding:7px 10px 8px 10px; text-align:left; }
+.xans-myshop-wishlist .sale-price{font-weight:bold;font-size:13px;margin-left:0px;display:block;}
+.xans-myshop-wishlist .ec-base-prdInfo .description .price .strike{color: #999;font-weight: normal;}
+.xans-myshop-wishlist .ec-base-prdInfo .description .price strong,
+.xans-myshop-wishlist .ec-base-prdInfo .description .sale-price {font-weight:bold;}
 
-#contents .xans-myshop-wishlist .ec-base-prdInfo .prdBox{padding: 24px 0;}
-#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail,
-#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{height:auto;}
-#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail{border:0;}
-#contents .xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{border:1px solid #eee;}
-#contents .xans-myshop-wishlist .ec-base-prdInfo .btnDelete{right:0;}
+.xans-myshop-wishlist .ec-base-prdInfo .prdBox{padding: 24px 0;}
+.xans-myshop-wishlist .ec-base-prdInfo .thumbnail,
+.xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{height:auto;}
+.xans-myshop-wishlist .ec-base-prdInfo .thumbnail{border:0;}
+.xans-myshop-wishlist .ec-base-prdInfo .thumbnail img{border:1px solid #eee;}
+.xans-myshop-wishlist .ec-base-prdInfo .btnDelete{right:0;}
 
 
 

@@ -135,7 +135,7 @@
         border: 1px solid #e1e1e1;
         display: none;
         z-index: 1;
-		border-radius:5px;
+		border-radius: var(--border-radius-small);
     }
 
     #aside .categoryList .sub02 > li:hover .sub03,
@@ -155,7 +155,7 @@
         background-position: right 6px top 10px;
         background-size: 5px auto;
         padding-right: 10px;
-		border-radius: 5px;
+		border-radius: var(--border-radius-small);
     }
 
     #aside .categoryList .sub02 > li:hover,#aside .categoryList .sub03 > li:hover,#aside .categoryList .sub04 > li:hover {

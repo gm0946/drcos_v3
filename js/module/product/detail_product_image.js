@@ -1,8 +1,8 @@
 /**
 * detail_product_image.js (암호화 필요)
 * 제작 : 웹퍼블릭
-* 버전 : 1.2.6 (축소이미지 - 가로형)
-* 최종업데이트 : 2024.08.19
+* 버전 : 1.3 (축소이미지 - 가로형)
+* 최종업데이트 : 2024.09.09
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -64,6 +64,9 @@ $(function () {
         	$(this).find('.swiper-slide:eq(0)').remove();
         });
     }
+    
+    // badge move
+    $('.prdImg .swiper-container').append($('.detailArea .prod-badge'));
 
     // thumb - add big imgae
     const img_src = $('.detailArea .bigImage').attr('src');
@@ -107,7 +110,7 @@ $(function () {
         },
         slidesPerView: 1,
         autoHeight: true,
-        spaceBetween: 0,
+        spaceBetween: 10,
         loop: false,
         roundLengths: true,
         navigation: {

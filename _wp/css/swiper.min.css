@@ -405,7 +405,7 @@ button.swiper-pagination-bullet {
 }
 /* Scrollbar */
 .swiper-scrollbar {
-  border-radius: 10px;
+  border-radius: var(--border-radius-basic);
   position: relative;
   -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
@@ -431,7 +431,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: var(--border-radius-basic);
   left: 0;
   top: 0;
 }

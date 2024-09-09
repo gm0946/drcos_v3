@@ -1,6 +1,6 @@
 #purchaseData{
 	position: absolute;
-	border-radius: 5px;
+	border-radius: var(--border-radius-small);
 	padding: 5px 10px;
 	display: block;
 	font-weight:600;

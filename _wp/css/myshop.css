@@ -443,7 +443,7 @@
 .myshop_menu .menu a{
 	display:flex;
 	border:1px solid #e5e5e5;
-	border-radius:5px;
+	border-radius: var(--border-radius-small);
 	flex-wrap: wrap;
 }
 
@@ -873,7 +873,9 @@
 		display:none;
 	}
 
-	.xans-myshop-boardpackage .myshop-boardList{}
+	.xans-myshop-boardpackage .myshop-boardList .ec-base-table.typeList tr{
+    	padding:14px 0;
+    }
 
 	.myshop_menu .menu ul{
 		display: flex;

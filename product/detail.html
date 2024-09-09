@@ -5,10 +5,9 @@
     $jointbuy_page = /product/jointbuy.html
 -->
 
-<!--@js(/board/review/js/dp.js)-->
 <!--@js(/_wp/js/detail/detail.js)-->
-
 <!--@js(/_wp/js/product/path.js)-->
+
 <div class="path" module="product_headcategory">
     <span>현재 위치</span>
     <ol>
@@ -66,7 +65,8 @@
 
 				<!-- 좋아요 -->
 				<div class="like_button {$disp_likeprd_class}">
-					<button type="button">{$disp_likeprd_icon}<span class="count">{$disp_likeprd_count}</span></button>
+
+					<button type="button"><span class="title">좋아요</span> {$disp_likeprd_icon}<span class="count">{$disp_likeprd_count}</span></button>
 				</div><!-- //좋아요 -->
             </div>
 
@@ -106,13 +106,13 @@
 				</div>
 
 				<!-- 리뷰 미리보기  -->
-				<div class="detail-review-box review_count_{$review_count}">
+				<div class="detail-review-box review_count_{$review_count} displaynone">
 					<div module="product_additional" class="grp_review">
 						<a href="#prdReview" class="{$review_display|display} ">
 							<span class="review-avg"></span><span class="count_review">({$review_count|numberformat}건)</span>
 						</a>
 					</div>
-                    <!--@import(/board/review/photo_review_tiny_widget.html)-->
+                    <!--import(/board/review/photo_review_tiny_widget.html)-->
 				</div><!-- //리뷰 미리보기 -->
 				<div class="productArea">
 					<div class="prod_price">
@@ -852,57 +852,83 @@
 
     <div id="prdReview" class="productReview tab-conts">
 		<div class="section_title">
-            <h2>리뷰</h2>
-        </div>
-		<!--@css(/board/review/css/review.css)-->
-		<!--@css(/_wp/css/board/review.css)-->
-		<!--@js(/board/review/js/review.js)-->
+			<h2>리뷰</h2>
+		</div>
 
-		<!--@import(/board/review/review_highlight_widget.html)-->
-		<!--@import(/board/review/photo_review_widget.html)-->
+		<div class="board">
+			<div module="product_review">
+				<!--@css(/css/module/product/review.css)-->
+				<!--@js(/js/module/product/review.js)-->
+				<!--@js(/board/review/js/review.js)-->
 
-		<div class="review_list_grp">
-			<div class="list_type">
-				<ul class="list--type">
-					<li class="grid selected"><a href="javascript:;">이미지</a></li>
-					<li class="list"><a href="javascript:;">리스트</a></li>
+				<p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+				<div class="minor {$adult_display|display}">
+					<p><span>19세 미만의 미성년자</span>는 출입을 금합니다.</p>
+					<a class="btnBasic" href="/intro/board.html{$returnParam}">성인인증하기</a>
+				</div>
+
+				<ul class="board {$list_display|display}">
+					<li class="{$block_target_class}" {$block_data_attr}>
+						<p class="descriptions">
+							<a href="/product/provider/review_read.xml{$param_read}">
+								<strong class="summary {$block_content_class}">{$icon_re} {$icon_lock} {$icon_mobile}
+									{$subject} <span class="commentCnt">{$comment_count}</span> 
+								</strong>
+                                <span class="info">
+                                    <span class="info_left">
+                                        <span class="point {$use_point_display|display}" data-rate="{$point_count}"></span>
+                                        <span class="vote {$vote_display|display}">추천 {$vote|numberformat}</span>                                        
+                                    </span>
+                                    <span class="info_right">
+                                        <span class="id" title="작성자">{$writer}</span>
+                                        <span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+                                        <span class="{$hit_display|display}">조회 {$hit_count|numberformat}</span>
+                                    </span>
+                                </span>
+							</a>
+						</p>
+					</li>
+					<li class="{$block_target_class}" {$block_data_attr}>
+						<p class="descriptions">
+							<a href="/product/provider/review_read.xml{$param_read}">
+								<strong class="summary {$block_content_class}">{$icon_re} {$icon_lock} {$icon_mobile}
+									{$subject} <span class="commentCnt">{$comment_count}</span> 
+								</strong>
+                                <span class="info">
+                                    <span class="info_left">
+                                        <span class="point {$use_point_display|display}" data-rate="{$point_count}"></span>
+                                        <span class="vote {$vote_display|display}">추천 {$vote|numberformat}</span>                                        
+                                    </span>
+                                    <span class="info_right">
+                                        <span class="id" title="작성자">{$writer}</span>
+                                        <span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+                                        <span class="{$hit_display|display}">조회 {$hit_count|numberformat}</span>
+                                    </span>
+                                </span>
+							</a>
+						</p>
+					</li>
 				</ul>
 			</div>
 
-			<div class="review__list list">
-				<ul module="product_review" class="wp-review-list">
-					<!--
-						$count = 30
-						$login_page_url = /member/login.html
-						$deny_access_url = /index.html
-					-->
-					<li data-review-no="{$idx}" class="{$block_target_class}" {$block_data_attr}>
-						<!--@import(/board/review/item.html)-->
-					</li>
-					<li data-review-no="{$idx}" class="{$block_target_class}" {$block_data_attr}>
-						<!--@import(/board/review/item.html)-->
-					</li>
-				</ul>
-				<div module="product_reviewpaging" class="ec-base-paginate typeList">
-					<a href="{$param_first}" class="first">첫 페이지</a>
-					<a href="{$param_before}">이전 페이지</a>
-					<ol>
-						<li><a href="{$param|replace:use_review,prdReview}" class="{$param_class}">{$no}</a></li>
-						<li><a href="{$param|replace:use_review,prdReview}" class="{$param_class}">{$no}</a></li>
-						<li><a href="{$param|replace:use_review,prdReview}" class="{$param_class}">{$no}</a></li>
-						<li><a href="{$param|replace:use_review,prdReview}" class="{$param_class}">{$no}</a></li>
-						<li><a href="{$param|replace:use_review,prdReview}" class="{$param_class}">{$no}</a></li>
-					</ol>
-					<a href="{$param_next}">다음 페이지</a>
-					<a href="{$param_last}" class="last">마지막 페이지</a>
-				</div>
-				<div class="ec-base-button gMColumn">
-					<span class="gRight">
-						<a href="{$review_list|replace:/board/product,/board/review}" class="btnNormalFix sizeM">전체 보기</a>
-						<a href="{$review_write|replace:/board/product,/board/review}" class="btnSubmitFix sizeM">리뷰작성하기</a>
-					</span>
-				</div>
+			<div module="product_reviewpaging" class="ec-base-paginate typeList">
+				<a href="{$param_before}" class="btnPrev">이전 페이지</a>
+				<ol>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+				</ol>
+				<a href="{$param_next}" class="btnNext">다음 페이지</a>
 			</div>
+            <div class="ec-base-button gMColumn">
+                <span class="gRight">
+                    <a href="{$review_list|replace:/board/product,/board/review}" class="btnNormalFix sizeM">전체 보기</a>
+                    <a href="{$review_write|replace:/board/product,/board/review}" class="btnSubmitFix sizeM">리뷰작성하기</a>
+                </span>
+            </div>
 		</div>
 	</div>
 

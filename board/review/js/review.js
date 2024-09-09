@@ -9,12 +9,525 @@
  * 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
  */
 
-(function(_0x57b02e,_0x16568d){const _0x46fb7b=_0x460b,_0x23ce90=_0x57b02e();while(!![]){try{const _0x21e472=-parseInt(_0x46fb7b(0x18f))/0x1*(parseInt(_0x46fb7b(0x1bf))/0x2)+parseInt(_0x46fb7b(0x212))/0x3*(-parseInt(_0x46fb7b(0x204))/0x4)+parseInt(_0x46fb7b(0x1af))/0x5*(-parseInt(_0x46fb7b(0x1a9))/0x6)+-parseInt(_0x46fb7b(0x186))/0x7+parseInt(_0x46fb7b(0x205))/0x8+-parseInt(_0x46fb7b(0x1f3))/0x9*(-parseInt(_0x46fb7b(0x224))/0xa)+parseInt(_0x46fb7b(0x229))/0xb*(parseInt(_0x46fb7b(0x207))/0xc);if(_0x21e472===_0x16568d)break;else _0x23ce90['push'](_0x23ce90['shift']());}catch(_0x5b9386){_0x23ce90['push'](_0x23ce90['shift']());}}}(_0x1140,0xbad52));let wpReview=function(_0x335dbb){const _0x21bc59=_0x460b,_0x19d6d6={'openReview':_0x21bc59(0x1f8),'closeReview':'.close-review','contMore':_0x21bc59(0x193),'iframePage':_0x21bc59(0x1ff),'iframeId':'wpReviewFrame','items':_0x21bc59(0x21f),'star_options':{'totalStars':0x5,'starShape':_0x21bc59(0x1ce),'activeColor':_0x21bc59(0x223),'emptyColor':'lightgray','starSize':0xf,'strokeWidth':0x0,'useGradient':![],'minRating':0x0,'readOnly':!![]}},_0x226b71=[],_0x6bf5e3=function(_0x454d55){const _0x519b09=_0x21bc59;if(_0x335dbb(base64Decode(_0x519b09(0x20a)))[_0x519b09(0x18c)](base64Decode(_0x519b09(0x1b3)))!==base64Decode('ODJERjFFQkQwNTg2')||_0x335dbb(base64Decode(_0x519b09(0x20a)))[_0x519b09(0x18c)](base64Decode('Y29udGVudA=='))!==base64Decode(_0x519b09(0x1d0))||_0x335dbb(base64Decode(_0x519b09(0x20a)))[_0x519b09(0x18c)](base64Decode('c2l0ZQ=='))!==base64Decode(_0x519b09(0x1fe)))return;_0x335dbb[_0x519b09(0x200)](!![],_0x19d6d6,_0x454d55),_0x335dbb['fn'][_0x519b09(0x1f5)]=function(){const _0x3e370b=_0x519b09;let _0x2fcd9,_0x4325eb=_0x335dbb(_0x3e370b(0x184)+this[_0x3e370b(0x1a3)]()+'</div>')[_0x3e370b(0x1fa)](_0x3e370b(0x1a1),_0x3e370b(0x1e5))[_0x3e370b(0x1fa)](_0x3e370b(0x1da),'-1')['css']('position','absolute')[_0x3e370b(0x1fa)](_0x3e370b(0x194),this['css'](_0x3e370b(0x194)))[_0x3e370b(0x1fa)](_0x3e370b(0x1ca),this[_0x3e370b(0x1fa)](_0x3e370b(0x1ca)))[_0x3e370b(0x1fa)](_0x3e370b(0x192),this[_0x3e370b(0x1fa)](_0x3e370b(0x192)))[_0x3e370b(0x208)]('body');return _0x2fcd9=_0x4325eb[_0x3e370b(0x21d)]()>this[_0x3e370b(0x21d)](),_0x4325eb[_0x3e370b(0x188)](),_0x2fcd9;};if(location[_0x519b09(0x1b9)][_0x519b09(0x1b8)](_0x519b09(0x1ff))){_0x22af7c('read'),_0x312266();if(WP_SETUP['폰트'][_0x519b09(0x196)]==_0x519b09(0x19e))_0x586010();_0x131198(),_0x45fd3e(),_0x3337e1();}if(location['pathname']['includes'](_0x519b09(0x1de))){let _0x3dc96c=_0x4abf63(_0x519b09(0x1eb));_0x335dbb(_0x519b09(0x219))['addClass'](_0x3dc96c);}location['pathname'][_0x519b09(0x1d5)]()[_0x519b09(0x1b8)](_0x519b09(0x1a6))&&_0x335dbb(_0x519b09(0x217))[_0x519b09(0x20b)](_0x335dbb(_0x519b09(0x217))[_0x519b09(0x20b)]()[_0x519b09(0x21a)]('/board/review?',_0x519b09(0x1cd)));document['referrer'][_0x519b09(0x1d5)]()['includes'](_0x519b09(0x198))&&_0x23165b('D');let _0x4d1a5a=[];_0x335dbb(_0x19d6d6[_0x519b09(0x1dc)])[_0x519b09(0x1ef)](function(_0x35b313,_0x30ccbd){const _0xef9345=_0x519b09,_0x179dce=async function(){const _0xd42e0=_0x460b,_0x1f61aa=_0x30ccbd[_0xd42e0(0x1e7)]['reviewNo'],_0x46c4fb=this;_0x335dbb(this)[_0xd42e0(0x216)](_0xd42e0(0x180))[_0xd42e0(0x1f5)]()&&_0x335dbb(this)[_0xd42e0(0x216)]('.content\x20.cont__more')[_0xd42e0(0x182)](_0xd42e0(0x1dd)),await _0x414cda(_0x1f61aa,this)[_0xd42e0(0x22a)](function(){_0x1d9831(_0x1f61aa,_0x46c4fb);});}[_0xef9345(0x225)](this)();_0x4d1a5a[_0xef9345(0x1b2)](_0x179dce);}),Promise[_0x519b09(0x1b1)](_0x4d1a5a)[_0x519b09(0x22a)](function(){_0x22af7c('list');});};function _0x4bd11e(_0x21ac02,_0x506234,_0x14119c){const _0xa7bf84=_0x21bc59;if(_0x21ac02[_0xa7bf84(0x1ba)]==0x0)return;const _0x4848d7=_0x21ac02['indexOf'](_0x506234);if(_0x4848d7===-0x1)return null;let _0x46ff11,_0x32ec74;if(_0x14119c==_0xa7bf84(0x1ed))return _0x46ff11=_0x4848d7>0x0?_0x21ac02[_0x4848d7-0x1]:null,_0x46ff11;if(_0x14119c=='next')return _0x32ec74=_0x4848d7<_0x21ac02[_0xa7bf84(0x1ba)]-0x1?_0x21ac02[_0x4848d7+0x1]:null,_0x32ec74;}const _0x3337e1=function(){const _0x361024=_0x21bc59;let _0x1194b0=_0x4abf63('no');if(!_0x1194b0)board=_0x335dbb(_0x361024(0x1c0))[_0x361024(0x20b)]();if(!_0x1194b0)return;let _0x42f1ac=[];typeof parent[_0x361024(0x1ee)]==_0x361024(0x1bb)?_0x42f1ac=parent['wpReviewModule'][_0x361024(0x226)]():_0x335dbb('.review__list',parent[_0x361024(0x20c)])[_0x361024(0x216)](_0x361024(0x1db))[_0x361024(0x1ef)](function(){const _0x2ff918=_0x361024;_0x42f1ac['push'](_0x335dbb(this)[_0x2ff918(0x1ab)]('review-no'));});if(_0x42f1ac[_0x361024(0x1ba)]<=0x0)return;_0x1194b0=parseInt(_0x1194b0);const _0x1587ae=_0x361024(0x1b4);let _0x334dc3=_0x4bd11e(_0x42f1ac,_0x1194b0,'prev'),_0x5120bb=_0x4bd11e(_0x42f1ac,_0x1194b0,_0x361024(0x1e3));_0x335dbb(_0x361024(0x1cc))[_0x361024(0x1c7)]('.next-button')[_0x361024(0x182)](_0x361024(0x1dd)),_0x334dc3&&(_0x335dbb('.prev-button\x20a')[_0x361024(0x18c)](_0x361024(0x1d6),_0x1587ae+_0x334dc3),_0x335dbb('.prev-button')['addClass']('on')),_0x5120bb&&(_0x335dbb(_0x361024(0x1c4))[_0x361024(0x18c)](_0x361024(0x1d6),_0x1587ae+_0x5120bb),_0x335dbb('.next-button')[_0x361024(0x1c2)]('on'));},_0x45fd3e=function(){const _0x266436=_0x21bc59;_0x335dbb('.is-status-logoff')[_0x266436(0x1ba)]>0x0?_0x335dbb(_0x266436(0x18d))[_0x266436(0x182)](_0x266436(0x1dd)):_0x335dbb(_0x266436(0x18b))['removeClass'](_0x266436(0x1dd));},_0x414cda=function(_0x588d08){return new Promise((_0x2fac56,_0x59025e)=>{const _0x4f5670=_0x460b;_0x335dbb[_0x4f5670(0x1b6)](_0x4f5670(0x1b7)+_0x588d08+'&board_no=4',function(_0x26c3e9){const _0xee2318=_0x4f5670;let _0x5a996b=JSON[_0xee2318(0x1c5)](_0x26c3e9);_0x226b71[_0xee2318(0x1b2)](_0x5a996b),_0x2fac56(_0x5a996b);});});},_0x1d9831=function(_0x36f1df,_0x562f6b){const _0x2667c3=_0x21bc59;if(_0x36f1df){const _0xb4a707=_0x580058(_0x36f1df);if(_0xb4a707[0x0]){const _0xd17ecd=_0xb4a707[0x0][_0x2667c3(0x181)][_0x2667c3(0x19c)];_0xd17ecd&&(_0xd17ecd&&(_0x335dbb(_0x562f6b)[_0x2667c3(0x216)](_0x2667c3(0x1f0))['append'](_0xd17ecd),_0x335dbb(_0x562f6b)[_0x2667c3(0x216)]('.thumb-attach\x20br')[_0x2667c3(0x188)](),_0x335dbb(_0x562f6b)[_0x2667c3(0x216)](_0x2667c3(0x1f4))[_0x2667c3(0x1c9)]('<span></span>')));}}},_0x580058=function(_0x2158cd){const _0x240789=_0x21bc59;return _0x226b71[_0x240789(0x1e6)](function(_0x3f4292){return _0x3f4292['no']==_0x2158cd;});},_0x131198=function(){const _0x33582e=_0x21bc59;_0x335dbb(_0x33582e(0x1a8))[_0x33582e(0x1a3)]()['trim']()[_0x33582e(0x1ba)]<=0x0&&_0x335dbb(_0x33582e(0x183))[_0x33582e(0x188)]();},_0x586010=function(){const _0x4b3678=_0x21bc59;_0x4abf63('is_loaded')&&_0x4abf63('is_loaded')=='T'&&_0x335dbb(_0x4b3678(0x228))[_0x4b3678(0x1fa)](_0x4b3678(0x20d),_0x4b3678(0x1be)),_0x335dbb(_0x4b3678(0x20f))[_0x4b3678(0x185)](),_0x335dbb(_0x4b3678(0x228))[_0x4b3678(0x1c2)](_0x4b3678(0x1e2));},_0x312266=function(){const _0x5879b7=_0x21bc59;if(_0x335dbb('#reviewPhotos\x20img')[_0x5879b7(0x1ba)]>0x0){_0x335dbb(_0x5879b7(0x219))[_0x5879b7(0x1c2)](_0x5879b7(0x1bc)),_0x335dbb(_0x5879b7(0x1fc))[_0x5879b7(0x18c)](_0x5879b7(0x1d6),_0x335dbb(_0x5879b7(0x1fc))[_0x5879b7(0x18c)](_0x5879b7(0x1d6))+_0x5879b7(0x1ea)),_0x335dbb('#reviewPhotos\x20br')[_0x5879b7(0x188)]();if(_0x335dbb(_0x5879b7(0x1a2))[_0x5879b7(0x1ba)]==0x1)_0x335dbb(_0x5879b7(0x1ae))[_0x5879b7(0x1c2)]('single');else{_0x335dbb(_0x5879b7(0x1ae))[_0x5879b7(0x1c9)](_0x5879b7(0x191)),_0x335dbb(_0x5879b7(0x1ae))[_0x5879b7(0x1c2)](_0x5879b7(0x203)),_0x335dbb(_0x5879b7(0x1a2))[_0x5879b7(0x1c9)](_0x5879b7(0x1ec)),_0x335dbb(_0x5879b7(0x1ae))['after'](_0x5879b7(0x1c3));let _0xaa7d71=new Swiper(_0x5879b7(0x220),{'slidesPerView':0x1,'spaceBetween':0x5,'loop':!![],'pagination':{'el':_0x5879b7(0x1a0),'type':_0x5879b7(0x1aa),'clickable':!![]},'on':{'init':function(){let _0x4e639d=_0x4abf63('t_idx');_0x4e639d&&(_0x4e639d=parseInt(_0x4e639d)-0x1,this['slideToLoop'](_0x4e639d,0x0));}}});}}else _0x335dbb(_0x5879b7(0x219))[_0x5879b7(0x1c2)](_0x5879b7(0x190)),_0x335dbb(_0x5879b7(0x1fc))[_0x5879b7(0x18c)]('href',_0x335dbb(_0x5879b7(0x1fc))[_0x5879b7(0x18c)](_0x5879b7(0x1d6))+_0x5879b7(0x20e)),_0x335dbb(_0x5879b7(0x1ae))['remove']();},_0xf0d64b=function(_0x45a5a4,_0x177b4d){const _0x37f553=_0x21bc59;if(_0x177b4d[_0x37f553(0x197)]){alert(_0x37f553(0x1d9)),_0x23165b();return;}_0x3e6ded(_0x45a5a4);},_0x22af7c=function(_0x1e8b85='list'){const _0x1192d3=_0x21bc59;if(_0x1e8b85==_0x1192d3(0x181)){_0x335dbb(_0x1192d3(0x1c1))['on'](_0x1192d3(0x1cf),function(_0x1b0c74){const _0x31a514=_0x1192d3;_0x1b0c74[_0x31a514(0x210)]();}),_0x335dbb(_0x1192d3(0x228))['on'](_0x1192d3(0x1cf),function(_0x29a9dc){const _0x534ad2=_0x1192d3;_0x29a9dc[_0x534ad2(0x1b5)]();}),_0x335dbb(_0x1192d3(0x199))['on'](_0x1192d3(0x1cf),function(){_0x23165b();}),_0x335dbb(window)['on'](_0x1192d3(0x18a),function(){_0x23165b();}),history['pushState']({},'',''),_0x335dbb(_0x1192d3(0x219))[_0x1192d3(0x1f1)](function(){_0x23165b();}),setTimeout(function(){const _0x3eadbd=_0x1192d3;_0x152f0e();let _0x3288ac=new MutationObserver(function(_0x274fa4){_0x152f0e();}),_0x55b51a={'attributes':!![]};_0x335dbb(_0x3eadbd(0x187))[_0x3eadbd(0x1ef)](function(){const _0x5f508f=_0x3eadbd;_0x3288ac[_0x5f508f(0x1df)](this,_0x55b51a);});},0x0);function _0x152f0e(){const _0x4f6993=_0x1192d3;$target=_0x335dbb(_0x4f6993(0x19d)),_0x335dbb('html')['hasClass'](_0x4f6993(0x211))&&_0x335dbb(_0x4f6993(0x1f2))[_0x4f6993(0x1d8)]($target),_0x335dbb(_0x4f6993(0x187))[_0x4f6993(0x213)](_0x4f6993(0x1a4))&&_0x335dbb(_0x4f6993(0x1f2))[_0x4f6993(0x21c)]($target);}let _0x2a65f9=_0x335dbb(_0x1192d3(0x1d4))[_0x1192d3(0x1ab)](_0x1192d3(0x209))&&_0x335dbb('.article-rate')['data'](_0x1192d3(0x209))>0x0?_0x335dbb(_0x1192d3(0x1d4))['data']('rate'):0x0;_0x19d6d6['star_options'][_0x1192d3(0x1f7)]=_0x2a65f9,_0x335dbb('.article-rate')['starRating'](_0x19d6d6[_0x1192d3(0x19b)]);return;}_0x1e8b85=='list'&&(_0x335dbb(_0x19d6d6[_0x1192d3(0x227)])['on'](_0x1192d3(0x1cf),function(_0x545957){const _0x3db947=_0x1192d3;_0x335dbb(this)[_0x3db947(0x214)](_0x3db947(0x1d7)),_0x335dbb(this)['closest'](_0x3db947(0x201))[_0x3db947(0x216)](_0x3db947(0x180))['toggleClass'](_0x3db947(0x21b));}),_0x335dbb(document)['on'](_0x1192d3(0x1cf),_0x19d6d6[_0x1192d3(0x1ac)],function(_0x47bae9){const _0x13d62b=_0x1192d3;_0x47bae9[_0x13d62b(0x210)]();const _0x517c23=_0x335dbb(this)[_0x13d62b(0x195)]('li[data-review-no]')[_0x13d62b(0x1ab)](_0x13d62b(0x221));if(_0x517c23){const _0x4a387a=_0x580058(_0x517c23);_0x4a387a[0x0]?_0xf0d64b(_0x517c23,_0x4a387a[0x0]):_0x414cda(_0x517c23)[_0x13d62b(0x22a)](function(_0x56d6df){_0xf0d64b(_0x517c23,_0x56d6df);});}return![];}),_0x335dbb(document)['on'](_0x1192d3(0x1cf),_0x1192d3(0x1fb),function(_0x1cb08d){const _0x20a5ba=_0x1192d3;_0x1cb08d['preventDefault']();const _0x37cfb5=_0x335dbb(this)[_0x20a5ba(0x195)](_0x20a5ba(0x1db))[_0x20a5ba(0x1ab)](_0x20a5ba(0x221)),_0x40371f=_0x335dbb(this)[_0x20a5ba(0x218)]()+0x1;return _0x37cfb5&&_0x3e6ded(_0x37cfb5,_0x40371f),![];}),_0x335dbb(_0x19d6d6[_0x1192d3(0x1dc)])[_0x1192d3(0x1ef)](function(){const _0x55b458=_0x1192d3,_0x22975a=_0x335dbb(this)['find'](_0x55b458(0x1d1)),_0x170e9f=_0x335dbb(this)['find'](_0x55b458(0x1c8)),_0x57d3ca=_0x335dbb(this),_0x403886=_0x580058(_0x335dbb(this)[_0x55b458(0x1ab)](_0x55b458(0x221)))['at'](0x0),_0x4f0151=_0x403886[_0x55b458(0x181)][_0x55b458(0x189)],_0x5889c3=/<img [^>]*src=['"]([^'"]+)[^>]*>/i,_0x431b97=_0x5889c3['exec'](_0x4f0151);_0x57d3ca[_0x55b458(0x216)](_0x55b458(0x1f6))[_0x55b458(0x1a3)]()[_0x55b458(0x215)]()[_0x55b458(0x1ba)]<=0x0&&(_0x57d3ca['find'](_0x55b458(0x1f6))[_0x55b458(0x1a5)]()[_0x55b458(0x1d8)](_0x55b458(0x1e4)),_0x57d3ca[_0x55b458(0x216)](_0x55b458(0x222))['attr']('href',_0x55b458(0x1e1)));let _0x1a5966=_0x57d3ca['find'](_0x55b458(0x1d4))[_0x55b458(0x1ab)](_0x55b458(0x209))&&_0x57d3ca[_0x55b458(0x216)](_0x55b458(0x1d4))[_0x55b458(0x1ab)]('rate')>0x0?_0x57d3ca[_0x55b458(0x216)](_0x55b458(0x1d4))[_0x55b458(0x1ab)](_0x55b458(0x209)):0x0;_0x57d3ca['find'](_0x55b458(0x1d4))[_0x55b458(0x1d3)](_0x335dbb[_0x55b458(0x200)](_0x19d6d6['star_options'],{'initialRating':_0x1a5966}));if(_0x335dbb(_0x55b458(0x1d2))[_0x55b458(0x1ba)]>0x0)_0x1c11d8(_0x22975a[_0x55b458(0x1ab)](_0x55b458(0x1a7)))[_0x55b458(0x22a)](_0x5e5308=>_0x22975a[_0x55b458(0x18c)](_0x55b458(0x1ad),_0x5e5308[_0x55b458(0x1ad)]))[_0x55b458(0x21e)](_0x523395=>{const _0x5c3bc5=_0x55b458;_0x22975a[_0x5c3bc5(0x18c)](_0x5c3bc5(0x1ad),_0x22975a[_0x5c3bc5(0x1ab)](_0x5c3bc5(0x19f)));});else{if(_0x431b97&&_0x431b97[0x1]){const _0x70ae12=_0x431b97[0x1];_0x22975a[_0x55b458(0x18c)]('src',_0x70ae12);}else _0x1c11d8(_0x22975a['attr'](_0x55b458(0x1ad)))[_0x55b458(0x21e)](_0x1fa9c7=>{const _0x5808e3=_0x55b458;_0x1c11d8(_0x22975a['data'](_0x5808e3(0x1a7)))[_0x5808e3(0x22a)](_0x1b4504=>_0x22975a[_0x5808e3(0x18c)]('src',_0x1b4504['src']))['catch'](_0x37ab35=>{const _0x2ff787=_0x5808e3;_0x22975a[_0x2ff787(0x18c)](_0x2ff787(0x1ad),_0x22975a[_0x2ff787(0x1ab)]('error-img'));});});}_0x1c11d8(_0x170e9f[_0x55b458(0x18c)](_0x55b458(0x1ad)))[_0x55b458(0x21e)](_0x175679=>{const _0x2007a2=_0x55b458;_0x57d3ca[_0x2007a2(0x216)](_0x2007a2(0x1cb))[_0x2007a2(0x18c)](_0x2007a2(0x1d6),_0x2007a2(0x18e)),_0x170e9f['attr'](_0x2007a2(0x1ad),_0x170e9f[_0x2007a2(0x1ab)](_0x2007a2(0x19f)));});}));},_0x1c11d8=_0x4ef790=>new Promise((_0x25b23e,_0x47598e)=>{const _0x29384e=_0x21bc59,_0x2e559a=new Image();_0x2e559a[_0x29384e(0x1b0)]('load',()=>_0x25b23e(_0x2e559a)),_0x2e559a[_0x29384e(0x1b0)]('error',_0x3dd13a=>_0x47598e(_0x3dd13a)),_0x2e559a['src']=_0x4ef790;}),_0x3e6ded=function(_0x5ba28b,_0x4e7fcb){const _0x3adc6d=_0x21bc59;if(_0x335dbb('html')[_0x3adc6d(0x213)](_0x3adc6d(0x1bd)))return;let _0x3fff1c='?board_no=4&no='+_0x5ba28b;if(_0x4e7fcb)_0x3fff1c+=_0x3adc6d(0x1e8)+_0x4e7fcb;const _0x4eef05='<div\x20class=\x22'+_0x19d6d6[_0x3adc6d(0x1fd)]+_0x3adc6d(0x19a)+_0x19d6d6['iframeId']+_0x3adc6d(0x1c6)+_0x19d6d6[_0x3adc6d(0x202)]+_0x3fff1c+'\x22></iframe>\x0a\x09\x09\x09\x09\x09\x09\x09</div>';_0x335dbb('html')[_0x3adc6d(0x1d8)](_0x4eef05)[_0x3adc6d(0x1c2)](_0x3adc6d(0x1bd));},_0x23165b=function(_0x1f7002=''){const _0x2bcb79=_0x21bc59;if(_0x1f7002=='D')parent['location']['reload']();_0x335dbb(_0x2bcb79(0x187),parent[_0x2bcb79(0x20c)])[_0x2bcb79(0x182)](_0x2bcb79(0x1bd)),_0x335dbb('.'+_0x19d6d6['iframeId']+_0x2bcb79(0x1e9),parent['document'])[_0x2bcb79(0x188)]();},_0x4abf63=function(_0x1bea5f,_0x2775db){const _0x32ee2e=_0x21bc59;if(!_0x2775db)_0x2775db=location[_0x32ee2e(0x1d6)];let _0x5b60b7=_0x2775db['substring'](_0x2775db[_0x32ee2e(0x1e0)]('?')+0x1),_0x359a3e={};if(_0x5b60b7){let _0x508dd2=_0x5b60b7[_0x32ee2e(0x1f9)]('&'),_0x27f944=[];for(let _0x32bdea=0x0;_0x32bdea<_0x508dd2['length'];_0x32bdea++){_0x27f944=_0x508dd2[_0x32bdea][_0x32ee2e(0x1f9)]('='),_0x359a3e[_0x27f944[0x0]]=_0x27f944[0x1];}}return _0x359a3e['page']=_0x359a3e[_0x32ee2e(0x206)]?_0x359a3e[_0x32ee2e(0x206)]:0x1,_0x1bea5f?_0x359a3e[_0x1bea5f]:_0x359a3e;};return{'init':function(_0x4f4ae7){_0x6bf5e3(_0x4f4ae7);},'close':function(){_0x23165b();},'loadCompleted':_0x586010};}($);function _0x460b(_0x727e09,_0x1bd201){const _0x1140e0=_0x1140();return _0x460b=function(_0x460b90,_0xec6a70){_0x460b90=_0x460b90-0x180;let _0x53c665=_0x1140e0[_0x460b90];return _0x53c665;},_0x460b(_0x727e09,_0x1bd201);}function _0x1140(){const _0x3dc775=['.prod-info','<div>','hide','10625335zUFvIr','html','remove','content','popstate','.review-logon','attr','.review-logoff','#none','3844OFmSKS','list','<div\x20class=\x22review-photos\x20swiper-container\x22></div>','font-weight','.cont__more','font-family','closest','구글폰트_표시여부','is_secret','/board/del/','.back-panel','Wrap\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<iframe\x20border=\x220\x22\x20scrolling=\x22no\x22\x20frameborder=\x220\x22\x20id=\x22','star_options','content_image','.review_read_grp\x20.close-review','off','error-img','.review-photos\x20.swiper-pagination','display','#reviewPhotos\x20img','text','res-pc','empty','comment_del','prod-img','.information\x20.prod-name','2598558DFdnbH','fraction','data','openReview','src','#reviewPhotos','5vpetnX','addEventListener','all','push','Y29kZQ==','/board/review/read.html?board_no=4&is_loaded=T&no=','stopPropagation','get','/exec/front/board/product/4?no=','includes','pathname','length','function','thumb','review-active','none','344GQYAVG','#BoardDelForm\x20#no','.review_read_grp\x20a[href=\x22#none\x22]','addClass','<div\x20class=\x22swiper-pagination\x22></div>','.next-button\x20a','parse','\x22\x20src=\x22','add','.small-thumb-review:eq(0)','wrap','font-size','.product_wrap\x20a','.prev-button','/board/review/read.html?','rounded','click','7Ju57Y2867iU66at','.thumb-review:eq(0)','.review__list\x20.list','starRating','.article-rate','toLowerCase','href','expand','append','접근\x20권한이\x20없습니다.','z-index','li[data-review-no]','items','displaynone','modify.html','observe','indexOf','javascript:;','active','next','상품\x20정보가\x20없습니다.','table','filter','dataset','&t_idx=','Wrap','&page_mode=thumb','page_mode','<div\x20class=\x22swiper-slide\x22></div>','prev','wpReviewModule','each','.thumb-attach','backDetect','.review_read_grp\x20.section_title','729TzcNaD','.thumb-attach\x20img','hasOverflown','.prod_name\x20.name','initialRating','.open-review','split','css','.thumb-attach\x20span','#btnModify','iframeId','aHR0cHM6Ly93ZWJwdWJsaWMuY28ua3I','/board/review/read.html','extend','.item','iframePage','swiper-wrapper','4NSNYBp','2832144FIJmux','page','2519940peSsbg','appendTo','rate','bWV0YVtuYW1lPW1hZGUtYnld','val','document','transition','&page_mode=list','.review-loading','preventDefault','res-mobile','1581981AHLPbv','hasClass','toggleClass','trim','find','#return_url','index','body','replace','clamp','after','width','catch','.review_list_grp\x20li[data-review-no]','.review-photos.swiper-container','review-no','.prod_thumb\x20a','red','179110iHBqyK','bind','getReviewData','contMore','.review_read_grp','110eMaVsk','then','.content\x20.cont','read','removeClass'];_0x1140=function(){return _0x3dc775;};return _0x1140();}
+let wpReview = (function ($) {
+    const defs = {
+        openReview: '.open-review',
+        closeReview: '.close-review',
+        contMore: '.cont__more',
+        contMaxLine: 2,
+        iframePage: '/board/review/read.html',
+        iframeId: 'wpReviewFrame',
+        items: '.review_list_grp li[data-review-no]',
+        star_options: {
+            totalStars: 5,
+            starShape: 'rounded',
+            activeColor: 'red',
+            emptyColor: 'lightgray',
+            starSize: 15,
+            strokeWidth: 0,
+            useGradient: false,
+            minRating: 0,
+            readOnly: true,
+        }
+    };
+
+    const _articleData = []; // 게시글 정보
+
+    const textOverFlown = function () {
+        setTimeout(function () {
+            $(defs.items).each(function (i, item) {
+                $(this).find('.content .cont__more').addClass('displaynone');
+                if ($(this).find('.content .cont').hasOverflown()) {
+                    $(this).find('.content .cont__more').removeClass('displaynone');
+                }
+            });
+        }, 0);
+    }
+
+    // 초기 실행
+    const init = function (options) {
+
+        // 인증코드 체크
+        if ($(base64Decode('bWV0YVtuYW1lPW1hZGUtYnld')).attr(base64Decode('Y29kZQ==')) !== base64Decode('ODJERjFFQkQwNTg2')
+            || $(base64Decode('bWV0YVtuYW1lPW1hZGUtYnld')).attr(base64Decode('Y29udGVudA==')) !== base64Decode('7Ju57Y2867iU66at')
+            || $(base64Decode('bWV0YVtuYW1lPW1hZGUtYnld')).attr(base64Decode('c2l0ZQ==')) !== base64Decode('aHR0cHM6Ly93ZWJwdWJsaWMuY28ua3I')) {
+            return;
+        }
+
+        $.extend(true, defs, options);
+
+        // 텍스트 오버플로우 체크 (더보기v 기능 사용)
+        $.fn.hasOverflown = function () {
+            let res;
+            let cont = $('<div class="asdf">' + this.text() + '</div>').css("display", "table")
+                .css("z-index", "-1").css("position", "absolute")
+                .css("white-space", 'nowrap')
+                .css("font-family", this.css("font-family"))
+                .css("font-size", this.css("font-size"))
+                .css("font-weight", this.css("font-weight"))
+                .appendTo(this);
+            res = (cont.width() > this.width() * defs.contMaxLine);
+            cont.remove();
+            return res;
+        }
+
+        // 읽기 페이지 전용
+        if (location.pathname.includes('/board/review/read.html')) {
+            addEvent('read');
+            reviewTypeCheck();
+            if (WP_SETUP.폰트.구글폰트_표시여부 == 'off') loadCompleted();
+            prodInfoException();
+            loginStatusDisp();
+            addNavigationButtons();
+        }
+
+        // 수정 페이지 전용
+        if (location.pathname.includes('modify.html')) {
+            let pageMode = getParamUrl('page_mode');
+            $('body').addClass(pageMode);
+        }
+
+        /* 리뷰 댓글 삭제 페이지 접근 체크
+           -> 리턴 시 이전에 보고 있던 read 페이지로 이동할 수 있도록 return 주소 변경
+        */
+        if (location.pathname.toLowerCase().includes('comment_del')) {
+            $('#return_url').val($('#return_url').val().replace('/board/review?', '/board/review/read.html?'));
+        }
+
+        // 리뷰 삭제 시 창 닫기 / 새로고침
+        if (document.referrer.toLowerCase().includes('/board/del/')) {
+            closeIframe('D');
+        }
+
+        // `더보기` 버튼 위치 이동 (로딩 완료 후 하지 않으면 넓이 계산이 정상적으로 안됨)
+        $(window).on('load', function () {
+            textOverFlown();
+        });
+
+        /*비동기 호출*/
+        let promises = [];
+        $(defs.items).each(function (i, item) {
+            const promise = (async function () {
+                // 레이어 방식 사용 시 주석 제거
+                // const idx = item.dataset.reviewNo;
+                // const target = this;
+                // await getReviewDataJSON(idx, this).then(function () {
+                //     getAttachImageListItem(idx, target);
+                // });
+            }).bind(this)();
+
+            promises.push(promise);
+        });
+
+        Promise.all(promises).then(function () {
+            addEvent('list');
+        });
+    }
+
+    function findAround(data, key, target) {
+        if (data.length == 0) return;
+        const index = data.indexOf(key);
+
+        if (index === -1) {
+            return null;
+        }
+
+        let prev_no, next_no;
+        if (target == 'prev') {
+            prev_no = index > 0 ? data[index - 1] : null;
+            return prev_no;
+        }
+
+        if (target == 'next') {
+            next_no = index < data.length - 1 ? data[index + 1] : null;
+            return next_no;
+        }
+    }
+
+    // 이전 / 다음 버튼 표시
+    const addNavigationButtons = function () {
+        let review_no = getParamUrl('no');
+        if (!review_no) board = $('#BoardDelForm #no').val();
+        if (!review_no) return;
+
+        let data = [];
+        if (typeof parent.wpReviewModule == 'function') {
+            data = parent.wpReviewModule.getReviewData();
+        } else {
+            $('.review__list', parent.document).find('li[data-review-no]').each(function () {
+                data.push($(this).data('review-no'));
+            });
+        }
+        if (data.length <= 0) return;
+
+        review_no = parseInt(review_no);
+        const read_url = '/board/review/read.html?board_no=4&is_loaded=T&no=';
+
+        let prev_no = findAround(data, review_no, 'prev');
+        let next_no = findAround(data, review_no, 'next');
+
+        $('.prev-button').add('.next-button').removeClass('displaynone');
+        if (prev_no) {
+            $('.prev-button a').attr('href', read_url + prev_no);
+            $('.prev-button').addClass('on');
+        }
+        if (next_no) {
+            $('.next-button a').attr('href', read_url + next_no);
+            $('.next-button').addClass('on');
+        }
+    }
+
+    // 로그인 상태에 따른 표시상태 설정
+    const loginStatusDisp = function () {
+        // 로그아웃 상태
+        if ($('.is-status-logoff').length > 0) {
+            $('.review-logoff').removeClass('displaynone');
+        } else {
+            $('.review-logon').removeClass('displaynone');
+        }
+    }
+
+    // 페이지 로드 시 서버에서 게시글 정보 호출
+    const getReviewDataJSON = function (idx) {
+        return new Promise((resolve, reject) => {
+            $.get('/exec/front/board/product/4?no=' + idx + '&board_no=4', function (json) {
+                let d = JSON.parse(json);
+                _articleData.push(d);
+                resolve(d);
+            })
+        })
+    }
+
+    const getAttachImageListItem = function (idx, target) {
+        if (idx) {
+            const d = getArticleData(idx);
+            if (d[0]) {
+                const contentImg = d[0].read.content_image;
+                if (contentImg) {
+                    if (contentImg) {
+                        $(target).find('.thumb-attach').append(contentImg);
+                        $(target).find('.thumb-attach br').remove();
+                        $(target).find('.thumb-attach img').wrap('<span></span>');
+                    }
+                }
+            }
+        }
+    }
+
+    // 게시글 조회
+    const getArticleData = function (idx) {
+        return _articleData.filter(function (d) {
+            return d.no == idx;
+        });
+    }
+
+    // 읽기 - 상품 정보가 없을 때 해당 영역 제거
+    const prodInfoException = function () {
+        if ($('.information .prod-name').text().trim().length <= 0) {
+            $('.prod-info').remove();
+        }
+    }
+
+    // 읽기 - 페이지 로딩 완료 시 로딩 아이콘 숨김 및 아이프레임 노출
+    const loadCompleted = function () {
+        if (getParamUrl('is_loaded') && getParamUrl('is_loaded') == 'T') {
+            $('.review_read_grp').css('transition', 'none');
+        }
+        $('.review-loading').hide();
+        $('.review_read_grp').addClass('active');
+    }
+
+    // 포토리뷰 여부 체크
+    const reviewTypeCheck = function () {
+        if ($('#reviewPhotos img').length > 0) {
+            $('body').addClass('thumb');
+            $('#btnModify').attr('href', $('#btnModify').attr('href') + '&page_mode=thumb');
+            $('#reviewPhotos br').remove();
+
+            // 이미지가 2개 이상일 경우 슬라이드 적용
+            if ($('#reviewPhotos img').length == 1) {
+                $('#reviewPhotos').addClass('single');
+            } else {
+                $('#reviewPhotos').wrap('<div class="review-photos swiper-container"></div>');
+                $('#reviewPhotos').addClass('swiper-wrapper');
+                $('#reviewPhotos img').wrap('<div class="swiper-slide"></div>');
+                $('#reviewPhotos').after('<div class="swiper-pagination"></div>');
+
+                let swiper = new Swiper('.review-photos.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 5,
+                    loop: true,
+                    pagination: {
+                        el: '.review-photos .swiper-pagination',
+                        type: 'fraction',
+                        clickable: true,
+                    },
+                    on: {
+                        init: function () {
+                            let t_idx = getParamUrl('t_idx');
+                            if (t_idx) {
+                                t_idx = parseInt(t_idx) - 1;
+                                this.slideToLoop(t_idx, 0);
+                            }
+                        },
+                    },
+                });
+            }
+        } else {
+            $('body').addClass('list');
+            $('#btnModify').attr('href', $('#btnModify').attr('href') + '&page_mode=list');
+            $('#reviewPhotos').remove();
+        }
+    }
+
+    // 리뷰 접근 권한 체크
+    const articleAuthCheck = function (idx, data) {
+        if (data.is_secret) {
+            alert('접근 권한이 없습니다.');
+            closeIframe();
+            return;
+        }
+        addIframe(idx);
+    }
+
+    // 공통 - 이벤트 추가
+    const addEvent = function (page = 'list') {
+
+        // 읽기 페이지
+        if (page == 'read') {
+            // 차단 / 신고 / 추천 버튼 클릭 시 창 닫힘 방지
+            $('.review_read_grp a[href="#none"]').on('click', function (e) { e.preventDefault() });
+
+            // 컨텐츠 영역 클릭 시 닫기 이벤트 방지
+            $('.review_read_grp').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            $('.back-panel').on('click', function () {
+                closeIframe();
+            });
+
+            $(window).on('popstate', function () {
+                closeIframe();
+            });
+
+            history.pushState({}, '', '');
+            $('body').backDetect(function () {
+                closeIframe();
+            });
+
+            // 리뷰 썸네일 표시 위치 변경
+            setTimeout(function () {
+                reviewCloseMover();
+                let observer = new MutationObserver(function (mutations) {
+                    reviewCloseMover();
+                });
+                let config = { attributes: true };
+                $('html').each(function () {
+                    observer.observe(this, config);
+                });
+            }, 0);
+
+            function reviewCloseMover() {
+                $target = $('.review_read_grp .close-review');
+                if ($('html').hasClass('res-mobile')) {
+                    $('.review_read_grp .section_title').append($target);
+                }
+                if ($('html').hasClass('res-pc')) {
+                    $('.review_read_grp .section_title').after($target);
+                }
+            }
+
+            // 평점 표시
+            let rate = $('.article-rate').data('rate') && $('.article-rate').data('rate') > 0 ? $('.article-rate').data('rate') : 0;
+            defs.star_options.initialRating = rate;
+            $('.article-rate').starRating(defs.star_options);
+
+            return;
+        }
+
+        // 목록 전용 이벤트
+        if (page == 'list') {
+            $(defs.contMore).on('click', function (e) {
+                $(this).toggleClass('expand');
+                $(this).closest('.item').find('.content .cont').toggleClass('clamp');
+            });
+
+            // 목록 - 리뷰 열기 클래스 이벤트
+            $(document).on('click', defs.openReview, function (e) {
+                e.preventDefault();
+
+                const read_href = $(this).closest('.item').data('read-href');
+                if (read_href)
+                    location.href = read_href;
+
+                /* 레이어 방식 사용 시 주석 제거
+                const idx = $(this).closest('li[data-review-no]').data('review-no');
+                if (idx) {
+                    const d = getArticleData(idx);
+                    if (d[0]) {
+                        articleAuthCheck(idx, d[0]);
+                    } else {
+                        // 포토리뷰 모아보기에서 클릭 시 해당 글이 현재 리뷰 목록에 없을 때 서버에서 호출
+                        getReviewDataJSON(idx).then(function (data) {
+                            articleAuthCheck(idx, data);
+                        });
+                    }
+                }
+                */
+                return false;
+            });
+
+            var review_timer = null;
+            $(window).resize(function () {
+                clearTimeout(review_timer);
+                review_timer = setTimeout(function () {
+                    textOverFlown(); // 텍스트 `더보기` 리사이즈 대응
+                }, 200);
+            });
+
+            $(document).on('click', '.list--type > li', function (e) {
+                textOverFlown();
+            });
+
+            // 목록 - 작은 썸네일 클릭 시
+            $(document).on('click', '.thumb-attach span', function (e) {
+                e.preventDefault();
+                const idx = $(this).closest('li[data-review-no]').data('review-no');
+                const thumb_idx = $(this).index() + 1;
+                if (idx) {
+                    addIframe(idx, thumb_idx);
+                }
+                return false;
+            });
+
+            // 목록 - 썸네일 체크
+            $(defs.items).each(function () {
+                const $this_thumb = $(this).find('.thumb-review:eq(0)'); // 썸네일 가져오기
+                const $this_small_thumb = $(this).find('.small-thumb-review:eq(0)');
+                const $this = $(this);
+                const d = getArticleData($(this).data('review-no')).at(0);
+                const const_html = (d) ? d.read.content : '';
+                const regex = /<img [^>]*src=['"]([^'"]+)[^>]*>/i;
+                const match = regex.exec(const_html);
+
+                if ($this.find('.prod_name .name').text().trim().length <= 0) {
+                    $this.find('.prod_name .name').empty().append('상품 정보가 없습니다.')
+                    $this.find('.prod_thumb a').attr('href', 'javascript:;');
+                }
+
+                // 평점 표시
+                let rate = $this.find('.article-rate').data('rate') && $this.find('.article-rate').data('rate') > 0 ? $this.find('.article-rate').data('rate') : 0;
+                $this.find('.article-rate').starRating($.extend(defs.star_options, { initialRating: rate }));
+
+                // 목록 타입에서는 왼쪽에 상품 이미지를 기본으로 설정
+                if ($('.review__list .list').length > 0) {
+                    // 상품 이미지로 대체
+                    loadImage($this_thumb.data('prod-img')).then(img => $this_thumb.attr('src', img.src))
+                        .catch(err => {
+                            // 상품 이미지도 없을 경우 에러 이미지로 대체
+                            $this_thumb.attr('src', $this_thumb.data('error-img'));
+                        });
+                } else {
+                    // 스마트스토어 이미지가 있을 경우
+                    if (match && match[1]) {
+                        const smart_store_src = match[1];
+                        $this_thumb.attr('src', smart_store_src);
+                    } else {
+                        // 첨부가 없을 경우
+                        loadImage($this_thumb.attr('src')).catch(err => {
+                            // 상품 이미지로 대체
+                            loadImage($this_thumb.data('prod-img')).then(img => $this_thumb.attr('src', img.src))
+                                .catch(err => {
+                                    // 상품 이미지도 없을 경우 에러 이미지로 대체
+                                    $this_thumb.attr('src', $this_thumb.data('error-img'));
+                                });
+                        });
+                    }
+                }
+
+                // 작은 상품 썸네일
+                loadImage($this_small_thumb.attr('src')).catch(err => {
+                    $this.find('.product_wrap a').attr('href', '#none');
+                    $this_small_thumb.attr('src', $this_small_thumb.data('error-img'));
+                });
+            });
+
+            // 
+            $('#detailTab #prdReview .point[data-rate]').each(function () {
+                const rate = $(this).data('rate');
+                $(this).starRating($.extend(defs.star_options, { initialRating: rate }));
+            });
+        }
+    }
+
+    // 공통 - 이미지 로드 체크
+    const loadImage = (url) => new Promise((resolve, reject) => {
+        const img = new Image();
+        img.addEventListener('load', () => resolve(img));
+        img.addEventListener('error', (err) => reject(err));
+        img.src = url;
+    });
+
+
+    // 목록 - 아이프레임 추가
+    const addIframe = function (idx, thumb_idx) {
+        // 중복 실행 방지
+        if ($('html').hasClass('review-active')) return;
+
+        let params = `?board_no=4&no=${idx}`;
+        if (thumb_idx) params += '&t_idx=' + thumb_idx;
+
+        const iframeHTML = `<div class="${defs.iframeId}Wrap">
+								<iframe border="0" scrolling="no" frameborder="0" id="${defs.iframeId}" src="${defs.iframePage}${params}"></iframe>
+							</div>`;
+        $('html').append(iframeHTML).addClass('review-active');
+    }
+
+    // 읽기 - 프레임 닫기
+    const closeIframe = function (proc = '') {
+
+        // 게시글 삭제 후 아이프레임이 안닫히는 현상으로 스크롤 안되는 문제로 인해 예외처리 - 페이지 리로드 처리
+        if (proc == 'D') parent.location.reload();
+
+        $('html', parent.document).removeClass('review-active');
+        $(`.${defs.iframeId}Wrap`, parent.document).remove();
+    }
+
+    // URL 파라미터 추출
+    const getParamUrl = function (sKey, url) {
+        if (!url) url = location.href;
+        let sQueryString = url.substring(url.indexOf('?') + 1);
+        let aParam = {};
+
+        if (sQueryString) {
+            let aFields = sQueryString.split("&");
+            let aField = [];
+            for (let i = 0; i < aFields.length; i++) {
+                aField = aFields[i].split('=');
+                aParam[aField[0]] = aField[1];
+            }
+        }
+
+        aParam.page = aParam.page ? aParam.page : 1;
+        return sKey ? aParam[sKey] : aParam;
+    }
+
+    return {
+        init: function (options) {
+            init(options);
+        },
+        close: function () {
+            closeIframe();
+        },
+        loadCompleted
+    }
+})($);
 
 $(function () {
     wpReview.init({
-        star_options : {
-            shape : 'rounded',
+        star_options: {
+            shape: 'rounded',
             activeColor: WP_SETUP.색상.게시판.리뷰.별,
             emptyColor: 'lightgray',
             starSize: 15,

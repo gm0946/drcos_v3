@@ -45,7 +45,7 @@
 
 @media all and (min-width:1025px) {
     .index_ban_300 {
-        margin: 0 0 120px 0;
+        margin: 120px 0;
     }
 
     .index_ban_300 a {
@@ -135,7 +135,7 @@
 /********************* Mobile *********************/
 @media all and (max-width:1024px) {
     .index_ban_300 {
-        margin: 0 0 5rem 0;
+        margin: 5rem 0;
     }
 
     .index_ban_300 .swiper-container {

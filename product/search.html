@@ -22,19 +22,13 @@
         <ul class="prdList grid4 mgrid2">
             <li id="anchorBoxId_{$product_no}">
                 <div class="prdList__item">
-					<div class="thumbnail">
+						<div class="thumbnail">
 						<div class="prdImg">
 							<a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">
 								<img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
-								<img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" class="img_ov"/>
+								<img src="{$image_small}" id="{$image_small_id}" alt="{$seo_alt_tag}" class="img_ov"/>
 								<span module="search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
 							</a>
-						</div>
-						<div class="color {$colorchip_display|display}">
-							<div module="product_Colorchip">
-								<span class="chips" style="background-color:{$color};" {$color_image}></span>
-								<span class="chips" style="background-color:{$color};" {$color_image}></span>
-							</div>
 						</div>
 						<div class="iconarea">
 							<span class="ico2 {$list_wish_icon|display}">{$list_wish_icon}</span>
@@ -44,8 +38,9 @@
 					</div>
 					<div class="description">
 						<div class="descInfo">
-							<span class="discount_rate displaynone" data-prod-custom="{$product_custom}" data-prod-price="{$product_price}" data-sale-price="{$prd_price_sale}"></span>
+							<span class="discount_rate displaynone" data-prod-custom="{$product_custom}" data-prod-price="{$product_price}" data-sale-price="{$prd_price_sale|striptag}"></span>
 							<span class="chk"><input type="checkbox" class="{$product_compare_class} {$product_compare_display|display}" /></span>
+							<div class="brandname">{$manu_name}</div>
 							<div class="name">
 								<a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
 							</div>
@@ -54,6 +49,7 @@
 								<li class="{$item_display|display} {$column_name}" column_name="{$column_name|replace:product_custom,price_custom}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
 							</ul>
 							<div class="review_cnt">{$review_count}</div>
+							<div class="bt_download">{$custom_option2}</div>
 						</div>
 						<div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
 						<div class="option">{$option_preview_icon}</div>
@@ -62,19 +58,13 @@
             </li>
             <li id="anchorBoxId_{$product_no}">
                 <div class="prdList__item">
-					<div class="thumbnail">
+						<div class="thumbnail">
 						<div class="prdImg">
 							<a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">
 								<img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
-								<img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" class="img_ov"/>
+								<img src="{$image_small}" id="{$image_small_id}" alt="{$seo_alt_tag}" class="img_ov"/>
 								<span module="search_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
 							</a>
-						</div>
-						<div class="color {$colorchip_display|display}">
-							<div module="product_Colorchip">
-								<span class="chips" style="background-color:{$color};" {$color_image}></span>
-								<span class="chips" style="background-color:{$color};" {$color_image}></span>
-							</div>
 						</div>
 						<div class="iconarea">
 							<span class="ico2 {$list_wish_icon|display}">{$list_wish_icon}</span>
@@ -84,8 +74,9 @@
 					</div>
 					<div class="description">
 						<div class="descInfo">
-							<span class="discount_rate displaynone" data-prod-custom="{$product_custom}" data-prod-price="{$product_price}" data-sale-price="{$prd_price_sale}"></span>
+							<span class="discount_rate displaynone" data-prod-custom="{$product_custom}" data-prod-price="{$product_price}" data-sale-price="{$prd_price_sale|striptag}"></span>
 							<span class="chk"><input type="checkbox" class="{$product_compare_class} {$product_compare_display|display}" /></span>
+							<div class="brandname">{$manu_name}</div>
 							<div class="name">
 								<a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
 							</div>
@@ -94,6 +85,7 @@
 								<li class="{$item_display|display} {$column_name}" column_name="{$column_name|replace:product_custom,price_custom}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
 							</ul>
 							<div class="review_cnt">{$review_count}</div>
+							<div class="bt_download">{$custom_option2}</div>
 						</div>
 						<div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
 						<div class="option">{$option_preview_icon}</div>

@@ -4,7 +4,7 @@
 .타임세일,
 .timesale-active .discountPeriod{display:none !important;}
 
-.wp-timer{text-align: center; color: #fff;display: flex;justify-content: center;align-items: center;border-radius:.5rem;background: var(--color-timer);box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);}
+.wp-timer{text-align: center; color: #fff;display: flex;justify-content: center;align-items: center;border-radius: var(--border-radius-small);background: var(--color-timer);box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);}
 .wp-timer:before{content:"";display:block;width:1rem;height:1rem;margin-right:.2rem;background:url(/skin_img/ico_time_fff.svg) no-repeat 0 0;}
 .wp-timer.wp--wait{background: #fff; border: 1px solid #ddd;color: #777;}
 .wp-timer .wp-time.day:after{  font-weight:normal;content:"일";}
