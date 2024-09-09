@@ -1,5 +1,5 @@
 /**
-* detail_product_image.js (암호화 필요)
+* detail_product_image.js
 * 제작 : 웹퍼블릭
 * 버전 : 1.3 (축소이미지 - 가로형)
 * 최종업데이트 : 2024.09.09
