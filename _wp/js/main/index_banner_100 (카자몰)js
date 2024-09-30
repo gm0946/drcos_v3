@@ -1,8 +1,8 @@
 /**
-* 메인슬라이드 100 배너 (암호화 필요)
+* 메인슬라이드 100 배너
 * 제작 : 웹퍼블릭
-* 버전 : 1.3.1
-* 최종업데이트 : 2024.08.15
+* 버전 : 1.3.1 (커스텀)
+* 최종업데이트 : 2024.09.30
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -48,12 +48,9 @@ $(document).ready(function () {
     }
 
     const swiper = new Swiper('.index_ban_100 .swiper-container', {
-        effect: WP_SETUP.메인페이지.메인슬라이드.이펙트,
-        fadeEffect: {
-            crossFade: true
-        },
-        spaceBetween: 0,
-        speed: 500,
+        spaceBetween: 10,
+        speed: 800,
+        centeredSlides: true,
         grabCursor: true,
         observer: true,
         observeParents: true,
@@ -82,8 +79,8 @@ $(document).ready(function () {
                     $('.index_ban_100 .swiper-slide').addClass('wp-completely');
                 $('.index_ban_100').closest('.wp-stand-by').removeClass('wp-stand-by');
             },
-            slideChangeTransitionStart: function () {
-                $('.index_ban_100').find('.swiper-slide').removeClass('wp-completely').promise().done(function(){
+            slideChangeTransitionEnd: function () {
+                $('.index_ban_100').find('.swiper-slide').removeClass('wp-completely').promise().done(function () {
                     $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
                 });
             },
