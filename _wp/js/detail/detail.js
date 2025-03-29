@@ -1,12 +1,204 @@
-/*
- * 제작 : 웹퍼블릭 (https://webpublic.co.kr)
- *
- * ※ 웹퍼블릭 콘텐츠 라이선스 고지 ※
- *
- * 이 코드는 오직 웹퍼블릭 디자인 스킨에서만 사용하실 수 있습니다.
- * 주석 제거 시 해당 코드를 사용하실 수 없습니다.
- * 대한민국 저작권법 제97조에 의거하여 금지되어 있습니다.
- * 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
- */
+/**
+* detail.js
+* 제작 : 웹퍼블릭
+* 버전 : 2.2
+* 최종업데이트 : 2025.03.07
 
-function _0x77b3(_0x2b9c8c,_0x23f58e){const _0x8aff8b=_0x8aff();return _0x77b3=function(_0x77b3a2,_0x5339fc){_0x77b3a2=_0x77b3a2-0x164;let _0x5944dd=_0x8aff8b[_0x77b3a2];return _0x5944dd;},_0x77b3(_0x2b9c8c,_0x23f58e);}function _0x8aff(){const _0x2a8267=['#optionG\x20.add-opt-expand','.res-mobile\x20#optionG.active\x20.btn-extend','#appPaymentButtonBox','#optionG.active','trim','44344212IQjwRE','2253503VgeZrn','.photo_review_widget.no-swiper','displaynone','extend','.additional\x20.product','util','append','show','res-mobile','one','#optionG\x20.btn-toggle.active','#frm_image_zoom','651bmeUxJ','text','<div\x20id=\x22prodName\x22>','modal','remove','preventDefault','after','.res-mobile','width=459,height=490,left=100,top=100,resizable=no','target','click','25135qEjzKN','12UubLQy','1012868WBunnb','.infoArea','offset','.infoArea\x20.productSet','#optionG\x20.productSet','action','product_no=','slideToggle','serialize','add','4438712vLKkCx','944LdDtnj','6XNPnSX','toggleClass','#btn_restock','scrollTop','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22success\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22frsp--msg1\x22>😄\x20무료배송</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22frsp--msg2\x20delivery_fee\x22>{#delivery_fee}원</span>을\x20절약했어요.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','.naver-kakao-pay','#wpDetailInfo\x20.product_name_css\x20td\x20>\x20span','active\x20extend','auto',':visible','9ZIdmOY','.wp-opt-box2','.res-mobile\x20#optionG.active.extend','#optionG','detail','active','#optionG\x20.wp-opt-area','sms_restock','html','#optionG\x20.btn-extend','css','#optionG.active\x20.wp-opt-area','#couponModalContainer','.productArea\x20.prod_coupon','scroll--hide','height','.ec-base-tab\x20.menu-inner\x20a[href=\x22#prdReview\x22]','hide','11812230FUHqlR','.wp-opt-area','.additional\x20.btn-toggle','addClass','</div>','appendTo','removeClass','#couponModalContainer\x20.coupon_list\x20li','hasClass','.add-opt-expand','toggle','resize','7790ulQcDW','length','trigger','#NaverChk_Button'];_0x8aff=function(){return _0x2a8267;};return _0x8aff();}(function(_0x373ee7,_0x272fed){const _0x428d60=_0x77b3,_0x269004=_0x373ee7();while(!![]){try{const _0x220703=-parseInt(_0x428d60(0x18a))/0x1+parseInt(_0x428d60(0x167))/0x2*(-parseInt(_0x428d60(0x17d))/0x3)+-parseInt(_0x428d60(0x195))/0x4*(parseInt(_0x428d60(0x188))/0x5)+parseInt(_0x428d60(0x196))/0x6*(parseInt(_0x428d60(0x171))/0x7)+-parseInt(_0x428d60(0x194))/0x8*(-parseInt(_0x428d60(0x1a0))/0x9)+-parseInt(_0x428d60(0x1b2))/0xa+parseInt(_0x428d60(0x170))/0xb*(parseInt(_0x428d60(0x189))/0xc);if(_0x220703===_0x272fed)break;else _0x269004['push'](_0x269004['shift']());}catch(_0xcdca45){_0x269004['push'](_0x269004['shift']());}}}(_0x8aff,0xa698e),$(function(){const _0x280960=_0x77b3;WP_CORE({'page':_0x280960(0x1a4),'free_shopping':{'msg':{'fail':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22fail\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22frsp--msg1\x22>{#shortfall_price}원</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20더\x20담으면\x20<span\x20class=\x22frsp--msg2\x20delivery_fee\x22>무료배송\x20💖</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','success':_0x280960(0x19a)}}});($(_0x280960(0x16a))[_0x280960(0x17e)]()['trim']()[_0x280960(0x168)]>0x0||$(_0x280960(0x16d))[_0x280960(0x17e)]()[_0x280960(0x16f)]()[_0x280960(0x168)]>0x0)&&$(_0x280960(0x19b))[_0x280960(0x1b5)](_0x280960(0x1a5));$(document)['on'](_0x280960(0x187),_0x280960(0x198),function(_0x10ab14){const _0x5ab2f2=_0x280960;_0x10ab14['preventDefault']();let _0xec2a48=_0x5ab2f2(0x190)+WP_CORE()[_0x5ab2f2(0x176)]['getProdNo']();$(_0x5ab2f2(0x17c))[_0x5ab2f2(0x192)]()[_0x5ab2f2(0x168)]>0x0&&(_0xec2a48=$(_0x5ab2f2(0x17c))[_0x5ab2f2(0x192)]()),window['open']('/product/sms_restock_layer.html?'+_0xec2a48,_0x5ab2f2(0x1a7),_0x5ab2f2(0x185));}),$(window)['scroll'](function(){_0x22f4eb(this);}),$(document)['on'](_0x280960(0x187),'.prod_coupon\x20a',function(_0x5eafc5){const _0x402ab9=_0x280960;_0x5eafc5[_0x402ab9(0x182)](),$(_0x402ab9(0x1ac))[_0x402ab9(0x180)]({'fadeDuration':0x12c,'fadeDelay':1.2,'top':0x32});});if($(_0x280960(0x1b9))['length']>0x0)$(_0x280960(0x1ad))[_0x280960(0x1b8)](_0x280960(0x173));$('.grp_review\x20a[href=\x22#prdReview\x22]')[_0x280960(0x193)](_0x280960(0x172))['on'](_0x280960(0x187),function(_0x1f2281){const _0x8d22cb=_0x280960;_0x1f2281['preventDefault'](),$(_0x8d22cb(0x1b0))[_0x8d22cb(0x169)]('click');}),$(document)['on'](_0x280960(0x187),_0x280960(0x16b),function(){const _0x2e8ac6=_0x280960;$(_0x2e8ac6(0x18e))['addClass'](_0x2e8ac6(0x1a5)),$(this)[_0x2e8ac6(0x181)]();}),$(_0x280960(0x1b4))['click'](function(){const _0x405e6f=_0x280960;$(this)['toggleClass'](_0x405e6f(0x1a5)),$(_0x405e6f(0x164))[_0x405e6f(0x197)]('displaynone'),$(_0x405e6f(0x175))[_0x405e6f(0x165)]();});const _0x22f4eb=function(_0x3c36e1){const _0x3335b8=_0x280960;if(!_0x3c36e1)_0x3c36e1=document;$('.detailArea')[_0x3335b8(0x18c)]()['top']+$('.detailArea')['height']()<$(_0x3c36e1)[_0x3335b8(0x199)]()?!$(_0x3335b8(0x1a3))['hasClass'](_0x3335b8(0x1a5))&&($(_0x3335b8(0x18b))['css'](_0x3335b8(0x1af),$(_0x3335b8(0x18b))['height']()),$(_0x3335b8(0x1a3))[_0x3335b8(0x1b5)](_0x3335b8(0x1a5)),$(_0x3335b8(0x18d))[_0x3335b8(0x168)]>0x0&&$('.wp-opt-box\x20.opt-left')[_0x3335b8(0x177)]($(_0x3335b8(0x18d))),$(_0x3335b8(0x19b))[_0x3335b8(0x1b7)]($(_0x3335b8(0x1b3))),$(_0x3335b8(0x1b3))[_0x3335b8(0x1b1)]()):$(_0x3335b8(0x1a3))[_0x3335b8(0x1ba)](_0x3335b8(0x1a5))&&($('.wp-opt-area')[_0x3335b8(0x178)](),$('.infoArea')[_0x3335b8(0x1aa)](_0x3335b8(0x1af),_0x3335b8(0x19e)),$(_0x3335b8(0x1a3))['removeClass'](_0x3335b8(0x19d)),$(_0x3335b8(0x18d))[_0x3335b8(0x168)]>0x0&&$('.wp-opt-box\x20.opt-left')[_0x3335b8(0x183)]($(_0x3335b8(0x18d))),$(_0x3335b8(0x19b))[_0x3335b8(0x1b7)]($('.wp-opt-box3\x20.productAction')));};_0x22f4eb(),$(document)[_0x280960(0x17a)]('click',_0x280960(0x16c),function(){const _0x3904cd=_0x280960;$(_0x3904cd(0x17b))['trigger']('click');}),$(document)['on'](_0x280960(0x187),_0x280960(0x1a2),function(_0x4c2249){const _0x5f2f9d=_0x280960;$(_0x4c2249[_0x5f2f9d(0x186)])['is'](this)&&$(_0x5f2f9d(0x1a9))['trigger'](_0x5f2f9d(0x187));}),$(_0x280960(0x1a9))['on'](_0x280960(0x187),function(_0xb257e){const _0x45a180=_0x280960;_0xb257e[_0x45a180(0x182)](),setTimeout(function(){const _0x38962f=_0x45a180;$(_0x38962f(0x16e))[_0x38962f(0x197)](_0x38962f(0x174)),$(_0x38962f(0x184))[_0x38962f(0x197)](_0x38962f(0x1ae)),$(_0x38962f(0x1ab))[_0x38962f(0x191)](0xc8);},0x0);});let _0x7b7c8d;$(window)[_0x280960(0x166)](function(){clearTimeout(_0x7b7c8d),_0x7b7c8d=setTimeout(function(){const _0x270444=_0x77b3,_0x5b39ae=$(_0x270444(0x1a8)),_0x161d1c=$(_0x270444(0x16e));_0x5b39ae[_0x270444(0x1ba)]('res-pc')&&_0x161d1c[_0x270444(0x1ba)](_0x270444(0x174))&&_0x5b39ae[_0x270444(0x1b8)](_0x270444(0x1ae)),_0x5b39ae['hasClass'](_0x270444(0x179))&&_0x161d1c[_0x270444(0x1ba)](_0x270444(0x174))&&_0x5b39ae['addClass']('scroll--hide');},0xc8);});const _0x52da56=$(_0x280960(0x19c))[_0x280960(0x17e)]();$(_0x280960(0x1a1))[_0x280960(0x177)](_0x280960(0x17f)+_0x52da56+_0x280960(0x1b6)),$('.actionCart,\x20.action-buy')[_0x280960(0x187)](function(){const _0x27e240=_0x280960;if(!$(_0x27e240(0x1a6))['is'](_0x27e240(0x19f)))$('#optionG.active\x20.btn-extend')[_0x27e240(0x169)](_0x27e240(0x187));else{let _0x15dde9=$(this)['data'](_0x27e240(0x18f));eval(_0x15dde9);}});}));
+ 🔖 웹퍼블릭 콘텐츠 라이선스 고지
+
+ 1) 이 코드는 오직 웹퍼블릭 디자인 스킨에서만 사용하실 수 있습니다.
+ 2) 주석 제거 시 해당 코드를 사용하실 수 없습니다.
+ 3) 대한민국 저작권법 제97조에 의거하여 금지되어 있습니다.
+ 4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
+*/
+
+$(function () {
+    WP_CORE({
+        page: 'detail',
+        free_shopping: {
+            msg: {
+                fail: `
+                <div class="fail">
+                        <span class="frsp--msg1">{#shortfall_price}원</span>
+                    더 담으면 <span class="frsp--msg2 delivery_fee">무료배송!</span>
+                </div>`,
+                success: `
+                <div class="success">
+                    <span class="frsp--msg1">😄 무료배송</span>
+                    <span class="frsp--msg2 delivery_fee">{#delivery_fee}원</span>을 절약했어요.
+                </div>`,
+            }
+        }
+    });
+
+    // 네이버페이 또는 카카오페이 활성화 시 클래스 추가
+    if ($('#NaverChk_Button').text().trim().length > 0 || $('#appPaymentButtonBox').text().trim().length > 0) {
+        $('.naver-kakao-pay').addClass('active');
+    }
+
+    // 재입고 알림 신청
+    $(document).on('click', '#btn_restock', function (e) {
+        e.preventDefault();
+        let params = 'product_no=' + WP_CORE().util.getProdNo();
+        if ($('#frm_image_zoom').serialize().length > 0) {
+            params = $('#frm_image_zoom').serialize();
+        }
+        window.open('/product/sms_restock_layer.html?' + params, 'sms_restock', 'width=459,height=490,left=100,top=100,resizable=no');
+    });
+
+    // 쿠폰 모달 활성화
+    $(document).on('click', '.prod_coupon a', function (e) {
+        e.preventDefault();
+        $("#couponModalContainer").modal({ fadeDuration: 300, fadeDelay: 1.2, top: 50 });
+    });
+
+    // 쿠폰 버튼 활성화
+    if ($('#couponModalContainer .coupon_list li').length > 0)
+        $('.productArea .prod_coupon').removeClass('displaynone');
+
+    // 리뷰 별점 클릭 시 탭 > 리뷰, no-swiper 리뷰 버튼 트리거
+    $('.grp_review a[href="#prdReview"]').add('.photo_review_widget.no-swiper').on('click', function (e) {
+        e.preventDefault();
+        $('.ec-base-tab .menu-inner a[href="#prdReview"]').trigger('click');
+    });
+
+    // 추가구성상품 펼쳐보기
+    $(document).on('click', '#optionG .add-opt-expand', function () {
+        $('#optionG .productSet').addClass('active');
+        $(this).remove();
+    });
+
+    // 추가구성상품 토글
+    $('.additional .btn-toggle').click(function () {
+        $(this).toggleClass('active');
+        $('.add-opt-expand').toggleClass('displaynone');
+        $('.additional .product').toggle();
+    });
+
+    // 이벤트 내용 없을 경우 영역 삭제
+    $('.eventArea').each(function(){
+        if($(this).find('.event').is(':empty')){
+            $(this).addClass('displaynone');
+        }
+    });
+
+    const scrollOptionFixed = function (target) {
+        if (!target) target = document;
+        if (($('.detailArea').offset().top + $('.detailArea').height()) < $(target).scrollTop()) {
+            if (!$('#optionG').hasClass('active')) {
+                $('.infoArea').css('height', $('.infoArea').height());
+                $('#optionG').addClass('active');
+                $('#detailTab .remaining-quantity').addClass('fixed-menu');
+                if ($('.infoArea .productSet').length > 0) {
+                    $('.wp-opt-box .opt-left').append($('.infoArea .productSet'));
+                }
+                $('.naver-kakao-pay').appendTo($('.wp-opt-area'));
+                $('.wp-opt-area').hide();
+            }
+        } else {
+            if ($('#optionG').hasClass('active')) {
+                $('.wp-opt-area').show();
+                $('.infoArea').css('height', 'auto');
+                $('#optionG').removeClass('active extend');
+                $('#detailTab .remaining-quantity').removeClass('fixed-menu');
+                if ($('.infoArea .productSet').length > 0) {
+                    $('.wp-opt-box .opt-left').after($('.infoArea .productSet'));
+                }
+                $('.naver-kakao-pay').appendTo($('.wp-opt-box3 .productAction'));
+            }
+        }
+    }
+    
+    scrollOptionFixed();
+    $(window).scroll(function () {
+        scrollOptionFixed(this);
+    });
+    
+    let resize_timer;
+    $(window).resize(function () {
+        scrollOptionFixed();
+        clearTimeout(resize_timer);
+        resize_timer = setTimeout(function () {
+            const html = $('html');
+            const optionG_active = $('#optionG.active');
+
+            if (html.hasClass('res-pc') && optionG_active.hasClass('extend')) {
+                html.removeClass('scroll--hide');
+            }
+
+            if (html.hasClass('res-mobile') && optionG_active.hasClass('extend')) {
+                html.addClass('scroll--hide');
+            }
+        }, 200);
+    });
+
+    // 모바일 배경 토글
+    $(document).on('click', '.res-mobile #optionG.active.extend', function (e) {
+        if ($(e.target).is(this)) {
+            $('#optionG .btn-extend').trigger('click');
+        }
+    });
+
+    let origin_name, prodset_once_toggle = false;
+    const is_review_class = 'is-review',
+          review_text = '리뷰',
+          toggle_text = '제품상세',
+          cart_text = '장바구니';
+  	
+    $('#optionG .btn-extend').on('click', function(e){
+        e.preventDefault();
+        // 하단 고정 `구매하기` 클릭 시 추가구성상품 창이 접힌상태로 노출됨
+        if ($('.res-mobile #optionG').hasClass('active') && prodset_once_toggle == false) {
+        	prodset_once_toggle = true;
+            $('.productSet .btn-toggle.active').removeClass('active');
+            $('.productSet .product').hide();
+            $('.productSet .add-opt-expand').addClass('displaynone');
+        }
+        $('#optionG.active').toggleClass('extend');
+        $('html').hasClass('scroll--hide') ? $('html').removeClass('scroll--hide') : $('html').addClass('scroll--hide');
+        $('#optionG.active .wp-opt-area').slideToggle(200);
+        
+        // 옵션 창이 확장되어 있을 경우 텍스트 전환
+        if ($('#optionG.active').hasClass('extend')){
+            origin_name = $('.actionCartAndReview p').text();
+            $('#optionG .wp-opt-box3').removeClass(is_review_class);
+            $('.actionCartAndReview p').text(cart_text);
+        }else{
+            if (origin_name == review_text) $('#optionG .wp-opt-box3').addClass(is_review_class);
+        	$('.actionCartAndReview p').text(origin_name);
+        }
+    });
+
+    // 상품명
+    const prod_name = $('#wpDetailInfo .product_name_css td > span').text();
+
+    // 구매하기 - 하단고정 - 옵션확장
+    $('.wp-opt-box2').append(`<div id="prodName">${prod_name}</div>`);
+
+    // 구매 / 장바구니 클릭 시 옵션창 오픈
+    $('.actionCart, .action-buy, .actionCartAndReview').click(function(e){
+        e.preventDefault();
+        
+        // 옵션 창이 확장 되어 있지 않다면
+        if(!$('#optionG .wp-opt-area').is(':visible')) {
+            
+            // 리뷰 버튼 클릭 시
+            if ($(this).hasClass('actionCartAndReview')) {
+                if ($(this).find('p').text() == review_text){
+                    $('#optionG .wp-opt-box3').removeClass(is_review_class);
+                    $('.actionCartAndReview p').text(toggle_text);
+                    $('#detailTab [href="#prdReview"]').trigger('click');
+                }else{
+                    $('#optionG .wp-opt-box3').addClass(is_review_class);
+                    $('.actionCartAndReview p').text(review_text);
+                    $('#detailTab [href="#prdDetail"]').trigger('click');
+                }
+                return;
+            }
+            $('#optionG.active .btn-extend').trigger('click'); // 창 확장
+        }else{
+            let action_func = $(this).data('action');
+            eval(action_func);
+        }
+    });
+});

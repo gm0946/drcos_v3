@@ -1,8 +1,8 @@
 /**
 * 배송시간알리미
 * 제작 : 웹퍼블릭
-* 버전 : 2.0
-* 최종업데이트 : 2024.06.26
+* 버전 : 2.1
+* 최종업데이트 : 2024.10.17
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -12,8 +12,199 @@
  4) 이를 위반할 경우 저작권법에 의해 법적 책임을 질 수 있으며 발각 시 절대 관용은 없습니다.
 */
 
-function _0x226b(_0x5dc028,_0x53a054){const _0x6f6d7=_0x6f6d();return _0x226b=function(_0x226be9,_0x544a2b){_0x226be9=_0x226be9-0xe5;let _0x56da83=_0x6f6d7[_0x226be9];return _0x56da83;},_0x226b(_0x5dc028,_0x53a054);}function _0x6f6d(){const _0xa41d37=['132GoKvnB','includes','표시여부','trim','closest','displaynone','#wpDetailInfo\x20tr','25AuvGfB','419380jtkxKU','배송알리미','3990753rgMpbM','findElementsWithHtml','util','ready','1238760FZuLIT','1037160debTal','12678UOPiaZ','배송마감시간','상세페이지','배송시간알리미','692922CpRVIP','371Pghlsb','td\x20span','25192NbgVsN','find','toLowerCase','each','text','th\x20span','4Dvrqqt'];_0x6f6d=function(){return _0xa41d37;};return _0x6f6d();}const _0x186c79=_0x226b;(function(_0x4bf867,_0x396e22){const _0x7ab06b=_0x226b,_0x1f7972=_0x4bf867();while(!![]){try{const _0x38185d=parseInt(_0x7ab06b(0xf9))/0x1*(-parseInt(_0x7ab06b(0xe8))/0x2)+parseInt(_0x7ab06b(0xf7))/0x3+parseInt(_0x7ab06b(0xf8))/0x4+-parseInt(_0x7ab06b(0xf0))/0x5*(parseInt(_0x7ab06b(0xfd))/0x6)+-parseInt(_0x7ab06b(0xfe))/0x7*(-parseInt(_0x7ab06b(0x100))/0x8)+-parseInt(_0x7ab06b(0xf3))/0x9+-parseInt(_0x7ab06b(0xf1))/0xa*(-parseInt(_0x7ab06b(0xe9))/0xb);if(_0x38185d===_0x396e22)break;else _0x1f7972['push'](_0x1f7972['shift']());}catch(_0x23b687){_0x1f7972['push'](_0x1f7972['shift']());}}}(_0x6f6d,0x484db),$(document)[_0x186c79(0xf6)](function(){const _0x44315b=_0x186c79;if(WP_SETUP['상세페이지'][_0x44315b(0xfc)][_0x44315b(0xeb)][_0x44315b(0x102)]()=='on'){let _0x5e4896,_0x1f3c3b;$(WP_CORE()[_0x44315b(0xf5)][_0x44315b(0xf4)](_0x44315b(0xef),_0x44315b(0xf2)))[_0x44315b(0xe5)](function(_0x526214,_0x51d3ad){const _0x5d66ee=_0x44315b;$parent=$(_0x51d3ad)[_0x5d66ee(0xed)]('tr'),$parent['addClass'](_0x5d66ee(0xee)),$parent['find'](_0x5d66ee(0xe7))[_0x5d66ee(0xe6)]()['includes']('숨김')&&(_0x5e4896=$parent[_0x5d66ee(0x101)](_0x5d66ee(0xff))[_0x5d66ee(0xe6)]()['trim']()),$parent[_0x5d66ee(0x101)](_0x5d66ee(0xe7))[_0x5d66ee(0xe6)]()[_0x5d66ee(0xea)]('시간')&&(_0x1f3c3b=$parent[_0x5d66ee(0x101)]('td\x20span')[_0x5d66ee(0xe6)]()[_0x5d66ee(0xec)]());});if(_0x5e4896=='Y')return;dm['init']({'limit':_0x1f3c3b||WP_SETUP[_0x44315b(0xfb)][_0x44315b(0xfc)][_0x44315b(0xfa)]});}}));
+$(document).ready(function(){
+    
+    if (WP_SETUP.상세페이지.배송시간알리미.표시여부.toLowerCase() == 'on'){
+        
+        let 개별시간, 숨김여부;
+        if (!WP_CORE().util.getProdNo()) return; // 상품번호 조회하여 없으면 종료
+     
+        // 개별 시간 설정
+        const prod_time_data = WP_SETUP.상세페이지.배송시간알리미.상품별_시간_설정.filter(function(obj){
+        	return obj.상품번호 == WP_CORE().util.getProdNo();
+        });
+        
+        if (prod_time_data.length > 0){
+        	개별시간 = prod_time_data[0].시간;
+        }
+        
+        // 숨김 여부 설정
+        const prod_disp_data = WP_SETUP.상세페이지.배송시간알리미.상품별_숨김_설정.filter(function(obj){
+        	return obj.상품번호 == WP_CORE().util.getProdNo();
+        });
+        if (prod_disp_data.length > 0) return;
+       
+		// init
+        dm.init({limit: 개별시간 || WP_SETUP.상세페이지.배송시간알리미.배송마감시간});
+    }
+});
 
 /*******************************************************************************************/
 
-(function(_0x5231bf,_0x1c2cc4){var _0x4e679e=_0x205d,_0x1207ea=_0x5231bf();while(!![]){try{var _0x56eedd=parseInt(_0x4e679e(0x170))/0x1+parseInt(_0x4e679e(0x14c))/0x2+parseInt(_0x4e679e(0x16e))/0x3+-parseInt(_0x4e679e(0x16c))/0x4*(parseInt(_0x4e679e(0x164))/0x5)+parseInt(_0x4e679e(0x163))/0x6+parseInt(_0x4e679e(0x16d))/0x7*(parseInt(_0x4e679e(0x169))/0x8)+-parseInt(_0x4e679e(0x147))/0x9*(parseInt(_0x4e679e(0x141))/0xa);if(_0x56eedd===_0x1c2cc4)break;else _0x1207ea['push'](_0x1207ea['shift']());}catch(_0x1614b4){_0x1207ea['push'](_0x1207ea['shift']());}}}(_0x1398,0x72264));var dm=function(_0x249498){var _0x188dac=_0x205d,_0x51a653={'limit':_0x188dac(0x14e)},_0x235b8a=0x3e8,_0x58d43d=_0x235b8a*0x3c,_0x2f99b6=_0x58d43d*0x3c,_0x4d40e0=_0x2f99b6*0x18,_0x13b354,_0x1e8459,_0x2f2f1e,_0x5be6a1,_0x3abfaa,_0xa1e124=function(_0x28db19){var _0x3901a2=_0x188dac;_0x249498[_0x3901a2(0x166)](_0x51a653,_0x28db19),Date[_0x3901a2(0x15d)][_0x3901a2(0x146)]=function(_0x45697d){var _0x4c051f=_0x3901a2;if(!this[_0x4c051f(0x15b)]())return'\x20';var _0x5e607a=['일','월','화','수','목','금','토'],_0x426639=this;return _0x45697d[_0x4c051f(0x157)](/(yyyy|yy|MM|M|dd|d|E|hh|mm|ss|a\/p)/gi,function(_0x5eb068){var _0x47a3d9=_0x4c051f;switch(_0x5eb068){case _0x47a3d9(0x156):return _0x426639[_0x47a3d9(0x177)]();case'yy':return(_0x426639[_0x47a3d9(0x177)]()%0x3e8)['zf'](0x2);case'MM':return(_0x426639[_0x47a3d9(0x173)]()+0x1)['zf'](0x2);case'M':return _0x426639[_0x47a3d9(0x173)]()+0x1;case'dd':return _0x426639[_0x47a3d9(0x16f)]()['zf'](0x2);case'd':return _0x426639['getDate']();case'E':return _0x5e607a[_0x426639['getDay']()];case'HH':return _0x426639[_0x47a3d9(0x145)]()['zf'](0x2);case'hh':return((h=_0x426639[_0x47a3d9(0x145)]()%0xc)?h:0xc)['zf'](0x2);case'mm':return _0x426639[_0x47a3d9(0x154)]()['zf'](0x2);case'ss':return _0x426639[_0x47a3d9(0x14b)]()['zf'](0x2);case _0x47a3d9(0x16b):return _0x426639[_0x47a3d9(0x145)]()<0xc?'오전':'오후';default:return _0x5eb068;}});},String[_0x3901a2(0x15d)][_0x3901a2(0x15a)]=function(_0x383c07){var _0x11ddaa='',_0x1e920b=0x0;while(_0x1e920b++<_0x383c07){_0x11ddaa+=this;}return _0x11ddaa;},String[_0x3901a2(0x15d)]['zf']=function(_0x939850){var _0x45f2d9=_0x3901a2;return'0'[_0x45f2d9(0x15a)](_0x939850-this[_0x45f2d9(0x150)])+this;},Number[_0x3901a2(0x15d)]['zf']=function(_0x561ba6){var _0x3875fd=_0x3901a2;return this[_0x3875fd(0x15e)]()['zf'](_0x561ba6);},_0x249498[_0x3901a2(0x144)]({'type':'GET','cache':![],'url':_0x3901a2(0x16a),'async':![],'complete':function(_0xc89106,_0x583d0e){var _0xa30b0a=_0x3901a2,_0x5f14b7=_0xc89106[_0xa30b0a(0x174)](_0xa30b0a(0x155));_0x5f14b7['indexOf'](_0xa30b0a(0x15c))===-0x1&&(_0x5f14b7+='\x20GMT'),_0x5be6a1=new Date(_0x5f14b7),_0x3abfaa=setInterval(_0x3f13d0,0x3e8);}});},_0x47ca98=function(_0x4ef5f0,_0x1ae215){var _0x22c4f9=_0x188dac;return _0x4ef5f0=_0x4ef5f0+'',_0x4ef5f0[_0x22c4f9(0x150)]>=_0x1ae215?_0x4ef5f0:new Array(_0x1ae215-_0x4ef5f0[_0x22c4f9(0x150)]+0x1)['join']('0')+_0x4ef5f0;},_0x3f13d0=function(){var _0x3010a0=_0x188dac,_0x23b154=_0x5be6a1['getDate']()-_0x5be6a1[_0x3010a0(0x161)]()+((_0x5be6a1['getDay']()==0x0?0x1:0x8)+0x0),_0x26066f=new Date(_0x5be6a1[_0x3010a0(0x146)](_0x3010a0(0x156)),_0x5be6a1[_0x3010a0(0x146)]('M'),0x0),_0x5029ad=parseInt(_0x26066f['format']('dd')),_0x14dd71,_0x2f628c=_0x23b154-_0x5029ad;_0x2f628c>0x0?(_0x26066f[_0x3010a0(0x152)](_0x26066f['getDate']()+_0x2f628c),_0x14dd71=_0x26066f['format'](_0x3010a0(0x175))):_0x14dd71=_0x5be6a1[_0x3010a0(0x146)]('M')+'/'+_0x23b154+_0x3010a0(0x159);var _0x23d174=new Date(_0x5be6a1[_0x3010a0(0x146)]('yyyy/MM/dd')+'\x20'+_0x51a653[_0x3010a0(0x142)]),_0x8e58a3=_0x5be6a1[_0x3010a0(0x161)](),_0xe30d1c=_0x23d174<=_0x5be6a1,_0x22d4e4=new Date(_0x5be6a1[_0x3010a0(0x146)](_0x3010a0(0x178)));_0x22d4e4['setDate'](_0x22d4e4[_0x3010a0(0x16f)]()+0x1);var _0x2c967e=_0x22d4e4['format']('M/d(E)');if(_0x8e58a3>0x0&&_0x8e58a3<0x6){if(_0xe30d1c)_0x13b354=_0x3010a0(0x179),_0x1e8459='오늘출발\x20'+_0x51a653[_0x3010a0(0x142)]['substr'](0x0,0x5)+_0x3010a0(0x160),_0x2f2f1e=_0x3010a0(0x158)+_0x2c967e+_0x3010a0(0x165),_0x8e58a3==0x5&&(_0x13b354=_0x3010a0(0x167),_0x2f2f1e=_0x3010a0(0x153)+_0x14dd71+'</span>\x20에\x20발송됩니다.'),_0x249498(_0x3010a0(0x148))[_0x3010a0(0x162)]('active'),clearInterval(_0x3abfaa);else{var _0x3fb794,_0x59aba9,_0x20af36,_0x54a229,_0x4bd111=_0x23d174-_0x5be6a1;if(_0x4bd111>0x0){var _0x5cb52b=_0x4bd111;_0x3fb794=Math[_0x3010a0(0x143)](_0x5cb52b/_0x4d40e0),_0x59aba9=Math[_0x3010a0(0x143)](_0x5cb52b%_0x4d40e0/_0x2f99b6),_0x20af36=Math['floor'](_0x5cb52b%_0x2f99b6/_0x58d43d),_0x54a229=Math[_0x3010a0(0x143)](_0x5cb52b%_0x58d43d/_0x235b8a);}_0x13b354=_0x3010a0(0x14d),_0x1e8459='<span>'+(_0x47ca98(_0x59aba9,0x2)+':'+_0x47ca98(_0x20af36,0x2)+':'+_0x47ca98(_0x54a229,0x2))+_0x3010a0(0x15f),_0x249498('.dm')[_0x3010a0(0x14a)]('active');}}(_0x8e58a3==0x0||_0x8e58a3==0x6)&&(_0x13b354=_0x3010a0(0x151),_0x1e8459='지금\x20주문\x20시\x20<span>다음\x20주\x20'+_0x14dd71+_0x3010a0(0x176),_0x249498(_0x3010a0(0x148))[_0x3010a0(0x162)]('active'),clearInterval(_0x3abfaa)),_0x249498(_0x3010a0(0x172))[_0x3010a0(0x14f)]()[_0x3010a0(0x171)](_0x13b354),_0x249498(_0x3010a0(0x168))[_0x3010a0(0x14f)]()[_0x3010a0(0x171)](_0x1e8459),_0x249498('.dm\x20.msg3')['empty']()[_0x3010a0(0x171)](_0x2f2f1e),_0x249498(_0x3010a0(0x148))['hasClass'](_0x3010a0(0x149))&&_0x249498(_0x3010a0(0x148))[_0x3010a0(0x162)](_0x3010a0(0x149)),_0x5be6a1['setSeconds'](_0x5be6a1[_0x3010a0(0x14b)]()+_0x235b8a/0x3e8);};return{'init':function(_0x180615){_0xa1e124(_0x180615);}};}($);function _0x205d(_0x3a7830,_0xc21abe){var _0x1398ca=_0x1398();return _0x205d=function(_0x205d73,_0x246d80){_0x205d73=_0x205d73-0x141;var _0x12d1ce=_0x1398ca[_0x205d73];return _0x12d1ce;},_0x205d(_0x3a7830,_0xc21abe);}function _0x1398(){var _0x4c86a7=['getMinutes','Date','yyyy','replace','지금\x20주문\x20시\x20<span>내일','(월)','string','valueOf','GMT','prototype','toString','</span>\x20내에\x20결제\x20시\x20오늘\x20바로\x20발송됩니다.','\x20마감','getDay','removeClass','1980162QiANsD','45ivFRDK','</span>\x20에\x20발송됩니다','extend','다음\x20주\x20월요일\x20가장\x20빠르게\x20출발할게요!','.dm\x20.msg2','24488PMSZtP','/exec/front/manage/async?module=member&p','a/p','152236nMUtEs','217sXPzjA','2378571KfkcIS','getDate','240084tJSuCI','html','.dm\x20.msg1','getMonth','getResponseHeader','M/d(E)','</span>\x20에\x20발송됩니다.','getFullYear','yyyy/MM/dd','내일\x20출발할게요!','9897710zRyiIF','limit','floor','ajax','getHours','format','9ZUqXIc','.dm','displaynone','addClass','getSeconds','683998pVePei','오늘출발\x20상품','11:00:00','empty','length','오늘출발\x20휴무일','setDate','지금\x20주문\x20시\x20<span>다음\x20주\x20'];_0x1398=function(){return _0x4c86a7;};return _0x1398();}
+/*******************************************************************************************/
+var dm = (function($){
+    var defs = {
+        limit : '11:00:00'
+    }
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var msg1, msg2, msg3
+    var serverDate;
+    var timer;
+
+    var _init = function(options){
+
+        $.extend(defs, options);
+
+        Date.prototype.format = function(f) {
+            if (!this.valueOf()) return " ";
+
+            var weekName = ["일", "월", "화", "수", "목", "금", "토"];
+            var d = this;
+
+            return f.replace(/(yyyy|yy|MM|M|dd|d|E|hh|mm|ss|a\/p)/gi, function($1) {
+                switch ($1) {
+                    case "yyyy": return d.getFullYear();
+                    case "yy": return (d.getFullYear() % 1000).zf(2);
+                    case "MM": return (d.getMonth() + 1).zf(2);
+                    case "M": return (d.getMonth() + 1);
+                    case "dd": return d.getDate().zf(2);
+                    case "d": return d.getDate();
+                    case "E": return weekName[d.getDay()];
+                    case "HH": return d.getHours().zf(2);
+                    case "hh": return ((h = d.getHours() % 12) ? h : 12).zf(2);
+                    case "mm": return d.getMinutes().zf(2);
+                    case "ss": return d.getSeconds().zf(2);
+                    case "a/p": return d.getHours() < 12 ? "오전" : "오후";
+                    default: return $1;
+                }
+            });
+        };
+
+        String.prototype.string = function(len){var s = '', i = 0; while (i++ < len) { s += this; } return s;};
+        String.prototype.zf = function(len){return "0".string(len - this.length) + this;};
+        Number.prototype.zf = function(len){return this.toString().zf(len);};
+
+
+        $.ajax({
+            type: 'GET',
+            cache: false,
+            url: '/exec/front/manage/async?module=member&p',
+            async : false,
+            complete: function (req, textStatus) {
+                var dateString = req.getResponseHeader('Date');
+                if (dateString.indexOf('GMT') === -1) {
+                    dateString += ' GMT';
+                }
+                serverDate = new Date(dateString);
+                //serverDate = new Date("2022/07/15 13:59:50")
+                timer = setInterval(_proc, 1000);
+            }
+        });
+    }
+
+    var _pad = function(n, width){
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+    }
+
+    var _proc = function(){
+
+        // 차 주 월요일 계산
+        var nextWeekMonday = serverDate.getDate() - serverDate.getDay() + ((serverDate.getDay() == 0 ? 1 : 8) + 0);
+
+        // 마지막 일 구하기 위한 Date
+        var lastDate = new Date(serverDate.format('yyyy'), serverDate.format('M'), 0);
+        var lastDay = parseInt(lastDate.format('dd')); // 마지막 일
+
+        // 차 주 월요일에 대한 결과 (HTML 출력용)
+        var nextWeekMondayMsg;
+
+        var temp = nextWeekMonday - lastDay; // 차 주 월요일이 해당 마지막 일과의 차이를 계산
+
+        // 차 주 월요일이 다음달로 넘어갈 경우
+        if (temp > 0){
+            lastDate.setDate(lastDate.getDate() + temp);
+            nextWeekMondayMsg = lastDate.format('M/d(E)');
+        }
+        // 해당 월의 마지막 일 기준으로 차 주 월요일이 당 월에 포함되어 있을 경우
+        else {
+            nextWeekMondayMsg = serverDate.format('M') + '/' + nextWeekMonday + '(월)';
+        }
+
+        // 제한 시간 Date (14:00)
+        var limitDate = new Date(serverDate.format("yyyy/MM/dd") + ' ' + defs.limit);
+
+        // 요일
+        var week = serverDate.getDay();
+        var isTimeover = (limitDate <= serverDate); // 기준 시간을 넘었을 경우 true 반환
+
+        // 다음 날
+        var nextDate = new Date(serverDate.format('yyyy/MM/dd'));
+        nextDate.setDate(nextDate.getDate() + 1);
+        var nextDayMsg = nextDate.format('M/d(E)');
+
+        // 평일 기준
+        if (week > 0 && week < 6){
+            // 지정된 시간을 오버했을 경우
+            if (isTimeover){
+                msg1 = '오늘 출발 ' + defs.limit.substr(0,5) + ' 마감';
+                msg2 = '지금 주문 시 <span>내일' + nextDayMsg + '</span> 에 발송됩니다';
+
+                // 금요일인 경우
+                if (week == 5){
+                    msg1 = '다음 주 월요일 가장 빠르게 출발할게요!';
+                    msg2 = '지금 주문 시 <span>다음 주 '+ nextWeekMondayMsg +'</span> 에 발송됩니다.';
+                }
+
+                $('.dm').removeClass('active');
+                clearInterval(timer);
+            }
+
+            // 제한 시간에 아직 도달하지 못했을 경우 (배송 가능한 경우)
+            else {
+                var days, hours, minutes, seconds;
+
+                var endDistance = limitDate - serverDate;
+                if(endDistance > 0){
+                    var distance = endDistance;
+                    days = Math.floor(distance / _day);
+                    hours = Math.floor((distance % _day) / _hour);
+                    minutes = Math.floor((distance % _hour) / _minute);
+                    seconds = Math.floor((distance % _minute) / _second);
+                }
+
+                msg1 = '오늘 출발 상품';
+                msg2 = '<span>'+ (_pad(hours,2) + ':' + _pad(minutes,2) + ':' + _pad(seconds,2)) +'</span> 내에 결제 시 오늘 바로 발송됩니다.';
+
+                $('.dm').addClass('active');
+            }
+        }
+        
+        // 주말
+        if (week == 0 || week == 6){
+			msg1 = '오늘 출발 휴무일';
+            msg2 = '지금 주문 시 <span>다음 주 '+ nextWeekMondayMsg +'</span> 에 발송됩니다.';
+
+            $('.dm').removeClass('active');
+            clearInterval(timer);
+        }
+
+        $('.dm .msg1').empty().html(msg1);
+        $('.dm .msg2').empty().html(msg2);
+
+        if($('.dm').hasClass('displaynone')){
+        	$('.dm').removeClass('displaynone');
+        }
+
+        serverDate.setSeconds(serverDate.getSeconds() + (_second / 1000)); // 1초 추가
+    }
+
+	return {
+    	init : function(options){
+        	_init(options);
+        }
+    }
+})($);

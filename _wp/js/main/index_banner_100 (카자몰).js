@@ -1,7 +1,7 @@
 /**
 * 메인슬라이드 100 배너
 * 제작 : 웹퍼블릭
-* 버전 : 1.3.1 (커스텀)
+* 버전 : 1.3.4
 * 최종업데이트 : 2024.09.30
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
@@ -13,40 +13,6 @@
 */
 
 $(document).ready(function () {
-
-    // 샘플몰 전용코드
-    if (location.href.includes('ecudemo')) {
-        if (WP_CORE().util.getParamUrl('type')
-            && WP_CORE().util.getParamUrl('type') == 'b') {
-            $('.index_ban_100.type_a').remove();
-        } else {
-            $('.index_ban_100.type_b').remove();
-        }
-
-        // 모바일에서 팝업 숨김 처리
-        if ($('div[id^="popup_"] iframe').length > 0) {
-            let timer = null;
-            const mobileHidePopup = function(mq){
-                if (mq.matches) {
-                    $('div[id^="popup_"]').addClass('displaynone');
-                } else {
-                    $('div[id^="popup_"]').removeClass('displaynone').addClass('wp-stand-by');
-                    $('div[id^="popup_"] iframe')[0].contentWindow.location.reload();
-                    clearTimeout(timer);
-                    timer = setTimeout(function(){
-                        $('div[id^="popup_"]').removeClass('wp-stand-by');
-                    },400);
-                }
-            }
-            const mq = window.matchMedia('(max-width: 1024px)');
-            addClassByBrowserMode(mq);
-            mq.addEventListener('change', function () {
-                mobileHidePopup(mq);
-            });
-            mobileHidePopup(mq);
-        }
-    }
-
     const swiper = new Swiper('.index_ban_100 .swiper-container', {
         spaceBetween: 10,
         speed: 800,
@@ -80,16 +46,8 @@ $(document).ready(function () {
                 $('.index_ban_100').closest('.wp-stand-by').removeClass('wp-stand-by');
             },
             slideChangeTransitionEnd: function () {
-                $('.index_ban_100').find('.swiper-slide').removeClass('wp-completely').promise().done(function () {
-                    $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
-                });
-            },
-            touchEnd: function () {
-                if (!$('.index_ban_100').find('.swiper-slide-active').hasClass('wp-completely')) {
-                    setTimeout(function () {
-                        $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
-                    }, 0);
-                }
+                $('.index_ban_100').find('.swiper-slide').removeClass('wp-completely');
+                $('.index_ban_100').find('.swiper-slide-active').addClass('wp-completely');
             },
         },
     });

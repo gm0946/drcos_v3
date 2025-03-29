@@ -1,8 +1,8 @@
 /**
 * detail_product_image.js
 * 제작 : 웹퍼블릭
-* 버전 : 1.3 (축소이미지 - 가로형)
-* 최종업데이트 : 2024.09.09
+* 버전 : 3.0 (축소이미지 - 가로형)
+* 최종업데이트 : 2024.01.13
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -47,32 +47,19 @@ $(function () {
             }
         });
     }
-
-    // thumb - remove small image or default smmall thumb remove
-    let is_remove = false;
-    $('.detail-img-box .ThumbImage').each(function () {
-        if ($(this).attr('src').includes('/product/small/')
-            || $(this).attr('src').includes('/thumb/img_product_small.gif')) {
-            $(this).closest('.swiper-slide').remove();
-            is_remove = true;
-        }
-    });
-    
-    // 축소이미지가 정상적으로 삭제되지 않았을 경우 첫번째 이미지 강제로 삭제
-    if (!is_remove){
-    	$('.xans-product-addimage').each(function(){
-        	$(this).find('.swiper-slide:eq(0)').remove();
-        });
-    }
     
     // badge move
     $('.prdImg .swiper-container').append($('.detailArea .prod-badge'));
 
-    // thumb - add big imgae
-    const img_src = $('.detailArea .bigImage').attr('src');
-    $('.prdImg .swiper-wrapper')
-        .add('.listImg .swiper-wrapper')
-        .prepend('<li class="swiper-slide"><img src="' + img_src + '" class="ThumbImage" /></li>');
+    // 대표이미지 경로 (해당 이미지만 경로가 다름)
+    var big_img = $('.bigImage').data('src'); 
+    
+    // 첫번째 이미지 대표이미지 주소로 대체 
+    $('.prdImg .swiper-container .swiper-slide:eq(0) .ThumbImage').attr('src', big_img);
+    $('.prdImg .swiper-container .swiper-slide .ThumbImage').each(function(){
+    	var origin_src = $(this).attr('src');
+        $(this).attr('src', origin_src.replace('/product/extra/small/', '/product/extra/big/'));
+    });
 
     // big image slide
     const thumb_img_swiper = new Swiper('.prdImg .swiper-container', {
@@ -80,6 +67,7 @@ $(function () {
             init: function () {
                 $('.prdImg .swiper-slide:eq(0)').addClass('selected');
                 $('.prdImg .swiper-container').append($('.detailArea .likeButton'));
+                $(this.el).closest('.wp-stand-by').removeClass('wp-stand-by');
 
                 const target_node = document.querySelector("html");
                 const config = { attributes: true };
