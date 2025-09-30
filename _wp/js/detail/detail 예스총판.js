@@ -1,7 +1,7 @@
 /**
 * detail.js
 * 제작 : 웹퍼블릭
-* 버전 : 2.2
+* 버전 : 2.2 (하단 고정 시에도 data-action으로 동작하도록 수정)
 * 최종업데이트 : 2025.03.07
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
@@ -180,6 +180,7 @@ $(function () {
         e.preventDefault();
         
         // 옵션 창이 확장 되어 있지 않다면
+        /*
         if(!$('#optionG .wp-opt-area').is(':visible')) {
             
             // 리뷰 버튼 클릭 시
@@ -200,5 +201,10 @@ $(function () {
             let action_func = $(this).data('action');
             eval(action_func);
         }
+        */
+        
+        let action_func = $(this).data('action');
+        eval(action_func);
+        
     });
 });
