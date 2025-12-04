@@ -1,8 +1,8 @@
 /**
 * detail.js
 * 제작 : 웹퍼블릭
-* 버전 : 2.2
-* 최종업데이트 : 2025.03.07
+* 버전 : 2.2.1
+* 최종업데이트 : 2025.10.13
 
  🔖 웹퍼블릭 콘텐츠 라이선스 고지
 
@@ -30,6 +30,11 @@ $(function () {
             }
         }
     });
+
+    const is_review_class = 'is-review',
+        review_text = '리뷰',
+        toggle_text = '제품상세',
+        cart_text = '장바구니';
 
     // 네이버페이 또는 카카오페이 활성화 시 클래스 추가
     if ($('#NaverChk_Button').text().trim().length > 0 || $('#appPaymentButtonBox').text().trim().length > 0) {
@@ -76,8 +81,8 @@ $(function () {
     });
 
     // 이벤트 내용 없을 경우 영역 삭제
-    $('.eventArea').each(function(){
-        if($(this).find('.event').is(':empty')){
+    $('.eventArea').each(function () {
+        if ($(this).find('.event').is(':empty')) {
             $(this).addClass('displaynone');
         }
     });
@@ -108,12 +113,12 @@ $(function () {
             }
         }
     }
-    
+
     scrollOptionFixed();
     $(window).scroll(function () {
         scrollOptionFixed(this);
     });
-    
+
     let resize_timer;
     $(window).resize(function () {
         scrollOptionFixed();
@@ -140,16 +145,13 @@ $(function () {
     });
 
     let origin_name, prodset_once_toggle = false;
-    const is_review_class = 'is-review',
-          review_text = '리뷰',
-          toggle_text = '제품상세',
-          cart_text = '장바구니';
-  	
-    $('#optionG .btn-extend').on('click', function(e){
+
+
+    $('#optionG .btn-extend').on('click', function (e) {
         e.preventDefault();
         // 하단 고정 `구매하기` 클릭 시 추가구성상품 창이 접힌상태로 노출됨
         if ($('.res-mobile #optionG').hasClass('active') && prodset_once_toggle == false) {
-        	prodset_once_toggle = true;
+            prodset_once_toggle = true;
             $('.productSet .btn-toggle.active').removeClass('active');
             $('.productSet .product').hide();
             $('.productSet .add-opt-expand').addClass('displaynone');
@@ -157,15 +159,15 @@ $(function () {
         $('#optionG.active').toggleClass('extend');
         $('html').hasClass('scroll--hide') ? $('html').removeClass('scroll--hide') : $('html').addClass('scroll--hide');
         $('#optionG.active .wp-opt-area').slideToggle(200);
-        
+
         // 옵션 창이 확장되어 있을 경우 텍스트 전환
-        if ($('#optionG.active').hasClass('extend')){
+        if ($('#optionG.active').hasClass('extend')) {
             origin_name = $('.actionCartAndReview p').text();
             $('#optionG .wp-opt-box3').removeClass(is_review_class);
             $('.actionCartAndReview p').text(cart_text);
-        }else{
+        } else {
             if (origin_name == review_text) $('#optionG .wp-opt-box3').addClass(is_review_class);
-        	$('.actionCartAndReview p').text(origin_name);
+            $('.actionCartAndReview p').text(origin_name);
         }
     });
 
@@ -176,19 +178,19 @@ $(function () {
     $('.wp-opt-box2').append(`<div id="prodName">${prod_name}</div>`);
 
     // 구매 / 장바구니 클릭 시 옵션창 오픈
-    $('.actionCart, .action-buy, .actionCartAndReview').click(function(e){
+    $('.actionCart, .action-buy, .actionCartAndReview').click(function (e) {
         e.preventDefault();
-        
+
         // 옵션 창이 확장 되어 있지 않다면
-        if(!$('#optionG .wp-opt-area').is(':visible')) {
-            
+        if (!$('#optionG .wp-opt-area').is(':visible')) {
+
             // 리뷰 버튼 클릭 시
             if ($(this).hasClass('actionCartAndReview')) {
-                if ($(this).find('p').text() == review_text){
+                if ($(this).find('p').text() == review_text) {
                     $('#optionG .wp-opt-box3').removeClass(is_review_class);
                     $('.actionCartAndReview p').text(toggle_text);
                     $('#detailTab [href="#prdReview"]').trigger('click');
-                }else{
+                } else {
                     $('#optionG .wp-opt-box3').addClass(is_review_class);
                     $('.actionCartAndReview p').text(review_text);
                     $('#detailTab [href="#prdDetail"]').trigger('click');
@@ -196,7 +198,7 @@ $(function () {
                 return;
             }
             $('#optionG.active .btn-extend').trigger('click'); // 창 확장
-        }else{
+        } else {
             let action_func = $(this).data('action');
             eval(action_func);
         }

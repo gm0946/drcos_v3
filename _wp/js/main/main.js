@@ -19,9 +19,9 @@ $(function () {
     if (location.href.includes('ecudemo')) {
         if (WP_CORE().util.getParamUrl('type')
             && WP_CORE().util.getParamUrl('type') == 'b') {
-            $('.index_ban_100.type_a').remove();
+            $('.index_ban_100.type_b').removeClass('displaynone');
         } else {
-            $('.index_ban_100.type_b').remove();
+            $('.index_ban_100.type_a').removeClass('displaynone');
         }
 
         // 모바일에서 팝업 숨김 처리
@@ -46,5 +46,7 @@ $(function () {
             });
             mobileHidePopup(mq);
         }
+    }else{
+        $('.index_ban_100').removeClass('displaynone');
     }
 });
