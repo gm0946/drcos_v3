@@ -86,10 +86,18 @@ $(function () {
             $(this).addClass('displaynone');
         }
     });
+    
+    var res_mode;
+    const mq = window.matchMedia('(max-width: 1024px)');
+    mq.addEventListener('change', function () {
+       res_mode = (mq.matches) ? 'mobile' : 'pc';
+    });
+    res_mode = (mq.matches) ? 'mobile' : 'pc';
 
     const scrollOptionFixed = function (target) {
+        var header_height = (res_mode == 'pc') ? $('#header .inner').outerHeight() : $('#header').outerHeight();
         if (!target) target = document;
-        if (($('.detailArea').offset().top + $('.detailArea').height()) < $(target).scrollTop()) {
+        if (($('.detailArea').offset().top + $('.detailArea').height()) < $(target).scrollTop() + header_height) {
             if (!$('#optionG').hasClass('active')) {
                 $('.infoArea').css('height', $('.infoArea').height());
                 $('#optionG').addClass('active');
